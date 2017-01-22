@@ -35,3 +35,20 @@ h2 {font-weight:bold; font-size:22px;  margin-top:10px; text-align:center; color
 .footer {width:100%; height: 200px; float:left; background-color:#F2F2F2; border-bottom:10px solid gray;}
 .info {width:100%; float:left; font-size:11px; margin:15px 0; color:#2E2E2E;}
 .info li {text-align:center; margin-top:5px;}
+
+/* 전체 네비게이션 */
+#gnb {z-index: 20;position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: rgba(0,0,0,.905); color:#fff;}
+.clsBtn, .ph, .mp {display: block; width: 50px;height: 48px;background-image:url("../images/menuIcon.png"); background-repeat: no-repeat; background-size: 120px; }
+.clsBtn {position: absolute;top: 10px; right: 10px; background-position: -71px 0px; }
+#gnb h2 {color: #fff; font-size: 24px; font-weight: 400; margin-top: 10px;}
+#gnb h3 {color: #FB7C00; font-weight: 400; font-size: 34px; text-align: center; margin-top: 60px;}
+nav.menu ul li {text-align: center; margin-top: 18px}
+nav.menu ul li:first-child {margin-top: 28px;}
+nav.menu a {color:#fff; font-size: 20px}
+.wrap_ntc {position:relative; width: 350px; height: 130px; margin: 0 auto; margin-top: 60px; border:1px solid #fff; border-radius: 2px;}
+.wrap_ntc li {float:left; text-align: center; width: 50%; box-sizing: border-box;}
+.wrap_ntc li:first-child {border-right: 1px solid #fff; height: 100%;}
+.ph, .mp { margin: 0 auto; margin-top: 4px; background-position: 5px 0px; }
+.mp {background-position: -35px 0;}
+.ph + p, .mp + p {font-size: 14px; margin-bottom: 8px;}
+.wrap_ntc p {line-height: 1.4em; font-weight: 600;}
