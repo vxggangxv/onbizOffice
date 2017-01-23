@@ -99,7 +99,11 @@
 					</li>
 					<li>
 						<label for="chk_email">이메일 주소</label>
-						<input type="text" id="chk_email"><span>&#64;</span><input type="text" id="chk_email">
+						<input type="text" id="chk_email"><span>&#64;</span><select type="text">
+							<option value="naver.com">naver.com</option>
+							<option value="naver.com">daum.net</option>
+							<option value="naver.com">nate.com</option>
+						</select>
 					</li>
 					<li>
 						<label for="chk_num">전화번호</label>
@@ -110,6 +114,27 @@
 					</li>
 				</ul>
 			</section>
+			<!--<section class="mng_wrap off">
+				<a href="#" class="mng_clsBtn"></a>
+				<h2>가상오피스 임대신청서 내역 조회</h2>
+				<ul>
+					<li>
+						<label for="mng_name">신청자명</label>
+						<input type="text" id="mng_name" placeholder='"-"없이 입력해주세요'>
+					</li>
+					<li>
+						<label for="mng_email">이메일 주소</label>
+						<input type="text" id="mng_email"><span>&#64;</span><input type="text" id="mng_email">
+					</li>
+					<li>
+						<label for="mng_num">전화번호</label>
+						<input type="text" id="mng_num" placeholder='"-"없이 입력해주세요'>
+					</li>
+					<li>
+						<button type="button">확 인</button>
+					</li>
+				</ul>
+			</section>-->
 		</div>
 
     <!-- 헤더 -->
@@ -122,15 +147,154 @@
       <img src="http://img.go.co.kr/mobile/top.png" alt="위로가기">
     </div>
     
+    <!--단계 bar-->
     <ul class="inf_bar clr">
     	<li class="ib0">가상오피스 임대신청</li>
     	<li class="ib1 on">1.정보입력</li>
     	<li class="ib2">2.상품결제</li>
     	<li class="ib3">3.신청완료</li>
     </ul>
-
-
-
+		
+		<!--main 섹션-->
+		<section id="main">
+			<h2><span>Onbiz</span><span>Office</span></h2>
+			<p>
+				1인실~ 60인 이상을 수용할 수 있는 다양한 독립 사무실, <br/>
+				법인 설립 에서 세무기장까지 강남 최저가 서비스
+			</p>
+			<p>전국 어디에서든 방문없이 1시간 이내 제공받으실 수 있습니다.</p>
+		</section>
+		
+		<!--contents-->
+		<div id="contents">
+			<h2><span></span>정보입력</h2>
+			
+			<!--카테고리-->
+			<div class="category clr">
+				<ul>
+					<li>
+						<p class="tit"><input type="radio" id="new" name="category" checked="checked"><label for="new">신규사업자 개설</label></p>
+						<p>현재 사업자가 없고, 개인 또는 <br/>법인 신규사업자 개설을 위해 <br/>사용합니다.</p>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<p class="tit"><input type="radio" id="hold" name="category"><label for="hold">사업자 보유자</label></p>
+						<p>사업자가 있고, <br/>주소지 이전용으로 사용합니다.</p>
+					</li>
+				</ul>
+			</div>
+			<!--업종선택-->
+			<div class="st_wrap">
+				<select name="" id="">
+					<option value="업종선택">업종선택</option>
+				</select>
+				<p>※정확한 업종을 모르실 경우, 사업 내용을 간략하게</p>
+				<p>작성해주시기 바랍니다.</p>
+			</div>
+			<!--계약 담당자 정보-->
+			<section class="manager">
+				<h3>계약 담당자 정보</h3>
+				<ul>
+					<li>
+						<label for="mng_name">&#8226;신청자명</label>
+						<input type="text" id="mng_name" class="mng_name" placeholder='"-"없이 입력해주세요'>
+					</li>
+					<li class="m_num">
+						<label for="mng_num">&#8226;연락처</label>
+						<select type="text" id="mng_num" class="mng_num">
+							<option value="010">010</option>
+						</select><span>-</span><input type="text"><span>-</span><input type="text">
+					</li>
+					<li class="m_jm">
+						<label for="mng_jm">&#8226;주민등록번호</label>
+						<input type="text" id="mng_jm" class="mng_jm"><span>-</span><input type="text">
+					</li>
+					<li class="m_em">
+						<label for="mng_email">&#8226;이메일 주소</label>
+						<input type="text" id="mng_email" class="mng_email"><span>&#64;</span><select type="text">
+							<option value="naver.com">naver.com</option>
+							<option value="naver.com">daum.net</option>
+							<option value="naver.com">nate.com</option>
+						</select>
+						<span class="cf_txt">계약서를 이메일 발송해 드리오니, 이메일 주소를<br/>정확하게 입력해주세요.</span>
+					</li>
+					<li class="m_pax">
+						<label for="mng_pax">&#8226;팩스번호</label>
+						<select type="text" id="mng_pax" class="mng_num">
+							<option value="010">010</option>
+						</select><span>-</span><input type="text"><span>-</span><input type="text">
+						<span class="cf_txt">계약서를 팩스로 발송해 드리오니, 이메일 주소를<br/>정확하게 입력해주세요.</span>
+					</li>
+				</ul>
+			</section>
+			<!--계약 명의자 (임차인) 정보-->
+			<section class="manager lessee">
+				<h3>계약 명의자(임차인) 정보 <input type="checkbox" id="les"><label for="les">계약 임차인 정보와 동일함</label></h3>
+				<ul>
+					<li>
+						<label for="mng_name">&#8226;신청자명</label>
+						<input type="text" id="mng_name" class="mng_name" placeholder='"-"없이 입력해주세요'>
+					</li>
+					<li class="m_num">
+						<label for="mng_num">&#8226;연락처</label>
+						<select type="text" id="mng_num" class="mng_num">
+							<option value="010">010</option>
+						</select><span>-</span><input type="text"><span>-</span><input type="text">
+					</li>
+					<li class="m_jm">
+						<label for="mng_jm">&#8226;주민등록번호</label>
+						<input type="text" id="mng_jm" class="mng_jm"><span>-</span><input type="text">
+					</li>
+					<li class="m_em">
+						<label for="mng_email">&#8226;이메일 주소</label>
+						<input type="text" id="mng_email" class="mng_email"><span>&#64;</span><select type="text">
+							<option value="naver.com">naver.com</option>
+							<option value="naver.com">daum.net</option>
+							<option value="naver.com">nate.com</option>
+						</select>
+						<span class="cf_txt">계약서를 이메일 발송해 드리오니, 이메일 주소를<br/>정확하게 입력해주세요.</span>
+					</li>
+					<li class="m_pax">
+						<label for="mng_pax">&#8226;팩스번호</label>
+						<select type="text" id="mng_pax" class="mng_num">
+							<option value="010">010</option>
+						</select><span>-</span><input type="text"><span>-</span><input type="text">
+					</li>
+					<li class="m_est">
+						<label for="m_est">&#8226;업체개설일</label>
+						<select type="text" id="m_est">
+							<option value="010">2017년 00월 00일</option>
+						</select>
+					</li>
+				</ul>
+			</section>
+			<!--환불계좌정보-->
+			<section class="manager refund">
+				<h3>※환불 계좌 정보<span>(추후 예치금 상환시 필요함으로 정확히 입력해주세요!)</span></h3>
+				<ul>
+					<li>
+						<label for="ref_name">은행명</label>
+						<select type="text" id="ref_name">
+							<option value="">환불 받으실 은행을 선택해주세요</option>
+						</select>
+					</li>
+					<li class="r_est">
+						<label for="ref_est">계좌 번호</label>
+						<input type="text" id="ref_est">
+					</li>
+					<li>
+						<label for="ref_host">예금주</label>
+						<input type="text" id="ref_host" >
+					</li>
+				</ul>
+			</section>
+			
+			<div class="btn_wrap"><button type="button">확 인</button></div>
+			
+			
+		</div><!--contents 끝-->
+		
 		<!-- 푸터 -->
 		<footer class="footer">
 			<ul class="info">
