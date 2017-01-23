@@ -1,8 +1,103 @@
+/*단계 bar*/
 .inf_bar {position: relative; width: 100%;}
-.inf_bar li {position: relative; float:left; padding: 10px 0; background-color: #F3F3F3; font-size: 12px; font-weight: 500; text-align: center; width: 20%;}
-.inf_bar .ib0 {color: #4C4C4C; font-weight: 700; width: 40%; font-size: 14px; text-align: left; text-indent: 5px;}
+.inf_bar li {position: relative; float:left; height: 34px; line-height: 34px; background-color: #F3F3F3; font-size: 12px; font-weight: 500; color: #4C4C4C; text-align: center; width: 20%; text-indent: 5px; box-sizing: border-box;}
+.inf_bar .ib0 {font-weight: 700; width: 40%; font-size: 14px; text-align: left;}
 .inf_bar .ib2 {background-color: #D0D0D0;}
 .inf_bar .ib3 {background-color: #E0E0E0;}
 .inf_bar li.on {background-color: #5B5B59; color: #fff;}
-.inf_bar li:after {position:absolute; top: 0; right: 0; content: ""; display: block;
-border:1px solid #d0d0d0; border-color: transparent; border-left-color: #d0d0d0; border-left-width: 3px; width: 1px; height: 32px;}
+.inf_bar li:after {z-index: 1; position:absolute; top: 0; right: -25px; content: ""; display: block;
+border:17px solid transparent;  border-left-color: #f3f3f3; border-left-width: 8px;}
+.inf_bar li.on:after {border-left-color: #5B5B59;}
+.inf_bar .ib0:after {border-left-color: #f3f3f3;}
+.inf_bar .ib2:after {border-left-color: #d0d0d0;}
+.inf_bar .ib3:after {display: none;}
+
+/*main 섹션*/
+#main {letter-spacing: -1px;}
+#main h2 {color: #3C3C3C; font-size: 54px; font-weight: 600; margin-top: 28px;}
+#main h2 span:first-child {display: inline-block; color: #fff; background-color: #3c3c3c; height: 43px; width: 168px; line-height: 0.8em;}
+#main h2 span:last-child {position: relative; left: -4px;}
+#main h2 + p {margin-top: 12px;}
+#main p {color: #ff7700; font-weight: 600; text-align: center; line-height: 1.3em;}
+#main h2 + p + p {color: #4c4c4c; font-size: 14px; margin-top: 10px;}
+@media (max-width: 320px){
+	#main p {font-size: 14px}
+	#main h2 + p + p {font-size: 13px;}
+}
+
+/*컨텐츠*/
+#contents {position: relative; padding: 0 5px; margin-top: 30px; color: #4c4c4c;}
+#contents h2 span {position: relative; top: 6px; display: inline-block; width: 20px; height: 20px; background-image: url("http://img.onbiz.co.kr/images/m/on_arrow.png"); background-repeat: no-repeat;}
+#contents h2 {font-size: 16px; font-weight: 700; color: #4c4c4c; text-align: left; line-height: 1em;}
+
+/*카테고리*/
+.category {position: relative; margin-top: 6px;}
+.category .tit label {font-size: 14px; color: #fff;}
+.category ul li {float: left; text-align: center;}
+.category ul li {width: 50%; box-sizing: border-box;}
+.tit input {margin-right: 3px;}
+.category p {padding: 6px;}
+.category p:first-child {background-color: #3E3E3E; border-right: 1px solid #ccc;}
+.category .tit + p {padding-top: 10px; height: 52px; background-color: #F5F5F5; font-size: 12px; line-height: 1.4em; border-bottom: 1px solid #ccc; letter-spacing: -1px;}
+.category ul:first-child .tit + p {border-right: 1px solid #ccc;}
+
+/*업종선택*/
+.st_wrap {padding-left: 5px;}
+.st_wrap select {width: 70%; padding: 8px 0; margin: 16px 0 4px 0px; text-indent: 5px;}
+.st_wrap select > option {text-indent: 5px;}
+.st_wrap p {font-size: 13px; line-height: 1.4em;}
+.st_wrap select + p + p {text-indent: 12px;}
+
+/*담당자, 명의자 공통*/
+.manager select {background-size: 8px;}
+.manager span {display: inline-block; text-align: center;}
+/*계약 담당자 정보*/
+.manager { position: relative; margin-top: 10px; height: 336px; background: #F9F9F9;}
+/*.mng_clsBtn {position: absolute; top: -34px; right: 0px;}*/
+.manager h3 {color:#424242; text-align: center; font-size: 16px; font-weight: 700; line-height: 2.4em; border-top:1px solid #4c4c4c; background-color: #FEECD6;}
+.manager ul {padding-top: 10px;}
+.manager ul li {position: relative; padding: 4px 10px; line-height: 2.0em;}
+.manager label {display: inline-block; width: 32%; font-size: 14px; font-weight: 600;}
+.manager input, .manager select {width: 65%; height: 30px; border-radius: 4px; border: 1px solid #888; text-indent: 5px; box-sizing: border-box;}
+/*연락처*/
+.mng_num, .mng_pax, .manager .m_num input, .manager .m_pax input, .manager .mng_num {width: 19.7%;}
+.manager .m_num span, .manager .m_pax span, .manager .m_jm span {width: 3%;}
+/*주민등록번호*/
+.manager .m_jm input {width: 31%;}
+/*이메일*/
+.mng_email + span + select {text-indent: 0px; width: 29%;}
+.manager .mng_email {width: 31%;}
+.manager .mng_email +  span {display: inline-block; width: 5%; text-align: center;}
+.manager input::-webkit-input-placeholder { color: #666; }
+.manager input::-ms-input-placeholder { color: #666; }
+.manager input::-moz-input-placeholder { color: #666; }
+.manager .m_em .cf_txt, .manager .m_pax .cf_txt {width: 65%; position: relative; font-size: 10px; text-align: left; line-height: 1.3em; margin-top: 5px; margin-left: 32%; left: 5px; letter-spacing: -1px;}
+@media (min-width: 321px){
+	.manager .m_em .cf_txt, .manager .m_pax .cf_txt {font-size: 11px;}
+}
+/*팩스번호*/
+.manager .m_pax {margin-top: -10px;}
+.manager .m_pax .cf_txt {}
+
+/*계약 명의자 정보*/
+.lessee, .refund {margin-top: 30px;}
+.lessee > h3 > input, .lessee > h3 > input + label {position: relative; top: -2px;}
+.lessee > h3 > input {width: 10px; height: 10px;}
+.lessee > h3 > input + label {display: inline-block; width: 36%; font-size: 11px; letter-spacing: -1px; text-align: left;}
+.manager #m_est {	background-color: #f3f3f3; }
+	
+/*환불계좌정보*/
+.refund {height: 180px;}
+.refund h3 {background-color:#F9F9F9; border-top: 2px solid #b2b2b2; font-size: 14px; font-weight: 600; letter-spacing: -1px;}
+.refund h3 span {font-size: 11px;  color: #ff7700;}
+@media (max-width: 320px){
+	.refund h3 span {font-size: 10px}
+}
+.refund ul li {padding: 4px 16px;}
+.refund label {width: 22%;}
+.refund input, .refund select {width: 76%;}
+.refund select {font-size:13px; background-position: 97%;}
+
+/*확인버튼*/
+.btn_wrap {padding: 30px 0;}
+.btn_wrap button {display: block; width: 50%; color: #fff; font-size: 18px; line-height: 2.4em; margin: 0 auto; border-radius: 4px; border: none; background: #FF9600;}
