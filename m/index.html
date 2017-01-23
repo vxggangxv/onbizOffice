@@ -51,43 +51,66 @@
 <body>
   <div id="wrap"> 
     <!-- menu -->
-    <div id="gnb">
-      <a class="clsBtn" href="#"></a>
-      <h2>Onbiz Office Menu</h2>
-      <h3>Onbiz Office</h3>
-      <nav class="menu">
-        <ul>
-          <li>
-            <a href="">홈으로</a>
-          </li>
-          <li>
-            <a href="#">임대신청</a>
-          </li>
-          <li>
-            <a href="#">임대신청 내역 확인</a>
-          </li>
-          <li>
-            <a href="#">Login/Logout</a>
-          </li>
-        </ul>
-      </nav>
-      <ul class="wrap_ntc clr">
-        <li>
-          <!--<i class="fa fa-phone" aria-hidden="true"></i>-->
-					<span class="ph"></span>
-          <p>전화문의</p>
-          <p>T : 02-6255-3014</p>
-          <p>H : 010-4429-3013</p>
-        </li>
-        <li>
-          <!--<i class="fa fa-map-marker" aria-hidden="true"></i>-->
-					<span class="mp"></span>
-          <p>오시는 길</p>
-          <p>서울트별시 강남구</p>
-          <p>테헤란로 82길 15</p>
-        </li>
-      </ul>
-    </div>
+    <div id="backDrop">
+      <section class="menu">
+      	<a class="clsBtn" href="#"></a>
+				<h2>Onbiz Office Menu</h2>
+				<h3>Onbiz Office</h3>
+				<nav class="gnb">
+					<ul>
+						<li>
+							<a href="index.html">홈으로</a>
+						</li>
+						<li>
+							<a href="#">임대신청</a>
+						</li>
+						<li>
+							<a class="chClk" href="#">임대신청 내역 확인</a>
+						</li>
+						<li>
+							<a class="chClk" href="#">Login/Logout</a>
+						</li>
+					</ul>
+				</nav>
+				<ul class="wrap_ntc clr">
+					<li>
+						<!--<i class="fa fa-phone" aria-hidden="true"></i>-->
+						<span class="ph"></span>
+						<p>전화문의</p>
+						<p>T : 02-6255-3014</p>
+						<p>H : 010-4429-3013</p>
+					</li>
+					<li>
+						<!--<i class="fa fa-map-marker" aria-hidden="true"></i>-->
+						<span class="mp"></span>
+						<p>오시는 길</p>
+						<p>서울트별시 강남구</p>
+						<p>테헤란로 82길 15</p>
+					</li>
+				</ul>
+			</section>
+			<section class="chk_wrap off">
+				<a href="#" class="chk_clsBtn"></a>
+				<h2>가상오피스 임대신청서 내역 조회</h2>
+				<ul>
+					<li>
+						<label for="chk_name">신청자명</label>
+						<input type="text" id="chk_name" placeholder='"-"없이 입력해주세요'>
+					</li>
+					<li>
+						<label for="chk_email">이메일 주소</label>
+						<input type="text" id="chk_email"><span>&#64;</span><input type="text" id="chk_email">
+					</li>
+					<li>
+						<label for="chk_num">전화번호</label>
+						<input type="text" id="chk_num" placeholder='"-"없이 입력해주세요'>
+					</li>
+					<li>
+						<button type="button">확 인</button>
+					</li>
+				</ul>
+			</section>
+		</div>
 
     <!-- 헤더 -->
     <div class="headerOrigin">
