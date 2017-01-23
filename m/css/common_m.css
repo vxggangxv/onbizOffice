@@ -24,7 +24,7 @@ strong {font-weight: bold;}
 /* 헤더영역 */
 .headerOrigin {position: relative; width: 100%;height: 50px;background: #fff;}
 .headerOrigin h1 {position: relative; top: 8px; left: 10px; color: #302E2E; font-size: 28px; }
-.headerOrigin a {position: absolute; top: 11px;	right: 10px; display: block; padding: 4px 8px; color: #eee; font-size: 14px; border:1px solid #eee; border-radius: 3px;}
+.headerOrigin a {position: absolute; width: 25px; height: 22px; top: 14px;	right: 10px; display: block; background-image: url("http://img.onbiz.co.kr/images/tab.jpg");}
 
 .header {width:100%; height:60px; float:left; background-color:#3b3938;}
 h2 {font-weight:bold; font-size:22px;  margin-top:10px; text-align:center; color: #ff8921;}
