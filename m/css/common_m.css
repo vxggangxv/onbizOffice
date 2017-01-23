@@ -64,8 +64,9 @@ background: #fff; border-radius: 4px;}
 .chk_wrap ul {margin-top: 25px;}
 .chk_wrap ul li {padding: 6px 20px; line-height: 2.4em;}
 .chk_wrap label {display: inline-block; width: 30%; font-size: 16px;}
-.chk_wrap input {width: 66%; height: 40px; border-radius: 4px; border: 1px solid #666; text-indent: 5px;
+.chk_wrap input, .chk_wrap select {width: 66%; height: 40px; border-radius: 4px; border: 1px solid #666; text-indent: 5px;
 box-sizing: border-box;}
+.chk_wrap select {text-indent: 0; width: 29%;}
 .chk_wrap #chk_email {width: 29%;}
 .chk_wrap #chk_email +  span {display: inline-block; width: 8%; text-align: center;}
 .chk_wrap input::-webkit-input-placeholder { color: #666; }
