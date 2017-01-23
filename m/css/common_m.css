@@ -18,10 +18,12 @@ strong {font-weight: bold;}
 
 #wrap {width:100%; position:relative; margin:0 auto; overflow: hidden;}
 
+/*jquery addClass*/
+.menu.off, .chk_wrap.off {display: none;}
  
 /* 헤더영역 */
-.headerOrigin {position: relative; width: 100%;height: 50px;background: #000;}
-.headerOrigin h1 {position: relative; top: 8px; left: 10px; color: #d0d1d1; font-size: 28px; }
+.headerOrigin {position: relative; width: 100%;height: 50px;background: #fff;}
+.headerOrigin h1 {position: relative; top: 8px; left: 10px; color: #302E2E; font-size: 28px; }
 .headerOrigin a {position: absolute; top: 11px;	right: 10px; display: block; padding: 4px 8px; color: #eee; font-size: 14px; border:1px solid #eee; border-radius: 3px;}
 
 .header {width:100%; height:60px; float:left; background-color:#3b3938;}
@@ -32,7 +34,7 @@ h2 {font-weight:bold; font-size:22px;  margin-top:10px; text-align:center; color
 
 /* 푸터영역 */
 /* 푸터 */
-.footer {width:100%; height: 200px; float:left; background-color:#F2F2F2; border-bottom:10px solid gray;}
+footer {width:100%; height: 200px; float:left; background: #F7F7F7;}
 .info {width:100%; float:left; font-size:11px; margin:15px 0; color:#2E2E2E;}
 .info li {text-align:center; margin-top:5px;}
 
@@ -70,5 +72,7 @@ box-sizing: border-box;}
 .chk_wrap input::-ms-input-placeholder { color: #666; }
 .chk_wrap input::-moz-input-placeholder { color: #666; }
 .chk_wrap button {color: #fff; font-size: 18px; line-height: 2.4em; width: 98%; margin: 0 auto; margin-top: 16px;border-radius: 4px; border: none; background: #FF9600;}
-/*jquery addClass*/
-.menu.off, .chk_wrap.off {display: none;}
+
+/*위로가기 버튼*/
+.btntop {width:55px; z-index:10; position:fixed; height:55px; bottom:75px; right:15px;}
+.btntop img {width:100%;}
