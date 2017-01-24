@@ -3,12 +3,12 @@
 .inf_bar li {position: relative; float:left; height: 34px; line-height: 34px; background-color: #F3F3F3; font-size: 12px; font-weight: 500; color: #4C4C4C; text-align: center; width: 20%; text-indent: 5px; box-sizing: border-box;}
 .inf_bar .ib0 {font-weight: 700; width: 40%; font-size: 14px; text-align: left;}
 .inf_bar .ib2 {background-color: #D0D0D0;}
-.inf_bar .ib3 {background-color: #E0E0E0;}
+.inf_bar .ib1 {background-color: #E0E0E0;}
 .inf_bar li.on {background-color: #5B5B59; color: #fff;}
 .inf_bar li:after {z-index: 1; position:absolute; top: 0; right: -25px; content: ""; display: block;
 border:17px solid transparent;  border-left-color: #f3f3f3; border-left-width: 8px;}
 .inf_bar li.on:after {border-left-color: #5B5B59;}
-.inf_bar .ib0:after {border-left-color: #f3f3f3;}
+.inf_bar .ib1:after {border-left-color: #e0e0e0;}
 .inf_bar .ib2:after {border-left-color: #d0d0d0;}
 .inf_bar .ib3:after {display: none;}
 
@@ -26,5 +26,20 @@ border:17px solid transparent;  border-left-color: #f3f3f3; border-left-width: 8
 }
 
 /*컨텐츠*/
-#contents {position: relative; padding: 0 5px; margin-top: 30px; color: #4c4c4c;}
-#contents h2 {font-size: 15px; font-weight: 700; color: #4c4c4c; text-align: left; line-height: 1em;}
+#contents {position: relative; margin: 0 5px; margin-top: 30px; color: #4c4c4c; border-top: 1px dashed #e0e0e0;}
+#contents h2 {font-size: 13px; font-weight: 700; color: #4c4c4c; text-align: left; line-height: 1em; letter-spacing: -1px; margin-top: 24px;}
+#contents h2 span {position: relative; top: 2px; width: 12px; height: 12px; background-size: 28px;}
+
+/*방법1, 방법2*/
+.way {position: relative; margin: 10px 0; text-align: center;}
+.way ul li {float: left; box-sizing: border-box; width: 50%;}
+.way ul li div {border: 1px solid #8c8c8c; border-radius: 3px;}
+.way ul li:first-child div {margin-right: 2px;}
+.way ul li:last-child div {margin-left: 2px;}
+.way h3 {position: relative; font-size: 16px; font-weight: 600; padding: 10px 0; z-index: 1;}
+.way div {position: relative;}
+.way div span {position: absolute; content: ""; display: block; width: 47px; height: 8px; background-color: #E1E0DD; top: 21px; left: 50%; margin-left: -24px; }
+
+/*계약서 다운로드, 계약서에 사인하기 버튼*/
+.btn_wrap {margin-top: 24px;}
+.btn_wrap li {float: left;}
