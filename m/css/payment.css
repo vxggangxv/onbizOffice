@@ -13,7 +13,7 @@ border:17px solid transparent;  border-left-color: #f3f3f3; border-left-width: 8
 .inf_bar .ib2:after {border-left-color: #d0d0d0;}
 .inf_bar .ib3:after {display: none;}
 
-/*main 섹션*/
+/*main 영역*/
 #main {letter-spacing: -1px;}
 #main h2 {color: #3C3C3C; font-size: 54px; font-weight: 600; margin-top: 28px;}
 #main h2 span:first-child {display: inline-block; color: #fff; background-color: #3c3c3c; height: 43px; width: 168px; line-height: 0.8em;}
@@ -35,18 +35,106 @@ padding-bottom: 5px; border-bottom: 1px solid #696969;}
 #contents h2 + p select {position: relative; top: -1px; font-size: 12px; padding: 4px; width: 180px; background-size: 8px; background-color: #fbfbfb;}
 #contents input[type="radio"] {width: 20px; height: 20px; background-size: 50px; background-position: -25px -1px;}
 
-/*임대기간선택*/
+/*임대기간선택 영역*/
 .term {padding: 3px 0 15px 0; border-top: 2px solid #FF912F; border-bottom: 2px solid #FF912F; margin-top: 6px;}
-.term h3 {font-size: 14px; font-weight: 600; text-align: center; margin-bottom: 5px;}
-.term ul {position: relative; width: 100%;}
-.term ul li {box-sizing: border-box; float: left; text-align: center; font-size: 13px; line-height: 2.7em; border-right: 1px solid #EDECEB; border-bottom: 1px solid #edeceb;}
-.term ul:first-child li {line-height: 2.4em; border-bottom: none; background-color: #FF8A17; color: #fff;}
+.term h3 {font-size: 14px; font-weight: 600; text-align: center; padding-bottom: 5px; color: #3c3c3c;}
+.term > div {display: table; width: 100%;}
+.term ul {position: relative; display: table-row; width: 100%;}
+.term ul li {display: table-cell; vertical-align: middle;  box-sizing: border-box; text-align: center; font-size: 14px; border-right: 1px solid #EDECEB; border-bottom: 1px solid #edeceb; font-weight: 600; height: 38px;}
+.term ul:first-child li { border-bottom: none; background-color: #FF8A17; color: #fff; font-size: 13px; height: 32px;}
 .term ul:first-child .t04 span {font-size: 10px; line-height: 0em;}
 .term ul li.t04 {border-right: none;}
-.term .t01 {width: 10%;}
-.term .t02 {width: 22%;}
-.term .t03 {width: 28%;}
-.term .t04 {width: 40%; text-align: right; padding-right: 4%;}
+.term .t01 {width: 12%;}
+.term .t02 {width: 19%;}
+.term .t03 {width: 27%;}
+.term .t04 {width: 42%; text-align: right; padding-right: 6%;}
+@media (max-width: 320px){
+	.term .t04 {padding-right: 4%;}
+}
+.term .t04 .sale {display: inline-block; background-color: #ff3600; color: #fff; line-height: 1.6em; padding: 0 3px; margin-right: 3px; font-size: 12px;}
+
+/*옵션상품추가 영역*/
+.add {border: none; margin-top: 30px;}
+.add h3 {background-color: #F3F3F3; padding: 6px 8px;}
+.add .t01 {width: 12%;}
+.add .t02 {width: 62%;}
+.add .t04 {width: 26%; padding-right: 0; text-align: center;}
+.add .t02 span {position: relative; display: block; font-size: 12px;}
+/*radio checked일 경우*/
+.term ul.on li {background-color: #fff7eb;}
+.term ul.on .t04 {color: #FF3600; font-weight: 700;}
+.add p {font-size: 13px; font-weight: 600; line-height: 1.8em;}
+
+/*결제정보*/
+.p_ctgr {border-bottom: 1px solid #ccc;}
+.p_ctgr li {float: left; text-align: center; font-size: 13px; padding: 10px 0;}
+.p_ctgr li {width: 36%;}
+.p_ctgr li + li {width: 32%;}
+.p_ctgr li + li + li {width: 32%;}
+.p_ctgr li input {margin-right: 2px;}
+.p_ctgr li label span {font-size: 12px;}
+@media (max-width: 320px){
+	.p_ctgr li {font-size: 12px;}
+	.p_ctgr li label span {font-size: 11px;}
+}
+.p_ctgr + p {margin-top: 3px;}
+.p_ctgr + p, .p_ctgr + p + p {font-size: 11px; line-height: 1.7em;}
+
+/*결제하실 금액 영역*/
+.price {margin-top: 30px; border: 2px solid #EDEDED; box-sizing: border-box; font-weight: 600; padding-bottom: 12px;}
+.price h3 {background-color: #F9F9F9; font-size: 20px; padding: 5px 0; text-align: center; border-bottom: 2px solid #EDEDED; font-weight: 600;}
+.price > ul {border-bottom: 2px solid #ededed;}
+.price > ul li {padding: 0px 18px 12px;}
+.price > ul li:first-child {padding-top: 12px;} 
+.price > ul li:after {content: ""; display: block; clear: both;}
+.price > ul li p {display: inline-block; float: right; font-size: 14px;}
+.price > ul li p + p {letter-spacing: 0px;}
+.price > ul li p:first-child {float: left;}
+
+.p_price p + p {font-weight: 800;}
+.p_price li:last-child p:last-child { color: #f93500;}
+
+.p_total {padding: 10px 0;}
+.price .p_total p:first-child {font-size: 18px; line-height: 2.2em;}
+.price .p_total p + p {font-size: 30px; color: #f93500; font-weight: 800;}
+.p_total p span {display: block; font-size: 16px; margin-top: 1px; text-align: right; font-weight: 600; color: #4c4c4c;}
+/*주의 사항 및 약관 동의*/
+.price > p {padding: 3px 22px; background-color: #F3F3F3;}
+.price > p label {font-size: 16px; width: auto;}
+.price > p label:before {position: relative; top: -1px; margin-right: 5px;}
+.price > p input[type="checkbox"]:checked + label:before {margin-right: 5px;}
+
+.price .txtara {display: block; margin: 10px auto 4px;; width: 86%; height: 100px; resize: none; text-align: left; padding: 5px 2px; border: 2px solid #dedede; overflow-y: scroll;}
+.price .txtara li {padding: 0; font-size: 14px; font-weight: 400; line-height: 1.3em; text-indent: 14px;}
+.price .txtara .idt {text-indent: 0;}
+.price .txtara + p, .price .txtara + p + p {display: block; margin: 0 auto; padding: 0; width: 90%; font-size: 14px; line-height: 1.3em; background-color: transparent;}
+@media (max-width: 320px){
+	.price .txtara + p, .price .txtara + p + p {font-size: 13px;}
+}
+.price .txtara + p + p {text-indent: 12px;}
+
+/*카드 무이자 할부 혜택 영역*/
+.card {letter-spacing: 0; margin-top: 30px;}
+.card h3 {font-weight: 600; font-size: 15px; padding-bottom: 5px;}
+.card ul {position: relative; width: 100%; border: 1px solid #dedede; box-sizing: border-box;}
+.card li {border-top: 1px solid #dedede;}
+.card li:first-child {border-top: none;}
+.card li:after {content: ""; display: block; clear: both;}
+.card p {float: left; height: 36px; font-size: 14px; line-height: 2.5em; font-weight: 600; text-align: center;}
+.card p:first-child {width: 40%; background-image: url("http://img.onbiz.co.kr/images/m/card.jpg"); background-size: 130px; background-position: center -2px;}
+.card p:nth-child(2) {width: 30%;}
+.card p:last-child {width: 30%;}
+/*카드 이미지*/
+.card p.c01 {}
+.card p.c02 {background-position: center -42px;}
+.card p.c03 {background-position: center -82px;}
+.card p.c04 {background-position: center -122px;}
+.card p.c05 {background-position: center -164px;}
+.card p.c06 {background-position: center -204px;}
+.card p.c07 {background-position: center -244px;}
+.card p.c08 {background-position: center -282px;}
+.card p.c09 {background-position: center -328px;}
+
 /*결제하기 버튼*/
-.btn_wrap input {display: block; width: 100%; color: #fff; font-size: 18px; line-height: 2.2em; margin: 10px auto 20px; border: none; background: #F93500; cursor: pointer;}
+.btn_wrap input {display: block; width: 100%; color: #fff; font-size: 28px; line-height: 2.2em; margin: 10px auto 20px; border: none; background: #F93500; cursor: pointer;}
 

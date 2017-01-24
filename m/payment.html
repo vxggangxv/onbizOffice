@@ -157,41 +157,142 @@
 			<section class="term">
 				<h3>임대기간 선택</h3>
 				<div>
-					<ul class="clr">
+					<ul>
 						<li class="t01">선 택</li>
 						<li class="t02">임대기간</li>
 						<li class="t03">예치금</li>
 						<li class="t04">월세<span>(부가세별도)</span></li>
 					</ul>
-					<ul class="clr">
+					<ul>
 						<li class="t01"><input type="radio" name="choice1"></li>
-						<li class="t02">
-							1개월
-						</li>
-						<li class="t03">
-							80,000원
-						</li>
+						<li class="t02">1개월</li>
+						<li class="t03">80,000원</li>
+						<li class="t04">100,000원</li>
+					</ul>
+					<ul>
+						<li class="t01"><input type="radio" name="choice1"></li>
+						<li class="t02">3개월</li>
+						<li class="t03">80,000원</li>
 						<li class="t04">
-							100,000원
+							<span class="sale">30%할인</span>210,000원
 						</li>
 					</ul>
-					<ul class="clr">
+					<ul>
 						<li class="t01"><input type="radio" name="choice1"></li>
-						<li class="t02">
-							3개월
-						</li>
-						<li class="t03">
-							80,000원
-						</li>
-						<li class="t04">
-							<span>30%할인</span>210,000원
-						</li>
+						<li class="t02">6개월</li>
+						<li class="t03">80,000원</li>
+						<li class="t04"><span class="sale">40%할인</span>360,000원</li>
+					</ul>
+					<ul>
+						<li class="t01"><input type="radio" name="choice1"></li>
+						<li class="t02">12개월</li>
+						<li class="t03">80,000원</li>
+						<li class="t04"><span class="sale">50%할인</span>600,000원</li>
 					</ul>
 				</div>
 			</section>
+			<!--옵션상품추가-->
+			<section class="term add">
+				<h3>옵션상품추가</h3>
+				<div>
+					<ul>
+						<li class="t01">선 택</li>
+						<li class="t02">옵션상품 추가</li>
+						<li class="t04">금액<span>(부가세별도)</span></li>
+					</ul>
+					<ul>
+						<li class="t01"><input type="radio" name="choice2"></li>
+						<li class="t02">대회의실 및 미팅룸 월 5시간 사용</li>
+						<li class="t04">월10,000원</li>
+					</ul>
+					<ul>
+						<li class="t01"><input type="radio" name="choice2"></li>
+						<li class="t02">우편물 발송 서비스</li>
+						<li class="t04">월20,000원</li>
+					</ul>
+					<ul>
+						<li class="t01"><input type="radio" name="choice2"></li>
+						<li class="t02">팩스수신 서비스 및 전화번호 신청<span>(전화실비 사용자 부담)</span></li>
+						<li class="t04">월20,000원</li>
+					</ul>
+					<ul>
+						<li class="t01"><input type="radio" name="choice2"></li>
+						<li class="t02">복사기 이용<span>(월 흑백 150매)</span></li>
+						<li class="t04">10,000원</li>
+					</ul>
+					<ul>
+						<li class="t01"><input type="radio" name="choice2"></li>
+						<li class="t02">카드키</li>
+						<li class="t04">보증금 3만원</li>
+					</ul>
+				</div>
+				<p>※카페테리아 이용 무제한, 입주명판 무료제공</p>
+			</section>
+			<!--결제정보-->
+			<h2><span></span>결제정보</h2>
+			<ul class="p_ctgr clr">
+				<li><input type="radio" name="credit" id="credit"><label for="credit">신용카드<span>(개인,법인)</span></label></li>
+				<li><input type="radio" name="credit" id="isp"><label for="isp">신용카드<span>(ISP)</span></label></li>
+				<li><input type="radio" name="credit" id="bank"><label for="bank">실시간 계좌이체</label></li>
+			</ul>
+			<p>&#8226;신용카드 간편결제는 별도의 설치없이 카드정보 입력만으로 결제가 가능합니다.</p>
+			<p>&#8226;신용카드, 체크카드, 법인카드로 결제가 가능합니다.</p>
+			<!--결제하실 금액-->
+			<section class="price">
+				<h3>결제하실 금액</h3>
+				<ul class="p_term">
+					<li><p>&#8226;임대 개일</p><p>2017년 00월 00(일)</p></li>
+					<li><p>&#8226;임대 기간</p><p>3개월</p></li>
+					<li><p>&#8226;임대 상품</p><p>대회의실/미팅룸 5시간</p></li>
+				</ul>
+				<ul class="p_price">
+					<li><p>&#8226;임대 정상가</p><p>300,000원</p></li>
+					<li><p>&#8226;옵션 상품</p><p>(3개월)30,000원</p></li>
+					<li><p>&#8226;총 할인혜택</p><p>-90000원</p></li>
+				</ul>
+				<ul class="p_total">
+					<li><p>&#8226;최종 결제금액</p><p>264,000원<span>(VAT포함)</span></p></li>
+				</ul>
+				
+				<p><input type="checkbox" id="agree"><label for="agree">주의사항 및 약관 동의</label></p>
+				<div class="txtara">
+					<ul>
+						<li>주의사항 (체크박스 확인)</li>
+						<li class="idt">■ 계약 만료 및 해지시 30일 이전에 당시에</li>
+						<li>통보해야하며, 미통보시 해당 예고기간은 사용</li>
+						<li>기간으로 간주되어 합상 청구됩니다.</li>
+						<li class="idt">■ 할인이 적용된 계약인 경우, 중도 해지시,</li>
+						<li>해당 기간동안 할인받은 총 금액은 정상금액</li>
+						<li>으로 정산되어 반환청구됩니다.</li>
+						<li class="idt">■업무지원 서비스 및 기타 서비스 비용을 당사가</li>
+						<li>대납할 경우에는 10%의 서비스요금이 추가로</li>
+						<li>부가됩니다.</li>
+					</ul>
+				</div>
+				<p>※결제 후, 계약서(PDF파일)는 이메일로 발송해 드리며,</p>
+				<p>홈페이지에서도 다운로드 받으실 수 있습니다.</p>
+			</section>
+			<!--카드무이자할부혜택-->
+			<section class="card">
+				<h3>※ 카드 무이자 할부 혜택</h3>
+				<ul>
+					<li><p class="c01"></p><p>5만원이상</p><p>2~5개월</p></li>
+					<li><p class="c02"></p><p>5만원이상</p><p>2~5개월</p></li>
+					<li><p class="c03"></p><p>5만원이상</p><p>2~5개월</p></li>
+					<li><p class="c04"></p><p>5만원이상</p><p>2~5개월</p></li>
+					<li><p class="c05"></p><p>5만원이상</p><p>2~5개월</p></li>
+					<li><p class="c06"></p><p>5만원이상</p><p>2~5개월</p></li>
+					<li><p class="c07"></p><p>5만원이상</p><p>2~5개월</p></li>
+					<li><p class="c08"></p><p>5만원이상</p><p>2~5개월</p></li>
+					<li><p class="c09"></p><p>5만원이상</p><p>2~5개월</p></li>
+				</ul>
+			</section>
+			
+			
 			
 			<div class="btn_wrap"><input type="button" value="결제하기"></div>
 		</div><!--contents 끝-->
+		
 		
 		<!-- 푸터 -->
 		<footer class="footer">
