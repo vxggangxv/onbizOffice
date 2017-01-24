@@ -2,7 +2,7 @@
 * {margin:0; padding:0; font-family: 'Nanum Gothic', '나눔고딕', 'NanumGothicWeb', '맑은 고딕', 'Malgun Gothic', '돋움', Dotum, sans-serif,Helvetica,AppleGothic;}
 ul,ol {list-style-type:none;}
 a {text-decoration:none;}
-input {-webkit-border-radius:1px; -webkit-appearance:none;}
+input[type="text"], input[type="radio"] {-webkit-border-radius:1px; -webkit-appearance:none;}
 select {
 	-webkit-border-radius:1px;
 	-webkit-appearance:none;
@@ -14,6 +14,12 @@ select {
 }
 textarea {-webkit-border-radius:1px; -webkit-appearance:none;}
 strong {font-weight: bold;}
+input[type="checkbox"] + label {
+	cursor: pointer; 
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
 input[type=radio] {position: relative; top: -1px; width: 13px; height: 13px; border: 1px solid #ccc; border-radius: 50%; box-sizing: border-box; background-color: #fff;}
 input[type=radio]:checked {background-image: url("http://img.onbiz.co.kr/images/m/on_arrow.png"); background-repeat: no-repeat; background-size: 29px; background-position: -14px 0px; border: none; background-color: #FCAD17;}
 select {font-size:14px; border:1px solid #636363; border-radius: 4px; }	
@@ -28,8 +34,8 @@ select {font-size:14px; border:1px solid #636363; border-radius: 4px; }
  
 /* 헤더영역 */
 .headerOrigin {position: relative; width: 100%;height: 50px;background: #fff;}
-.headerOrigin h1 {position: relative; top: 8px; left: 10px; color: #302E2E; font-size: 28px; }
-.headerOrigin a {position: absolute; width: 25px; height: 22px; top: 14px;	right: 10px; display: block; background-image: url("http://img.onbiz.co.kr/images/m/tab.jpg");}
+.headerOrigin h1 a {position: relative; top: 8px; left: 10px; color: #302E2E; font-size: 28px; }
+.headerOrigin h1 + a {position: absolute; width: 25px; height: 22px; top: 14px;	right: 10px; display: block; background-image: url("http://img.onbiz.co.kr/images/m/tab.jpg");}
 
 .header {width:100%; height:60px; float:left; background-color:#3b3938;}
 h2 {font-weight:bold; font-size:22px;  margin-top:10px; text-align:center; color: #ff8921;}
@@ -39,7 +45,7 @@ h2 {font-weight:bold; font-size:22px;  margin-top:10px; text-align:center; color
 
 /* 푸터영역 */
 /* 푸터 */
-footer {width:100%; height: 200px; float:left; background: #F7F7F7;}
+footer {width:100%; height: 130px; float:left; background: #F7F7F7;}
 .info {width:100%; float:left; font-size:11px; margin:15px 0; color:#2E2E2E;}
 .info li {text-align:center; margin-top:5px;}
 
@@ -77,8 +83,8 @@ box-sizing: border-box;}
 .chk_wrap input::-webkit-input-placeholder { color: #666; }
 .chk_wrap input::-ms-input-placeholder { color: #666; }
 .chk_wrap input::-moz-input-placeholder { color: #666; }
-.chk_wrap button {color: #fff; font-size: 18px; line-height: 2.4em; width: 98%; margin: 0 auto; margin-top: 16px;border-radius: 4px; border: none; background: #FF9600;}
+.chk_wrap .chk_btn {color: #fff; font-size: 18px; line-height: 2.4em; width: 98%; margin: 0 auto; margin-top: 16px;border-radius: 4px; border: none; background: #FF8400; cursor: pointer;}
 
 /*위로가기 버튼*/
 .btntop {width:55px; z-index:10; position:fixed; height:55px; bottom:75px; right:15px;}
-.btntop img {width:100%;}
+.btntop img {width:100%; cursor: pointer;}

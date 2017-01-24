@@ -110,7 +110,7 @@
 						<input type="text" id="chk_num" placeholder='"-"없이 입력해주세요'>
 					</li>
 					<li>
-						<button type="button">확 인</button>
+						<input type="button" value="확 인" class="chk_btn">
 					</li>
 				</ul>
 			</section>
@@ -139,7 +139,7 @@
 
     <!-- 헤더 -->
     <header class="headerOrigin">
-      <h1>Onbiz Office</h1>
+      <h1><a href="./index.html">Onbiz Office</a></h1>
       <a class="nav_tab" href="#"></a>
     </header>
     
@@ -230,25 +230,25 @@
 			</section>
 			<!--계약 명의자 (임차인) 정보-->
 			<section class="manager lessee">
-				<h3>계약 명의자(임차인) 정보 <input type="checkbox" id="les"><label for="les">계약 임차인 정보와 동일함</label></h3>
+				<h3>계약 명의자(임차인) 정보 <input type="checkbox" id="les" ><label for="les">계약 임차인 정보와 동일함</label></h3>
 				<ul>
 					<li>
-						<label for="mng_name">&#8226;신청자명</label>
-						<input type="text" id="mng_name" class="mng_name" placeholder='"-"없이 입력해주세요'>
+						<label for="les_name">&#8226;신청자명</label>
+						<input type="text" id="les_name" class="mng_name" placeholder='"-"없이 입력해주세요'>
 					</li>
 					<li class="m_num">
-						<label for="mng_num">&#8226;연락처</label>
-						<select type="text" id="mng_num" class="mng_num">
+						<label for="les_num">&#8226;연락처</label>
+						<select type="text" id="les_num" class="mng_num">
 							<option value="010">010</option>
 						</select><span>-</span><input type="text"><span>-</span><input type="text">
 					</li>
 					<li class="m_jm">
-						<label for="mng_jm">&#8226;주민등록번호</label>
-						<input type="text" id="mng_jm" class="mng_jm"><span>-</span><input type="text">
+						<label for="les_jm">&#8226;주민등록번호</label>
+						<input type="text" id="les_jm" class="mng_jm"><span>-</span><input type="text">
 					</li>
 					<li class="m_em">
-						<label for="mng_email">&#8226;이메일 주소</label>
-						<input type="text" id="mng_email" class="mng_email"><span>&#64;</span><select type="text">
+						<label for="les_email">&#8226;이메일 주소</label>
+						<input type="text" id="les_email" class="mng_email"><span>&#64;</span><select type="text">
 							<option value="naver.com">naver.com</option>
 							<option value="naver.com">daum.net</option>
 							<option value="naver.com">nate.com</option>
@@ -256,14 +256,14 @@
 						<span class="cf_txt">계약서를 이메일 발송해 드리오니, 이메일 주소를<br/>정확하게 입력해주세요.</span>
 					</li>
 					<li class="m_pax">
-						<label for="mng_pax">&#8226;팩스번호</label>
-						<select type="text" id="mng_pax" class="mng_num">
+						<label for="les_pax">&#8226;팩스번호</label>
+						<select type="text" id="les_pax" class="mng_num">
 							<option value="010">010</option>
 						</select><span>-</span><input type="text"><span>-</span><input type="text">
 					</li>
 					<li class="m_est">
-						<label for="m_est">&#8226;업체개설일</label>
-						<select type="text" id="m_est">
+						<label for="les_est">&#8226;업체개설일</label>
+						<select type="text" id="les_est">
 							<option value="010">2017년 00월 00일</option>
 						</select>
 					</li>
@@ -290,7 +290,7 @@
 				</ul>
 			</section>
 			
-			<div class="btn_wrap"><button type="button">확 인</button></div>
+			<div class="btn_wrap"><input type="button" value="확 인"></div>
 			
 			
 		</div><!--contents 끝-->
