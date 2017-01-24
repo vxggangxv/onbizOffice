@@ -1,7 +1,7 @@
 /* 마진과 패딩의 초기화 */
-a, abbr, acronym, address, 
+a, abbr, acronym, address,
 b, blockquote, big, body,
-center, caption, cite, code, command,
+center, caption, cite, code, command, 
  dd, del, dfn, dl, div, dt, 
 em, embed,
 fieldset, footer, form, 
@@ -13,9 +13,15 @@ p, pre,
 q, 
 s, samp, section, small, span, source, strike, strong, sub, sup,
 table, tbody, tfoot, thead, th, tr, 
-u, ul, main,
+u, ul, 
+nav, aside, canvas, main, figure, figcaption,
 var { margin:0; padding:0}
 
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
 /* 헤더 폰트 사이즈 초기화 */
 h1,h2,h3,h4,h5,h6 {font-size:100% }
 
