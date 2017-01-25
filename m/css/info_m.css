@@ -28,7 +28,8 @@ border:17px solid transparent;  border-left-color: #f3f3f3; border-left-width: 8
 /*컨텐츠*/
 #contents {position: relative; padding: 0 5px; margin-top: 30px; color: #4c4c4c;}
 #contents h2 {font-size: 15px; font-weight: 700; color: #4c4c4c; text-align: left; line-height: 1em;}
-
+/*신규사업자, 사업자보유자 라디오박스*/
+.tit input[type=radio] {top: -1px;}
 /*카테고리*/
 .category {position: relative; margin-top: 6px;}
 .category .tit label {font-size: 14px; color: #fff;}
@@ -80,7 +81,8 @@ border:17px solid transparent;  border-left-color: #f3f3f3; border-left-width: 8
 
 /*계약 명의자 정보*/
 .lessee, .refund {margin-top: 30px;}
-.lessee > h3 > input, .lessee > h3 > input + label {position: relative; top: -2px;}
+.lessee > h3 > input[type="checkbox"] {width: 14px; height: 14px; top: -1px;}
+.lessee > h3 > input[type="checkbox"] + label {position: relative; display: inline-block; width: 36%; font-size: 11px; letter-spacing: -1px; text-align: left;}
 .manager #les_est {	background-color: #f7f7f7; }
 	
 /*환불계좌정보*/

@@ -2,7 +2,7 @@
 /* 헤더영역 */
 .headerOrigin {position: relative; width: 100%;height: 50px;background: #000;}
 .headerOrigin h1 a {position: relative; top: 8px; left: 10px; color: #d0d1d1; font-size: 28px; }
-.headerOrigin h1 + a {position: absolute; width: 106px;height: 17px; top: 11px;	right: 10px; display: block; padding: 4px 8px; color: #eee; font-size: 14px; border:1px solid #eee; border-radius: 3px; background-image: none;}
+.headerOrigin h1 + a {position: absolute; width: 106px;height: 17px; top: 11px;	right: 10px; display: block; padding: 5px 8px 3px; color: #eee; font-size: 14px; border:1px solid #eee; border-radius: 3px; background-image: none;}
 /* 푸터영역 */
 footer {background-color:#F2F2F2; height: 200px; border-bottom:10px solid gray;}
 
@@ -127,7 +127,7 @@ width:290px; }
 
 
 .hot_desk {width:100%; float:left; text-align:center; background-color:#2F2E2E; color:white; padding-bottom:50px;}
-.hot_desk ul {width:160px; float:left;}
+.hot_desk ul {width: 50%; float:left;}
 .hot_desk li:nth-child(odd) {font-size:30px; font-weight:bold; margin-top:40px;}
 .hot_desk li:nth-child(even) {font-size:16px; font-weight:bold; margin-top:5px;}
 
@@ -170,15 +170,16 @@ width:290px; }
 .form_box input {font-size:14px;}
 .form_box select {font-size:14px;}
 .form_box select, .form_box option {padding-left: 5px;}
-.link_text {height:100%; margin-left:2px;}
-.form_wrap {width:100%; float:left; vertical-align:middle;}
+.form_wrap {position: relative; width:100%; float:left; vertical-align:middle;}
 .form_wrap:last-child {margin:20px 0;}
 .form_wrap textarea {width:100%; height:100px; border:1px solid #474747; font-size:14px;  resize:none;}
-.form_wrap input {height: 30px;}
+.form_wrap input {height: 30px; box-sizing: border-box;}
 #name {width: 100%;}
-#tel_input1, #tel_input2, #tel_input3 {width: 27.5%;}
-#email {width: 40%; float: left;}
-#email2 {width: 50%; height: 30px; background-color: #fff;}
+#tel_input1, #tel_input2, #tel_input3 {width: 31.3%;}
+.link_text {display: inline-block; width: 3%; height:100%; text-align: center;}
+.link_text2 {display: inline-block; width: 6%; height:100%; text-align: center; }
+#email {width: 46%; float: left;}
+#email2 {width: 48%; height: 30px; background-color: #fff;}
 #email3 {width: 100%; margin-top: 10px;}
 #subject {width: 100%;}
 .form_wrap .form_btn {position: relative; width:100px; background-color:#DBDBDB; height:30px;left: 50%; margin-left: -50px; border-radius:0px;}
@@ -202,4 +203,7 @@ width:290px; }
   .intro_text {margin-bottom: 15px}
   .intro_img {height: 250px}
   .intro_img img {width: 190px;}
+}
+@media (min-width: 480px){
+	.hot_desk ul {width: 33.33%;}
 }

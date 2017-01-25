@@ -50,8 +50,9 @@
 
 <body>
   <div id="wrap"> 
-    <!-- menu -->
-    <div id="backDrop">
+    <div id="backDrop"></div>
+    <!--전체화면 메뉴-->
+    <div id="menu_wrap">
       <section class="menu">
       	<a class="clsBtn" href="#"></a>
 				<h2>Onbiz Office Menu</h2>
@@ -99,8 +100,10 @@
 						<label for="chk_email">이메일 주소</label>
 						<input type="text" id="chk_email"><span>&#64;</span><select type="text">
 							<option value="naver.com">naver.com</option>
-							<option value="naver.com">daum.net</option>
-							<option value="naver.com">nate.com</option>
+							<option value="daum.net">daum.net</option>
+							<option value="hanmail.net">hanmail.net</option>
+							<option value="nate.com">nate.com</option>
+							<option value="gmail.com">gmail.com</option>
 						</select>
 					</li>
 					<li>
@@ -552,21 +555,16 @@
                 <label for="name">이름</label>
                 <input type="text" name="name" id="name" />
               </div>
-              <!-- -->
+              <!--일정간격 유지 위해 줄바꿈 하지않음 input,span-->
               <div class="form_wrap">
                 <label for="tel_input1">연락처</label>
-                <input type="tel" name="phone1" id="tel_input1" onkeyup="Onlynum(this.value,this.id);" maxlength="4" oninput="maxLengthCheck(this)" />
-                <span class="link_text">-</span>
-                <input type="tel" name="phone2" id="tel_input2" onkeyup="Onlynum(this.value,this.id);" maxlength="4" oninput="maxLengthCheck(this)" />
-                <span class="link_text">-</span>
-                <input type="tel" name="phone3" id="tel_input3" onkeyup="Onlynum(this.value,this.id);" maxlength="4" oninput="maxLengthCheck(this)" />
+                <input type="tel" name="phone1" id="tel_input1" onkeyup="Onlynum(this.value,this.id);" maxlength="4" oninput="maxLengthCheck(this)" /><span class="link_text">-</span><input type="tel" name="phone2" id="tel_input2" onkeyup="Onlynum(this.value,this.id);" maxlength="4" oninput="maxLengthCheck(this)" /><span class="link_text">-</span><input type="tel" name="phone3" id="tel_input3" onkeyup="Onlynum(this.value,this.id);" maxlength="4" oninput="maxLengthCheck(this)" />
               </div>
-              <!-- -->
+              <!--일정간격 유지 위해 줄바꿈 하지않음 span,select-->
               <div class="form_wrap">
                 <label for="email">이메일</label>
                 <input type="text" name="email1" id="email" />
-                <span class="link_text">@</span>
-                <select class="mail_select" name="email2" id="email2">
+                <span class="link_text2">@</span><select class="mail_select" name="email2" id="email2">
                   <option value="write" selected>직접입력</option>
                   <option value="naver.com">naver.com</option>
                   <option value="daum.net">daum.net</option>

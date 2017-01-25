@@ -50,8 +50,9 @@
 
 <body>
   <div id="wrap"> 
-    <!-- menu -->
-    <div id="backDrop">
+    <!--전체화면 메뉴-->
+    <div id="backDrop"></div>
+    <div id="menu_wrap">
       <section class="menu">
       	<a class="clsBtn" href="#"></a>
 				<h2>Onbiz Office Menu</h2>
@@ -99,8 +100,10 @@
 						<label for="chk_email">이메일 주소</label>
 						<input type="text" id="chk_email"><span>&#64;</span><select type="text">
 							<option value="naver.com">naver.com</option>
-							<option value="naver.com">daum.net</option>
-							<option value="naver.com">nate.com</option>
+							<option value="daum.net">daum.net</option>
+							<option value="hanmail.net">hanmail.net</option>
+							<option value="nate.com">nate.com</option>
+							<option value="gmail.com">gmail.com</option>
 						</select>
 					</li>
 					<li>
@@ -111,6 +114,13 @@
 						<input type="button" value="확 인" class="chk_btn">
 					</li>
 				</ul>
+			</section>
+		</div>
+    <!--전자서명하기, 도장이미지 업로드-->
+		<div id="sign_wrap">
+			<section class="sign off">
+				<a href="#" class="sign_clsBtn"><span class="sc_01"></span><span class="sc_02"></span></a>
+				
 			</section>
 		</div>
 
@@ -162,12 +172,12 @@
 						</div>
 					</li>
 				</ul>
-				<p>※<span>온비즈 오피스 홈페이지 > 신청내역확인</span>에서 임대계약서 다운로드 및 날인한 계약서 업로드가 가능합니다.</p>
+				<p>※ 온비즈 <span>오피스 홈페이지 > 신청내역확인</span>에서 임대계약서 <span>다운로드 및 날인한 계약서 업로드가 가능합니다.</span></p>
 			</section>
 			
 			<ul class="btn_wrap clr">
-				<li><input type="button" value="결제하기"></li>
-				<li><input type="button" value="결제하기"></li>
+				<li><div><input type="button" value="계약서 다운로드(PDF파일)"></div></li>
+				<li><div><input type="button" value="계약서에 바로 사인하기"></div></li>
 			</ul>
 		</div><!--contents 끝-->
 		

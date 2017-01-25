@@ -34,6 +34,8 @@ padding-bottom: 5px; border-bottom: 1px solid #696969;}
 #contents h2 + p label {margin-right: 5px;}
 #contents h2 + p select {position: relative; top: -1px; font-size: 12px; padding: 4px; width: 180px; background-size: 8px; background-color: #fbfbfb;}
 #contents input[type="radio"] {width: 20px; height: 20px; background-size: 50px; background-position: -25px -1px;}
+#contents input[type="checkbox"] {width: 16px; height: 16px; margin-right: 3px;}
+#contents input[type="checkbox"] + label {position: relative;}
 
 /*임대기간선택 영역*/
 .term {padding: 3px 0 15px 0; border-top: 2px solid #FF912F; border-bottom: 2px solid #FF912F; margin-top: 6px;}
@@ -85,6 +87,9 @@ padding-bottom: 5px; border-bottom: 1px solid #696969;}
 .price h3 {background-color: #F9F9F9; font-size: 20px; padding: 5px 0; text-align: center; border-bottom: 2px solid #EDEDED; font-weight: 600;}
 .price > ul {border-bottom: 2px solid #ededed;}
 .price > ul li {padding: 0px 18px 12px;}
+@media (max-width: 320px){
+	.price > ul li {padding: 0px 16px 12px;}
+}
 .price > ul li:first-child {padding-top: 12px;} 
 .price > ul li:after {content: ""; display: block; clear: both;}
 .price > ul li p {display: inline-block; float: right; font-size: 14px;}
@@ -100,6 +105,10 @@ padding-bottom: 5px; border-bottom: 1px solid #696969;}
 .p_total p span {display: block; font-size: 16px; margin-top: 1px; text-align: right; font-weight: 600; color: #4c4c4c;}
 /*주의 사항 및 약관 동의*/
 .price > p {padding: 3px 22px; background-color: #F3F3F3;}
+.p_total + p {padding: 6px 22px;}
+@media (max-width: 320px){
+	.p_total + p {padding: 6px 20px;}
+}
 .price > p label {font-size: 16px; width: auto;}
 .price > p label:before {position: relative; top: -1px; margin-right: 5px;}
 .price > p input[type="checkbox"]:checked + label:before {margin-right: 5px;}
@@ -107,11 +116,11 @@ padding-bottom: 5px; border-bottom: 1px solid #696969;}
 .price .txtara {display: block; margin: 10px auto 4px;; width: 86%; height: 100px; resize: none; text-align: left; padding: 5px 2px; border: 2px solid #dedede; overflow-y: scroll;}
 .price .txtara li {padding: 0; font-size: 14px; font-weight: 400; line-height: 1.3em; text-indent: 14px;}
 .price .txtara .idt {text-indent: 0;}
-.price .txtara + p, .price .txtara + p + p {display: block; margin: 0 auto; padding: 0; width: 90%; font-size: 14px; line-height: 1.3em; background-color: transparent;}
+.price .txtara + p, .price .txtara + p + p {display: block; margin: 0 auto; padding: 0; width: 88%; font-size: 13px; line-height: 1.3em; background-color: transparent; letter-spacing: -1px;}
 @media (max-width: 320px){
-	.price .txtara + p, .price .txtara + p + p {font-size: 13px;}
+	.price .txtara + p, .price .txtara + p + p {width: 90%;}
 }
-.price .txtara + p + p {text-indent: 12px;}
+.price .txtara + p + p {text-indent: 14px;}
 
 /*카드 무이자 할부 혜택 영역*/
 .card {letter-spacing: 0; margin-top: 30px;}

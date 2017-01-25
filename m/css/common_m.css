@@ -2,7 +2,11 @@
 * {margin:0; padding:0; font-family: 'Nanum Gothic', '나눔고딕', 'NanumGothicWeb', '맑은 고딕', 'Malgun Gothic', '돋움', Dotum, sans-serif,Helvetica,AppleGothic;}
 ul,ol {list-style-type:none;}
 a {text-decoration:none;}
-input[type="text"], input[type="radio"], input[type="checkbox"] {-webkit-border-radius:1px; -webkit-appearance:none;}
+/*label {vertical-align: middle;}*/
+/*input label 설정*/
+input[type="checkbox"] + label, input[type="radio"] + label {vertical-align: middle;}
+input[type="checkbox"], input[type="radio"] {vertical-align: middle;}
+input[type="text"], input[type="radio"] {-webkit-border-radius:1px; -webkit-appearance:none;}
 select {
 	-webkit-border-radius:1px;
 	-webkit-appearance:none;
@@ -20,57 +24,11 @@ input[type="checkbox"] + label, input[type="radio"] + label {
 	-moz-user-select: none;
 	-ms-user-select: none;
 }
-input[type=radio] {position: relative; top: -1px; width: 13px; height: 13px; border: 1px solid #ccc; border-radius: 50%; box-sizing: border-box; background-color: #fff; cursor: pointer;}
+input[type=radio] {position: relative; width: 13px; height: 13px; border: 1px solid #ccc; border-radius: 50%; box-sizing: border-box; background-color: #fff; cursor: pointer;}
 input[type=radio]:checked {background-image: url("http://img.onbiz.co.kr/images/m/on_arrow.png"); background-repeat: no-repeat; background-size: 29px; background-position: -14px 0px; border: none; background-color: #FCAD17;}
 select {font-size:14px; border:1px solid #636363; border-radius: 4px; }	
-
-/*checkbox 커스터마이징*/
-input[type="checkbox"] {
-	-webkit-border-radius:1px; -webkit-appearance:none;
-	display: none;
- 	position: absolute;
-	width: 1px;
-	height: 1px;
-	padding: 0;
-	margin: -1px;
-	overflow: hidden;
-	clip: rect(0, 0, 0, 0);
-	border: 0
-}
-input[type="checkbox"] + label {position: relative; display: inline-block; width: 36%; font-size: 11px; letter-spacing: -1px; text-align: left; cursor: pointer; 
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-}
-input[type="checkbox"] + label:before {
-	content: ' ';
-	display: inline-block;
-	width: 12px;  
-	height: 12px;  
-	line-height: 12px; 
-	margin: -1px 1px 0 0;
-	text-align: center; 
-	vertical-align: middle;
-	background: #fff;
-	border: 1px solid #cacece;
-	border-radius : 3px;
-	box-shadow: 0px 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
-}
-input[type="checkbox"] + label:active:before,
-input[type="checkbox"]:checked + label:active:before {
-	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
-}
-input[type="checkbox"]:checked + label:before {
-	content: '\2714';  
-	text-indent: -3px;
-	color: #99a1a7;
-	width: 12px; height: 12px;
-	margin: -1px 1px 0 0;
-	text-shadow: 1px 1px #fff;
-	background: #e9ecee;
-	border-color: #adb8c0;
-	box-shadow: 0px 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
-}
+input[type="checkbox"] {position: relative; width: 14px; height: 14px;}
+input[type="checkbox"] + label {position: relative; display: inline-block; width: 36%; font-size: 11px; letter-spacing: -1px; text-align: left;}
 
 .clr:before, .clr:after {content:""; display:block;}
 .clr:after {clear:both;}
@@ -92,12 +50,14 @@ h2 {font-weight:bold; font-size:22px;  margin-top:10px; text-align:center; color
 /* .h_txt_2 {font-size:12px; float:right; color:rgb(255, 137, 33); padding-right:5px; padding-top:8px; letter-spacing:-1px;} */
 
 /*컨텐츠영역*/
-#contents h2 span {position: relative; top: 6px; display: inline-block; width: 18px; height: 18px; background-image: url("http://img.onbiz.co.kr/images/m/on_arrow.png"); background-repeat: no-repeat; background-size: 36px;}
+#contents h2 span {position: relative; top: 5px; display: inline-block; width: 18px; height: 18px; background-image: url("http://img.onbiz.co.kr/images/m/on_arrow.png"); background-repeat: no-repeat; background-size: 36px;}
 
-
+/*Div팝업창 등장시 배경*/
+#backDrop, #menu_wrap {position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
+#backDrop {display: none; z-index: 20;background: rgba(0,0,0,.905);}
 /* 전체 네비게이션 */
-#backDrop {display: none; z-index: 20;position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: rgba(0,0,0,.905);}
 /*메뉴 영역*/
+#menu_wrap {display: none; z-index: 21;}
 .menu {color:#fff;}
 .clsBtn, .ph, .mp, .chk_clsBtn {display: block; width: 40px;height: 40px;background-image:url("http://img.onbiz.co.kr/images/m/menuIcon.png"); background-repeat: no-repeat; background-size: 120px; }
 .clsBtn, .chk_clsBtn {position: absolute;top: 7px; right: 5px; background-position: -80px 0px; }

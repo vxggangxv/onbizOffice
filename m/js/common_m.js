@@ -6,10 +6,11 @@ $(function () {
 	/*tab 클릭시 Nav전체화면 등장*/
 	$(".nav_tab").on("click", function() {
 		$("#backDrop").fadeIn();
+		$("#menu_wrap").fadeIn();
 	});
 	/*X, 홈으로 클릭시 Nav사라짐*/
 	$(".clsBtn").on("click", function() {
-		$(this).closest("div").fadeOut();
+		$("#backDrop, #menu_wrap").fadeOut();
 	});
 	/*임대신청내역확인, Login클릭시 내역조회 등장*/
 	$(".chClk, .chk_clsBtn").on("click", function() {
