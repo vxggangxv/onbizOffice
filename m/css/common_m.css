@@ -4,6 +4,7 @@ ul,ol {list-style-type:none;}
 a {text-decoration:none;}
 /*label {vertical-align: middle;}*/
 /*input label 설정*/
+input[type="button"] {cursor: pointer;}
 input[type="checkbox"] + label, input[type="radio"] + label {vertical-align: middle;}
 input[type="checkbox"], input[type="radio"] {vertical-align: middle;}
 input[type="text"], input[type="radio"] {-webkit-border-radius:1px; -webkit-appearance:none;}

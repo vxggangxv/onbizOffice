@@ -59,20 +59,111 @@ padding: 10px 4px;}
 .btn_wrap li input {display: inline-block; width: 100%; background-color: #FF9320; font-size: 14px; font-weight: 600; color: #fff; border: none; padding: 15px 0; border-radius: 4px; letter-spacing: -1px;}
 .btn_wrap li:first-child input { background-color: #515151;}
 
-/*전자서명하기, 도장이미지 업로드, 모달창*/
-#backDrop {display: block;}
-#sign_wrap {z-index: 21; position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
-.sign { position: relative; width: 96%; height: 330px; margin: 0 auto; top: 110px;
+/*모달창 공통스타일*/
+.common_wrap {display: none; z-index: 21; position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
+.common_wrap > section {position: relative; width: 96%; height: 330px; margin: 0 auto; margin-top: 110px;
 background: #fff; border-radius: 4px;}
-.sign_clsBtn {position: absolute; width: 32px; height: 38px; top: 0px; right: 2%;}
-.sign_clsBtn > span {display: block; position: absolute; top: 18px; right: -5px; width: 32px; height: 2px; background: #727272;}
-.sign_clsBtn .sc_01 {
+.common_wrap > section > div:first-child {position: relative; width: 96%; margin: 0 auto; height: 40px;}
+
+.common_box {height: 40px;}
+.common_clsBtn {position: absolute; width: 32px; height: 36px; top: 2px; right: 0;}
+.common_clsBtn > span {display: block; position: absolute; top: 18px; right: -5px; width: 32px; height: 2px; background: #727272;}
+/*닫기 버튼*/
+.common_clsBtn .sc_01 {
 	-ms-transform: rotate(50deg); /* IE 9 */
 	-webkit-transform: rotate(50deg); /* Chrome, Safari, Opera */
 	transform: rotate(50deg);
 }
-.sign_clsBtn .sc_02 {
+.common_clsBtn .sc_02 {
 	-ms-transform: rotate(-50deg); /* IE 9 */
 	-webkit-transform: rotate(-50deg); /* Chrome, Safari, Opera */
 	transform: rotate(-50deg);
 }
+/*전자서명하기, 도장이미지 업로드, 모달창*/
+#sign_wrap {display:none; z-index: 21; position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
+.sign {position: relative; width: 96%; height: 330px; margin: 0 auto; margin-top: 110px;
+background: #fff; border-radius: 4px;}
+.sign > div, .sign > ul {position: relative; width: 96%; margin: 0 auto;}
+
+/*탭버튼*/
+.sign_tab li {float: left; width: 50%; text-align: center; padding: 10px 0; font-weight: 600; color: #4c4c4c; background-color: #b7b6b6; cursor: pointer;}
+.sign_tab li.on {background-color: #eee; color: #444;}
+/*탭화면*/
+.sign_pan { position: absolute; top: 0; left: 0;}
+.sign_pan li {display: none;} 
+.sign_pan li.on {display: block;}
+/*서명하기, 업로드 공통*/
+.sp_sign, .sp_up {width: 100%; background-color: #eee;}
+.sp_sign div:first-child, .sp_up div:first-child {width: 94%; margin: 0 auto;}
+.sp_sign div:first-child p:first-child, .sp_up div:first-child p {color: #333; font-size: 11px; letter-spacing: -1px;}
+.sp_sign div:last-child input, .sp_up > div:last-child input {display: inline-block; position: absolute; width: 43.5%; color: #fff; border: none; padding: 8px 0; font-size: 15px; border-radius: 3px;}
+/*서명하기*/
+.sp_sign {height: 190px;}
+.sp_sign div:first-child p:first-child {padding: 10px 0 5px;}
+.sp_sign div:first-child p:last-child {height: 140px; background-color: #212121; border-radius: 2px;}
+
+.sp_sign div:last-child {margin-top: 35px;}
+.sp_sign div:last-child input {width: 43.5%;}
+.sp_sign div:last-child input:first-child {background-color: #686868; left: 50%; margin-left: -45.5%;}
+.sp_sign div:last-child input:last-child {background-color: #ff8400; right: 50%; margin-right: -45.5%;}
+/*도장이미지 업로드*/
+.sp_up {height: 105px;}
+.sp_up div:first-child p {font-size: 13px; font-weight: 600; padding: 30px 0 5px;}
+.sp_up > div:last-child {margin-top: 62px;}
+.sp_up > div:last-child input {display: block; position: relative; margin: 0 auto; width: 50%; background-color: #ff8400;}
+
+/*파일박스 커스터마이징*/
+.filebox input[type="file"] { 
+	position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip:rect(0,0,0,0); border: 0; 
+} 
+.filebox label, .filebox .upload-name {box-sizing: border-box;}
+.filebox label { 
+	display: inline-block; padding: 12px 0; width: 30%; text-align: center;
+	color: #fff; font-size: 13px; line-height: normal; vertical-align: middle; background-color: #2E2E2E; cursor: pointer; border: 1px solid #ebebeb; border-bottom-color: #e2e2e2; border-radius: 4px; 
+} 
+/* named upload */ 
+.filebox .upload-name { 
+	display: inline-block; font-size: 13px; text-indent: 5px;
+	width: 67%; margin-right: 1%;
+	padding: 11px 0px; /* label의 패딩값과 일치 */ 
+	line-height: normal; vertical-align: middle; background-color: #fff; border: 1px solid #4c4c4c; 
+	-webkit-appearance: none; /* 네이티브 외형 감추기 */ 
+	-moz-appearance: none; appearance: none; 
+}
+/*계약서 발급, 완료 공통*/
+#load_wrap p, #comp_wrap p {text-align: center;}
+/*계약서 발급중*/
+#load_wrap {display: none;}
+#load_wrap p:nth-child(2){margin-top: 20px; font-size: 20px; font-weight: 700;}
+#load_wrap p:nth-child(3) {margin-top: 10px; font-size: 15px; font-weight: 600; color: #8e8e8e;}
+#load_wrap p:nth-child(4) {margin-top: 35px;}
+#load_wrap p:nth-child(4) img {width: 126px;}
+#load_wrap.on p:nth-child(4) img {animation: loadingAni 2s linear infinite;}
+/*#load_wrap p:nth-child(4) img {width: 126px; animation: loadingAni 2s ease infinite;}*/
+@keyframes loadingAni {
+	0% {
+		-ms-transform: rotate(0deg); 
+		-webkit-transform: rotate(0deg); 
+		transform: rotate(0deg);
+	}
+	100% {
+		-ms-transform: rotate(360deg); 
+		-webkit-transform: rotate(360deg); 
+		transform: rotate(360deg);
+	}
+}
+
+/*계약서 발급완료*/
+#comp_wrap p:nth-child(2) {margin-top: 16px; letter-spacing: -2px; font-size: 23px; font-weight: 700;}
+#comp_wrap p:nth-child(3) {margin-top: 28px;}
+#comp_wrap p:nth-child(3) span {color: #ff8400; font-weight: 800;}
+#comp_wrap p:nth-child(3), #comp_wrap p:nth-child(4) {font-size: 14px; letter-spacing: -1px; font-weight: 500; color: #4c4c4c;}
+#comp_wrap p:nth-child(4) {margin-top: 5px;}
+#comp_wrap p:nth-child(5) {margin-top: 30px; color: #fff;}
+#comp_wrap p:nth-child(5) input, #comp_wrap p:nth-child(6) input
+{color: #fff; padding: 11px 0px; border: none; border-radius: 4px; letter-spacing: -1px;}
+#comp_wrap p:nth-child(5) input {display: block; margin: 0 auto; background-color: #323232; width: 190px;}
+#comp_wrap p:nth-child(6) {margin-top: 35px;}
+#comp_wrap p:nth-child(6) input {font-size: 15px; padding: 8px 0; width: 144px;}
+#comp_wrap p:nth-child(6) input:first-child {background-color: #686868; margin-right: 10px;}
+#comp_wrap p:nth-child(6) input:last-child {background-color: #ff8400;}

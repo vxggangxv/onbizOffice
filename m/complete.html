@@ -28,7 +28,7 @@
   <!-- <link rel="stylesheet" type="text/css"  href="http://static.onbiz.co.kr/css/layout_m.css"> -->
   <!--<link rel="stylesheet" href="http://static.onbiz.co.kr/css/common_m.css" type="text/css">
 	<link rel="stylesheet" href="http://static.onbiz.co.kr/css/index_m.css" type="text/css">-->
-  <link rel="stylesheet" href="css/reset.css" type="text/css">
+  <link rel="stylesheet" href="css/reset_m.css" type="text/css">
   <link rel="stylesheet" href="css/common_m.css" type="text/css">
   <link rel="stylesheet" href="css/complete_m.css" type="text/css">
   <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css">
@@ -117,10 +117,64 @@
 			</section>
 		</div>
     <!--전자서명하기, 도장이미지 업로드-->
-		<div id="sign_wrap">
-			<section class="sign off">
-				<a href="#" class="sign_clsBtn"><span class="sc_01"></span><span class="sc_02"></span></a>
+		<div id="sign_wrap" class="common_wrap">
+			<section class="sign">
+				<div class="common_box">
+					<a href="#" class="common_clsBtn"><span class="sc_01"></span><span class="sc_02"></span></a>
+				</div>
 				
+				<ul class="sign_tab clr">
+					<li class="">전자서명하기</li>
+					<li class="">도장이미지 업로드</li>
+				</ul>
+				
+				<ul class="sign_pan clr">
+					<li class="sp_sign">
+						<div>
+							<p>※회색 패드에 손가락 혹은 스마트 펜을 이요하여 서명을 해주세요</p>
+							<p></p>
+						</div>
+						<div>
+							<input type="button" value="다시 서명하기">
+							<input type="button" value="서명 완료" class="st_ld">
+						</div>
+					</li>
+					<li class="sp_up">
+						<div>
+							<p>※도장 이미지를 업로드 해 주세요</p>
+							<div class="filebox">
+								<input class="upload-name" value="파일선택" disabled="disabled">
+								<label for="filename">파일찾기</label>
+								<input type="file" id="filename" class="upload-hidden">
+							</div>
+						</div>
+						<div><input type="button" value="이미지 업로드" class="st_ld"></div>
+					</li>
+				</ul>
+			</section>
+		</div>
+    <!--계약서 발급중-->
+		<div id="load_wrap" class="common_wrap">
+			<section class="sign">
+				<div class="common_box">
+					<a href="#" class="common_clsBtn"><span class="sc_01"></span><span class="sc_02"></span></a>
+				</div>
+				<p>계약서를 발급중입니다</p>
+				<p>잠시만 기다려주세요</p>
+				<p><img src="http://img.onbiz.co.kr/images/m/on_loading.png" alt="로딩중이미지"></p>
+			</section>
+		</div>
+		<!--계약서 발급완료-->
+    <div id="comp_wrap" class="common_wrap">
+			<section class="sign">
+				<div class="common_box">
+					<a href="#" class="common_clsBtn"><span class="sc_01"></span><span class="sc_02"></span></a>
+				</div>
+				<p>계약서 발급이 완료되었습니다.</p>
+				<p><span>oooo@naver.com</span>으로 계약서 발급이 완료 되었습니다.</p>
+				<p>감사합니다.</p>
+				<p><input type="button" value="계약서 (PDF)파일 바로받기"></p>
+				<p><input type="button" value="신청내역확인" onclick="location.href='check.html'"><input type="button" value="확인" class="all_clsBtn"></p>
 			</section>
 		</div>
 
