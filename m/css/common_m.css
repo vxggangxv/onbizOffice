@@ -10,7 +10,7 @@ input[type="checkbox"], input[type="radio"] {vertical-align: middle;}
 input[type="text"], input[type="radio"] {-webkit-border-radius:1px; -webkit-appearance:none;}
 select {
 	-webkit-border-radius:1px;
-	-webkit-appearance:none;
+	-webkit-appearance:none; 
 	-moz-appearance: none; 
 	appearance: none; 
 	background: url("http://img.onbiz.co.kr/images/m/triangle2.png") no-repeat 95% 50%;

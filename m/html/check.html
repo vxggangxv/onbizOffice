@@ -28,9 +28,9 @@
   <!-- <link rel="stylesheet" type="text/css"  href="http://static.onbiz.co.kr/css/layout_m.css"> -->
   <!--<link rel="stylesheet" href="http://static.onbiz.co.kr/css/common_m.css" type="text/css">
 	<link rel="stylesheet" href="http://static.onbiz.co.kr/css/index_m.css" type="text/css">-->
-  <link rel="stylesheet" href="css/reset_m.css" type="text/css">
-  <link rel="stylesheet" href="css/common_m.css" type="text/css">
-  <link rel="stylesheet" href="css/info_m.css" type="text/css">
+  <link rel="stylesheet" href="http://static.onbiz.co.kr/css/reset_m.css" type="text/css">
+  <link rel="stylesheet" href="http://static.onbiz.co.kr/css/common_m.css" type="text/css">
+  <link rel="stylesheet" href="http://static.onbiz.co.kr/css/check/check_m.css" type="text/css">
   <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css">
   <link rel="stylesheet" href="http://static.onbiz.co.kr/css/swiper.3.4.1.min.css" type="text/css">
 
@@ -39,7 +39,8 @@
 	<!--지도-->
   <script type="text/javascript" src="http://apis.daum.net/maps/maps3.js?apikey=ccf6dd6538a21cc002e87e64695e0862"></script>
   <!--커스터마이징-->
-  <script src="js/common_m.js"></script>
+  <script src="http://static.onbiz.co.kr/js/common_m.js"></script>
+  <!--<script src="js/check_m.js"></script>-->
 
   <!--[if lt IE 9]>
         <script type="text/javascript" src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -49,8 +50,8 @@
 
 <body>
   <div id="wrap"> 
-   	<div id="backDrop"></div>
     <!--전체화면 메뉴-->
+    <div id="backDrop"></div>
     <div id="menu_wrap">
       <section class="menu">
       	<a class="clsBtn" href="#"></a>
@@ -115,6 +116,7 @@
 				</ul>
 			</section>
 		</div>
+    
 
     <!-- 헤더 -->
     <header class="headerOrigin">
@@ -128,10 +130,8 @@
     
     <!--단계 bar-->
     <ul class="inf_bar clr">
-    	<li class="ib0">가상오피스 임대신청</li>
-    	<li class="ib1 on">1.정보입력</li>
-    	<li class="ib2">2.상품결제</li>
-    	<li class="ib3">3.신청완료</li>
+    	<li class="ib0">신청내역확인</li>
+    	<li class="ib3 on">신청내역 확인</li>
     </ul>
 		
 		<!--main 섹션-->
@@ -142,137 +142,92 @@
 				법인 설립 에서 세무기장까지 강남 최저가 서비스
 			</p>
 			<p>전국 어디에서든 방문없이 1시간 이내 제공받으실 수 있습니다.</p>
+			<p><input type="button" value="계약서 (PDF)파일 다운받기"></p>
 		</section>
 		
 		<!--contents-->
 		<div id="contents">
-			<h2><span></span>정보입력</h2>
-			
-			<!--카테고리-->
-			<div class="category clr">
-				<ul>
-					<li>
-						<p class="tit"><input type="radio" id="new" name="category" checked="checked"><label for="new">신규사업자 개설</label></p>
-						<p>현재 사업자가 없고, 개인 또는 <br/>법인 신규사업자 개설을 위해 <br/>사용합니다.</p>
-					</li>
-				</ul>
-				<ul>
-					<li>
-						<p class="tit"><input type="radio" id="hold" name="category"><label for="hold">사업자 보유자</label></p>
-						<p>사업자가 있고, <br/>주소지 이전용으로 사용합니다.</p>
-					</li>
-				</ul>
-			</div>
-			<!--업종선택-->
-			<div class="st_wrap">
-				<select name="" id="">
-					<option value="업종선택">업종선택</option>
-				</select>
-				<p>※정확한 업종을 모르실 경우, 사업 내용을 간략하게</p>
-				<p>작성해주시기 바랍니다.</p>
-			</div>
+			<!--사업자정보-->
+			<section>
+				<h3>&#8226; 사업자정보</h3>
+				<div>
+					<ul>
+						<li>사업자구분</li><li>개인사업자</li>
+					</ul>
+					<ul>
+						<li>용도</li><li>신규사업자 개설용</li>
+					</ul>
+					<ul>
+						<li>업종</li><li>부동산 컨설팅</li>
+					</ul>
+				</div>
+			</section>
 			<!--계약 담당자 정보-->
-			<section class="manager">
-				<h3>계약 담당자 정보</h3>
-				<ul>
-					<li>
-						<label for="mng_name">&#8226;신청자명</label>
-						<input type="text" id="mng_name" class="mng_name" placeholder='"-"없이 입력해주세요'>
-					</li>
-					<li class="m_num">
-						<label for="mng_num">&#8226;연락처</label>
-						<select type="text" id="mng_num" class="mng_num">
-							<option value="010">010</option>
-						</select><span>-</span><input type="text"><span>-</span><input type="text">
-					</li>
-					<li class="m_jm">
-						<label for="mng_jm">&#8226;주민등록번호</label>
-						<input type="text" id="mng_jm" class="mng_jm"><span>-</span><input type="text">
-					</li>
-					<li class="m_em">
-						<label for="mng_email">&#8226;이메일 주소</label>
-						<input type="text" id="mng_email" class="mng_email"><span>&#64;</span><select type="text">
-							<option value="naver.com">naver.com</option>
-							<option value="naver.com">daum.net</option>
-							<option value="naver.com">nate.com</option>
-						</select>
-						<span class="cf_txt">계약서를 이메일 발송해 드리오니, 이메일 주소를<br/>정확하게 입력해주세요.</span>
-					</li>
-					<li class="m_pax">
-						<label for="mng_pax">&#8226;팩스번호</label>
-						<select type="text" id="mng_pax" class="mng_num">
-							<option value="010">010</option>
-						</select><span>-</span><input type="text"><span>-</span><input type="text">
-						<span class="cf_txt">계약서를 팩스로 발송해 드리오니, 이메일 주소를<br/>정확하게 입력해주세요.</span>
-					</li>
-				</ul>
+			<!--section>h3+(ul>li*2)*5-->
+			<section>
+				<h3>&#8226; 계약 담당자 정보</h3>
+				<div>
+					<ul>
+						<li>성명</li><li>홍길동</li>
+					</ul>
+					<ul>
+						<li>연락처</li><li>010-0000-0000</li>
+					</ul>
+					<ul>
+						<li>주민등록번호</li><li>000000-0000000</li>
+					</ul>
+					<ul>
+						<li>이메일주소</li><li>oooooo@naver.com</li>
+					</ul>
+					<ul>
+						<li>팩스</li><li>00-000-0000</li>
+					</ul>
+				</div>
 			</section>
-			<!--계약 명의자 (임차인) 정보-->
-			<section class="manager lessee">
-				<h3>계약 명의자(임차인) 정보 <input type="checkbox" id="les" ><label for="les">계약 임차인 정보와 동일함</label></h3>
-				<ul>
-					<li>
-						<label for="les_name">&#8226;신청자명</label>
-						<input type="text" id="les_name" class="mng_name" placeholder='"-"없이 입력해주세요'>
-					</li>
-					<li class="m_num">
-						<label for="les_num">&#8226;연락처</label>
-						<select type="text" id="les_num" class="mng_num">
-							<option value="010">010</option>
-						</select><span>-</span><input type="text"><span>-</span><input type="text">
-					</li>
-					<li class="m_jm">
-						<label for="les_jm">&#8226;주민등록번호</label>
-						<input type="text" id="les_jm" class="mng_jm"><span>-</span><input type="text">
-					</li>
-					<li class="m_em">
-						<label for="les_email">&#8226;이메일 주소</label>
-						<input type="text" id="les_email" class="mng_email"><span>&#64;</span><select type="text">
-							<option value="naver.com">naver.com</option>
-							<option value="naver.com">daum.net</option>
-							<option value="naver.com">nate.com</option>
-						</select>
-						<span class="cf_txt">계약서를 이메일 발송해 드리오니, 이메일 주소를<br/>정확하게 입력해주세요.</span>
-					</li>
-					<li class="m_pax">
-						<label for="les_pax">&#8226;팩스번호</label>
-						<select type="text" id="les_pax" class="mng_num">
-							<option value="010">010</option>
-						</select><span>-</span><input type="text"><span>-</span><input type="text">
-					</li>
-					<li class="m_est">
-						<label for="les_est">&#8226;업체개설일</label>
-						<select type="text" id="les_est">
-							<option value="010">2017년 00월 00일</option>
-						</select>
-					</li>
-				</ul>
+			<!--결제상품정보-->
+			<section>
+				<h3>&#8226; 결제상품정보</h3>
+				<div>
+					<ul>
+						<li>상품정보</li><li>가상오피스 3개월 이용권</li>
+					</ul>
+					<ul>
+						<li>임대기간</li><li>2017년 01월 09일(월)~2017년04월09일(월)</li>
+					</ul>
+					<ul>
+						<li>옵션상품 추가</li><li>대회의실 및 미팅룸 5시간 사용</li>
+					</ul>
+				</div>
 			</section>
-			<!--환불계좌정보-->
-			<section class="manager refund">
-				<h3>※환불 계좌 정보<span>(추후 예치금 상환시 필요함으로 정확히 입력해주세요!)</span></h3>
-				<ul>
-					<li>
-						<label for="ref_name">은행명</label>
-						<select type="text" id="ref_name">
-							<option value="">환불 받으실 은행을 선택해주세요</option>
-						</select>
-					</li>
-					<li class="r_est">
-						<label for="ref_est">계좌 번호</label>
-						<input type="text" id="ref_est">
-					</li>
-					<li>
-						<label for="ref_host">예금주</label>
-						<input type="text" id="ref_host" >
-					</li>
-				</ul>
+			<!--결제정보-->
+			<section class="sec_prc">
+				<h3>&#8226; 결제상품정보</h3>
+				<div>
+					<ul>
+						<li>결제일</li><li>2017년 01월 05일</li>
+					</ul>
+					<ul>
+						<li>상품정보</li><li>가상오피스 3개월 이용권</li>
+					</ul>
+					<ul>
+						<li>임대기간</li><li>2017년 01월 09일(월)~2017년04월09일(월)</li>
+					</ul>
+					<ul>
+						<li>옵션상품 추가</li><li>대회의실 및 미팅룸 5시간 사용</li>
+					</ul>
+					<ul>
+						<li>결제방법</li><li>신용카드</li>
+					</ul>
+					<ul>
+						<li>최종 결제 금액</li>
+						<li>624,000(VAT포함)</li>
+					</ul>
+				</div>
 			</section>
 			
-			<div class="btn_wrap"><input type="button" value="확 인" onclick="location.href='payment.html'"></div>
-			
-			
+			<p><input type="button" value="세금계산서 신청"><input type="button" value="영수증발급"></p>
 		</div><!--contents 끝-->
+		
 		
 		<!-- 푸터 -->
 		<footer class="footer">

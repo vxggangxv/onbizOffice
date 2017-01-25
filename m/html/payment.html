@@ -28,9 +28,10 @@
   <!-- <link rel="stylesheet" type="text/css"  href="http://static.onbiz.co.kr/css/layout_m.css"> -->
   <!--<link rel="stylesheet" href="http://static.onbiz.co.kr/css/common_m.css" type="text/css">
 	<link rel="stylesheet" href="http://static.onbiz.co.kr/css/index_m.css" type="text/css">-->
-  <link rel="stylesheet" href="css/reset_m.css" type="text/css">
-  <link rel="stylesheet" href="css/common_m.css" type="text/css">
-  <link rel="stylesheet" href="css/payment_m.css" type="text/css">
+  <link rel="stylesheet" href="http://static.onbiz.co.kr/css/reset_m.css" type="text/css">
+  <link rel="stylesheet" href="http://static.onbiz.co.kr/css/common_m.css" type="text/css">
+  <link rel="stylesheet" href="http://static.onbiz.co.kr/css/payment/payment_m.css" type="text/css">
+  <!-- <link rel="stylesheet" href="css/payment/payment_m.css" type="text/css"> -->
   <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css">
   <link rel="stylesheet" href="http://static.onbiz.co.kr/css/swiper.3.4.1.min.css" type="text/css">
 
@@ -39,9 +40,10 @@
 	<!--지도-->
   <script type="text/javascript" src="http://apis.daum.net/maps/maps3.js?apikey=ccf6dd6538a21cc002e87e64695e0862"></script>
   <!--커스터마이징-->
-  <script src="js/common_m.js"></script>
-  <script src="js/payment_m.js"></script>
-
+  <script src="http://static.onbiz.co.kr/js/common_m.js"></script>
+  <!--<script src="http://static.onbiz.co.kr/js/payment/payment_m.js"></script>-->
+  <script src="js/payment/payment_m.js"></script>
+   
   <!--[if lt IE 9]>
         <script type="text/javascript" src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script type="text/javascript" src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -50,6 +52,7 @@
 
 <body>
   <div id="wrap"> 
+   	<div id="backDrop"></div>
     <!--전체화면 메뉴-->
     <div id="menu_wrap">
       <section class="menu">
@@ -203,27 +206,27 @@
 						<li class="t04">금액<span>(부가세별도)</span></li>
 					</ul>
 					<ul>
-						<li class="t01"><input type="radio" name="choice2"></li>
+						<li class="t01"><input type="checkbox" name="add1" id="a_room"><label for="a_room"></label></li>
 						<li class="t02">대회의실 및 미팅룸 월 5시간 사용</li>
 						<li class="t04">월10,000원</li>
 					</ul>
 					<ul>
-						<li class="t01"><input type="radio" name="choice2"></li>
+						<li class="t01"><input type="checkbox" name="add2" id="a_mail"><label for="a_mail"></label></li>
 						<li class="t02">우편물 발송 서비스</li>
 						<li class="t04">월20,000원</li>
 					</ul>
 					<ul>
-						<li class="t01"><input type="radio" name="choice2"></li>
+						<li class="t01"><input type="checkbox" name="add3" id="a_pax"><label for="a_pax"></label></li>
 						<li class="t02">팩스수신 서비스 및 전화번호 신청<span>(전화실비 사용자 부담)</span></li>
 						<li class="t04">월20,000원</li>
 					</ul>
 					<ul>
-						<li class="t01"><input type="radio" name="choice2"></li>
+						<li class="t01"><input type="checkbox" name="add4" id="a_copy"><label for="a_copy"></label></li>
 						<li class="t02">복사기 이용<span>(월 흑백 150매)</span></li>
 						<li class="t04">10,000원</li>
 					</ul>
 					<ul>
-						<li class="t01"><input type="radio" name="choice2"></li>
+						<li class="t01"><input type="checkbox" name="add5" id="a_card"><label for="a_card"></label></li>
 						<li class="t02">카드키</li>
 						<li class="t04">보증금 3만원</li>
 					</ul>
