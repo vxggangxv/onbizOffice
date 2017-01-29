@@ -1,0 +1,476 @@
+
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">             
+<meta charset="utf-8">
+<title>온비즈오피스</title>
+<meta name="title" content="온비즈오피스" /> 
+<meta name="author" content="온비즈오피스"/>
+<meta name="subject" content="가상오피스 1인실에서 80평까지 분할임대, 삼성역 풀옵션 Onbiz Office" /> 
+<meta name="description" content="가상오피스 1인실에서 80평까지 분할임대, 삼성역 풀옵션 Onbiz Office">
+<meta name="keywords" content="가상오피스 1인실에서 80평까지 분할임대, 삼성역 풀옵션 Onbiz Office"/>
+<meta name="classification" content="소호사무실"/>
+<link rel="canonical" href="http://www.onbiz.co.kr"> 
+<!-- 오픈그래프 -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="온비즈오피스">
+<meta property="og:description" content="가상오피스 1인실에서 80평까지 분할임대, 삼성역 풀옵션 Onbiz Office">
+<meta property="og:url" content="http://www.onbiz.co.kr">
+<meta property="og:site_name" content="온비즈오피스">
+<!-- 오픈그래프 -->
+
+<!-- Android icon -->
+<link rel='shortcut icon' type="image/x-ico" href='http://img.onbiz.co.kr/favicon/icon128x128.png' />
+<!-- iPhone icon -->
+<link rel='apple-touch-icon' type="image/x-ico" sizes='57x57' href='http://img.onbiz.co.kr/favicon/icon57x57.png' />
+<!-- iPad icon -->
+<link rel='apple-touch-icon' type="image/x-ico" sizes='72x72' href='http://img.onbiz.co.kr/favicon/icon72x72.png' />
+<!-- iPhone icon(Retina) -->
+<link rel='apple-touch-icon' type="image/x-ico" sizes='114x114' href='http://img.onbiz.co.kr/favicon/icon114x114.png' />
+<!-- iPad icon(Retina) -->
+<link rel='apple-touch-icon' type="image/x-ico" sizes='144x144' href='http://img.onbiz.co.kr/favicon/icon144x144.png' />
+
+
+<!----- 유입 카운터 출력 ---------------->
+<!--div style="position:absolute; top:-30px; left:-550px;">
+	<iframe id="ebiz_counter" src="http://www.onbiz.co.kr/web-home/ebiz_counter_2.php" width="330" height="150"  allowtransparency="true";  frameborder="0" marginheight="0" marginwidth="0" scrolling="0" style="position:absolute; top:184px; right:-930px; text-align:left;height:250px; z-index:10;"></iframe> 
+</div-->
+<!----- 유입 카운터 출력 끝---------------->
+
+<link href='https://cdn.rawgit.com/openhiun/hangul/14c0f6faa2941116bb53001d6a7dcd5e82300c3f/nanumbarungothic.css' rel='stylesheet' type='text/css'>
+<!-- <link rel="stylesheet" href="http://static.onbiz.co.kr/css/style.css?v=1485393503"> -->
+<link rel="stylesheet" href="../css/info/style.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script> <!--[if lte IE 8]> <script src="path/to/poly-checked.min.js"></script> <![endif]-->
+<!--[if lt IE 9]>
+<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+<![endif]-->
+<script src="http://static.onbiz.co.kr/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="http://post.ebiznetworks.co.kr/post2.php" charset="utf-8"></script>
+<script type="text/javascript">
+document.domain = "onbiz.co.kr";
+window.name = "onbiz";
+
+var etc = {
+	onlynum: function(e, i) {
+		if(event.keyCode != 9 && event.keyCode != 8) {
+			if($.isNumeric(e) === true) {
+				return true;
+			} else {
+				$("#" + i).val("");
+			}
+		}
+	},
+
+	service: function(e) {
+		if(e == "dr") {
+			$("#service2").show();
+		} else {
+			$("#service2").hide();
+		}
+	}
+}
+
+var info = {
+	copy: function() {
+		$("#cname").val($("#name").val());
+		$("#cssn1").val($("#ssn1").val());
+		$("#cssn2").val($("#ssn2").val());
+		$("#ctel1").val($("#tel1").val());
+		$("#ctel2").val($("#tel2").val());
+		$("#ctel3").val($("#tel3").val());
+	},
+
+	company: function(e) {
+		if(e == 1) {
+			$("label[for='cname']").html("ㆍ 성명");
+			$(".person").show();
+			$(".company").hide();
+		} else {
+			$("label[for='cname']").html("ㆍ 대표");
+			$(".person").hide();
+			$(".company").show();
+		}		
+	},
+	
+	send: function() {		
+		if(!$("select[name=service1]").val()) {
+			alert("업종을 선택해주세요.");
+			$("select[name=service1]").focus();
+			return;
+		}
+		
+		if($("select[name=service1]").val() == "dr" && !$("#service2").val()) {
+			alert("업종을 입력해주세요.");
+			$("#service2").focus();
+			return;
+		}
+
+		if(!$("#name").val()) {
+			alert("성명을 입력해주세요.");
+			$("#name").focus();
+			return;
+		}
+		
+		if(!$("#ssn1").val()) {
+			alert("주민등록번호 얖 6자리를 입력해주세요.");
+			$("#ssn1").focus();
+			return;
+		}
+
+		if(!$("#ssn2").val()) {
+			alert("주민등록번호 뒤 1자리를 입력해주세요.");
+			$("#ssn2").focus();
+			return;
+		}
+
+		if(!$("#tel1").val()) {
+			alert("연락처를 입력해주세요.");
+			$("#tel1").focus();
+			return;
+		}
+
+		if(!$("#tel2").val()) {
+			alert("연락처를 입력해주세요.");
+			$("#tel2").focus();
+			return;
+		}
+
+		if(!$("#tel3").val()) {
+			alert("연락처를 입력해주세요.");
+			$("#tel3").focus();
+			return;
+		}
+
+		if(!$("#email11").val()) {
+			alert("이메일 주소를 입력해주세요.");
+			$("#email11").focus();
+			return;
+		}
+
+		if(!$("#email12").val()) {
+			alert("이메일 주소를 입력해주세요.");
+			$("#email12").focus();
+			return;
+		}
+
+		if(!$("#email12").val()) {
+			alert("이메일 주소를 입력해주세요.");
+			$("#email12").focus();
+			return;
+		}
+
+		if(!$("#cname").val()) {
+			alert("대표명 또는 성명을 입력해주세요.");
+			$("#cname").focus();
+			return;
+		}
+
+		
+
+		if($("input:radio[name='ctype']:checked").val() == 1) {
+			if(!$("#cssn1").val()) {
+				alert("주민등록번호 얖 6자리를 입력해주세요.");
+				$("#cssn1").focus();
+				return;
+			}
+
+			if(!$("#cssn2").val()) {
+				alert("주민등록번호 뒤 1자리를 입력해주세요.");
+				$("#cssn2").focus();
+				return;
+			}
+		} else {
+			if(!$("input[name='company']").val()) {
+				alert("사업자명을 입력해주세요.");
+				$("input[name='company']").focus();
+				return;
+			}
+
+			if(!$("#ccssn1").val()) {
+				alert("사업자등록번호를 입력해주세요.");
+				$("#ccssn1").focus();
+				return;
+			}
+
+			if(!$("#ccssn2").val()) {
+				alert("사업자등록번호를 입력해주세요.");
+				$("#ccssn2").focus();
+				return;
+			}
+
+			if(!$("#ccssn3").val()) {
+				alert("사업자등록번호를 입력해주세요.");
+				$("#ccssn3").focus();
+				return;
+			}
+		}
+
+
+		
+		
+
+		
+
+
+		if(!$("#tel1").val()) {
+			alert("연락처를 입력해주세요.");
+			$("#tel1").focus();
+			return;
+		}
+
+		if(!$("#ctel2").val()) {
+			alert("연락처를 입력해주세요.");
+			$("#ctel2").focus();
+			return;
+		}
+
+		if(!$("#ctel3").val()) {
+			alert("연락처를 입력해주세요.");
+			$("#ctel3").focus();
+			return;
+		}
+
+		if(!$("#address").val()) {
+			alert("주소를 입력해주세요.");
+			$("#address").focus();
+			return;
+		}
+
+		if(!$("#addr").val()) {
+			alert("주소를 입력해주세요.");
+			$("#addr").focus();
+			return;
+		}
+
+		if(!$("#addr2").val()) {
+			alert("주소를 입력해주세요.");
+			$("#addr2").focus();
+			return;
+		}
+
+		if(!$("#addr2").val()) {
+			alert("주소를 입력해주세요.");
+			$("#addr2").focus();
+			return;
+		}
+
+		if(!$("select[name=bank1]").val()) {
+			alert("은행을 선택해주세요.");
+			$("select[name=bank1]").focus();
+			return;
+		}
+
+		if(!$("input[name=bank2]").val()) {
+			alert("계좌번호를 입력해주세요.");
+			$("input[name=bank2]").focus();
+			return;
+		}
+
+		if(!$("input[name=bank3]").val()) {
+			alert("예금주를 입력해주세요.");
+			$("input[name=bank3]").focus();
+			return;
+		}
+
+		$.ajax({		
+			type: "post",
+			url: "/rent/state.php",
+			data: $("#iform").serialize(),
+			success: function(r){
+				$("#temp").html(r);
+				$("#sform").submit();
+			}
+		});
+
+
+
+		//$("form[name=iform]").submit();
+	}
+}
+</script>
+</head>
+<body>
+<div id="wrapeer">
+	<div id="wrap">
+		<div id="header">
+			<h1 id="logo"><a href="#"><img src="http://img.onbiz.co.kr/logo.gif" alt="온비트오피스로고"/></a></h1>
+			<div id="gnb">
+				<ul>
+					<li class="menu_title">가상오피스 임대신청</li>
+					<li class="gnb_m gnb_m01"><a href="">임대신청</a></li>
+					<li> | </li>
+					<li class="gnb_m gnb_m02"><a href="">임대 신청내역 확인</a></li>
+				</ul>
+				<p class="tel">온비즈오피스<br/>문의전화: 02-6255-3014, 010-4429-3013 (24시간) </p>
+			</div>
+			<div id="lnb">
+				<div class="menuTitle">가상오피스 임대신청</div>
+				<ul class="navi navi_01">
+					<li class="here">1.정보입력</li>
+					<li>2.상품결제</li>
+					<li>3.신청완료</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="container">
+			<div class="contents">
+				<div class="intro">
+					<p class="tit01"><span>Onbiz​</span>Office</p>
+					<p class="txt01">
+						1인실 ~ 60인 이상을 수용할 수 있는 다양한 독립 사무실,법인 설립 에서 세무기장까지 강남 최저가 서비스<br/>
+						<span>전국 어디에서든 방문없이 계약완료 및 사업자 등록서류를 1시간 이내 제공받으실 수 있습니다.</span>
+					</p>
+				</div>
+				
+				<form id="iform">
+				<input type="hidden" name="mode" value="info" />
+				<ul class="select01">
+					<li>
+						<!-- 클릭시 chek_here클래스 부여  -->
+						<p class="chek chek_here">
+							<input type="radio" name="ctype" value="1" id="com1" checked="checked" onclick="info.company(1);"/>
+							<label for="com1">신규 사업자 개설</label>
+						</p>
+						<span>현재 사업자가 없고, 개인 또는 신규사업자 개설을 위해 사용힙니다.</span>
+					</li>
+					<li>
+						<p class="chek">
+							<input type="radio" name="ctype" value="2" id="com2" onclick="info.company(2);" />
+							<label for="com2">사업자 보유자</label>
+						</p>
+						<span>현재 사업자가 있고, 주소지 이전용으로 사용합니다.</span>
+					</li>	
+				</ul>
+
+				<div class="select02">
+					<select name="service1" class="business" onchange="etc.service(this.value);">
+					<option value="">업종선택</option>
+					<option value="건설업 ">건설업 </option><option value="도매 및 소매업 ">도매 및 소매업 </option><option value="운수업 ">운수업 </option><option value="출판, 영상, 방송통신 및 정보서비스업 ">출판, 영상, 방송통신 및 정보서비스업 </option><option value="금융 및 보험업 ">금융 및 보험업 </option><option value="부동산업 및 임대업 ">부동산업 및 임대업 </option><option value="전문,과학 및 기술서비스업 ">전문,과학 및 기술서비스업 </option><option value="사업시설관리 및 사업지원서비스업 ">사업시설관리 및 사업지원서비스업 </option><option value="교육서비스업 ">교육서비스업 </option><option value="사회복지서비스업 ">사회복지서비스업 </option><option value="예술, 스포츠 및 여가관련 서비스업 ">예술, 스포츠 및 여가관련 서비스업 </option><option value="협회 및 단체, 수리 및 기타  ">협회 및 단체, 수리 및 기타  </option><option value="개인서비스업">개인서비스업</option>					<option value="dr">직접입력</option>
+					</select> &nbsp; <input type="text" id="service2" name="service2" class="business" style="display: none;"/>
+					<p>※ 정확한 업종을 모르실 경우, 사업 내용을 간략하게 작성해주시기 바랍니다.</p>
+				</div>
+				
+				<div class="select03">
+					<dl class="table_write01">
+						<dt>계약 담당자 정보</dt>
+						<dd>
+							<label class="left_txt" for="name">ㆍ 성명</label>
+							<p class="right_input"><input type="text" name="name" id="name" autocomplete="off"/></p>
+						</dd>
+						<dd class="resize">
+							<label class="left_txt" for="ssn1">ㆍ 주민등록번호</label>
+							<p class="right_input">
+								<input type="text" name="ssn1" id="ssn1" onkeyup="etc.onlynum(this.value, this.id);" maxlength="6" autocomplete="off"/> - 
+								<input type="text" name="ssn2" id="ssn2" style="width:30px;" maxlength="1" autocomplete="off"/>XXXXXX
+							</p>
+						</dd>
+						<dd class="n_input resize">
+							<label class="left_txt" for="tel1">ㆍ 연락처</label>
+							<p class="right_input">
+								<input type="text" name="tel1" id="tel1" onkeyup="etc.onlynum(this.value, this.id);" maxlength="4" autocomplete="off"/> - 
+								<input type="text" name="tel2" id="tel2" onkeyup="etc.onlynum(this.value, this.id);" maxlength="4" autocomplete="off"/> - 
+								<input type="text" name="tel3" id="tel3" onkeyup="etc.onlynum(this.value, this.id);" maxlength="4" autocomplete="off"/>
+							</p>
+						</dd>
+						<dd class="e_input resize">
+							<label class="left_txt" for="email1">ㆍ 이메일 주소</label>
+							<p class="right_input">
+								<input type="text" name="email1" id="email11" autocomplete="off"/>&nbsp;@ 
+								<input type="text" name="email2" id="email12" autocomplete="off"/>
+								<span>계약서를 이메일로 발송해 드리오니, 이메일 주소를 <br/>정확하게 입력해주세요</span>
+							</p>
+						</dd>
+						<dd class="fax_input">
+							<label class="left_txt" for="fax1">ㆍ 팩스번호</label>
+							<p class="right_input">
+								<input type="text" name="fax1" id="fax1" onkeyup="etc.onlynum(this.value, this.id);" maxlength="4" autocomplete="off"/> - 
+								<input type="text" name="fax2" id="fax2" onkeyup="etc.onlynum(this.value, this.id);" maxlength="4" autocomplete="off"/> - 
+								<input type="text" name="fax3" id="fax3" onkeyup="etc.onlynum(this.value, this.id);" maxlength="4" autocomplete="off"/>
+							</p>
+						</dd>
+
+					</dl>
+					<dl class="table_write02">
+						<dt class="checks01">계약 명의자(임차인)정보&nbsp;&nbsp;<input type="checkbox" id="ex_chk" onclick="info.copy();"> <label for="ex_chk"><span>계약 임차인 정보와 동일함.</span></label></dt>
+						<dd>
+							<label class="left_txt" for="cname">ㆍ성명</label>
+							<p class="right_input"><input type="text" name="cname" id="cname" autocomplete="off"/></p>
+						</dd>
+						<dd class="resize person">
+							<label class="left_txt" for="cssn1">ㆍ 주민등록번호</label>
+							<p class="right_input">
+								<input type="text" name="cssn1" id="cssn1" onkeyup="etc.onlynum(this.value, this.id);" maxlength="6" autocomplete="off"/> - 
+								<input type="text" name="cssn2" id="cssn2" style="width:30px;" maxlength="1" autocomplete="off"/>XXXXXX
+							</p>
+						</dd>
+						<dd class="company" style="display: none;">
+							<label class="left_txt" for="cssn1">ㆍ 사업자명</label>
+							<p class="right_input"><input type="text" name="company" autocomplete="off"/></p>
+						</dd>
+						<dd class="resize company" style="display: none;">
+							<label class="left_txt" for="ccssn1">ㆍ 사업자등록번호</label>
+							<p class="right_input">
+								<input type="text" name="ccssn1" id="ccssn1" onkeyup="etc.onlynum(this.value, this.id);" style="width:60px;"  maxlength="3" autocomplete="off"/> - 
+								<input type="text" name="ccssn2" id="ccssn2" onkeyup="etc.onlynum(this.value, this.id);" style="width:40px;" maxlength="2" autocomplete="off"/> - 
+								<input type="text" name="ccssn3" id="ccssn3" onkeyup="etc.onlynum(this.value, this.id);" style="width:90px;" maxlength="5" autocomplete="off"/>
+							</p>
+						</dd>
+
+						<dd class="n_input resize">
+							<label class="left_txt" for="ctel1">ㆍ 연락처</label>
+							<p class="right_input">
+								<input type="text" name="ctel1" id="ctel1" onkeyup="etc.onlynum(this.value, this.id);" maxlength="4" autocomplete="off"/> - 
+								<input type="text" name="ctel2" id="ctel2" onkeyup="etc.onlynum(this.value, this.id);" maxlength="4" autocomplete="off"/> - 
+								<input type="text" name="ctel3" id="ctel3" onkeyup="etc.onlynum(this.value, this.id);" maxlength="4" autocomplete="off"/>
+							</p>
+						</dd>
+						<dd class="addr resize">
+							<label class="left_txt" for="address">ㆍ 주소</label>
+							<p class="right_input">
+								<input type="text" name="pcode" id="address" onclick="ebizPost.search_popup();" style="cursor:pointer; width: 100px;" readonly="readonly" autocomplete="off">&nbsp;
+								<input type="button" value="주소찾기" class="addr_find"  onclick="ebizPost.search_popup();">
+								<input type="text" name="addr" id="addr" class="more_addr" onclick="ebizPost.search_popup();" style="cursor:pointer;" readonly="readonly" autocomplete="off"/> 
+								<input type="text" name="addr_sub" id="addr2" class="more_addr" autocomplete="off"/>
+							</p>
+						</dd>
+						<dd>
+							<label class="left_txt">ㆍ 임대개시일</label>
+							<p class="right_input ">
+								<input type="text" name="date" id="date" class="input" style="width: 110px; text-align: center;" value="2017-01-26" maxlength="10" autocomplete="off"/> 
+							</p>
+						</dd>
+					</dl>
+				</div>
+
+				<div class="select04">
+					<p>※ 환불 계좌 정보<span>(추후 예치금 상환시 필요함으로 정확히 입력해 주세요!)</span></p>
+					<ul>
+						<li>
+							은행명&nbsp;&nbsp;							
+							<select name="bank1" class="business">
+							<option value="">환불받으실 은행을 선택해주세요 </option>
+							<option value="기업은행">기업은행</option><option value="국민은행">국민은행</option><option value="우리은행">우리은행</option><option value="신한은행">신한은행</option><option value="KEB하나은행">KEB하나은행</option><option value="농협은행">농협은행</option><option value="지역농축협">지역농축협</option><option value="SC은행">SC은행</option><option value="한국씨티은행">한국씨티은행</option><option value="우체국">우체국</option><option value="경남은행">경남은행</option><option value="광주은행">광주은행</option><option value="대구은행">대구은행</option><option value="도이치">도이치</option><option value="부산은행">부산은행</option><option value="산림조합">산림조합</option><option value="산업은행">산업은행</option><option value="상호저축은행">상호저축은행</option><option value="새마을금고">새마을금고</option><option value="수협">수협</option><option value="신협중앙회">신협중앙회</option><option value="전북은행">전북은행</option><option value="제주은행">제주은행</option><option value="BOA">BOA</option><option value="HSBC">HSBC</option><option value="JP모간">JP모간</option><option value="중국공상은행">중국공상은행</option><option value="비엔피파리바은행">비엔피파리바은행</option>							</select>
+						</li>
+						<li>계좌번호&nbsp;&nbsp;<input type="text" name="bank2" class="ac_num"/ autocomplete="off"></li>
+						<li>예금주&nbsp;&nbsp;<input type="text" name="bank3"  class="ac_holder"  autocomplete="off"/></li>
+					</ul>
+				</div>
+				</form>
+				
+				<div class="complete_btn"><input type="button" value="확인" onclick="info.send();"/></div>
+				<div id="temp"></div>
+
+			</div>
+		</div><!--container-->
+		<!-- <div id="footer">
+			(주)이비즈네트웍스  /  대표이사 : 박기범   /  사업자등록번호 : 220-87-30865   /  온비즈오피스&nbsp;&nbsp;&nbsp;<input type="button" value="사업자정보확인" onclick="window.open('http://ftc.go.kr/info/bizinfo/communicationView.jsp?apv_perm_no=2006322008330211501&area1=&area2=&currpage=1&searchKey=04&searchVal=2208730865&stdate=&enddate=');"/> <br/>
+			서울특별시 강남구 선릉로 99길 12, 4층 (역삼동, 모노타워)  /  TEL : 02-6255-3014  /  EMAIL : onbiz@ebiznetworks.co.kr
+			<small>Copyright © EbizNetworks. All Rights Reserved.</small>
+		</div> -->
+	</div>
+</div><!--wraper-->   
+</body>
+</html>
+
