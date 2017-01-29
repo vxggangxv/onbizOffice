@@ -62,7 +62,7 @@ padding-bottom: 5px; border-bottom: 1px solid #696969;}
 	display: none; position: absolute;	width: 1px;	height: 1px;
 	padding: 0;	margin: -1px;	overflow: hidden;	clip: rect(0, 0, 0, 0);	border: 0
 }
-#contents .add input[type="checkbox"] + label {left: -4px; /*width: 16px;*/}
+#contents .add input[type="checkbox"] + label { width: auto;}
 #contents .add input[type="checkbox"] + label:before {
 	content: ' ';
 	display: inline-block;
@@ -138,23 +138,54 @@ padding-bottom: 5px; border-bottom: 1px solid #696969;}
 .price .p_total p + p {font-size: 30px; color: #f93500; font-weight: 800;}
 .p_total p span {display: block; font-size: 16px; margin-top: 1px; text-align: right; font-weight: 600; color: #4c4c4c;}
 /*주의 사항 및 약관 동의*/
-.price > p {padding: 3px 22px; background-color: #F3F3F3;}
-.p_total + p {padding: 6px 22px;}
-@media (max-width: 320px){
-	.p_total + p {padding: 6px 20px;}
+#panel {margin: 10px 18px 3px 18px;}
+#panel > p {position: relative; padding: 3px 22px; background-color: #F3F3F3; border: 1px solid #dedede; border-radius: 6px; transition: all 1s;}
+#panel > p.up {border-bottom-right-radius: 0; border-bottom-left-radius: 0;}
+#panel > p span {display: inline-block; position: absolute; right: 13px; top: 50%; margin-top: -8px; width: 16px; height: 16px; background: url("http://img.onbiz.co.kr/images/m/triangle2.png") no-repeat 95% 50%; float: right; 
+	background-size: 16px; cursor: pointer;}
+#panel > p.up span {
+	background: url("http://img.onbiz.co.kr/images/m/triangle2.png") no-repeat 95% 50%;	
+	transform: rotate(180deg); 
 }
-.price > p label {font-size: 16px; width: auto;}
-.price > p label:before {position: relative; top: -1px; margin-right: 5px;}
-.price > p input[type="checkbox"]:checked + label:before {margin-right: 5px;}
+/* 가리기/보이기 */
+.price #panel > p {padding: 6px 10px;}
+.price #panel > p label {font-size: 16px; width: auto;}
+.price #panel > p label:before {position: relative; top: -1px; margin-right: 5px;}
 
-.price .txtara {display: block; margin: 10px auto 4px;; width: 86%; height: 100px; resize: none; text-align: left; padding: 5px 2px; border: 2px solid #dedede; overflow-y: scroll;}
-.price .txtara li {padding: 0; font-size: 14px; font-weight: 400; line-height: 1.3em; text-indent: 14px;}
-.price .txtara .idt {text-indent: 0;}
-.price .txtara + p, .price .txtara + p + p {display: block; margin: 0 auto; padding: 0; width: 88%; font-size: 13px; line-height: 1.3em; background-color: transparent; letter-spacing: -1px;}
-@media (max-width: 320px){
-	.price .txtara + p, .price .txtara + p + p {width: 90%;}
+#contents .price input[type="checkbox"] + label:before {
+	content: ' ';
+	display: inline-block;
+	position: relative;
+	box-sizing: border-box;
+	width: 16px; height: 16px;  
+	font-size: 14px;
+	line-height: 13px; 
+	margin: -1px 3px 0 0;
+	text-align: center; 
+	vertical-align: middle;
+	background: #fff;
+	border: 1px solid #cacece;
+	border-radius : 3px;
+	box-shadow: 0px 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
 }
-.price .txtara + p + p {text-indent: 14px;}
+#contents .price input[type="checkbox"]:checked + label:before {
+	content: '\2714';  
+	text-indent: -2px;
+	color: #99a1a7;
+	text-shadow: 1px 1px #fff;
+	background: #e9ecee;
+	border-color: #adb8c0;
+	box-shadow: 0px 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+}
+
+#panel .txtara {display: none; position: relative; top: -1px; height: 100px; resize: none; text-align: left; padding: 5px 2px; border: 1px solid #dedede; overflow-y: scroll; overflow-x: hidden; border-bottom-left-radius: 6px; border-bottom-right-radius: 6px;}
+#panel .txtara li {padding: 0; font-size: 14px; font-weight: 400; line-height: 1.3em; text-indent: 14px;}
+#panel .txtara .idt {text-indent: 0;}
+#panel + p, #panel + p + p {display: block; margin: 0 auto; padding: 0; width: 88%; font-size: 13px; line-height: 1.3em; background-color: transparent; letter-spacing: -1px;}
+@media (max-width: 320px){
+	#panel + p, #panel + p + p {width: 90%;}
+}
+#panel + p + p {text-indent: 14px;}
 
 /*카드 무이자 할부 혜택 영역*/
 .card {letter-spacing: 0; margin-top: 30px;}

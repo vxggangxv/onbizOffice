@@ -1,24 +1,31 @@
 $(document).ready(function() {
 	
+	//모달창 텍스트
+	var s_arg = ["서명란에 서명을 해주세요", "도장 이미지를 업로드 해주세요"];
+
 	/*전자서명하기, 도장이미지 업로드*/
 	$("#contents .way li input").on("click", function() {
 		//console.log($(this).index());
 		var wIdx = $(this).closest("li").index();
 		$sign_wrap = $("#sign_wrap");
 		
+
 		$("#backDrop").fadeIn();
 		$sign_wrap.fadeIn();
 		$sign_wrap.find(".sign_tab").find("li").removeClass("on");
 		$sign_wrap.find(".sign_tab").find("li").eq(wIdx).addClass("on");
 		$sign_wrap.find(".sign_pan").find("li").removeClass("on");
 		$sign_wrap.find(".sign_pan").find("li").eq(wIdx).addClass("on");
+		
+		$sign_wrap.find(".common_box > p").text(s_arg[wIdx]);
+
 	});
 	/*모달 창 닫기, X누룰 시, 계약서 발급완료 확인 버튼 누를 시*/
-	$("#sign_wrap .common_clsBtn, #load_wrap .common_clsBtn, #comp_wrap .common_clsBtn, #comp_wrap .all_clsBtn").on("click", function() {
+	/*$("#sign_wrap .common_clsBtn, #load_wrap .common_clsBtn, #load_wrap .common_clsBtn, #comp_wrap .all_clsBtn").on("click", function() {
 		
 		$(".common_wrap").css("display", "none");;
 		$("#backDrop").fadeOut();
-	});
+	});*/
 	
 	/*모달 탭 클릭*/
 	$("#sign_wrap .sign_tab li").on("click", function() {
@@ -28,6 +35,9 @@ $(document).ready(function() {
 		//console.log(idx);
 		$(this).parent().next().children().removeClass("on");
 		$(this).parent().next().children().eq(sIdx).addClass("on");
+
+		$("#sign_wrap .common_box > p").text(s_arg[sIdx]);
+
 	});
 	
 	/*파일박스 꾸미기*/

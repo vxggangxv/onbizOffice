@@ -80,10 +80,13 @@ background: #fff; border-radius: 4px;}
 	transform: rotate(-50deg);
 }
 /*전자서명하기, 도장이미지 업로드, 모달창*/
+.sign .common_box {color: #3c3c3c; font-size: 22px; line-height: 2.4em; font-weight: 600; text-align: center; letter-spacing: -1px;}
 #sign_wrap {display:none; z-index: 21; position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
-.sign {position: relative; width: 96%; height: 330px; margin: 0 auto; margin-top: 110px;
+#sign_wrap .sign {position: relative; width: 96%; height: 380px; margin: 0 auto; margin-top: 110px;
 background: #fff; border-radius: 4px;}
 .sign > div, .sign > ul {position: relative; width: 96%; margin: 0 auto;}
+.sign .common_txt {margin: 6px 0 10px;}
+.common_txt p {font-size: 12px; text-align: center; line-height: 1.4em;}
 
 /*탭버튼*/
 .sign_tab li {float: left; width: 50%; text-align: center; padding: 10px 0; font-weight: 600; color: #4c4c4c; background-color: #b7b6b6; cursor: pointer;}
@@ -100,11 +103,12 @@ background: #fff; border-radius: 4px;}
 /*서명하기*/
 .sp_sign {height: 190px;}
 .sp_sign div:first-child p:first-child {padding: 10px 0 5px;}
-.sp_sign div:first-child p:last-child {height: 140px; background-color: #212121; border-radius: 2px;}
+.sp_sign div:first-child p:last-child, .sp_sign div:first-child p:last-child input {height: 140px; background-color: #212121; border-radius: 2px;}
+.sp_sign div:first-child p:last-child input {display: inline-block; width: 100%; border: transparent; }
 
 .sp_sign div:last-child {margin-top: 35px;}
 .sp_sign div:last-child input {width: 43.5%;}
-.sp_sign div:last-child input:first-child {background-color: #686868; left: 50%; margin-left: -45.5%;}
+.sp_sign div:last-child input:first-child {background-color: #686868; left: 50%; margin-left: -45.5%; cursor: pointer;}
 .sp_sign div:last-child input:last-child {background-color: #ff8400; right: 50%; margin-right: -45.5%;}
 /*도장이미지 업로드*/
 .sp_up {height: 105px;}
