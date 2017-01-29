@@ -1,0 +1,196 @@
+
+ 
+<!DOCTYPE html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">             
+<meta charset="utf-8">
+<title>온비즈오피스</title>
+<meta name="title" content="온비즈오피스" /> 
+<meta name="author" content="온비즈오피스"/>
+<meta name="subject" content="가상오피스 1인실에서 80평까지 분할임대, 삼성역 풀옵션 Onbiz Office" /> 
+<meta name="description" content="가상오피스 1인실에서 80평까지 분할임대, 삼성역 풀옵션 Onbiz Office">
+<meta name="keywords" content="가상오피스 1인실에서 80평까지 분할임대, 삼성역 풀옵션 Onbiz Office"/>
+<meta name="classification" content="소호사무실"/>
+<link rel="canonical" href="http://www.onbiz.co.kr"> 
+<!-- 오픈그래프 -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="온비즈오피스">
+<meta property="og:description" content="가상오피스 1인실에서 80평까지 분할임대, 삼성역 풀옵션 Onbiz Office">
+<meta property="og:url" content="http://www.onbiz.co.kr">
+<meta property="og:site_name" content="온비즈오피스">
+<!-- 오픈그래프 -->
+
+<!-- Android icon -->
+<link rel='shortcut icon' type="image/x-ico" href='http://img.onbiz.co.kr/favicon/icon128x128.png' />
+<!-- iPhone icon -->
+<link rel='apple-touch-icon' type="image/x-ico" sizes='57x57' href='http://img.onbiz.co.kr/favicon/icon57x57.png' />
+<!-- iPad icon -->
+<link rel='apple-touch-icon' type="image/x-ico" sizes='72x72' href='http://img.onbiz.co.kr/favicon/icon72x72.png' />
+<!-- iPhone icon(Retina) -->
+<link rel='apple-touch-icon' type="image/x-ico" sizes='114x114' href='http://img.onbiz.co.kr/favicon/icon114x114.png' />
+<!-- iPad icon(Retina) -->
+<link rel='apple-touch-icon' type="image/x-ico" sizes='144x144' href='http://img.onbiz.co.kr/favicon/icon144x144.png' />
+
+<!----- 유입 카운터 출력 ---------------->
+<!--div style="position:absolute; top:-30px; left:-550px;">
+	<iframe id="ebiz_counter" src="http://www.onbiz.co.kr/web-home/ebiz_counter_2.php" width="330" height="150"  allowtransparency="true";  frameborder="0" marginheight="0" marginwidth="0" scrolling="0" style="position:absolute; top:184px; right:-930px; text-align:left;height:250px; z-index:10;"></iframe> 
+</div-->
+<!----- 유입 카운터 출력 끝---------------->
+
+<link href='https://cdn.rawgit.com/openhiun/hangul/14c0f6faa2941116bb53001d6a7dcd5e82300c3f/nanumbarungothic.css' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="http://static.onbiz.co.kr/css/style.css?v=1485420273">
+<style>
+/* 결제서명팝업 */
+#pop_pay_cas {position:absolute; z-index:99999; left:30%; margin-left:-315px;  top:20%; margin:auto; width:40%; background:#fff; border-radius:5px; color:#535252; letter-spacing:-0.5px}
+#pop_pay_cas .closew {position:relative; float:left; width:100%; height:40px; z-index:500}
+#pop_pay_cas .closew .close {position:absolute; top:7px; right:10px}
+#pop_pay_cas .txt{ position:relative; margin:auto; width:90%; text-align:center; }
+#pop_pay_cas .txt1{ font-size:1.000em; font-weight:bold; line-height:1.4; margin-bottom:10px; padding-bottom:10px; border-bottom:1px solid #e9e9ea;}
+#pop_pay_cas .txt2{ text-align:left}
+#pop_pay_cas .sign{width:90%; margin:auto; border:1px solid #e6e6e6; height:250px; margin-top:20px; display:inline-block; margin-left:5%}
+#pop_pay_cas .sign .sign_tit{text-align:center; font-size:0.688em; margin-top:10px}
+#pop_pay_cas .btn {clear:both; margin:auto; width:100%;  }
+#pop_pay_cas .btn .bt a{display:inline-block; width:100%; line-height:45px; font-weight:bold; text-align:center; letter-spacing:-0.5px; font-size:0.938em; background:#f15d28; color:#fff; border-radius:0px 0 5px 5px; margin-top:20px}
+#signature-pad {height:226px;}
+.m-signature-pad--body {height:226px;}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script> <!--[if lte IE 8]> <script src="path/to/poly-checked.min.js"></script> <![endif]-->
+<!--[if lt IE 9]>
+<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+<![endif]-->
+<script src="http://static.onbiz.co.kr/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="http://static.ssenflower.co.kr/js/jquery.number.js"></script>
+<script src="http://static.onbiz.co.kr/js/signature_pad.js"></script>
+<script>
+function sign(){
+	$("#pop_pay_cas").show();
+	$(function() {
+		/*서명패드 세팅*/
+		var wrapper = document.getElementById("signature-pad"),
+		clearButton = wrapper.querySelector("[data-action=clear]"),
+		saveButton = wrapper.querySelector("[data-action=save]"),
+		canvas = wrapper.querySelector("canvas"),
+		signaturePad;
+
+		signaturePad = new SignaturePad(canvas);
+		canvas.width = $("#pop_pay_cas").width();
+
+		$("#sign_succ").click(function(e) {
+			if (signaturePad.isEmpty()) {
+				alert("서명을 입력해주세요.");
+				//return;
+			} else {
+				$.ajax({
+					url : "/rent/state.php",
+					data: "mode=sign&oid=" + $("#oid").val() + "&sign=" + encodeURIComponent(signaturePad.toDataURL()),
+					type : "post",
+					success: function(r) {
+						$("#pop_pay_cas").hide();
+						$("#sform").submit();
+					}
+				});
+			}
+		});
+	});
+}
+
+function payclose() {
+	$("#pop_pay_cas").hide();
+}
+
+$("#pop_pay_cas").on("selectstart", function(event){ return false; });
+$("#pop_pay_cas").on("dragstart", function(event){ return false; });	
+ </script>
+
+</head>
+<body>
+	<div id="wrapeer">
+		<div id="wrap">
+			<div id="header">
+				<h1 id="logo"><a href="#"><img src="http://img.onbiz.co.kr/logo.gif" alt="온비트오피스로고"/></a></h1>
+				<div id="gnb">
+					<ul>
+						<li class="menu_title">가상오피스 임대신청</li>
+						<li class="gnb_m gnb_m01"><a href="">임대신청</a></li>
+						<li> | </li>
+						<li class="gnb_m gnb_m02"><a href="">임대 신청내역 확인</a></li>
+					</ul>
+					<p class="tel">온비즈 오피스<br/>문의전화: 02-6255-3014, 010-4429-3013 (24시간) </p>
+				</div>
+				<div id="lnb">
+					<div class="menuTitle">가상오피스 임대신청</div>
+					<ul class="navi navi_03">
+						<li >1.정보입력</li>
+						<li>2.상품결제</li>
+						<li class="here">3.신청완료</li>
+					</ul>
+				</div>
+			</div>
+	
+			<div id="container">
+				<div class="contents">
+					<div class="intro">
+						<p class="tit03">가상오피스 결제가 정상적으로 완료되었습니다.</p>
+						<p class="txt03">
+							임대차계약서(PDF파일)를 입력하신 "kspark@ebiznetworks.co.kr" 메일 주소로 발송해 드렸습니다.<br/> 
+							<span>※계약서 최종 확인 후, 00시간 이내 당사 날인된 임대차계약서(PDF)를 이메일로 발송해 드립니다.</span>
+						</p>
+					</div><!--intro-->
+					
+					<form id="sform" method="post" action="/rent/complete.php">
+					<input type="hidden" id="oid" name="oid" value="" />
+					</form>
+					
+					<div id="pop_pay_cas" style="display:none">
+						<div class="closew">
+							<span class="close"><span onclick="payclose();" style="cursor:pointer;"><img width="30" alt="닫기" src="http://img.go.co.kr/mobile/menu_close.jpg"></span></span>
+						</div>
+						<div class="sign">
+							<p class="sign_tit">이곳에 서명해주세요.</p>
+							
+							<!-- 제일 필요한부분 -->
+							<div id="signature-pad" class="m-signature-pad">
+								<div class="m-signature-pad--body">
+									<canvas height="224" width="100px"></canvas>
+								</div>
+							</div>
+							<!-- 제일 필요한부분 -->
+
+						</div>
+						
+						<!-- 제일 필요한부분 -->
+						<div class="btn" id="sign_succ"><span class="bt"><a href="#">전자서명완료</a></span></div>
+						<!-- 제일 필요한부분 -->
+
+					</div>
+
+				
+					<div class="completion">
+						<div class="ex_txt"><img src="http://img.onbiz.co.kr/pointer.gif" />&nbsp;계약서 작성 후 아래의 방법중 편하신 방법을 선택하여 당사로 발송해 주시기 바랍니다.</div>
+						<ul>	
+							<li><img src="http://img.onbiz.co.kr/send01.png" alt="방법1"/> <p class="line_p">전자서명 후 계약서 바로 받기</p><input type="button" value="전자서명하기" onclick="sign()"/></li>
+							<!--<li><img src="http://img.onbiz.co.kr/send02.png" alt="방법2"/><p>도장 이미지 업로드 후 계약서 바로 받기</p><div class="filebox"><label for="ex_file">도장 이미지 업로드</label> <input type="file" id="ex_file" > </div></li>-->
+							<li><img src="http://img.onbiz.co.kr/send02.png" alt="방법2"/><p>도장 이미지 업로드 후 계약서 바로 받기</p><div class="filebox"><label for="ex_file" onclick="alert('준비중입니다.');">도장 이미지 업로드</label></div></li>
+						</ul>
+
+						<div class="btn_box">
+							<p class="download"><input type="button" value="계약서 다운로드(PDF파일)"/></p>
+							<p class="e_sign"><input type="button" value="계약서에 바로 사인하기"/></p>
+						</div>
+					</div>
+						
+					<form name="pdf" method="post" action="http://onbiz.co.kr/form/pdf/doc/1.php" target="_blank">
+					<input type="hidden" name="oid" value="" />
+					</form>
+
+				</div>
+			</div><!--container-->
+			<div id="footer">
+				(주)이비즈네트웍스  /  대표이사 : 박기범   /  사업자등록번호 : 220-87-30865   /  온비즈오피스&nbsp;&nbsp;&nbsp;<input type="button" value="사업자정보확인"  /><br/>
+서울특별시 강남구 선릉로 99길 12, 4층 (역삼동, 모노타워)  /  TEL : 02-6255-3013  /  EMAIL : onbiz@ebiznetworks.co.kr
+<small>Copyright © EbizNetworks. All Rights Reserved.</small>
+			</div>
+		</div>
+	</div><!--wraper-->   
+</body>
+</html>
