@@ -16,7 +16,7 @@ border:17px solid transparent;  border-left-color: #f3f3f3; border-left-width: 8
 /*main 영역*/
 #main {letter-spacing: -1px;}
 #main h2 {color: #3C3C3C; font-size: 54px; font-weight: 600; margin-top: 28px;}
-#main h2 span:first-child {display: inline-block; color: #fff; background-color: #3c3c3c; height: 43px; width: 168px; line-height: 0.8em;}
+#main h2 span:first-child {display: inline-block; color: #fff; background-color: #3c3c3c; height: 45px; width: 168px; line-height: 52px;}
 #main h2 span:last-child {position: relative; left: -4px;}
 #main h2 + p {margin-top: 12px;}
 #main p {color: #ff7700; font-weight: 600; text-align: center; line-height: 1.3em;}

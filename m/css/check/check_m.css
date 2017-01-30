@@ -11,7 +11,8 @@ border:17px solid transparent;  border-left-color: #f3f3f3; border-left-width: 8
 /*main 섹션*/
 #main {letter-spacing: -1px;}
 #main h2 {color: #3C3C3C; font-size: 54px; font-weight: 600; margin-top: 28px;}
-#main h2 span:first-child {display: inline-block; color: #fff; background-color: #3c3c3c; height: 43px; width: 168px; line-height: 0.8em;}
+#main h2 span:first-child {display: inline-block; color: #fff; background-color: #3c3c3c; 
+	height: 45px; width: 168px; line-height: 52px;}
 #main h2 span:last-child {position: relative; left: -4px;}
 #main h2 + p {margin-top: 12px;}
 #main p {color: #ff7700; font-weight: 600; text-align: center; line-height: 1.3em;}
@@ -37,6 +38,7 @@ padding-bottom: 40px;}
 #contents section div {display: table; width: 100%;}
 #contents section ul {position: relative; display: table-row; width: 100%;}
 #contents section ul li {display: table-cell; vertical-align: middle;  box-sizing: border-box; text-align: center; font-size: 13px; border-right: 1px solid #c9c9c9; border-bottom: 1px solid #c9c9c9; height: 38px; letter-spacing: -1px;}
+#contents section ul li a {color: #4c4c4c;}
 #contents section ul:first-child li {border-top: 2px solid #FF8A17; height: 32px;}
 #contents section ul li:first-child {width: 30%; border-left: 1px solid #c9c9c9;}
 #contents section ul li:last-child {font-size: 12px; text-align: left; padding-left: 8px;}

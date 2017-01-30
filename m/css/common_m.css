@@ -7,7 +7,7 @@ a {text-decoration:none;}
 input[type="reset"], input[type="button"] {cursor: pointer;}
 input[type="checkbox"] + label, input[type="radio"] + label {vertical-align: middle;}
 input[type="checkbox"], input[type="radio"] {vertical-align: middle;}
-input[type="checkbox"], input[type="text"], input[type="radio"], input[type="button"] {-webkit-border-radius:1px; -webkit-appearance:none;}
+input[type="reset"], input[type="checkbox"], input[type="text"], input[type="radio"], input[type="button"] {-webkit-border-radius:1px; -webkit-appearance:none;}
 select {
 	-webkit-border-radius:1px;
 	-webkit-appearance:none; 
@@ -96,16 +96,20 @@ nav.gnb ul li {text-align: center; margin-top: 18px}
 nav.gnb ul li:first-child {margin-top: 28px;}
 nav.gnb a {color:#fff; font-size: 20px}
 /*내역 조회 영역*/
-.wrap_ntc {position:relative; width: 350px; height: 130px; margin: 0 auto; margin-top: 60px; border:1px solid #fff; border-radius: 2px;}
+.wrap_ntc {position:relative; width: 350px; height: 130px; margin: 0 auto; margin-top: 60px; border:1px solid #fff; border-radius: 2px; box-sizing: border-box;}
+@media (max-width: 320px) {
+	.wrap_ntc {width: 316px;}
+}
 .wrap_ntc li {float:left; text-align: center; width: 50%; box-sizing: border-box;}
 .wrap_ntc li:first-child {border-right: 1px solid #fff; height: 100%;}
+.wrap_ntc li a {color: #fff;}
 .ph, .mp { margin: 0 auto; margin-top: 4px; background-position: 0px 0px; }
 .mp {background-position: -40px 0;}
 .ph + p, .mp + p {font-size: 14px; margin-bottom: 8px;}
 .wrap_ntc p {line-height: 1.4em; font-weight: 600;}
 
 /*전체 네비게이션 안에 메뉴박스 영역*/
-.chk_wrap { position: relative; width: 96%; height: 306px; margin: 0 auto; top: 158px;
+.chk_wrap { position: relative; width: 96%; height: 306px; margin: 0 auto; margin-top: 20px;
 background: #fff; border-radius: 4px;}
 .chk_clsBtn {position: absolute; top: -34px; right: 0px;}
 .chk_wrap h2 {color:#424242; font-size: 20px; font-weight: 500; line-height: 1.9em; padding-top: 8px; border-bottom:1px solid #ccc;}
@@ -126,6 +130,7 @@ box-sizing: border-box;}
 footer {width:100%; height: 130px; float:left; background: #F9f9f9;}
 .info {width:100%; float:left; font-size:11px; margin:15px 0; color:#2E2E2E;}
 .info li {text-align:center; margin-top:5px;}
+.info li a {color: #2E2E2E;}
 
 /*위로가기 버튼*/
 .btntop {width:55px; z-index:10; position:fixed; height:55px; bottom:75px; right:15px;}

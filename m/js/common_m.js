@@ -12,10 +12,21 @@ $(function () {
 	$(".clsBtn").on("click", function() {
 		$("#backDrop, #menu_wrap").fadeOut();
 	});
-	/*임대신청내역확인, Login클릭시 내역조회 등장*/
+	/*임대신청내역확인 내역조회 등장*/
 	$(".chClk, .chk_clsBtn").on("click", function() {
 		$(this).closest("section").addClass("off");
 		$(this).closest("section").next().removeClass("off");
+
+		var wh = $(window).height();
+		//console.log(wh);
+		if(wh > 306){
+			wh = wh/2 ;
+			$(this).closest("section").next().css({
+				"top": wh,
+				"margin-top": "-163px"
+			});
+		}
+		
 	});
 	/*내역조회 X버튼 클릭시 다시 Nav등장*/
 	$(".chk_clsBtn").on("click", function() {

@@ -8,7 +8,19 @@ $(document).ready(function() {
 		//console.log($(this).index());
 		var wIdx = $(this).closest("li").index();
 		$sign_wrap = $("#sign_wrap");
-		
+
+		/* 모달창 브라우저 중앙높이 정렬 */
+		$(window).scrollTop(0);
+		var wh = $(window).height();
+		//console.log(wh);
+		if(wh > 380){
+			wh = wh/2 ;
+			$(".common_wrap section").css({
+				"top": wh,
+				"margin-top": "-190px"
+			});
+			
+		}
 
 		$("#backDrop").fadeIn();
 		$sign_wrap.fadeIn();
@@ -20,12 +32,12 @@ $(document).ready(function() {
 		$sign_wrap.find(".common_box > p").text(s_arg[wIdx]);
 
 	});
+
 	/*모달 창 닫기, X누룰 시, 계약서 발급완료 확인 버튼 누를 시*/
-	/*$("#sign_wrap .common_clsBtn, #load_wrap .common_clsBtn, #load_wrap .common_clsBtn, #comp_wrap .all_clsBtn").on("click", function() {
-		
-		$(".common_wrap").css("display", "none");;
+	$("#sign_wrap .common_clsBtn, #comp_wrap .common_clsBtn").on("click", function() {
+		$(".common_wrap").css("display", "none");
 		$("#backDrop").fadeOut();
-	});*/
+	});
 	
 	/*모달 탭 클릭*/
 	$("#sign_wrap .sign_tab li").on("click", function() {
@@ -62,7 +74,7 @@ $(document).ready(function() {
 	
 	/*로딩 클래스부여 예시*/
 	$("#sign_wrap .st_ld").on("click", function() {
-		$("#backDrop").fadeIn();
+		$("#sign_wrap").css("display", "none");
 		$("#load_wrap").addClass("on");
 		$("#load_wrap").fadeIn();
 		setTimeout(function() {
