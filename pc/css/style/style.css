@@ -1183,7 +1183,7 @@ p.file_upload span{display:block;padding-bottom:5px;}
 	position:fixed;
 	width:180px;
 	height:230px;
-	bottom:150px;
+	top:555px;
 	right:107px;
 	z-index:15;
 	background:#db2d2e;
