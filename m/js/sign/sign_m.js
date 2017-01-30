@@ -29,7 +29,7 @@ $(document).ready(function() {
 		$sign_wrap.find(".sign_pan").find("li").removeClass("on");
 		$sign_wrap.find(".sign_pan").find("li").eq(wIdx).addClass("on");
 		
-		$sign_wrap.find(".common_box > p").text(s_arg[wIdx]);
+		$sign_wrap.find(".common_box > h3").text(s_arg[wIdx]);
 
 	});
 
@@ -48,7 +48,7 @@ $(document).ready(function() {
 		$(this).parent().next().children().removeClass("on");
 		$(this).parent().next().children().eq(sIdx).addClass("on");
 
-		$("#sign_wrap .common_box > p").text(s_arg[sIdx]);
+		$("#sign_wrap .common_box > h3").text(s_arg[sIdx]);
 
 	});
 	

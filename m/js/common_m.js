@@ -4,7 +4,7 @@ $(function () {
 		$(window).scrollTop(0);
 	});
 	/*tab 클릭시 Nav전체화면 등장*/
-	$(".nav_tab").on("click", function() {
+	$("a.nav_tab").on("click", function() {
 		$("#backDrop").fadeIn();
 		$("#menu_wrap").fadeIn();
 	});
