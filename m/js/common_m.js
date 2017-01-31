@@ -4,7 +4,7 @@ $(function () {
 		$(window).scrollTop(0);
 	});
 	/*tab 클릭시 Nav전체화면 등장*/
-	$("a.nav_tab").on("click", function() {
+	$(".nav_tab").on("click", function() {
 		$("#backDrop").fadeIn();
 		$("#menu_wrap").fadeIn();
 	});
@@ -32,5 +32,5 @@ $(function () {
 	$(".chk_clsBtn").on("click", function() {
 		$(this).closest("section").addClass("off");
 		$(this).closest("section").prev().removeClass("off");
-	});
+	}); 
 });     
