@@ -60,7 +60,8 @@ padding: 10px 4px;}
 .btn_wrap li:first-child input { background-color: #515151;}
 
 /*모달창 공통스타일*/
-.common_wrap {display: none; z-index: 21; position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
+.common_wrap {display:block;opacity: 0; z-index: 0; position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
+.common_wrap.on {opacity: 1; z-index: 21;}
 .common_wrap > section {position: relative; width: 96%; height: 320px; margin: 0 auto; margin-top: 30px;  background: #fff; border-radius: 4px;}
 .common_wrap > section > div:first-child {position: relative; width: 96%; margin: 0 auto; height: 40px;}
 
@@ -89,7 +90,8 @@ padding: 10px 4px;}
 	.sign .common_box {font-size: 20px;}
 	.common_clsBtn > span {width: 26px;}
 }
-#sign_wrap {display:none; z-index: 21; position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
+/* #sign_wrap {display:block;opacity: 0; z-index: 0; position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
+.common_wrap.on {opacity: 1; z-index: 21;} */
 #sign_wrap .sign {position: relative; width: 96%; height: 380px; background: #fff; border-radius: 4px;}
 .sign > div, .sign > ul {position: relative; width: 96%; margin: 0 auto;}
 .sign .common_txt {margin: 6px 0 10px; }
@@ -113,8 +115,20 @@ padding: 10px 4px;}
 /*서명하기*/
 .sp_sign {height: 190px;}
 .sp_sign div:first-child p:first-child {padding: 10px 0 5px;}
-.sp_sign div:first-child p:last-child, .sp_sign div:first-child p:last-child input {height: 140px; background-color: #212121; border-radius: 2px;}
-.sp_sign div:first-child p:last-child input {display: inline-block; width: 100%; border: transparent; }
+.sp_sign div:first-child p:last-child {position: relative; width: 100%; height: 140px; background-color: #212121; border-radius: 2px; overflow: hidden;
+	box-sizing: border-box;
+	border: 1px solid #999;}
+.sp_sign div:first-child p:last-child canvas {
+	display: block; 
+	border: transparent; background-color: #fff; 
+	position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  /* width: 972px;
+  height: 140px; */
+}
 
 .sp_sign div:last-child {margin-top: 35px;}
 .sp_sign div:last-child input {width: 43.5%;}
@@ -148,7 +162,6 @@ padding: 10px 4px;}
 /* #load_wrap > section, #comp_wrap > section { height: 320px; margin-top: 95px; } */
 #load_wrap p, #comp_wrap p {text-align: center;}
 /*계약서 발급중*/
-#load_wrap {display: none;}
 #load_wrap h3:nth-child(2){margin-top: 20px; font-size: 20px; font-weight: 700; text-align: center;}
 #load_wrap p:nth-child(3) {margin-top: 10px; font-size: 15px; font-weight: 600; color: #8e8e8e;}
 #load_wrap p:nth-child(4) {margin-top: 35px;}
@@ -169,7 +182,6 @@ padding: 10px 4px;}
 }
 
 /*계약서 발급완료*/
-#comp_wrap {display: none;}
 #comp_wrap h3:nth-child(2) {margin-top: 16px; letter-spacing: -2px; font-size: 23px; font-weight: 700; text-align: center;}
 #comp_wrap p:nth-child(3) {margin-top: 28px;}
 #comp_wrap p:nth-child(3) span {color: #ff8400; font-weight: 800;}

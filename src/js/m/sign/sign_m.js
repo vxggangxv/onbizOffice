@@ -22,8 +22,19 @@ $(document).ready(function() {
 			
 		}
 
-		$("#backDrop").fadeIn();
-		$sign_wrap.fadeIn();
+		/* 캔버스 높이 부여 */
+		/*var cw = $("#signature-pad > div:first p:last").width();
+		var ch = $("#signature-pad > div:first p:last").height();
+		console.log(cw);
+		console.log(ch);
+		$sign_wrap.find("#signature-pad canvas").css({
+			"width": cw,
+			"height": ch
+		});*/
+
+		$("#backDrop").css("display", "block");
+		//$sign_wrap.fadeIn();
+		$sign_wrap.addClass("on");
 		$sign_wrap.find(".sign_tab").find("li").removeClass("on");
 		$sign_wrap.find(".sign_tab").find("li").eq(wIdx).addClass("on");
 		$sign_wrap.find(".sign_pan").find("li").removeClass("on");
@@ -35,8 +46,9 @@ $(document).ready(function() {
 
 	/*모달 창 닫기, X누룰 시, 계약서 발급완료 확인 버튼 누를 시*/
 	$("#sign_wrap .common_clsBtn, #comp_wrap .common_clsBtn").on("click", function() {
-		$(".common_wrap").css("display", "none");
-		$("#backDrop").fadeOut();
+		$(".common_wrap").removeClass("on");
+		$("#backDrop").css("display", "none");
+		signaturePad.clear();
 	});
 	
 	/*모달 탭 클릭*/
@@ -65,23 +77,24 @@ $(document).ready(function() {
 	});
 
 	/*발급 중 보기*/
-	/*$("#load_wrap").fadeIn();
-	$("#backDrop").css("display", "block");*/
+	/*$("#backDrop").css("display", "block");
+	$("#load_wrap").addClass("on");*/
 	
 	/*발급완료 보기*/
-	/*$("#backDrop").fadeIn();
-	$("#comp_wrap").css("display", "block");*/
+	/*$("#backDrop").css("display", "block");
+	$("#comp_wrap").addClass("on");*/
 	
 	/*로딩 클래스부여 예시*/
 	$("#sign_wrap .st_ld").on("click", function() {
-		$("#sign_wrap").css("display", "none");
+		$("#sign_wrap").removeClass("on");
 		$("#load_wrap").addClass("on");
-		$("#load_wrap").fadeIn();
+		$("#load_wrap").addClass("on");
 		setTimeout(function() {
 			$("#load_wrap").removeClass("on");
-			$("#comp_wrap").css("display", "block");
+			$("#comp_wrap").addClass("on");
 		}, 1000);
 	});
-		
 	
+
+
 });
