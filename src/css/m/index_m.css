@@ -26,16 +26,17 @@ justify-content: center;
 align-items: center;
 } 
 /* 메인이미지 */
-.top_box { position:absolute; top:285px; left:50%; margin-left:-145px; z-index:10; text-align:center;}
+.top_box { position:absolute; top:285px; left:50%; margin-left:-145px; z-index:10; text-align:center; letter-spacing: -1px; font-size:15px;}
 .box_1 {width:90px; height:90px; float:left; background-color: rgba(255, 137, 33, 0.8);}
-.box_1 p { color:#FFF; font-size:16px; margin-top:14px;}
+.box_1 p { color:#FFF; margin-top:14px; }
 .box_1 p span{ color:#FFF; font-size:12px;}
 .box_2 {width:90px; height:90px; margin-left: 10px; float:left; background-color: rgba(51, 51, 51, 0.8);}
-.box_2 p { color:#FFF; font-size:16px; margin-top:14px;}
+.box_2 p { color:#FFF; margin-top:14px;}
 .box_2 p span{ color:#FFF; font-size:12px;}
 .box_3 {width:90px; height:90px; margin-left: 10px; float:left; background-color: rgba(196, 196, 196, 0.9);}
-.box_3 p { color:#FFF; font-size:16px; margin-top:14px;}
+.box_3 p { color:#FFF; margin-top:14px;}
 .box_3 p span{ color:#FFF; font-size:12px;}
+.top_box p span:nth-child(2) { font-size: 14px; }
 
 /*전화문의*/
 .call {width:100%; height:64px; position:fixed; left: 0; bottom: 0; background-color:#3b3938; z-index:10;}
@@ -48,6 +49,7 @@ align-items: center;
 /* 컨텐츠 */
 .content {width:100%; position:relative;}
 .content h2 {color:#fff; text-align: left; font-size: 24px; margin-left: 15px;}
+.content h2 span {font-size: 16px; font-weight: 600;}
 
 /* 상단 박스 3개 */
 .article_1 {float:left; width:100%; height:auto; background-color:#e28f45; color:white;}
@@ -61,6 +63,7 @@ align-items: center;
 .article_2 ul {width:100%; font-size:11px; letter-spacing:-0.5px; list-style-type:disc; float:left; margin-top:10px; line-height:220%;}
 .article_3 ul {width:100%; font-size:11px; letter-spacing:-0.5px; list-style-type:disc; float:left; margin-top:10px; line-height:250%;}
 .article_1 ul li,.article_2 ul li,.article_3 ul li {max-width:100%; margin-left:30px; font-size:12px;margin-top: -2px;}
+.article_2 ul li:first-child {list-style: none; margin-left: 15px; margin-bottom: 15px;}
 
 /* 소개 부분 */
 .introduce {width:100%; float:left; position:relative;}
@@ -189,7 +192,10 @@ width:290px; }
 .contact p {width:100%; float:left; text-align:center; color:#FF8921; font-size:26px; font-weight:bold; margin-top:30px;}
 .address {width:100%; float:left; margin-top:10px;}
 .address b {font-size:20px;}
-.address li {width:80%; margin:10px auto; text-align:center; font-size:15px;}
+.address li {width: 96%; margin: 5px auto; text-align:center; font-size:12px; letter-spacing: -1px}
+.address li:first-child {margin: 10px auto;}
+.address li:nth-child(4) {font-size: 16px; font-weight: 600; margin-top: 15px;}
+.address li:last-child {margin-bottom: 10px;}
 .map {float: left;}
 #map {height: 250px;}
 

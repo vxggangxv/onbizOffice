@@ -1,9 +1,13 @@
 /*단계 bar*/
 .inf_bar {position: relative; width: 100%;}
-.inf_bar li {position: relative; float:left; height: 34px; line-height: 34px; background-color: #F3F3F3; font-size: 12px; font-weight: 500; color: #4C4C4C; text-align: center; width: 20%; text-indent: 5px; box-sizing: border-box;}
-.inf_bar .ib0 {font-weight: 700; width: 40%; font-size: 14px; text-align: left;}
+.inf_bar li {position: relative; float:left; height: 34px; line-height: 34px; background-color: #F3F3F3; font-size: 12px; font-weight: 500; color: #4C4C4C; text-align: center; width: 33.3%; text-indent: 5px; box-sizing: border-box;}
+/* .inf_bar .ib0 {font-weight: 700; width: 40%; font-size: 14px; text-align: left;} */
+@media(max-width: 320px) {
+	.inf_bar li { letter-spacing: -1px; }
+}
 .inf_bar .ib2 {background-color: #D0D0D0;}
 .inf_bar .ib1 {background-color: #E0E0E0;}
+.inf_bar .ib3 {background-color: #d0d0d0;}
 .inf_bar li.on {background-color: #5B5B59; color: #fff;}
 .inf_bar li:after {z-index: 1; position:absolute; top: 0; right: -25px; content: ""; display: block;
 border:17px solid transparent;  border-left-color: #f3f3f3; border-left-width: 8px;}

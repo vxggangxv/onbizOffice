@@ -1,7 +1,10 @@
 /*단계 bar*/
 .inf_bar {position: relative; width: 100%;}
-.inf_bar li {position: relative; float:left; height: 34px; line-height: 34px; background-color: #F3F3F3; font-size: 12px; font-weight: 500; color: #4C4C4C; text-align: center; width: 20%; text-indent: 5px; box-sizing: border-box;}
-.inf_bar .ib0 {font-weight: 700; width: 40%; font-size: 14px; text-align: left;}
+.inf_bar li {position: relative; float:left; height: 34px; line-height: 34px; background-color: #F3F3F3; font-size: 12px; font-weight: 500; color: #4C4C4C; text-align: center; width: 33.3%; text-indent: 5px; box-sizing: border-box;}
+/* .inf_bar .ib0 {font-weight: 700; width: 40%; font-size: 14px; text-align: left;} */
+@media(max-width: 320px) {
+	.inf_bar li { letter-spacing: -1px; }
+}
 .inf_bar .ib2 {background-color: #D0D0D0;}
 .inf_bar .ib1, .inf_bar .ib3 {background-color: #E0E0E0;}
 .inf_bar li.on {background-color: #5B5B59; color: #fff;}
@@ -9,37 +12,40 @@
 border:17px solid transparent;  border-left-color: #f3f3f3; border-left-width: 8px;}
 .inf_bar li.on:after {border-left-color: #5B5B59;}
 .inf_bar .ib0:after {border-left-color: #f3f3f3;}
-.inf_bar .ib1:after {border-left-color: #e0e0e0;}
 .inf_bar .ib2:after {border-left-color: #d0d0d0;}
 .inf_bar .ib3:after {display: none;}
 
 /*main 영역*/
-#main {letter-spacing: -1px;}
-#main h2 {color: #3C3C3C; font-size: 54px; font-weight: 600; margin-top: 28px;}
-#main h2 span:first-child {display: inline-block; color: #fff; background-color: #3c3c3c; height: 45px; width: 168px; line-height: 52px;}
-#main h2 span:last-child {position: relative; left: -4px;}
-#main h2 + p {margin-top: 12px;}
-#main p {color: #ff7700; font-weight: 600; text-align: center; line-height: 1.3em;}
-#main h2 + p + p {color: #4c4c4c; font-size: 14px; margin-top: 10px;}
-@media (max-width: 320px){
-	#main p {font-size: 14px}
-	#main h2 + p + p {font-size: 12px;}
+#main h2 {text-align: center; color: #4c4c4c; font-size: 15px; margin-top: 20px;
+line-height: 1.3em; font-weight: 600;}
+#main div {background-color: #F6F6F6; padding: 6px; font-size: 13px; margin-top: 20px;}
+
+#main div span, #main div label {display: inline-block; font-weight: 600;}
+#main div ul li {padding: 3px 0;}
+#main div ul li:first-child span {width: 66px;}
+#main div ul li:nth-child(2) span {width: 3%; text-align: center;}
+#main div ul li:last-child label {width: 131px;}
+#main div ul li:nth-child(1) label, #main div ul li:nth-child(2) label 
+{width: 60px; margin-right: 5px;}
+#main div input {position: relative; top: -1px; font-size: 12px; padding: 4px; width: 120px; 	height: 28px; background-color: #fbfbfb; 
+	border-radius: 4px; border: 1px solid #888; text-align: center; box-sizing: border-box;
 }
+#main div ul li:first-child input {width: 100px;}
+#main div ul li:nth-child(2) {margin-left: 70px;}
+#main div ul li:nth-child(2) input {width: 22%;}
+#main div ul li:nth-child(3) input {width: 39%;}
 
 /*컨텐츠*/
-#contents {position: relative; padding: 0 5px; margin-top: 30px; color: #4c4c4c; letter-spacing: -1px;}
+#contents {position: relative; padding: 0 5px; color: #4c4c4c; letter-spacing: -1px;}
 #contents h2 {font-size: 15px; font-weight: 700; color: #4c4c4c; text-align: left; line-height: 1em;
 padding-bottom: 5px; border-bottom: 1px solid #696969;}
-#contents h2 + p {font-size: 13px; margin-top: 20px;}
-#contents h2 + p label {margin-right: 5px;}
-#contents h2 + p select {position: relative; top: -1px; font-size: 12px; padding: 4px; width: 180px; background-size: 8px; background-color: #fbfbfb;}
 #contents input[type="radio"] {width: 20px; height: 20px; background-size: 50px; background-position: -25px -1px;}
 #contents input[type="checkbox"] {width: 16px; height: 16px; margin-right: 3px;}
 #contents input[type="checkbox"] + label {position: relative;}
 
 /*임대기간선택 영역*/
-.term {padding: 3px 0 15px 0; border-top: 2px solid #FF912F; border-bottom: 2px solid #FF912F; margin-top: 6px;}
-.term h3 {font-size: 14px; font-weight: 600; text-align: center; padding-bottom: 5px; color: #3c3c3c;}
+.term {border-top: 2px solid #FF912F; margin-top: 12px;}
+.term h3 {font-size: 14px; font-weight: 600; text-align: center; background-color: #F3F3F3; padding: 6px 8px; color: #3c3c3c;}
 .term > div {display: table; width: 100%;}
 .term ul {position: relative; display: table-row; width: 100%;}
 .term ul li {display: table-cell; vertical-align: middle;  box-sizing: border-box; text-align: center; font-size: 14px; border-right: 1px solid #EDECEB; border-bottom: 1px solid #edeceb; font-weight: 600; height: 38px;}
@@ -55,6 +61,15 @@ padding-bottom: 5px; border-bottom: 1px solid #696969;}
 }
 .term .t04 .sale {display: inline-block; background-color: #ff3600; color: #fff; line-height: 1.6em; padding: 0 3px; margin-right: 3px; font-size: 12px;}
 
+/* 예치금 & 옵션 미선택시에도 */
+.ps, .ps2, .ps3 {font-size: 13px; letter-spacing: -1px; margin-top: 10px; line-height: 1.3em;}
+.ps span, .ps3 span {display: inline-block; float: left;}
+.ps span:first-child, .ps3 span:first-child {width: 12px;}
+.ps span:last-child, .ps3 span:last-child {width: 96%;}
+.ps2 {font-size: 14px;}
+.container {padding: 4px 0; background: #f8f8f8;}
+.ps3 {line-height: 1.4em;}
+.ps3:after {content: ""; display: block; clear: both;}
 /*옵션상품추가 영역*/
 /*checkbox 커스터마이징*/
 #contents .add input[type="checkbox"] {
@@ -89,8 +104,8 @@ padding-bottom: 5px; border-bottom: 1px solid #696969;}
 	border: none; background-color: #FCAD17;
 	background-size: 50px; background-position: -25px -1px;
 }
-
-.add {border: none; margin-top: 30px;}
+/* add영역*/
+.add {border: none; margin-top: 15px; border-top: 2px solid #FF912F;}
 .add h3 {background-color: #F3F3F3; padding: 6px 8px;}
 .add .t01 {width: 12%;}
 .add .t02 {width: 62%;}
@@ -99,7 +114,7 @@ padding-bottom: 5px; border-bottom: 1px solid #696969;}
 /*radio checked일 경우*/
 .term ul.on li {background-color: #fff7eb;}
 .term ul.on .t04 {color: #FF3600; font-weight: 700;}
-.add p {font-size: 13px; font-weight: 600; line-height: 1.8em;}
+/* .add p {font-size: 13px; font-weight: 600; line-height: 1.8em;} */
 
 /*결제정보*/
 .p_ctgr {border-bottom: 1px solid #ccc;}
@@ -131,7 +146,8 @@ padding-bottom: 5px; border-bottom: 1px solid #696969;}
 .price > ul li p:first-child {float: left;}
 
 .p_price p + p {font-weight: 800;}
-.p_price li:last-child p:last-child { color: #f93500;}
+.p_price li:nth-child(2) p:last-child {color: #f93500;}
+/* .p_price .hl {color: color: #f93500;} */
 
 .p_total {padding: 10px 0;}
 .price .p_total p:first-child {font-size: 18px; line-height: 2.2em;}
@@ -181,11 +197,11 @@ padding-bottom: 5px; border-bottom: 1px solid #696969;}
 #panel .txtara {display: none; position: relative; top: -1px; height: 100px; resize: none; text-align: left; padding: 5px 2px; border: 1px solid #dedede; overflow-y: scroll; overflow-x: hidden; border-bottom-left-radius: 6px; border-bottom-right-radius: 6px;}
 #panel .txtara li {padding: 0; font-size: 14px; font-weight: 400; line-height: 1.3em; text-indent: 14px;}
 #panel .txtara .idt {text-indent: 0;}
-#panel + p, #panel + p + p {display: block; margin: 0 auto; padding: 0; width: 88%; font-size: 13px; line-height: 1.3em; background-color: transparent; letter-spacing: -1px;}
-@media (max-width: 320px){
-	#panel + p, #panel + p + p {width: 90%;}
-}
-#panel + p + p {text-indent: 14px;}
+.ps:after {content: ""; display: block; clear: both;}
+.ps {font-size: 13px; letter-spacing: -1px; margin: 3px 18px 0; line-height: 1.3em;}
+.ps span {display: inline-block; float: left;}
+.ps span:first-child {width: 12px;}
+.ps span:last-child {width: 95%;}
 
 /*카드 무이자 할부 혜택 영역*/
 .card {letter-spacing: 0; margin-top: 30px;}

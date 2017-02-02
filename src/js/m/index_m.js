@@ -61,7 +61,7 @@ $(function() {
 	});
 	// 마커 위에 표시할 인포윈도우를 생성한다
 	var infowindow = new daum.maps.InfoWindow({
-		content: '<div style="text-align:center; font-size:11px; padding:6px;">서울 강남구 테헤란로82길 15</div>' // 인포윈도우에 표시할 내용
+		content: '<div style="text-align:center; width:140px; font-size:11px; padding:6px;">서울 강남구 테헤란로82길 15</div>' // 인포윈도우에 표시할 내용
 	});
 
 	// 인포윈도우를 지도에 표시한다

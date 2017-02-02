@@ -1,69 +1,75 @@
 /*단계 bar*/
 .inf_bar {position: relative; width: 100%;}
-.inf_bar li {position: relative; float:left; height: 34px; line-height: 34px; background-color: #F3F3F3; font-size: 12px; font-weight: 500; color: #4C4C4C; text-align: center; width: 20%; text-indent: 5px; box-sizing: border-box;}
-.inf_bar .ib0 {font-weight: 700; width: 40%; font-size: 14px; text-align: left;}
+.inf_bar li {position: relative; float:left; height: 34px; line-height: 34px; background-color: #F3F3F3; font-size: 12px; font-weight: 500; color: #4C4C4C; text-align: center; width: 33.3%; text-indent: 5px; box-sizing: border-box;}
+/* .inf_bar .ib0 {font-weight: 700; width: 40%; font-size: 14px; text-align: left;} */
+@media(max-width: 320px) {
+	.inf_bar li { letter-spacing: -1px; }
+}
 .inf_bar .ib2 {background-color: #D0D0D0;}
-.inf_bar .ib3 {background-color: #E0E0E0;}
+.inf_bar .ib1 {background-color: #E0E0E0;}
+.inf_bar .ib3 {background-color: #d0d0d0;}
 .inf_bar li.on {background-color: #5B5B59; color: #fff;}
 .inf_bar li:after {z-index: 1; position:absolute; top: 0; right: -25px; content: ""; display: block;
 border:17px solid transparent;  border-left-color: #f3f3f3; border-left-width: 8px;}
 .inf_bar li.on:after {border-left-color: #5B5B59;}
-.inf_bar .ib0:after {border-left-color: #f3f3f3;}
+.inf_bar .ib1:after {border-left-color: #e0e0e0;}
 .inf_bar .ib2:after {border-left-color: #d0d0d0;}
 .inf_bar .ib3:after {display: none;}
 
 /*main 섹션*/
-#main {letter-spacing: -1px;}
-#main h2 {color: #3C3C3C; font-size: 54px; font-weight: 600; margin-top: 28px;}
-#main h2 span:first-child {display: inline-block; color: #fff; background-color: #3c3c3c; height: 45px; width: 168px; line-height: 52px;}
-#main h2 span:last-child {position: relative; left: -4px;}
-#main h2 + p {margin-top: 12px;}
-#main p {color: #ff7700; font-weight: 600; text-align: center; line-height: 1.3em;}
-#main h2 + p + p {color: #4c4c4c; font-size: 14px; margin-top: 10px;}
-@media (max-width: 320px){
-	#main p {font-size: 14px}
-	#main h2 + p + p {font-size: 13px;}
-}
+#main h2 {text-align: center; color: #4c4c4c; font-size: 16px; margin-top: 20px;
+line-height: 1.3em; font-weight: 600;}
 
 /*컨텐츠*/
-#contents {position: relative; padding: 0 5px; margin-top: 30px; color: #4c4c4c;}
+#contents {position: relative; padding: 0 5px; color: #4c4c4c;}
 #contents h2 {font-size: 15px; font-weight: 700; color: #4c4c4c; text-align: left; line-height: 1em;}
 /*신규사업자, 사업자보유자 라디오박스*/
 .tit input[type=radio] {top: -1px;}
 /*카테고리*/
 .category {position: relative; margin-top: 6px;}
-.category .tit label {font-size: 14px; color: #fff;}
+.category .tit label {font-size: 14px; letter-spacing: -1px;}
 .category ul li {float: left; text-align: center;}
 .category ul li {width: 50%; box-sizing: border-box;}
 .tit input {margin-right: 3px;}
 .category p {padding: 6px;}
-.category p:first-child {background-color: #3E3E3E; border-right: 1px solid #ccc;}
-.category .tit + p {padding-top: 10px; height: 52px; background-color: #F5F5F5; font-size: 12px; line-height: 1.4em; border-bottom: 1px solid #ccc; letter-spacing: -1px;}
-.category ul:first-child .tit + p {border-right: 1px solid #ccc;}
+.category .tit {border-top: 3px solid #958F8F;}
+.category .tit + p {/* padding-top: 10px; height: 52px; background-color: #F5F5F5; */
+font-size: 12px; line-height: 1.4em; letter-spacing: -1px; padding-top: 0px;} 
+
 
 /*업종선택*/
 .st_wrap {padding-left: 5px;}
-.st_wrap select {width: 70%; padding: 8px 0; margin: 16px 0 4px 0px; text-indent: 5px;}
+.st_wrap select {width: 70%; padding: 6px 0; margin: 16px 0 4px 0px; text-indent: 5px;}
 .st_wrap select > option {text-indent: 5px;}
 .st_wrap p {font-size: 13px; line-height: 1.4em;}
 .st_wrap select + p + p {text-indent: 12px;}
 
 /*담당자, 명의자 공통*/
+.manager { position: relative; background: #F9F9F9; border-bottom: 3px solid #ddd; padding-bottom: 3px;} 
 .manager select {background-size: 8px;}
 .manager span {display: inline-block; text-align: center;}
 /*계약 담당자 정보*/
-.manager { position: relative; margin-top: 10px; height: 336px; background: #F9F9F9;}
 /*.mng_clsBtn {position: absolute; top: -34px; right: 0px;}*/
 .manager h3 {color:#424242; text-align: center; font-size: 16px; font-weight: 700; line-height: 2.4em; border-top:1px solid #4c4c4c; background-color: #FEECD6;}
 .manager ul {padding-top: 10px;}
-.manager ul li {position: relative; padding: 4px 10px; line-height: 2.0em;}
+.manager ul li {position: relative; padding: 3px 10px;}
 .manager label {display: inline-block; width: 32%; font-size: 14px; font-weight: 600;}
-.manager input, .manager select {width: 65%; height: 30px; border-radius: 4px; border: 1px solid #888; text-indent: 5px; box-sizing: border-box;}
+.manager input, .manager select {width: 65%; height: 28px; border-radius: 4px; border: 1px solid #888; text-indent: 5px; box-sizing: border-box;}
 /*연락처*/
 .mng_num, .mng_pax, .manager .m_num input, .manager .m_pax input, .manager .mng_num {width: 19.7%;}
-.manager .m_num span, .manager .m_pax span, .manager .m_jm span {width: 3%;}
+.manager .m_num span, .manager .m_pax span, .manager .m_jm span, .m_snum span {width: 3%;}
+/* 사업자등록번호 */
+.manager .m_snum input:nth-child(2) {width: 18.7%;}
+.manager .m_snum input:nth-child(4) {width: 12.7%;}
+.manager .m_snum input:nth-child(6) {width: 27.7%;}
+.m_snum label {letter-spacing: -1px; font-size: 13px;}
 /*주민등록번호*/
-.manager .m_jm input {width: 31%;}
+.manager .m_jm input {width: 28%;}
+.manager .m_jm input:last-child {width: 10%;}
+/* 주소 */
+.manager .mng_adr {width: 31%;}
+.manager .mng_adr + input[type="button"] {width: 80px; color: #fff; background-color: #403C3C;text-indent: 0;}
+
 /*이메일*/
 .mng_email + span + select {text-indent: 0px; width: 29%;}
 .manager .mng_email {width: 31%;}
@@ -75,24 +81,21 @@ border:17px solid transparent;  border-left-color: #f3f3f3; border-left-width: 8
 @media (min-width: 321px){
 	.manager .m_em .cf_txt, .manager .m_pax .cf_txt {font-size: 11px;}
 }
-/*팩스번호*/
-.manager .m_pax {margin-top: -10px;}
-.manager .m_pax .cf_txt {}
 
 /*계약 명의자 정보*/
-.lessee, .refund {margin-top: 30px;}
+.lessee {display: none;}
 
 /* .lessee > h3 > input[type="checkbox"] {width: 14px; height: 14px; top: -1px;}
 .lessee > h3 > input[type="checkbox"] + label {position: relative; display: inline-block; width: 40%; font-size: 11px; letter-spacing: -1px; text-align: left;}
 .manager #les_est {	background-color: #f7f7f7; } */
 
-.lessee > h3 > input[type="checkbox"] {position: relative; width: 14px; height: 14px;}
-.lessee > h3 > input[type="checkbox"] + label {position: relative; display: inline-block; width: 40%; font-size: 11px; letter-spacing: -1px; text-align: left;}
-.lessee > h3 > input[type="checkbox"] + label:active:before,
-.lessee > h3 > input[type="checkbox"]:checked + label:active:before {
+.manager > h3 > input[type="checkbox"] {position: relative; width: 14px; height: 14px;}
+.manager > h3 > input[type="checkbox"] + label {position: relative; display: inline-block; width: 40%; font-size: 11px; letter-spacing: -1px; text-align: left;}
+.manager > h3 > input[type="checkbox"] + label:active:before,
+.manager > h3 > input[type="checkbox"]:checked + label:active:before {
 	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
 }
-.lessee > h3 > input[type="checkbox"] {
+.manager > h3 > input[type="checkbox"] {
 	-webkit-border-radius:1px; -webkit-appearance:none;
 	display: none;
  	position: absolute;
@@ -104,7 +107,7 @@ border:17px solid transparent;  border-left-color: #f3f3f3; border-left-width: 8
 	clip: rect(0, 0, 0, 0);
 	border: 0
 }
-.lessee > h3 > input[type="checkbox"] + label:before {
+.manager > h3 > input[type="checkbox"] + label:before {
 	content: ' ';
 	display: inline-block;
 	width: 12px;  
@@ -118,7 +121,7 @@ border:17px solid transparent;  border-left-color: #f3f3f3; border-left-width: 8
 	border-radius : 3px;
 	box-shadow: 0px 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
 }
-.lessee > h3 > input[type="checkbox"]:checked + label:before {
+.manager > h3 > input[type="checkbox"]:checked + label:before {
 	content: '\2714';  
 	text-indent: -2px;
 	color: #99a1a7;
@@ -129,10 +132,19 @@ border:17px solid transparent;  border-left-color: #f3f3f3; border-left-width: 8
 	border-color: #adb8c0;
 	box-shadow: 0px 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
 }
-	
+/* 발급 이후 변경 가능 */
+.ps:after, .ps2:after {content: ""; display: block; clear: both;}
+.ps, .ps2 {font-size: 14px; letter-spacing: -1px; margin-top: 10px; line-height: 1.3em;}
+.ps span, .ps2 span {display: inline-block; float: left;}
+.ps span:first-child {width: 14px;}
+.ps span:last-child {width: 95%;}
+.ps2 span:first-child {width: 12px;}
+.ps2 span:last-child {width: 96%;}
+.ps2 {font-size: 13px; line-height: 1.4em; margin-top: 0;}
+.ps2.mt {margin-top: 5px;}
 /*환불계좌정보*/
-.refund {height: 180px;}
-.refund h3 {background-color:#F9F9F9; border-top: 2px solid #b2b2b2; font-size: 14px; font-weight: 600; letter-spacing: -1px;}
+.refund {margin-top: 10px; border-bottom: none;}
+.refund h3 {background-color:#F9F9F9; border-top: 1px solid #4d4848; font-size: 14px; font-weight: 600; letter-spacing: -1px;}
 .refund h3 span {font-size: 11px;  color: #ff7700;}
 @media (max-width: 320px){
 	.refund h3 span {font-size: 10px}
@@ -145,3 +157,4 @@ border:17px solid transparent;  border-left-color: #f3f3f3; border-left-width: 8
 /*확인버튼*/
 .btn_wrap {padding: 30px 0;}
 .btn_wrap input {display: block; width: 60%; color: #fff; font-size: 18px; line-height: 2.2em; margin: 0 auto; border-radius: 4px; border: none; background: #FF8400; cursor: pointer;}
+
