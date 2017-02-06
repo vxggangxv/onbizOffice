@@ -91,10 +91,16 @@ $(document).ready(function() {
 		$("#load_wrap").addClass("on");
 		setTimeout(function() {
 			$("#load_wrap").removeClass("on");
-			$("#comp_wrap").addClass("on");
-		}, 1000);
-	});
-	
+			$("#comp_wrap").addClass("on");			
 
-
+			$.ajax({
+				url : "/rent/state.php",
+				data: "mode=sign&oid=" + $("#oid").val() + "&sign=" + encodeURIComponent(signaturePad.toDataURL()),
+				type : "post",
+				success: function(r) {					
+					$("#sform").submit();
+				}
+			});
+		}, 5000);
+	});	
 });
