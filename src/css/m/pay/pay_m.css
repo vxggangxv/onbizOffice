@@ -198,7 +198,7 @@ padding-bottom: 5px; border-bottom: 1px solid #696969;}
 #panel .txtara li {padding: 0; font-size: 14px; font-weight: 400; line-height: 1.3em; text-indent: 14px;}
 #panel .txtara .idt {text-indent: 0;}
 .ps:after {content: ""; display: block; clear: both;}
-.ps {font-size: 13px; letter-spacing: -1px; margin: 3px 18px 0; line-height: 1.3em;}
+.ps {font-size: 13px; letter-spacing: -1px; margin: 3px 0; line-height: 1.3em;}
 .ps span {display: inline-block; float: left;}
 .ps span:first-child {width: 12px;}
 .ps span:last-child {width: 95%;}
