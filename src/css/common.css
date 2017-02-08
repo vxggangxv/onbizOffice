@@ -3,9 +3,11 @@
 @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 
-* {margin:0; padding:0; font-family: 'Noto Sans KR', 'Nanum Gothic', 'Malgun Gothic', sans-serif;}
+* {margin:0; padding:0; font-family: 'Nanum Gothic', 'Malgun Gothic', sans-serif;}
 ul,ol {list-style-type:none;}
 a {text-decoration:none; color: #434343;}
+
+.in {display: inline;}
 
 /* input, label 설정 */
 input[type="reset"], input[type="button"] {cursor: pointer;}
@@ -66,9 +68,31 @@ input[type="checkbox"]:checked + label:before {
 /* 전체 영역 */
 #wrap {position:relative; width:100%;}
 /* 헤더 영역 */
+.h_wrap {width: 100%; padding-bottom: 10px; border-bottom: 1px solid #ededed;}
+/*로고*/
 /* background:url('http://img.onbiz.co.kr/gnb_Bg01.gif') no-repeat; */
+#header {width: 980px; margin: 0 auto; padding-top: 15px;}
+#header h2 {float: left; width: 467px;}
+/*글로벌네비게이션*/
+.g_wrap {width: 390px; float: right;}
+#gnb {background: #f0eeee;}
+#gnb h2 {display: inline-block; width: 157px; height: 35px; color: #fff; line-height: 2.1em; text-align: center;
+	background:url('http://img.onbiz.co.kr/gnb_Bg01.gif') no-repeat; font-size: 17px; font-weight: 700;}
+#gnb h2 a {color: #fff;}
+#gnb h2, #gnb ul {float: left;}
+#gnb ul {margin-left: 20px;}
+#gnb ul li {float:left; line-height: 2.2em; margin-right: 10px; text-align: center;}
+#gnb ul li:nth-child(2) {position: relative; top: 1px;}
+#gnb ul li a {font-size: 14px;}
+#gnb a {display: inline-block; height: 35px;}
+.g_wrap p {text-align: right; margin-top: 10px; font-size: 14px; color: #ff7e3f;}
 
-
+/*네이게이션 바*/
+#nb {margin-top: 35px; height: 45px; border-bottom: 5px solid #676767;}
+#nb h2 {font-size: 28px; color: #000;}
+#nb h2, #nb ul {float: left;}
+#nb ul {float: right;}
+#nb ul li {float:left; font-size: 18px; font-weight: 600; color: #898989; line-height: 2em;}
 
 /* 푸터 영역 */
 #footer {width:100%; background: #fff; padding: 10px 0; border-top: 1px solid #ededed;}
