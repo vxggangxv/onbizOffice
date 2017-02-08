@@ -15,32 +15,31 @@ table{border-collapse:collapse;}
 article, aside, hgroup, header, footer, figure, figcaption, nav, section,time, mark, canvas, video, 
 audio, details, summary {display:block;}
 input {outline-style:none}
-http://img.onbiz.co.kr{border:none;}
-.clear{clear:both;content:"";display:block;}
+img.onbiz.co.kr{border:none;}
+.clear:before, .clear:after {content:"";display:block;}
+.clear:after {clear:both;}
 
 html, body{
 
 	
 	}
 
-#wrapeer{width:100%;height:100%;margin:0 auto;background:#f9f9f9;}
+#wrapeer{width:100%;height:100%;margin:0 auto;}
+.h_wrap {width: 100%; padding-bottom: 5px; border-bottom: 1px solid #ededed;}
 #wrap{
-	width:1350px;
+	width:980px;
 	height:auto;
-	overflow:hidden;
 	margin:0 auto;
 	background:#fff;
-	border-left:1px solid #e0e0e0;
-	border-right:1px solid #e0e0e0;
 	}
-#header{width:980px;height:149px;margin:0 auto;padding-top:15px;}
-#logo{float:left;width:467px;height:102px;line-height:102px;}
+#header{width:980px;margin:0 auto;padding-top:15px;}
+#logo{float:left;width:467px;height:82px;}
 #logo http://img.onbiz.co.kr{width:467px;height:61px;vertical-align:middle;}
 
 #gnb{width:510px;}
 #gnb{float:right;width:510px;}
 #gnb ul{float:right;width:390px;height:35px;background:#f0eeee;}
-#gnb ul li{float:left;line-height:37px;text-align:center;}
+#gnb ul li{float:left;line-height:33px;text-align:center;}
 .gnb_m01{width:auto;height:35px;margin-left:10px;padding:0px 10px;}
 .gnb_m02{width:auto;height:35px;margin-left:5px;padding:0px 10px;}
 .gnb_m a{font-family:'Nanum Gothic' , sans-serif;font-size:14px;color:#454545;}
@@ -68,32 +67,26 @@ html, body{
 	}
 
 #lnb{
-	clear:both;
+	margin: 25px auto 0;
+	padding-bottom: 10px;
+	border-bottom: 5px solid #676767;
 	width:980px;
 	height:40px;
 	line-height:40px;
-	background:#ececec;
-	border:1px solid #d2d2d2;
 	}
 #lnb .menuTitle{
 	float:left;
 	margin-left:15px;
 	font-family:'Nanum Gothic' , sans-serif;
-	font-size:17px;
+	font-size:28px;
 	font-weight:bold;
-	color:#434343;
+	color:#000;
 	}
-#lnb ul.navi{float:right;width:393px;height:40px;}
-#lnb ul.navi li{float:left;width:130px;text-align:center;color:#646464;font-family:'Nanum Gothic' , sans-serif;font-size:14px;}
-#lnb ul.navi li.navi_1 p{width:80px;margin-left:30px;}
-#lnb ul.navi li.navi_2 p{width:120px;margin-left:10px;}
-#lnb ul.navi li.navi_3 p{width:120px;margin-left:13px;}
+#lnb ul.navi{float:right;height:40px;}
+#lnb ul.navi li{float:left;text-align:center;color:#898989;font-family:'Nanum Gothic' , sans-serif;font-size:18px;font-weight:600; letter-spacing: -1;}
+#lnb ul.navi li p{margin-left:10px;}
 
-#lnb ul.navi li.here{font-family:'Nanum Gothic' , sans-serif;color:#fff;font-weight:bold;}
-#lnb ul.navi_01{background:url(http://img.onbiz.co.kr/navi_01.gif) no-repeat;}
-#lnb ul.navi_02{background:url(http://img.onbiz.co.kr/navi_02.gif) no-repeat;}
-#lnb ul.navi_03{background:url(http://img.onbiz.co.kr/navi_03.gif) no-repeat;}
-#lnb ul.navi_04{background:url(http://img.onbiz.co.kr/navi_04.gif) no-repeat;}
+#lnb ul.navi li.here{font-family:'Nanum Gothic' , sans-serif;color:#000;}
 
 
 
@@ -785,7 +778,7 @@ html, body{
 .here_chk{background:#fff7e8;}
 .here_chk p{font-family:'Nanum Gothic' , sans-serif;color:#ff4d1c;font-weight:bold;}
 
-.paymentBox .payment_title http://img.onbiz.co.kr{padding-right:4px;}
+.paymentBox .payment_title img {padding-right:4px;}
 .paymentBox .payment {height:20px;padding:5px 0px;border-bottom:1px solid #dadada;}
 .paymentBox .payment li{float:left;font-size:15px;padding-top:2px;}
 .goods_choice .paymentBox p.s_txt{margin-top:10px;font-size:13px;line-height:16px;}
@@ -1224,7 +1217,7 @@ p.file_upload span{display:block;padding-bottom:5px;}
 	}
 
 #footer{
-	width:1350px;
+	width:980px;
 	height:80px;
 	border-top:1px solid #e0e0e0;
 	text-align:center;

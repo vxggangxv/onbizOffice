@@ -14,9 +14,10 @@ footer {background-color:#F2F2F2; height: 200px; border-bottom:10px solid gray;}
 .ptr {cursor: pointer;}
 /* 슬라이드 */
 .swiper-container {width:100%; height:310px; overflow:hidden; float:left;}
-.swiper-container img {max-width:100%;}
+.swiper-container img {display: block; max-width:100%; margin:0 auto;}
 .swiper-slide {
-display: -webkit-box;
+
+/* display: -webkit-box;
 display: -ms-flexbox;
 display: -webkit-flex;
 display: flex;
@@ -27,7 +28,7 @@ justify-content: center;
 -webkit-box-align: center;
 -ms-flex-align: center;
 -webkit-align-items: center;
-align-items: center;
+align-items: center; */
 } 
 /* 메인이미지 */
 .top_box { position:absolute; top:285px; left:50%; margin-left:-145px; z-index:10; text-align:center; letter-spacing: -1px; font-size:15px;}
