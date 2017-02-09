@@ -8,13 +8,16 @@
 #main h3 img {display: block; margin: 0 auto;}
 
 /*카테고리 영역*/
-.category ul li {position: relative;float: left; width: 50%; height: 80px; text-align: center; background: #444444; color: #fff;}
-.category ul li.on {top: -10px; height: 90px; background: #FF9000;}
-.category h3 {font-size: 24px; margin-top: 16px;}
+.category > ul li {position: relative;float: left; width: 50%; height: 80px; text-align: center; background: #444444; color: #fff;}
+.category h3 {font-size: 24px; margin-top: 6px;}
+.category > ul li.on {top: -10px; height: 90px; background: #FF9000;}
+.category > ul li.on h3 {margin-top: 16px;}
 .category p {margin-top: 5px;}
 /*업종 선택*/
-.st_wrap {position: relative; }
-.st_wrap .selectBox {display: block; margin: 5px auto 0;}
+.st_wrap {position: relative;}
+.st_wrap .selectBox {display: block; width: 432px; margin: 5px auto 0;}
+.st_wrap .selectBox .s_btn {width: 100%; text-align: left; text-indent: 15px; height: 36px; font-size: 15px;
+}
 .st_wrap p {text-align: center; font-size: 14px; color: #555; letter-spacing: -1px; margin: 12px 0 17px;}
 
 /*컨테이너 영역*/
@@ -26,9 +29,10 @@
 #container li label {display: inline-block; font-size: 15px; width: 120px; text-indent: 10px; color: #333;}
 #container li input {width: 307px; height: 36px; border: 1px solid #a9a9a9; text-indent: 15px; font-size: 15px;}
 #container li input:focus {color: #333;}
-#container .m_jm span {display: inline-block; width: 17px; text-align: center; font-weight: 800;}
+#container .m_jm span, #container .l_snum span {display: inline-block; width: 17px; text-align: center; font-weight: 800;}
 #container .mng_jm {width: 142px;}
 #container .m_jm input:last-child {width: 40px; margin-right: 5px;}
+#container .mTxt {padding-left: 120px; font-size: 14px; letter-spacing: -1px; margin: 5px 0 12px;}
 #container .m_adr input[type=text] {width: 185px; margin-right: -4px;}
 #container .m_adr a {display: inline-block; width: 122px; height: 36px; vertical-align: middle; line-height: 2.4em; border: 1px solid #a9a9a9; border-left: none; font-size: 14px; color: #222; text-align: center;
   background: #ffffff; 
@@ -39,6 +43,14 @@
 }
 #container .m_emt {margin-top: -1px;}
 #container .m_emt input {width: 307px;}
+
+#container .l_snum input:nth-child(2) {width: 90px;}
+#container .l_snum input:nth-child(4) {width: 60px;}
+#container .l_snum input:nth-child(6) {width: 123px;}
+
+.lessee p {position: absolute; width: 432px; left: 50%; margin-left: -216px; top: -32px; text-align: right;}
+
+#container section:first-child {display: none;}
 
 /*다음단계 버튼*/
 .nBtn {position: relative; display: block; margin: 15px auto; width: 268px; height: 56px; background: #ff9000; color: #fff; font-size: 20px; font-weight: 700; border-radius: 4px; text-align: center; line-height: 3em;}
