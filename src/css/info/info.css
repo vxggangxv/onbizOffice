@@ -1,11 +1,7 @@
 @charset "utf-8";
 /* 공통 css */
-/* @import url(http://static.onbiz.co.kr/css/common.css); */
-@import url(../common.css);
+@import url(http://static.onbiz.co.kr/css/reset.css); 
 
-/*메인 영역*/
-#main {padding: 30px 15px;}
-#main h3 img {display: block; margin: 0 auto;}
 
 /*카테고리 영역*/
 .category > ul li {position: relative;float: left; width: 50%; height: 80px; text-align: center; background: #444444; color: #fff;}
@@ -26,15 +22,15 @@
 #container ul {width: 432px; margin: 0 auto;}
 #container li {margin-top: 9px; color: #888;}
 #container li:first-child {margin-top: 0px;}
-#container li label {display: inline-block; font-size: 15px; width: 120px; text-indent: 10px; color: #333;}
-#container li input {width: 307px; height: 36px; border: 1px solid #a9a9a9; text-indent: 15px; font-size: 15px;}
-#container li input:focus {color: #333; outline: 2px solid #ff9000;}
+#container li > label {display: inline-block; font-size: 15px; width: 120px; text-indent: 10px; color: #333;}
+#container li > input {width: 307px; height: 36px; border: 1px solid #a9a9a9; text-indent: 15px; font-size: 15px;}
+#container li > input:focus {color: #333; border: 2px solid #ff9000; outline: none;}
 #container .m_jm span, #container .l_snum span {display: inline-block; width: 17px; text-align: center; font-weight: 800;}
 #container .mng_jm {width: 142px;}
 #container .m_jm input:last-child {width: 40px; margin-right: 5px;}
 #container .mTxt {padding-left: 120px; font-size: 14px; letter-spacing: -1px; margin: 5px 0 12px;}
-#container .m_adr input[type=text] {width: 185px; margin-right: -4px;}
-#container .m_adr a {display: inline-block; width: 122px; height: 36px; vertical-align: middle; line-height: 2.4em; border: 1px solid #a9a9a9; border-left: none; font-size: 14px; color: #222; text-align: center;
+#container .m_adr input[type=text] {width: 185px; margin-right: -5px;}
+#container .m_adr a {display: inline-block; width: 123px; height: 36px; vertical-align: middle; line-height: 2.4em; border: 1px solid #a9a9a9; font-size: 14px; color: #222; text-align: center;
   background: #ffffff; 
   background: -moz-linear-gradient(top,  #ffffff 0%, #efefef 100%); 
   background: -webkit-linear-gradient(top,  #ffffff 0%,#efefef 100%); 
@@ -54,4 +50,7 @@
 
 /*다음단계 버튼*/
 .nBtn {position: relative; display: block; margin: 15px auto; width: 268px; height: 56px; background: #ff9000; color: #fff; font-size: 20px; font-weight: 700; border-radius: 4px; text-align: center; line-height: 3em;}
-.nBtn i {position: absolute; right: 50%; margin-right: -110px; top: 50%; margin-top: -14px; font-size: 30px;}
+.nBtn i {position: absolute; right: 50%; margin-right: -110px; top: 50%; margin-top: -15px; font-size: 30px;}
+
+/*pie - ie8 border-radius작동 적용*/
+.nBtn {behavior: url("http://static.onbiz.co.kr/js/pie/PIE.htc");}

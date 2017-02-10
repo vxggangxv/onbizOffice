@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* 공통 css */
+@import url(http://static.onbiz.co.kr/css/reset.css); 
+
+
+/*네비게이션 바*/
+#nb h2 + a {display: inline-block; width: 233px; height: 37px; border-radius: 4px; background: #444; color: #fff; font-weight: 600; line-height: 2.4em; text-align: center; letter-spacing: -1px; float: right;}
+#nb h2 + a > i {position: relative; top: 2px; left: 5px; font-size: 24px; font-weight: 400;}
+/*메인 영역*/
+#main {padding-top: 44px;}
+#main > ul {display: table; text-align: center; margin: 30px auto 20px;}
+#main > ul li {display: table-cell; float: left; padding: 20px 40px; border-radius: 100px; background: #ff9000; color: #fff; font-weight: 600; font-size: 18px; margin-left: 30px;}
+#main > ul li:first-child {margin-left: 0;}
+#main > ul li:nth-child(even) {background: #999999;}
+
+/* 신청하기 영역 */
+.container {position: relative; padding: 40px 40px 30px; background: #F9F9F9; box-sizing: border-box; border: 1px solid #ddd;}
+.container h3 {position: absolute; top: 0; left: 0; font-size: 21px; line-height: 1.3em;}
+.container ul {width: 432px; margin: 0 auto;}
+.container li {margin-top: 9px; color: #888;}
+.container li:first-child {margin-top: 0px;}
+.container li > label {display: inline-block; font-size: 15px; width: 120px; text-indent: 10px; color: #333;}
+.container li > input {width: 307px; height: 36px; border: 1px solid #a9a9a9; text-indent: 15px; font-size: 15px;}
+.container li > input:focus {color: #333; outline: none; border: 2px solid #ff9000;}
+
+.container .selectBox {display: inline-block; width: 307px;}
+.container .selectBox i {color: #333;}
+
+/*신청하기 버튼*/
+.nBtn {position: absolute; display: block; top: 50%; margin-top: 2px; left: 50%; margin-left: 234px; width: 180px; height: 66px; background: #ff9000; color: #fff; font-size: 20px; font-weight: 700; border-radius: 4px; text-align: center; line-height: 3.4em;}
+.nBtn i {position: relative; top: 3px; left: 10px; font-size: 30px;}
+
+/*안내 설명글 영역*/
+.guide {margin: 50px 0; padding: 0px 40px;}
+.guide > div {float: left;}
+.guide > div:nth-child(1) {width: 520px;}
+.guide > div:nth-child(2) {width: 380px;}
+.guide li {color: #333; font-size: 15px; line-height: 1.5em;}
+.guide li h2 {display: inline-block; font-size: 18px; position: relative; left: 32px;}
+.guide li:first-child:before {content: ""; position: absolute; display: inline-block; top: -5px; width: 30px; height: 30px; background: url("http://img.onbiz.co.kr/onb_picto.png") no-repeat center -180px;}
+.guide li:nth-child(2) {margin-top: 20px;}
+
+/*pie - ie8 border-radius작동 적용*/
+#nb h2 + a, #main > ul li, .nBtn {behavior: url("http://static.onbiz.co.kr/js/pie/PIE.htc");}
