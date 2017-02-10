@@ -15,7 +15,7 @@
 .category p {margin-top: 5px;}
 /*업종 선택*/
 .st_wrap {position: relative;}
-.st_wrap .selectBox {display: block; width: 432px; margin: 5px auto 0;}
+.st_wrap .selectBox {display: block; margin: 5px auto 0;}
 .st_wrap .selectBox .s_btn {width: 100%; text-align: left; text-indent: 15px; height: 36px; font-size: 15px;
 }
 .st_wrap p {text-align: center; font-size: 14px; color: #555; letter-spacing: -1px; margin: 12px 0 17px;}
@@ -28,7 +28,7 @@
 #container li:first-child {margin-top: 0px;}
 #container li label {display: inline-block; font-size: 15px; width: 120px; text-indent: 10px; color: #333;}
 #container li input {width: 307px; height: 36px; border: 1px solid #a9a9a9; text-indent: 15px; font-size: 15px;}
-#container li input:focus {color: #333;}
+#container li input:focus {color: #333; outline: 2px solid #ff9000;}
 #container .m_jm span, #container .l_snum span {display: inline-block; width: 17px; text-align: center; font-weight: 800;}
 #container .mng_jm {width: 142px;}
 #container .m_jm input:last-child {width: 40px; margin-right: 5px;}
