@@ -17,4 +17,22 @@ $(document).ready(function() {
     $(this).closest("ul").next().children().removeClass("on");
     $(this).closest("ul").next().children().eq(thIdx).addClass("on");
   });
+  /*스크롤 시 사이드 패널 세로중앙정렬*/
+  $(window).scroll(function() {
+    var st = $(window).scrollTop();
+    var pHeight = $(".price").height();
+    pHeight = pHeight / 2 ;
+    if (st > 130) {
+      $(".price").css({
+        "top": "50%",
+        "margin-top": -pHeight
+      });
+    } else {
+      $(".price").css({
+        "top": "289px",
+        "margin-top": "0"
+      });
+    }
+  });
+  
 });

@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* 공통 css */
+@import url(http://static.onbiz.co.kr/css/reset.css); 
+
+/*신청내역확인*/
+.contract{width:980px;height:100%;margin:20px auto 45px;}
+.contract > div > p{
+  font-family:'Nanum Gothic'
+    font-size:16px;
+  color:#434343;
+  font-weight:bold;
+  margin:15px 0px 5px 0px;
+}
+.contract > div > table {width:980px;bordeR-top:2px solid #ff7e00;}
+.contract > div > table td{height:35px;border:1px solid #878787;padding-left:15px;color:#4b4b4b;}
+.contract > div > table td.th_color{
+  font-family:'Nanum Gothic'
+    background:#f3f3f3;
+  text-align:center;
+  font-size:17px;
+  color:#272727;
+  font-weight:600;
+}
+.contract > div > table td.final_pay02{position:relative;height:50px;}
+.contract > div > table td.final_pay02 > p{font-size:17px;color:#4b4b4b;font-weight:800;}
+.contract > div > table td.final_pay02 span.btnBox3{
+  position:absolute;
+  width:284px;
+  height:30px;
+  right:0;
+  top:10px;
+}
+.contract > div > table td.final_pay02 span.btnBox3 input{
+  width:136px;
+  height:30px;
+  background:#ff7e00;
+  font-family:'Nanum Gothic', sans-serif;
+  color:#fff;
+  border:none;
+  font-size:15px;
+  line-height:30px;
+  font-weight:700;
+  cursor:pointer;
+}
+.contract > div > table td.final_pay02 span.btnBox3 input:hover{background:#ff5a00;}
+.contract  .contract_btn03{width:100%;text-align:center;margin-top:30px;}
+.contract  .contract_btn03 input{
+  width:250px;
+  height:50px;
+  background:#323232;
+  font-family:'Nanum Gothic', sans-serif;
+  color:#fff;
+  border:none;
+  border-radius:5px;
+  font-size:18px;
+  font-weight:600;
+}

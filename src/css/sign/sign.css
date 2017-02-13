@@ -1,0 +1,271 @@
+@charset "utf-8";
+/* 공통 css */
+@import url(http://static.onbiz.co.kr/css/reset.css); 
+
+/*컨텐츠 영역*/
+#container{position: relative; width:100%;}
+#container:after {content: ""; display: block; clear: both;}
+#container .contents{width:980px;height:auto;margin:0 auto;}
+#container .contents .intro p.tit03{font-family:'Nanum Gothic' , sans-serif;font-size:31px;color:#ff5400;font-weight:600;text-align:center;margin:30px 0px;}
+#container .contents .intro p.txt03 {font-family:'Nanum Gothic' , sans-serif;margin-top:35px;text-align:center;font-size:18px;color:#353535;line-height:30px;}
+#container .contents .intro p.txt03 span{font-family:'Nanum Gothic' , sans-serif;font-size:15px; color:#353535;font-weight:500;}
+
+/*신청완료*/
+
+.completion{width:980px;height:500px;bordeR-top:1px dashed #d8d8d8;margin-top:35px;}
+.completion .ex_txt{margin:52px 0px 10px 120px;font-size:18px;}
+.completion ul {
+  width:750px;
+  height:102px;
+  padding-top:5px;
+  border:1px solid #8a8a8a;
+  margin:0 auto;
+}
+.completion ul li {width:750px;height:45px;position:relative;}
+.completion ul li img{display:block;float:left;width:66px;height:22px;margin:10px 0px 0px 23px;}
+.completion ul li p{
+  float:left;
+  width:625px;
+  height:45px;
+  line-height:45px;
+  margin-left:30px;
+  font-family:'Nanum Gothic' , sans-serif;
+  font-size:18px;
+  font-weight:700;
+  color:#5b5b5a;
+}
+.completion ul li p.line_p{border-bottom:1px dashed #8a8a8a;margin-bottom:2px;}
+.completion ul li input{
+  position:absolute;
+  width:163px;
+  height:39px;
+  right:15px;
+  border-radius:5px;
+  background:#ff9320;
+  font-family:'Nanum Gothic' , sans-serif;
+  font-size:17px;
+  font-weight:700;
+  color:#fff;
+  cursor:pointer;
+  border:none;
+}
+
+/*도장이미지 업로드 css*/
+.filebox label {
+  position:absolute;
+  width:163px;
+  height:39px;
+  right:15px;
+  top:5px;
+  font-family:'Nanum Gothic' , sans-serif;
+  color: #fff;
+  font-size:17px;
+  line-height: 39px;
+  text-align:center;
+  vertical-align: middle;
+  background-color: #ff9320;
+  cursor: pointer;
+  font-weight:600;
+  border-radius:5px;
+} 
+.filebox input[type="file"] { /* 파일 필드 숨기기 */
+  position:absolute;
+  width:1px;
+  height:
+    1px;
+  padding:0;
+  margin:-1px;
+  overflow:hidden;
+  clip:rect(0,0,0,0);
+  border: 0;}
+
+.btn_box{width:600px;height:50px;margin:0 auto;padding-top:65px;}
+.btn_box p {float:left;width:290px;height:52px;margin-left:8px;}
+.btn_box p input{
+  width:290px;
+  height:52px;
+  border-radius:5px;
+  font-family:'Nanum Gothic' , sans-serif;
+  font-size:17px;
+  font-weight:600;
+  color:#fff;
+  background:#ff8400;
+  border:none;
+  cursor:pointer;
+}
+.btn_box p.download input{background:#515151;}
+
+
+/*전자서명 팝업창*/
+
+#e_signWraper{position:relative;width:980px;height:100%;}
+#e_signWraper .e_signBg {
+  position:fixed;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  background:#000;
+  opacity:0.8;
+  filter: alpha(opacity=80);
+  z-index:9999;
+}
+
+#e_signWraper .e_sign{
+  position:absolute;
+  width:581px;
+  height:420px;
+  background:#fff;
+  z-index:10000;
+  top:-150px;
+  left:50%;
+  margin-left:-290px;
+  border-radius:5px;
+  padding-top:35px;
+}
+.e_sign_closeBtn{
+  position:absolute;
+  width:16px;
+  height:18px;
+  background:url(http://img.onbiz.co.kr/close.png) no-repeat;
+  top:10px;
+  right:20px;
+  cursor:pointer;
+}
+.tab {
+  position:relative;
+  width:532px;
+  height:400px;
+  margin:0 auto;}
+.tab li a {
+  display:block;
+  position:absolute;
+  top:0;
+  width:265px;
+  height:56px;
+  line-height:56px;
+  text-align:center;
+  background:#b7b6b6;
+  font-family:'Nanum Gothic' , sans-serif;
+  color:#353535;
+  font-weight:600;
+  border-bottom:0;
+}
+.tab li.on a {background:#eeeeee; font-family:'Nanum Gothic' , sans-serif;color:#3c3b3a;font-size:18px;font-weight:700;}
+.tab li:first-child a {left:0;}
+.tab>li+li a {left:265px;}
+.tab li > div {width:530px;height:0; overflow:hidden; position:absolute;}
+.tab li.on > div {
+  position:absolute;
+  top:56px;
+  width:530px;
+  height:340px;
+  background:#eeeeee;
+}
+.tab li.on div > p.signature_txt03{margin:15px 0px 5px 18px;}
+.tab li.on div > .signature{
+  width:490px;
+  height:220px;
+  border-radius:5px;
+  background:#3c3c3c;
+  margin:0 auto;
+}
+.btnBox2{width:530px;height:73px;margin-top:20px;background:#fff;}
+.btnBox2 p.btn_boX{width:500px;height:50px;margin:0 auto;padding-top:7px;}
+.btnBox2 input{
+  display:block;
+  float:left;
+  width:237px;
+  height:50px;
+  margin-left:8px;
+  border:none;
+  font-family:'Nanum Gothic' , sans-serif;
+  color:#fff;
+  font-size:18px;
+  font-weight:700;
+  border-radius:5px;
+  background:#ff8400;
+}
+.btnBox2 input.re_color{background:#686868;}
+
+
+p.file_upload {padding:45px 0px 0px 15px;}
+p.file_upload span{display:block;padding-bottom:5px;}
+.file_input_textbox {
+  float:left;
+  height:48px;
+  width:350px;
+}
+.file_input_div {
+  position:relative;
+  width:120px;
+  height:48px;
+  overflow:hidden;
+}
+.file_input_http://img.onbiz.co.kr_btn {
+  padding:0 0 0 5px;
+}
+.file_input_hidden {
+  font-size:29px;
+  position:absolute;
+  right:0px;
+  top:0px;
+  opacity:0;
+  filter: alpha(opacity=0);
+  -ms-filter: alpha(opacity=0);
+  cursor:pointer;
+}
+.upload_btn{width:100%;height:500px;margin-top:40px;padding-top:35px;background:#fff;}
+.upload_btn input{
+  display:block;
+  width:237px;
+  height:50px;
+  margin:0 auto;
+  border:none;
+  background:#ff8400;
+  font-family:'Nanum Gothic' , sans-serif;
+  color:#fff;
+  border-radius:5px;
+  font-size:18px;
+  font-weight:700;
+}
+
+/*발급중*/
+.loadingBox{width:480px;margin:0 auto;}
+.loading_txt{margin:45px 0px;}
+.loading_txt p{font-family:'Nanum Gothic' , sans-serif;font-size:28px;font-weight:800;color:#323232;text-align:center;line-height:45px;}
+.loading_txt p span{font-family:'Nanum Gothic' , sans-serif;font-size:18px;color:#7a7978;font-weight:600;}
+.loading{width:152px;height:151px;margin:0 auto;}
+
+/*발급완료*/
+.issueBox{text-align:center;}
+.issue_txt{margin:45px 0px 30px 0px;}
+.issue_txt > .txt01{font-size:28px;font-weight:bold;margin-bottom:23px;color:#323232;}
+.issue_txt > .txt02{font-size:22px;font-weight:700;color:#323232;line-height:28px;}
+.issue_txt > .txt02 span{color:#ff8400;}
+.contract_btn{width:229px;height:50px;margin:0 auto;}
+.contract_btn input{
+  width:229px;
+  height:50px;
+  border-radius:5px;
+  background:#323232;
+  font-family:'Nanum Gothic'
+    color:#fff;
+  border:none;
+  font-size:16px;
+  cursor:pointer;
+}
+.issue_btnBox {width:500px;margin:0 auto;padding-top:66px;}
+.issue_btnBox input{
+  width:247px;
+  height:50px;
+  border:none;
+  font-family:'Nanum Gothic'
+    font-size:18px;
+  background:#ff8400;
+  color:#fff;
+  font-weight:600;
+  cursor:pointer;
+  border-radius:3px;
+}
+.issue_btnBox input.particulars {background:#686868}

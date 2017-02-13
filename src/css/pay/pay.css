@@ -12,7 +12,7 @@
 #contents > section > h3 {font-size: 22px; padding: 30px 0px 12px;}
 #contents > section:first-child > h3 {font-size: 22px; padding: 20px 0px 12px;}
 /*임대상품 선택 영역*/
-.term h3 span {font-size: 13px; float: right; color: #444; font-weight: 400;}
+.term h3 span {position: relative; top: 10px;font-size: 13px; float: right; color: #444; font-weight: 400;}
 .term > ul {position: relative; width: 100%;}
 .term > ul li {float: left; width: 166px; height: 175px; border: 1px solid #ccc; box-sizing: border-box;}
 .term > ul li:not(:nth-child(1)) {margin-left: 0px; border-left: none;}
@@ -84,9 +84,9 @@ input[type="checkbox"].o_check + label:before {
   position: relative; top: 1px; right: 0px; width: 20px; height: 20px; cursor: pointer;
   border: 1px solid #a9a9a9; background: #eee;
 }
-input[type="checkbox"]:checked + label:before,
-input[type="checkbox"] + label:active:before,
-input[type="checkbox"]:checked + label:active:before {
+input[type="checkbox"].o_check:checked + label:before,
+input[type="checkbox"].o_check + label:active:before,
+input[type="checkbox"].o_check:checked + label:active:before {
   background: url("http://img.onbiz.co.kr/onb_picto.png") no-repeat center -155px;
   background-size: 30px; background-color: #ff9000; border-color: #ff9000;
 }
@@ -147,41 +147,68 @@ input[type="radio"].co_check:checked + label:active:before {
 .card > p {font-size: 12px; line-height: 1.5em; color: #222;}
 
 /*결제하실 금액*/
-.price {z-index: 2; position: fixed; width: 290px; left: 50%; margin-left: 200px; top: 289px; border: 1px solid #000; letter-spacing: -1px;}
+.price {z-index: 2; position: fixed; width: 290px; left: 50%; margin-left: 200px; top: 289px; letter-spacing: -1px; background: #fff;}
 @media all and (max-width: 980px) {
   .price {left: 690px; margin-left: 0;}
 }
-.price h3 { font-size: 22px; padding: 16px 16px 12px;  border-bottom: 1px solid #b3b3b3; font-weight: 600;}
+.container {border: 1px solid #000;}
+.container h3 { font-size: 22px; padding: 16px 16px 12px;  border-bottom: 1px solid #b3b3b3; font-weight: 600;}
 
-.price > ul {border-bottom: 1px solid #b3b3b3; padding: 8px 0 12px;}
-.price > ul li {margin: 0px 14px 0px; border-bottom: 1px solid #d2d2d2;}
-.price > ul li:last-child {border-bottom: none;}
-.price > ul:nth-child(3) li:last-child {padding-bottom: 6px;}
-.price > ul li:after {content: ""; display: block; clear: both;}
+.container > ul {border-bottom: 1px solid #b3b3b3; padding: 8px 0 12px;}
+.container > ul li {margin: 0px 14px 0px; border-bottom: 1px solid #d2d2d2;}
+.container > ul li:last-child {border-bottom: none;}
+.container > ul:nth-child(3) li:last-child {padding-bottom: 6px;}
+.container > ul li:before, .container > ul li:after {content: ""; display: block;}
+.container > ul li:after {clear: both;}
 
-.price > ul li p {display: inline-block; float: right; font-size: 13px; line-height: 2.5em;}
-.price > ul li p + p {letter-spacing: 0px;}
-.price > ul li p:first-child {float: left;}
-.price > ul li p:last-child {float: right; text-align: right;}
-.price > .p_term li:last-child p:last-child {width: 190px; line-height: 1.5em;}
+.container > ul li p {display: inline-block; float: right; font-size: 13px; line-height: 2.5em;}
+.container > ul li p + p {letter-spacing: 0px;}
+.container > ul li p:first-child {float: left;}
+.container > ul li p:last-child {float: right; text-align: right;}
+.container > .p_term li:last-child p:last-child {width: 190px; line-height: 1.5em;}
 
-.price > ul li p:last-child span {display: inline-block;}
-.price > ul li p:last-child span:first-child {margin-top: 6px;}
+.container > ul li p:last-child span {display: inline-block;}
+.container > ul li p:last-child span:first-child {margin-top: 6px;}
 
-.price > .p_startDate {padding: 16px 0; background: #f5f5f5;}
-.price > .p_startDate li {margin: 0 14px 0;}
-.price > .p_startDate li label {display: block; text-align: center; font-size: 14px; margin-bottom: 5px; color: #222; letter-spacing: 0;}
-.price .selectBox {width: 100%;}
-.price .selectBox .s_btn {background: #fff;}
+.container > .p_startDate {padding: 16px 0; background: #f5f5f5;}
+.container > .p_startDate li {margin: 0 14px 0;}
+.container > .p_startDate li label {display: block; text-align: center; font-size: 14px; margin-bottom: 5px; color: #222; letter-spacing: 0;}
+.container .selectBox {width: 100%;}
+.container .selectBox .s_btn {background: #fff;}
 
-.price > .p_price {border-bottom-color: #d2d2d2; padding-top: 6px;}
-.price > .p_price li:first-child {margin: 0; padding: 0px 14px; border-bottom: 1px dashed #d2d2d2;}
-.price > .p_price li:first-child p {font-size: 15px; font-weight: 600;}
+.container > .p_price {border-bottom-color: #d2d2d2; padding-top: 6px;}
+.container > .p_price li:first-child {margin: 0; padding: 0px 14px; border-bottom: 1px dashed #d2d2d2;}
+.container > .p_price li:first-child p {font-size: 15px; font-weight: 600;}
 .p_price li:last-child p:last-child {color: #f93500;}
 
-.price > .p_total {padding: 8px 0 12px; background: #f5f5f5;}
-.price > .p_total li:first-child {border-bottom: none;}
-.price > .p_total p:first-child {font-size: 16px; line-height: 2.2em; font-weight: 600;}
-.price > .p_total p:last-child {font-size: 14px;}
-.price > .p_total li:last-child p {font-size: 26px; color: #f93500; font-weight: 800; line-height: 1em; letter-spacing: 0; margin-top: -3px;}
-.price > .p_total li:last-child p span:first-child {display: block; font-size: 15px; margin-top: 5px; text-align: right; font-weight: 400; color: #4c4c4c; line-height: 1em;}
+.container > .p_total {padding: 8px 0 12px; background: #f5f5f5; border-bottom: none;}
+.container > .p_total li:first-child {border-bottom: none;}
+.container > .p_total p:first-child {font-size: 16px; line-height: 2.2em; font-weight: 600;}
+.container > .p_total p:last-child {font-size: 14px; color: #4c4c4c;}
+.container > .p_total li:last-child p {font-size: 26px; color: #f93500; font-weight: 800; line-height: 1em; letter-spacing: 0; margin-top: -6px;}
+.container > .p_total li:last-child p span:first-child {display: block; font-size: 15px; margin-top: 5px; text-align: right; font-weight: 400; color: #4c4c4c; line-height: 1em;}
+
+.p_btn {display: block; width: 100%; height: 67px; border-radius: 4px; margin-top: 10px; text-align: center; font-size: 26px; color: #fff; background: #f62600; line-height: 2.6em; font-weight: 600;}
+.p_btn + p {text-align: center; font-size: 15px; padding: 10px 0; color: #555;}
+.p_btn + p span {color: #f62600;}
+
+/*주의 사항 및 약관 동의*/
+#panel {position: relative; background-color: #F5F5F5; border: 1px solid #B3B3B3; padding: 18px 0;}
+#panel > p {position: relative; padding: 0 14px;}
+#panel > p label {font-size: 14px; font-weight: 600;}
+#panel .txtara { position: relative; height: 64px; resize: none; text-align: left; margin: 8px 14px 0; padding: 5px 2px; border: 1px solid #b3b3b3; overflow-y: scroll; overflow-x: hidden; background: #fff;}
+#panel .txtara li {padding: 0; font-size: 14px; font-weight: 400; line-height: 1.3em; text-indent: 14px; letter-spacing: -1px;}
+#panel .txtara .idt {text-indent: 0;}
+
+input[type="checkbox"]#agree + label:before {
+  content: "";
+  display: inline-block;
+  position: relative; top: 4px; right: 0px; margin-right: 5px; width: 14px; height: 14px; cursor: pointer;
+  border: 1px solid #a9a9a9; background: #eee;
+}
+input[type="checkbox"]#agree:checked + label:before,
+input[type="checkbox"]#agree + label:active:before,
+input[type="checkbox"]#agree:checked + label:active:before {
+  background: url("http://img.onbiz.co.kr/onb_picto.png") no-repeat center -82px;
+  background-size: 16px; background-color: #ff9000; border-color: #ff9000;
+}
