@@ -232,16 +232,75 @@
 		  <!--결제수단 선택 영역-->
 		  <section class="way">
 		    <h3>결제수단 선택</h3>
+        <ul id="tab" class="clr">
+          <li class="on">
+            <input type="radio" name="c_option" id="co1" class="co_check" checked="checked">
+            <label for="co1">신용카드(개인, 법인)</label>
+          </li>
+          <li>
+            <input type="radio" name="c_option" id="co2" class="co_check">
+            <label for="co2">신용카드(ISP)</label>
+          </li>
+          <li>
+            <input type="radio" name="c_option" id="co3" class="co_check">
+            <label for="co3">실시간계좌이체</label>
+          </li>
+        </ul>
+        <ul class="t_contents">
+          <li class="on">&#8226; 신용카드 간편결제는 별도의 설치없이 카드정보 입력만으로 간편하게 결제하실 수 있습니다.</li>
+          <li>&#8226; 신용카드(ISP) 결제는 신용카드 별 공인인증서를 통한 결제가 필요합니다.</li>
+          <li>&#8226; 실시간 계좌이체는 고객님 계좌에서 온비즈 오피스로 결제금액이 바로 입금됩니다.</li>
+        </ul>
 		  </section>
-		  <!--카드혜택 영역-->
+      <!--카드무이자할부혜택-->
       <section class="card">
-        <h4>카드 무이자 할부 선택</h4>
+        <h3>&#42; 카드 무이자 할부 혜택</h3>
+        <ul class="clr">
+          <li><p class="c01"></p><p>5만원이상</p><p>2~5개월</p></li>
+          <li><p class="c06"></p><p>5만원이상</p><p>2~5개월</p></li>
+          <li><p class="c02"></p><p>5만원이상</p><p>2~5개월</p></li>
+          <li><p class="c07"></p><p>5만원이상</p><p>2~5개월</p></li>
+          <li><p class="c03"></p><p>5만원이상</p><p>2~5개월</p></li>
+          <li><p class="c08"></p><p>5만원이상</p><p>2~5개월</p></li>
+          <li><p class="c04"></p><p>5만원이상</p><p>2~5개월</p></li>
+          <li><p class="c09"></p><p>5만원이상</p><p>2~5개월</p></li>
+          <li><p class="c05"></p><p>5만원이상</p><p>2~5개월</p></li>
+        </ul>
+        <p>&#42; 개인카드로 5만원 이상 결제시 적용</p>
+        <p>&#42; 신용카드사 정책 변경에 따라 변동 될 수 있음</p>
+        <p>&#42; 단, 삼성카드의 경우 50만원이상 결제시 공인인증서 필요</p>
       </section>
 		</div>
 		<!-- 콘텐츠영역 끝 -->
 		<!--결제하실 금액-->
-    <aside id="receipt">
+    <aside class="price">
       <h3>결제하실 금액</h3>
+      <ul class="p_startDate">
+        <li>
+          <label for="p_date">임대게시일 선택</label>
+          <div class="selectBox">
+            <input type="button" id="p_date" class="s_btn" value="2017년 02월 31일"><i class="fa fa-angle-down" aria-hidden="true"></i>
+          </div>
+        </li>
+      </ul>
+      <ul class="p_term">
+        <li><p>&#8226;임대 기간</p><p>2017.02.31~2017.05.31</p></li>
+        <li><p>&#8226;임대 개월수</p><p>3개월</p></li>
+        <li><p>&#8226;옵션 추가</p><p><span>2017년 04월 30일</span><span>회의실 및 카페테리아 이용권</span></p></li>
+      </ul>
+      <ul class="p_price">
+        <li><p>총 신청금액</p><p>442,500원</p></li>
+        <li><p>&#8226;임대정상가</p><p>300,000원</p></li>
+        <li><p>&#8226;예치금(보증금)</p><p>82,500원</p></li>
+        <li><p>&#8226;옵션(2개/3개월)</p><p>60,000원</p></li>
+        <li><p>&#8226;임대가 할인(30% 할인)</p><p>-90,000원</p></li>
+      </ul>
+      <ul class="p_total">
+        <li><p>최종 결제금액</p><p>(신용카드 결제)</p></li>
+        <li>
+          <p>387,750원<span>(VAT포함)</span></p>
+        </li>
+      </ul>
     </aside>
 
 		<!-- 푸터 -->
