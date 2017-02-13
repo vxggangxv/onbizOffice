@@ -6,8 +6,10 @@ $(document).ready(function() {
   $("#contents .selectBox i").on("click", function() {
     $(this).next().slideToggle('fast');
   });
-  $("#contents .category > ul > li").on("click", function() {
-    var thIdx = $(this).index();
+  $("#contents .category > ul > li label").on("click", function() {
+    var thIdx = $(this).closest("li").index();
+    $(this).closest("ul").children().removeClass("on");
+    $(this).closest("li").addClass("on");
     $("#container > section").css("display", "none");
     $("#container > section").eq(thIdx).css("display", "block");
     $("#contents .selectBox ul").hide();
