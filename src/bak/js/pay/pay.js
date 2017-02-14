@@ -4,7 +4,6 @@ $(document).ready(function() {
     $(this).closest("ul").children().removeClass("on");
     $(this).addClass("on");
     $(this).find("input").prop("checked", true);
-	pay.calc();
   });
   /*체크박스 효과 기능*/
   $("#contents .option .o_check").on("click", function() {
@@ -17,7 +16,6 @@ $(document).ready(function() {
     isChecked = !isChecked;
     $(this).find("input[type=checkbox]").prop('checked', isChecked);
     //console.log( isChecked );
-	pay.calc();
   });
   /*카드 할부 선택 기능*/
   $("#contents .way li").on("click", function() {

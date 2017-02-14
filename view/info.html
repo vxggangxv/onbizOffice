@@ -4,6 +4,7 @@
 <head>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=320, width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
 
   <meta name="title" content="온비즈오피스" />
   <meta name="subject" content="가상오피스 1인실에서 80평까지 분할임대" />
@@ -37,11 +38,13 @@
   <title>온비즈결제페이지</title>
 
   <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css">
-  <link rel="stylesheet" href="http://static.onbiz.co.kr/css/common.css" type="text/css">
-  <link rel="stylesheet" href="http://static.onbiz.co.kr/css/info/info.css" type="text/css">
-  <!-- <link rel="stylesheet" href="../src/css/info/info.css" type="text/css"> -->
+  <!--<link rel="stylesheet" href="http://static.onbiz.co.kr/css/common.css" type="text/css">
+  <link rel="stylesheet" href="http://static.onbiz.co.kr/css/info/info.css" type="text/css">-->
+  <link rel="stylesheet" href="../src/css/common.css" type="text/css">
+  <link rel="stylesheet" href="../src/css/info/info.css" type="text/css"> 
 
   <script src="http://static.onbiz.co.kr/js/jquery-1.11.2.min.js" type="text/javascript"></script>
+  <script src="../src/js/common.js"></script>
   <script src="http://static.onbiz.co.kr/js/info/info.js"></script>
   <!-- <script src="../src/js/info/info.js"></script> -->
 
@@ -60,12 +63,94 @@
 <body>
   <h1 class="hidden">온비즈가상오피스</h1>
   <div id="wrap">
+    <!--모바일 팝업 배경 백드랍-->
+    <div id="backDrop"></div>
+    <!-- 모바일 헤더 -->
+    <header class="headerOrigin">
+      <h1><a href="./index.html">Onbiz Office</a><span>가상오피스 임대신청</span></h1>
+      <a class="nav_tab" href="#"></a>
+    </header>
+    <!--모바일 top으로-->
+    <div class="btntop ptr">
+      <img src="http://img.go.co.kr/mobile/top.png" alt="위로가기">
+    </div>
+    <!--모바일 단계 bar-->
+    <ul class="inf_bar clr">
+      <li class="ib1">상품선택</li>
+      <li class="ib2 on">정보입력</li>
+      <li class="ib3">계약서 서명</li>
+      <li class="ib1">계약완료</li>
+    </ul>
+    <!--모바일 전체화면 메뉴-->
+    <div id="menu_wrap">
+      <section class="menu">
+        <a class="clsBtn" href="#"></a>
+        <h2>Onbiz Office Menu</h2>
+        <h3>Onbiz Office</h3>
+        <nav class="tnb">
+          <ul>
+            <li>
+              <a href="index.html">홈으로</a>
+            </li>
+            <li>
+              <a href="info.html">임대신청</a>
+            </li>
+            <li>
+              <a class="chClk" href="#">임대신청 내역 확인</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="wrap_ntc clr">
+          <li>
+            <span class="ph"></span>
+            <p>전화문의</p>
+            <p>T : 02-6255-3014</p>
+            <p>H : 010-4429-3013</p>
+          </li>
+          <li>
+            <span class="mp"></span>
+            <p>오시는 길</p>
+            <p>서울트별시 강남구</p>
+            <p>테헤란로 82길 15</p>
+          </li>
+        </ul>
+      </section>
+      <section class="chk_wrap off">
+        <a href="#" class="chk_clsBtn"></a>
+        <h2>가상오피스 임대신청서 내역 조회</h2>
+        <ul>
+          <li>
+            <label for="chk_name">신청자명</label>
+            <input type="text" id="chk_name">
+          </li>
+          <li>
+            <label for="chk_email">이메일 주소</label>
+            <input type="text" id="chk_email"><span>&#64;</span><select>
+            <option value="naver.com">naver.com</option>
+            <option value="daum.net">daum.net</option>
+            <option value="hanmail.net">hanmail.net</option>
+            <option value="nate.com">nate.com</option>
+            <option value="gmail.com">gmail.com</option>
+            </select>
+          </li>
+          <li>
+            <label for="chk_num">전화번호</label>
+            <input type="text" id="chk_num" placeholder="'-'없이 입력해주세요">
+          </li>
+          <li>
+            <input type="button" value="확 인" class="chk_btn">
+          </li>
+        </ul>
+      </section>
+    </div>
+    
+    
     <!-- 헤더  -->
     <div class="h_wrap">
       <header id="header" class="clr">
         <h2 class="in">
-					<a href="/"><img src="http://img.onbiz.co.kr/logo.gif" alt="온비트오피스로고"/></a>
-				</h2>
+          <a href="/"><img src="http://img.onbiz.co.kr/logo.gif" alt="온비트오피스로고"/></a>
+        </h2>
         <div class="g_wrap">
           <nav id="gnb" class="clr">
             <h2><a href="#">가상오피스 임대신청</a></h2>
@@ -134,7 +219,8 @@
       <!--정보등록-->
       <div id="container">
         <section class="manager">
-          <h3>계약 명의자(임차인) 정보 <!--<input type="checkbox" id="mng" ><label for="mng">계약 신청인 정보와 동일함</label>--></h3>
+          <h3>계약 명의자(임차인) 정보</h3>
+          <p><input type="checkbox" id="mng" ><label for="mng">계약 신청인 정보와 동일함</label></p>
           <ul>
             <li>
               <label for="mng_name">성명</label>

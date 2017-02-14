@@ -117,6 +117,28 @@ input[type="radio"].co_check:checked + label:active:before {
 /*클릭 시*/
 .way .t_contents li.on {display: block; border-color: #ff9000; background: #FFF5D2;}
 
+/* 이용약관 4가지 */
+#contents .terms {padding: 20px 0; margin-top: 5px; border-bottom: 1px dashed #ddd; border-top: 1px dashed #ddd;}
+.terms ul li {float: left; width: 50%; padding-left: 38px;}
+/* .terms ul li:nth-child(1), .terms ul li:nth-child(3) {padding-left: 37px;}
+.terms ul li:nth-child(2), .terms ul li:nth-child(4) {padding-left: 66px;}
+.terms ul li:nth-child(3), .terms ul li:nth-child(4) {margin-top: 5px;} */
+.terms li a {font-size: 15px;}
+.terms li a:hober {text-decoration: underline;}
+
+.terms input[type="checkbox"] + label:before {
+  content: "";
+  display: inline-block;
+  position: relative; top: 1px; right: 3px; width: 16px; height: 16px; cursor: pointer; margin-right: 5px;  
+  border: 1px solid #a9a9a9; background: #eee;
+}
+.terms input[type="checkbox"]:checked + label:before,
+.terms input[type="checkbox"] + label:active:before,
+.terms input[type="checkbox"]:checked + label:active:before {
+  background: url("http://img.onbiz.co.kr/onb_picto.png") no-repeat center -112px;
+  background-size: 22px; background-color: #ff9000; border-color: #ff9000;
+}
+
 /*카드 무이자 할부 혜택 영역*/
 #contents .card h3 {font-size: 14px; padding: 25px 0 8px;}
 .card {letter-spacing: 0; margin-top: 30px;}
@@ -211,4 +233,14 @@ input[type="checkbox"]#agree + label:active:before,
 input[type="checkbox"]#agree:checked + label:active:before {
   background: url("http://img.onbiz.co.kr/onb_picto.png") no-repeat center -82px;
   background-size: 16px; background-color: #ff9000; border-color: #ff9000;
+}
+
+
+/*모바일 디자인 미디어쿼리*/
+@media all and (max-width: 767px){
+  .m_hidden {display: none;}
+  #main, .contents {width: 100%;}
+  #main {padding: 15px 0; margin: 0;}
+  #main h3 {text-align: center; line-height: 1.4em;} 
+  #main h3 span {color: #F52700; }
 }

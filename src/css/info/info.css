@@ -44,9 +44,9 @@
 #container .l_snum input:nth-child(4) {width: 60px;}
 #container .l_snum input:nth-child(6) {width: 123px;}
 
-.lessee p {position: absolute; width: 432px; left: 50%; margin-left: -216px; top: -32px; text-align: right;}
+#container > section > p {position: absolute; width: 432px; left: 50%; margin-left: -216px; top: -32px; text-align: right;}
 
-#container section:first-child {display: none;}
+#container section:nth-child(2) {display: none;}
 
 /*다음단계 버튼*/
 .nBtn {position: relative; display: block; margin: 15px auto; width: 268px; height: 56px; background: #ff9000; color: #fff; font-size: 20px; font-weight: 700; border-radius: 4px; text-align: center; line-height: 3em;}
@@ -54,3 +54,8 @@
 
 /*pie - ie8 border-radius작동 적용*/
 .nBtn {behavior: url("http://static.onbiz.co.kr/js/pie/PIE.htc");}
+
+/*모바일 디자인 미디어 쿼리*/
+@media all and (max-width: 767px){
+  
+}
