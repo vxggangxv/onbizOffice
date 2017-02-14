@@ -10,7 +10,7 @@
 #contents {position: relative; width: 980px; margin: 0 auto; color: #333;}
 #contents > section {position: relative; width: 664px; left: -158px; margin: 0 auto; color: #333;}
 #contents > section > h3 {font-size: 22px; padding: 30px 0px 12px;}
-#contents > section:first-child > h3 {font-size: 22px; padding: 20px 0px 12px;}
+#contents > section:first-child > h3 {padding-top: 20px;}
 /*임대상품 선택 영역*/
 .term h3 span {position: relative; top: 10px;font-size: 13px; float: right; color: #444; font-weight: 400;}
 .term > ul {position: relative; width: 100%;}
@@ -237,10 +237,15 @@ input[type="checkbox"]#agree:checked + label:active:before {
 
 
 /*모바일 디자인 미디어쿼리*/
+@media all and (min-width: 768px){
+  .m_private {display: none;}
+}
 @media all and (max-width: 767px){
   .m_hidden {display: none;}
   #main, .contents {width: 100%;}
   #main {padding: 15px 0; margin: 0;}
   #main h3 {text-align: center; line-height: 1.4em;} 
-  #main h3 span {color: #F52700; }
+  #main h3 span {color: #F52700;}
+  #contents > section > h3 {font-size: 18px; padding: 15px 0px 12px; font-weight: 800;}
+  #contents > section:first-child > h3 {padding-top: 15px;}
 }
