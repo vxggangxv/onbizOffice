@@ -1,19 +1,28 @@
 $(document).ready(function() {
   /*라이도박스 효과 기능*/
-  $("#contents .term .table .t_radio").on("click",function() {
+  $("#contents .term ul li").on("click",function() {
     $(this).closest("ul").children().removeClass("on");
-    $(this).closest("li").addClass("on");
-    //$(this).closest("li").prev().css("border-right", "none");
+    $(this).addClass("on");
+    $(this).find("input").prop("checked", true);
   });
   /*체크박스 효과 기능*/
   $("#contents .option .o_check").on("click", function() {
     $(this).closest("li").toggleClass("on");
   });
+  $("#contents .option li").on("click", function() {
+    var isChecked =  $(this).find("input[type=checkbox]").prop('checked');
+    $(this).toggleClass("on");
+    //console.log( isChecked );
+    isChecked = !isChecked;
+    $(this).find("input[type=checkbox]").prop('checked', isChecked);
+    //console.log( isChecked );
+  });
   /*카드 할부 선택 기능*/
-  $("#contents .way .co_check").on("click", function() {
-    var thIdx = $(this).closest("li").index();
+  $("#contents .way li").on("click", function() {
+    var thIdx = $(this).index();
     $(this).closest("ul").children().removeClass("on");
-    $(this).closest("li").addClass("on");
+    $(this).addClass("on");
+    $(this).find("input").prop("checked", true);
     $(this).closest("ul").next().children().removeClass("on");
     $(this).closest("ul").next().children().eq(thIdx).addClass("on");
   });

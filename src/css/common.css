@@ -54,7 +54,7 @@ input[type=radio]:checked {border: none;
 }
 */
 
-input[type="radio"] {display: none;}
+input[type="radio"] {position: relative; left: -9999px;}
 input[type="radio"] + label:before {
   content: "";
   display: inline-block;
@@ -69,8 +69,8 @@ input[type="radio"]:checked + label:active:before {
 
 input[type="checkbox"] {
 	-webkit-border-radius:1px; -webkit-appearance:none;
-	display: none;
- 	position: absolute;
+  position: absolute;
+	left: -9999px;
 	width: 1px;
 	height: 1px;
 	padding: 0;
