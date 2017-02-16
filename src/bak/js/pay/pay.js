@@ -12,10 +12,8 @@ $(document).ready(function() {
   $("#contents .option li").on("click", function() {
     var isChecked =  $(this).find("input[type=checkbox]").prop('checked');
     $(this).toggleClass("on");
-    //console.log( isChecked );
     isChecked = !isChecked;
     $(this).find("input[type=checkbox]").prop('checked', isChecked);
-    //console.log( isChecked );
   });
   /*카드 할부 선택 기능*/
   $("#contents .way li").on("click", function() {
@@ -38,56 +36,22 @@ $(document).ready(function() {
   });
   /*결제하실 금액 브라우저 너비에 따라 조절*/
   var wd = $(window).width();
-  var ht = $(window).height();
-  if( wd >= 768 ){
-    $(".price").css({
-      "position": "fixed"
-    });
-    /*스크롤 시 사이드 패널 세로중앙정렬*/
-    $(window).scroll(function() {
-      var st = $(window).scrollTop();
-      var pHeight = $(".price").height();
-      pHeight = pHeight / 2 ;
-      if(ht > 828) {
-        $(".price").css({
-          "top": "50%",
-          "margin-top": -pHeight
-        });
-      } else {
-        $(".price").css({
-          "top": "0"
-        });
-      }
-    });
+  if (wd >= 768) {
+    setTimeout(function() {
+      $(".price").addClass("on");
+    }, 1000);
   }
-  $(window).resize(function() {
-    var wd = $(window).width();
-    var ht = $(window).height();
-    if( wd >= 768 ){
-      $(".price").css({
-        "position": "fixed"
-      });
-      /*스크롤 시 사이드 패널 세로중앙정렬*/
-        var st = $(window).scrollTop();
-        var pHeight = $(".price").height();
-        pHeight = pHeight / 2 ;
-      if(ht > 828) {
-        $(".price").css({
-          "top": "50%",
-          "margin-top": -pHeight
-        });
-      } else {
-        $(".price").css({
-          "top": "0"
-        });
-      }
+  $(window).on("resize", function() {
+    var r_wd = $(window).width();
+    if (r_wd >= 768) {
+      setTimeout(function() {
+        $(".price").removeClass("m_on");
+        $(".price").addClass("on");
+      }, 1000);
     } else {
-      $(".price").css({
-        "position": "relative",
-        "top": 0,
-        "margin-top": 0
-      });
-    }
+      $(".price").removeClass("on");
+      $(".price").addClass("m_on");
+    } 
   });
   
   /*주의사항 및 약관 동의 클릭시 보이기/가리기*/
