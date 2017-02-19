@@ -9,6 +9,7 @@ $(document).ready(function() {
   /*업종선택 셀렉트박스*/
   $("#contents .category > ul > li").on("click", function() {
     var thIdx = $(this).index();
+	onbiz.company(thIdx);
     $(this).closest("ul").children().removeClass("on");
     $(this).addClass("on");
     $(this).find("input").prop("checked", true);
@@ -38,9 +39,11 @@ $(document).ready(function() {
     //console.log(thVar);
     $("#contents .refund .selectBox input").val(thVar);
     $("#contents .refund .selectBox input").attr("type", "button");
+	$("#bank1").val(thVar);
     $(this).closest("ul").slideUp("fast");
   });
   $("#contents .refund .selectBox ul li:last").on("click",function(){
+	$("#bank1").val("");
     $("#contents .refund .selectBox input").val("");
     $("#contents .refund .selectBox input").attr("type", "text");
     $("#contents .refund .selectBox input").focus();

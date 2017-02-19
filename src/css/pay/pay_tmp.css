@@ -169,7 +169,7 @@ input[type="radio"].co_check:checked + label:active:before {
 
 /*결제하실 금액*/
 .price {z-index: 2; position: fixed; width: 290px; left: 50%; margin-left: 200px; top: 0; margin-top: 289px; letter-spacing: -1px; background: #fff;}
-.price.on {margin-top: 103px; transition: all 1s;}
+.price.on {margin-top: 103px; transition: all 2s;}
 .price.m_on {margin-top: 0;}
 @media all and (max-width: 980px) {
   .price {left: 690px; margin-left: 0;}
@@ -253,11 +253,12 @@ input[type="checkbox"]#agree:checked + label:active:before {
   .m_private {display: none;}
 }
 @media all and (max-width: 767px){
+  
   #main, #contents {width: 100%;}
   #main {padding: 15px 0; margin: 0;}
-  #main h3 {text-align: center; line-height: 1.4em;} 
   #main h3:first-child {display: none;}
-  #main h3 span {color: #F52700;} 
+  #main .mTxt {text-align: center; line-height: 1.4em;} 
+  #main .mTxt span {color: #F52700;} 
   /*콘텐츠*/
   #contents > section {position: relative; width: 100%; left: 0px;}
   #contents > section > h3 {font-size: 18px; padding: 15px 0px 12px; font-weight: 800;}
@@ -373,7 +374,8 @@ input[type="checkbox"]#agree:checked + label:active:before {
   
   .ps3 {padding: 14px 0;}
    /*결제하기 버튼, 약관동의*/
-  .p_btn, #panel {margin: 0 5px;}
+  #panel {margin: 0 5px;}
+  .btn_wrap {padding: 0 5px;}
   .p_btn {height: 50px; font-size: 20px; margin-top: 10px;}
 }
 

@@ -34,16 +34,21 @@ $(document).ready(function() {
     $(this).closest("ul").children().removeClass("on");
     $(this).addClass("on");
   });
-  /*결제하실 금액 브라우저 너비에 따라 조절*/
+  /*결제하실 금액 브라우저 너비, 높이에 따라 조절*/
   var wd = $(window).width();
-  if (wd >= 768) {
+  var ht = $(window).height();
+  if (wd >= 768 && ht < 1005) {
     setTimeout(function() {
       $(".price").addClass("on");
     }, 1000);
+  } else {
+    $(".price").removeClass("on");
+    $(".price").addClass("m_on");
   }
   $(window).on("resize", function() {
     var r_wd = $(window).width();
-    if (r_wd >= 768) {
+    var r_ht = $(window).height();
+    if (r_wd >= 768 && r_ht < 1005) {
       setTimeout(function() {
         $(".price").removeClass("m_on");
         $(".price").addClass("on");
@@ -56,7 +61,6 @@ $(document).ready(function() {
   
   /*주의사항 및 약관 동의 클릭시 보이기/가리기*/
   $("#panel > p i").on("click", function() {
-    $(this).closest("p").toggleClass("up");
     $(this).closest("div").children(".txtara").slideToggle();
   });
   

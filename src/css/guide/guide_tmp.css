@@ -1,0 +1,124 @@
+@charset "utf-8";
+/* 공통 css */
+@import url(http://static.onbiz.co.kr/css/reset.css); 
+
+
+/*네비게이션 바*/
+#nb h2 + a {display: inline-block; width: 233px; height: 37px; border-radius: 4px; background: #444; color: #fff; font-weight: 600; line-height: 2.4em; text-align: center; letter-spacing: -1px; float: right;}
+#nb h2 + a > i {position: relative; top: 2px; left: 5px; font-size: 24px; font-weight: 400;}
+/*메인 영역*/
+#main {padding-top: 44px;}
+#main > ul {display: table; text-align: center; margin: 30px auto 20px;}
+#main > ul li {display: table-cell; float: left; padding: 20px 40px; border-radius: 100px; background: #ff9000; color: #fff; font-weight: 600; font-size: 18px; margin-left: 30px;}
+#main > ul li:first-child {margin-left: 0;}
+#main > ul li:nth-child(even) {background: #999999;}
+
+/* 신청하기 영역 */
+.container {position: relative; padding: 40px 40px 30px; background: #F9F9F9; box-sizing: border-box; border: 1px solid #ddd;}
+.c_form {position: relative;}
+.c_form h3 {position: absolute; top: 0; left: 0; font-size: 21px; line-height: 1.3em;}
+.c_form h3 span {display: block;}
+.c_form ul {position: relative; width: 432px; margin: 0 auto;}
+.c_form li {margin-top: 9px; color: #888;}
+.c_form li:first-child {margin-top: 0px;}
+.c_form li > label {display: inline-block; font-size: 15px; width: 120px; text-indent: 10px; color: #333;}
+.c_form li > input {width: 307px; height: 36px; border: 1px solid #a9a9a9; text-indent: 15px; font-size: 15px;}
+.c_form li > input:focus {color: #333; outline: none; border: 2px solid #ff9000;}
+
+.c_form .selectBox {display: inline-block; width: 307px;}
+.c_form .selectBox i {color: #333;}
+
+/*신청하기 버튼*/
+.nBtn {position: absolute; display: block; top: 50%; margin-top: 2px; left: 50%; margin-left: 234px; width: 180px; height: 66px; background: #ff9000; color: #fff; font-size: 20px; font-weight: 700; border-radius: 4px; text-align: center; line-height: 3.4em;}
+.nBtn i {position: relative; top: 3px; left: 10px; font-size: 30px;}
+
+/*안내 설명글 영역*/
+.guide {margin: 50px 0; padding: 0px 40px;}
+.guide > div {float: left;}
+.guide > div:nth-child(1) {width: 520px;}
+.guide > div:nth-child(2) {width: 380px;}
+.guide li {color: #333; font-size: 15px; line-height: 1.5em;}
+.guide li h2 {display: inline-block; font-size: 18px; position: relative; left: 32px;}
+.guide li:first-child:before {content: ""; position: absolute; display: inline-block; top: -5px; width: 30px; height: 30px; background: url("http://img.onbiz.co.kr/onb_picto.png") no-repeat center -180px;}
+.guide li:nth-child(2) {margin-top: 20px;}
+
+/*pie - ie8 border-radius작동 적용*/
+#nb h2 + a, #main > ul li, .nBtn {behavior: url("http://static.onbiz.co.kr/js/pie/PIE.htc");}
+
+/*모바일 디자인 미디어쿼리*/
+@media all and (min-width: 768px){
+  .m_private {display: none;}
+}
+/*모바일 디자인 css*/
+@media all and (max-width: 767px) {
+  #main, #contents {width: 100%; padding: 0 5px;}
+  
+  /*헤더*/
+  .headerOrigin {border-bottom: 4px solid #4c4c4c; padding-top: 18px;}
+  .headerOrigin h1 a:last-child {position: absolute; display: inline-block; width: 130px; height: 28px; top: 19px;	right: 10px; display: block; text-align: center; line-height: 2em; font-size: 14px;  color: #fff; background: #4c4c4c;
+  border-radius: 4px;}
+  .headerOrigin h1 a:last-child i {position: relative; top: 1px; margin-left: 3px; font-size: 18px;}
+  
+  #main {padding: 20px 0 4px;}
+  #main > h3:first-child {display: none;}
+  #main .mTxt {color: #333; text-align: center; letter-spacing: -1px;}
+  #main .mTxt h3 {font-size: 28px; font-weight: 800; }
+  #main .mTxt p {font-weight: 600; font-size: 15px; line-height: 1.3em; color: #4c4c4c; padding: 0 50px;}
+  #main .mTxt .mt {margin-top: 14px;}
+  #main .mTxt p .fc {color: #ff9000;}
+  
+  #main .mTxt p .bl2 {display: block;}
+  
+  #main > ul {position: relative; display: table; margin: 12px auto;}
+  #main > ul li {display: table-cell; text-align: center; padding: 11px 0; width: 153px; height: 60px; margin: 4px 0; font-size: 16px; line-height: 1.2em;}
+  /*#main > ul li {margin-left: 14px;}*/
+  
+  
+  /*정보등록*/
+  .container {padding: 15px;}
+  .c_form h3 {position: relative; text-align: center; font-size: 18px;}
+  .c_form h3 span {display: inline;}
+  .c_form ul {margin-top: 14px; width: 100%;}
+  .c_form li > label {width: 25%; text-indent: 0px;}
+  .c_form li > input, .c_form .selectBox {width: 75%;}
+  
+  .nBtn {position: relative; top: 0; margin-top: 10px; left: 0; margin-left: 0; width: 100%; height: 48px; line-height: 2.7em; font-size: 18px; letter-spacing: -1px}
+  .nBtn i {font-size: 26px  }
+  
+  /*상세설명*/
+  .guide {margin: 0; padding: 0;}
+  .guide > div {position: relative; margin-top: 30px; float: none;}
+  .guide > div:nth-child(1), .guide > div:nth-child(2) {width: 100%;}
+  .guide li h2 {font-size: 16px; left: 28px; letter-spacing: 0;}
+  .guide li:first-child:before {width: 24px; height: 24px; background: url("http://img.onbiz.co.kr/onb_picto.png") no-repeat center -142px; background-size: 24px;}
+  .guide li:nth-child(2) {margin-top: 10px;}
+  .guide li {font-size: 14px; letter-spacing: -1px; color: #676767;}
+}
+@media all and (max-width: 767px) and (min-width: 481px){
+  .guide > div:nth-child(1), .guide > div:nth-child(2) {padding-left: 14px;}
+}
+@media all and (max-width: 630px){
+  #main .mTxt p {padding: 0;}
+  #main .mTxt p .bl {display: block;}
+  
+  
+  #main > ul {display: block; position: relative; width: 320px; margin: 12px auto;}
+  #main > ul li {display: block;}
+  #main > ul li:nth-child(2), #main > ul li:nth-child(4) {margin-left: 14px;}
+  
+}
+@media all and (max-width: 480px){
+  
+  .guide > div:nth-child(1), .guide > div:nth-child(2) {padding-left: 0px;}
+}
+@media all and (max-width: 375px){
+  
+  .guide li {font-size: 13px;}
+}
+@media all and (max-width: 320px){
+  #main .mTxt p {font-size: 14px;}
+  #main > ul {width: 320px; padding-left: 14px;}
+  #main > ul li {width: 139px;}
+  
+  .guide li span {display: block; text-indent: 6px;}
+}
