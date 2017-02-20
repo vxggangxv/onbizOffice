@@ -1,6 +1,7 @@
 @charset "utf-8";
+/* 공통 css */
+@import url(http://static.onbiz.co.kr/css/reset.css); 
 /* 폰트 */
-@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 
 * {margin:0; padding:0; font-family: 'Nanum Gothic', 'Malgun Gothic', sans-serif;}
@@ -13,21 +14,17 @@ a {text-decoration:none; color: #434343;}
 /* input, label 설정 */
 input[type="reset"], input[type="button"] {cursor: pointer;}
 input[type="checkbox"] + label, input[type="radio"] + label {vertical-align: middle;}
-input[type="checkbox"], input[type="radio"] {vertical-align: middle; position: absolute; left: -9999px;}
-input[type="reset"], input[type="checkbox"], input[type="text"], input[type="radio"], input[type="button"] 
-{-webkit-border-radius:1px;
-  -webkit-appearance: none;
-  -moz-appearance:   none;
-  appearance:        none;}
+input[type="checkbox"], input[type="radio"] {vertical-align: middle;}
+input[type="reset"], input[type="checkbox"], input[type="text"], input[type="radio"], input[type="button"] {-webkit-border-radius:1px; -webkit-appearance:none;}
 
 select {
-	-webkit-border-radius:1px;
-	-webkit-appearance:none; 
-	-moz-appearance: none; 
-	appearance: none; 
-	background: url("http://img.onbiz.co.kr/images/m/triangle2.png") no-repeat 95% 50%;
-	background-size: 12px;
-	background-color: #fff;
+  -webkit-border-radius:1px;
+  -webkit-appearance:none; 
+  -moz-appearance: none; 
+  appearance: none; 
+  background: url("http://img.onbiz.co.kr/images/m/triangle2.png") no-repeat 95% 50%;
+  background-size: 12px;
+  background-color: #fff;
 }
 .selectBox {z-index: 1; position: relative;  width: 431px; height: 36px;}
 .s_btn {position: relative; width: 100%; height: 36px; font-size:14px; border:1px solid #aeaeae; text-indent: 15px; cursor:pointer; text-align: left;
@@ -36,7 +33,7 @@ select {
   background: -webkit-linear-gradient(top,  #ffffff 0%,#efefef 100%); 
   background: linear-gradient(to bottom,  #ffffff 0%,#efefef 100%); 
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#efefef',GradientType=0 ); 
-} 	
+}   
 .selectBox i {position: absolute; display: inline-block; width: 20px; height: 20px; right: 10px; top: 7px; font-size: 32px; cursor: pointer; overflow: hidden;}
 .selectBox i img {position: relative; left: -40px; width: 80px;}
 .selectBox ul {display: none; position: absolute; width: 100%; top: 35px; z-index: 1; background: #fff; border: 1px solid #aeaeae; font-size: 14px; padding: 8px 15px;}
@@ -44,27 +41,62 @@ select {
 .selectBox ul li:first-child {margin-top: 0;}
 textarea {-webkit-border-radius:1px; -webkit-appearance:none;}
 strong {font-weight: bold;}
-label {
-	cursor: pointer; 
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
+input[type="checkbox"] + label, input[type="radio"] + label,
+input[type="checkbox"] + span + label, input[type="radio"] + span + label,
+{
+  cursor: pointer; 
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
+
+/*input[type="radio"] + span + label {cursor: pointer; top: -6px; margin-right: 20px;}
 input[type="radio"] + span {
+  content: ""; cursor: pointer;
+  display: inline-block;
+  position: relative; width: 30px; height: 30px; cursor: pointer;
+  background: url("http://img.onbiz.co.kr/onb_picto.png") no-repeat center -30px;
+}
+input[type="radio"] + span.on {
+  background: url("http://img.onbiz.co.kr/onb_picto.png") no-repeat center -60px; 
+} */
+
+input[type="radio"] {position: relative; left: -9999px;}
+input[type="radio"] + label:before {
+  content: "";
   display: inline-block;
   position: relative; top: 6px; width: 30px; height: 30px; cursor: pointer;
   background: url("http://img.onbiz.co.kr/onb_picto.png") no-repeat center -30px;
 }
-input[type="radio"]:checked + span {
+input[type="radio"]:checked + label:before,
+input[type="radio"] + label:active:before,
+input[type="radio"]:checked + label:active:before {
   background: url("http://img.onbiz.co.kr/onb_picto.png") no-repeat center -60px;
 }
-input[type="checkbox"] + span + label {position: relative; display: inline-block; font-size: 11px; text-align: left; font-size: 13px;}
-input[type="checkbox"] + span {  
+
+input[type="checkbox"] {
+	-webkit-border-radius:1px; -webkit-appearance:none;
+  position: absolute;
+	left: -9999px;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0
+}
+input[type="checkbox"] {position: relative; width: 14px; height: 14px;}
+input[type="checkbox"] + label {position: relative; display: inline-block; font-size: 11px; text-align: left; font-size: 13px;}
+input[type="checkbox"] + label:before {
+  content: "";
   display: inline-block;
-  position: relative; top: 4px; right: 3px; width: 14px; height: 14px; cursor: pointer;
+  position: relative; top: 5px; right: 3px; width: 14px; height: 14px; cursor: pointer;
   border: 1px solid #a9a9a9; background: #eee;
 }
-input[type="checkbox"]:checked + span {
+input[type="checkbox"]:checked + label:before,
+input[type="checkbox"] + label:active:before,
+input[type="checkbox"]:checked + label:active:before {
   background: url("http://img.onbiz.co.kr/onb_picto.png") no-repeat center -82px;
   background-size: 16px; background-color: #ff9000; border-color: #ff9000;
 }
@@ -82,7 +114,7 @@ section {position: relative;}
 .g_wrap {width: 390px; float: right;}
 #gnb {background: #f0eeee;}
 #gnb h2 {display: inline-block; width: 157px; height: 35px; color: #fff; line-height: 2.1em; text-align: center;
-	background:url('http://img.onbiz.co.kr/gnb_Bg01.gif') no-repeat; font-size: 17px; font-weight: 700;}
+  background:url('http://img.onbiz.co.kr/gnb_Bg01.gif') no-repeat; font-size: 17px; font-weight: 700;}
 #gnb h2 a {color: #fff;}
 #gnb h2, #gnb ul {float: left;}
 #gnb ul {margin-left: 20px;}

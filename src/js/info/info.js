@@ -12,7 +12,10 @@ $(document).ready(function() {
 	onbiz.company(thIdx);
     $(this).closest("ul").children().removeClass("on");
     $(this).addClass("on");
+    $(this).closest("ul").find(".cate_inp + span").removeClass("on");
+    $(this).find(".cate_inp + span").addClass("on");
     $(this).find("input").prop("checked", true);
+    var isCheck = $(this).find("input").prop("checked");
     
     $("#container > section").css("display", "none");
     $("#container > section").eq(thIdx).css("display", "block");
@@ -48,6 +51,16 @@ $(document).ready(function() {
     $("#contents .refund .selectBox input").attr("type", "text");
     $("#contents .refund .selectBox input").focus();
     $(this).closest("ul").slideUp("fast");
+  });
+  /*계약 신청인 정보 동일 체크박스*/
+  $("#contents .manager #mng + span, #contents .manager #les + span").on('click', function() {
+    $(this).toggleClass("on");
+    var isChecked = $(this).prev().prop("checked");
+    isChecked = !isChecked;
+    $(this).prev().prop("checked", isChecked);
+  });
+  $("#contents .manager #mng + span + label, #contents .manager #les + span + label").on('click', function() {
+    $(this).prev().toggleClass("on");
   });
   
 });

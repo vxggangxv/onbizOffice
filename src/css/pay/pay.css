@@ -168,7 +168,9 @@ input[type="radio"].co_check:checked + label:active:before {
 .card > p {font-size: 12px; line-height: 1.5em; color: #222;}
 
 /*결제하실 금액*/
-.price {z-index: 2; position: fixed; width: 290px; left: 50%; margin-left: 200px; top: 289px; letter-spacing: -1px; background: #fff;}
+.price {z-index: 2; position: fixed; width: 290px; left: 50%; margin-left: 200px; top: 0; margin-top: 289px; letter-spacing: -1px; background: #fff;}
+.price.on {margin-top: 103px; transition: all 2s;}
+.price.m_on {margin-top: 0;}
 @media all and (max-width: 980px) {
   .price {left: 690px; margin-left: 0;}
 }

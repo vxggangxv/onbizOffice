@@ -1,6 +1,4 @@
 @charset "utf-8";
-/* 공통 css */
-@import url("http://static.onbiz.co.kr/css/reset.css"); 
 
 	/*네비게이션 바*/
 	#nb h2 + a {display: inline-block; width: 233px; height: 37px; border-radius: 4px; background: #444; color: #fff; font-weight: 600; line-height: 2.4em; text-align: center; letter-spacing: -1px; float: right;}
@@ -38,8 +36,8 @@
 	/*안내 설명글 영역*/
 	.guide {margin: 50px 0; padding: 0px 40px;}
 	.guide > div {float: left;}
-	.guide > div:first-child {width: 520px;}
-	.guide > div:first-child + div {width: 380px;}
+	.guide > div:nth-child(1) {width: 520px;}
+	.guide > div:nth-child(2) {width: 380px;}
 	.guide li {color: #333; font-size: 15px; line-height: 1.5em;}
 	.guide li h2 {display: inline-block; font-size: 18px; position: relative; left: 32px;}
 	.guide li:first-child span {content: ""; position: absolute; display: block; top: -5px; width: 30px; height: 30px; background: url("http://img.onbiz.co.kr/onb_picto.png") no-repeat center -180px;}
@@ -47,7 +45,3 @@
 
 	/*pie - ie8 border-radius작동 적용*/
 	/* #nb h2 + a, #main > ul li, .nBtn {behavior: url("http://static.onbiz.co.kr/js/pie/PIE.htc");} */
-
-@media (max-width: 480px) {
-	#main { display: none; }
-}
