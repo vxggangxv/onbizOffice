@@ -46,18 +46,24 @@ width: 13px; height: 20px;}
 .guide li:first-child + li {margin-top: 20px;}
 
 /*자주묻는 질문 FAQ*/
-.faq {position: relative; margin-top: 50px}
+.faq {position: relative; margin: 50px 0}
 .faq > h3 {font-size: 26px; padding: 0 0 10px 10px; border-bottom: 1px solid #222;}
 .faq > h3 > span {font-size: 16px; margin-left: 20px;}
 .faq .f_table {position: relative;}
-.f_q, .f_a {position: relative; font-size: 15px; border-bottom: 1px solid #bdbdbd; padding: 17px 0 16px 75px; font-weight: 600;}
-.f_a {color: #555; background: #f9f9f9; line-height: 1.3em;}
+.f_q, .f_a {position: relative; font-size: 15px; border-bottom: 1px solid #bdbdbd; padding: 17px 5px 16px 75px; font-weight: 600;}
+.f_q {cursor: pointer;}
+.f_a {color: #444; background: #f9f9f9; line-height: 1.3em; display: none;}
 .q_icon, .a_icon {position: absolute; display: inline-block; width: 26px; height: 26px; background: #666; border-radius: 50%; color: #fff; text-align: center; top: 13px; left: 35px; line-height: 1.6em;}
 .a_icon {background: #ff9000;}
 
 .f_a > a {display: block;}
 .f_a .mt {margin-top: 17px;}
 .f_a a:hover {text-decoration: underline}
+/*버튼*/
+.fBtn {position: relative; display: block; margin: 20px auto 0; width: 240px; height: 47px; background: #ff9000; color: #fff; font-size: 20px; font-weight: 700; border-radius: 4px; text-align: center; line-height: 2.5em;}
+.fBtn i {position: relative; left: -10px; top: 14px; display: inline-block; float:right; overflow: hidden;
+  width: 15px; height: 22px;}
+.fBtn i img {position: relative; width: 74px; top: -25px; left: 0px;}
 
 /*모바일 디자인 미디어쿼리*/
 .m_private {display: none;}
@@ -68,9 +74,9 @@ width: 13px; height: 20px;}
   
   /*헤더*/
   .headerOrigin {border-bottom: 4px solid #4c4c4c; padding-top: 18px;}
-  .headerOrigin h2 a.nav_tab {position: absolute; display: inline-block; width: 130px; height: 28px; top: 19px;	right: 10px; display: block; text-align: center; line-height: 2em; font-size: 14px;  color: #fff; background: #4c4c4c;
+  .headerOrigin h2 a.nav_tab {float: right; position: relative; top: 1px; display: inline-block; width: 140px; height: 28px; display: block; text-align: center; line-height: 2em; font-size: 14px;  color: #fff; background: #4c4c4c;
   border-radius: 4px;}
-  .headerOrigin h1 a.nav_tab i {position: relative; top: 1px; margin-left: 3px; font-size: 18px;}
+  .headerOrigin h2 a.nav_tab i {position: relative; top: 2px; left: 2px; left: 0px; font-size: 18px;}
   
   #main {padding: 20px 0 4px;}
   #main > h3:first-child {display: none;}
@@ -91,12 +97,13 @@ width: 13px; height: 20px;}
   .container {padding: 15px;}
   .c_form h3 {position: relative; text-align: center; font-size: 18px;}
   .c_form h3 span {display: inline;}
-  .c_form ul {margin: 14px auto; width: 100%;}
+  .c_form ul {margin: 14px auto; width: 100%; border-right: none;}
   .c_form li > label {width: 25%; text-indent: 0px;}
   .c_form li > input, .c_form .selectBox {width: 75%;}
   
   .c_form .select_wrap label {display: inline-block; width: 25%; text-align: left;}
   .c_form .select_wrap {position: relative; left: 0;}
+  .c_form .select_wrap label > span {display: none;}
   
   .nBtn {position: relative; top: 0; margin-top: 10px; left: 0; margin-left: 0; width: 100%; height: 48px; line-height: 2.7em; font-size: 18px; letter-spacing: -1px}
   .nBtn i {top: 16px; }
@@ -111,6 +118,14 @@ width: 13px; height: 20px;}
   .guide li:first-child:before {width: 24px; height: 24px; background: url("http://img.onbiz.co.kr/onb_picto.png") no-repeat center -142px; background-size: 24px;}
   .guide li:first-child + li {margin-top: 10px;}
   .guide li {font-size: 14px; letter-spacing: -1px; color: #676767;}
+  
+  /*자주묻는 질문*/
+  .faq > h3 {font-size: 18px; padding: 0px 0 3px 0;}
+  .faq > h3 > span {display: inline-block; margin-left: 0; font-size: 13px; color: #888; letter-spacing: -1px;}
+  .f_q, .f_a {font-size: 14px;  padding: 13px 5px 12px 33px; letter-spacing: -1px; /*font-weight: 400;*/}
+  .q_icon, .a_icon {font-size: 13px; width: 22px; height: 22px; top: 10px; left: 5px; line-height: 1.7em;}
+  /*버튼*/
+  .fBtn {width: 100%;}
 }
 @media all and (max-width: 767px) and (min-width: 481px){
   .guide > div:first-child, .guide > div:first-child + div {padding-left: 14px;}
@@ -126,7 +141,6 @@ width: 13px; height: 20px;}
   
 }
 @media all and (max-width: 480px){
-  
   .guide > div:first-child, .guide > div:first-child + div {padding-left: 0px;}
 }
 @media all and (max-width: 375px){
@@ -134,9 +148,15 @@ width: 13px; height: 20px;}
   .guide li {font-size: 13px;}
 }
 @media all and (max-width: 320px){
+  .headerOrigin {padding: 18px 5px 0 3px;}
+  .headerOrigin h2 a.nav_tab {line-height: 2.1em; font-size: 13px; width: 130px; top: 2px;}
   #main .mTxt p {font-size: 14px;}
   #main > ul {width: 320px; padding-left: 14px;}
   #main > ul li {width: 139px;}
   
+  .c_form .select_wrap label, .c_form li > label {font-size: 14px; letter-spacing: -1px;}
+  
   .guide li span {display: block; text-indent: 6px;}
+  
+  .faq > h3 > span {font-size: 12px;}
 }
