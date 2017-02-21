@@ -1,47 +1,63 @@
 @charset "utf-8";
 
-  /*네비게이션 바*/
-  #nb h2 + a {display: inline-block; width: 233px; height: 37px; border-radius: 4px; background: #444; color: #fff; font-weight: 600; line-height: 2.4em; text-align: center; letter-spacing: -1px; float: right;}
-  #nb h2 + a > span {position: relative; left: -10px; top: 8px; display: inline-block; float:right; overflow: hidden;
-  width: 13px; height: 20px;}
-  #nb h2 + a > span img {position: relative; width: 70px; top: -19px; left: 0px;}
-  /*메인 영역*/
-  #main {padding-top: 44px;}
-  #main > ul {display: table; text-align: center; margin: 30px auto 20px;}
-  #main > ul li {display: table-cell; float: left; padding: 20px 40px; border-radius: 100px; background: #ff9000; color: #fff; font-weight: 600; font-size: 18px; margin-left: 30px;}
-  #main > ul li:first-child {margin-left: 0;}
-  #main > ul li:first-child + li, #main > ul li:first-child + li + li + li {background: #999999;}
+/*네비게이션 바*/
+#nb h2 + a {display: inline-block; width: 233px; height: 37px; border-radius: 4px; background: #444; color: #fff; font-weight: 600; line-height: 2.4em; text-align: center; letter-spacing: -1px; float: right;}
+#nb h2 + a > span {position: relative; left: -10px; top: 8px; display: inline-block; float:right; overflow: hidden;
+width: 13px; height: 20px;}
+#nb h2 + a > span img {position: relative; width: 70px; top: -19px; left: 0px;}
+/*메인 영역*/
+#main {padding-top: 44px;}
+#main > ul {display: table; text-align: center; margin: 30px auto 20px;}
+#main > ul li {display: table-cell; float: left; padding: 20px 40px; border-radius: 100px; background: #ff9000; color: #fff; font-weight: 600; font-size: 18px; margin-left: 30px;}
+#main > ul li:first-child {margin-left: 0;}
+#main > ul li:first-child + li, #main > ul li:first-child + li + li + li {background: #999999;}
 
-  /* 신청하기 영역 */
-  .container {position: relative; padding: 40px 40px 30px; background: #F9F9F9; box-sizing: border-box; border: 1px solid #ddd;}
-  .c_form {position: relative;}
-  .c_form h3 {position: absolute; top: 0; left: 0; font-size: 21px; line-height: 1.3em;}
-  .c_form h3 span {display: block;}
-  .c_form ul {position: relative; width: 432px; margin: 0 auto;}
-  .c_form li {margin-top: 9px; color: #888;}
-  .c_form li:first-child {margin-top: 0px;}
-  .c_form li > label {display: inline-block; font-size: 15px; width: 120px; text-indent: 10px; color: #333;}
-  .c_form li > input {width: 307px; height: 36px; border: 1px solid #a9a9a9; text-indent: 15px; font-size: 15px;}
-  .c_form li > input:focus {color: #333; outline: none; border: 2px solid #ff9000;}
+/* 신청하기 영역 */
+.container {position: relative; padding: 30px 40px 30px; background: #F9F9F9; box-sizing: border-box; border: 1px solid #ddd;}
+.c_form {position: relative;}
+.c_form h3 {position: absolute; top: 0; left: 0; font-size: 21px; line-height: 1.3em;}
+.c_form h3 span {display: block;}
+.c_form ul {position: relative; width: 294px; margin-left: 200px; border-right: 1px solid #ddd;} 
+.c_form li {margin-top: 9px; color: #888;}
+.c_form li:first-child {margin-top: 0px;}
+.c_form li > label {display: inline-block; font-size: 15px; width: 88px; text-indent: 0px; color: #333;}
+.c_form li > input {width: 195px; height: 30px; border: 1px solid #a9a9a9; text-indent: 15px; font-size: 15px;}
+.c_form li > input:focus {color: #333; outline: none; border: 2px solid #ff9000;}
 
-  .c_form .selectBox {display: inline-block; width: 307px;}
-  .c_form .selectBox i {color: #333;}
+.c_form .select_wrap {position: absolute; bottom: 0; left: 504px; }
+.c_form .select_wrap label {display: block; text-align: center; margin-bottom: 6px; font-size: 15px;}
+.c_form .selectBox {display: inline-block; width: 195px;}
+.c_form .selectBox i {color: #333;}
 
-  /*신청하기 버튼*/
-  .nBtn {position: absolute; display: block; top: 50%; margin-top: 2px; left: 50%; margin-left: 234px; width: 180px; height: 66px; background: #ff9000; color: #fff; font-size: 20px; font-weight: 700; border-radius: 4px; text-align: center; line-height: 3.4em;}
-  .nBtn i {position: relative; left: -10px; top: 22px; display: inline-block; float:right; overflow: hidden;
-    width: 15px; height: 22px;}
-  .nBtn i img {position: relative; width: 74px; top: -34px; left: 0px;}
+/*신청하기 버튼*/
+.nBtn {position: absolute; display: block; top: 0px; margin-top: 2px; right: 0px; width: 180px; height: 67px; background: #ff9000; color: #fff; font-size: 20px; font-weight: 700; border-radius: 4px; text-align: center; line-height: 3.5em;}
+.nBtn i {position: relative; left: -10px; top: 24px; display: inline-block; float:right; overflow: hidden;
+  width: 15px; height: 22px;}
+.nBtn i img {position: relative; width: 74px; top: -36px; left: 0px;}
 
-  /*안내 설명글 영역*/
-  .guide {margin: 50px 0; padding: 0px 40px;}
-  .guide > div {float: left;}
-  .guide > div:first-child {width: 520px;}
-  .guide > div:first-child + div {width: 380px;}
-  .guide li {color: #333; font-size: 15px; line-height: 1.5em;}
-  .guide li h2 {display: inline-block; font-size: 18px; position: relative; left: 32px;}
-  .guide li:first-child span {content: ""; position: absolute; display: block; top: -5px; width: 30px; height: 30px; background: url("http://img.onbiz.co.kr/onb_picto.png") no-repeat center -180px;}
-  .guide li:first-child + li {margin-top: 20px;}
+/*안내 설명글 영역*/
+.guide {margin-top: 50px; padding: 0px 30px;}
+.guide > div {float: left; }
+.guide > div:first-child {width: 540px;}
+.guide > div:first-child + div {width: 380px;}
+.guide li {color: #333; font-size: 15px; line-height: 1.5em;}
+.guide li h2 {display: inline-block; font-size: 18px; position: relative; left: 32px;}
+.guide li:first-child span {content: ""; position: absolute; display: block; top: -5px; width: 30px; height: 30px; background: url("http://img.onbiz.co.kr/onb_picto.png") no-repeat center -180px;}
+.guide li:first-child + li {margin-top: 20px;}
+
+/*자주묻는 질문 FAQ*/
+.faq {position: relative; margin-top: 50px}
+.faq > h3 {font-size: 26px; padding: 0 0 10px 10px; border-bottom: 1px solid #222;}
+.faq > h3 > span {font-size: 16px; margin-left: 20px;}
+.faq .f_table {position: relative;}
+.f_q, .f_a {position: relative; font-size: 15px; border-bottom: 1px solid #bdbdbd; padding: 17px 0 16px 75px; font-weight: 600;}
+.f_a {color: #555; background: #f9f9f9; line-height: 1.3em;}
+.q_icon, .a_icon {position: absolute; display: inline-block; width: 26px; height: 26px; background: #666; border-radius: 50%; color: #fff; text-align: center; top: 13px; left: 35px; line-height: 1.6em;}
+.a_icon {background: #ff9000;}
+
+.f_a > a {display: block;}
+.f_a .mt {margin-top: 17px;}
+.f_a a:hover {text-decoration: underline}
 
 /*모바일 디자인 미디어쿼리*/
 .m_private {display: none;}
@@ -75,9 +91,12 @@
   .container {padding: 15px;}
   .c_form h3 {position: relative; text-align: center; font-size: 18px;}
   .c_form h3 span {display: inline;}
-  .c_form ul {margin-top: 14px; width: 100%;}
+  .c_form ul {margin: 14px auto; width: 100%;}
   .c_form li > label {width: 25%; text-indent: 0px;}
   .c_form li > input, .c_form .selectBox {width: 75%;}
+  
+  .c_form .select_wrap label {display: inline-block; width: 25%; text-align: left;}
+  .c_form .select_wrap {position: relative; left: 0;}
   
   .nBtn {position: relative; top: 0; margin-top: 10px; left: 0; margin-left: 0; width: 100%; height: 48px; line-height: 2.7em; font-size: 18px; letter-spacing: -1px}
   .nBtn i {top: 16px; }
