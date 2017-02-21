@@ -52,7 +52,7 @@
   
   /*헤더*/
   .headerOrigin {border-bottom: 4px solid #4c4c4c; padding-top: 18px;}
-  .headerOrigin h2 a.nav_tab {position: absolute; display: inline-block; width: 130px; height: 28px; top: 19px; right: 10px; display: block; text-align: center; line-height: 2em; font-size: 14px;  color: #fff; background: #4c4c4c;
+  .headerOrigin h2 a.nav_tab {position: absolute; display: inline-block; width: 130px; height: 28px; top: 19px;	right: 10px; display: block; text-align: center; line-height: 2em; font-size: 14px;  color: #fff; background: #4c4c4c;
   border-radius: 4px;}
   .headerOrigin h1 a.nav_tab i {position: relative; top: 1px; margin-left: 3px; font-size: 18px;}
   

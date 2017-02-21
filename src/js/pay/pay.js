@@ -37,6 +37,16 @@ $(document).ready(function() {
     $(this).find("input").prop("checked", true);
     $(this).closest("ul").next().children().removeClass("on");
     $(this).closest("ul").next().children().eq(thIdx).addClass("on");
+      /*모바일용 연결*/
+    $("#m_way").find("ul li").eq(thIdx).find("input").prop("checked", true);
+    $("#m_way").find("ul li").removeClass("on");
+    $("#m_way").find("ul li").eq(thIdx).addClass("on");
+  });
+  /*모바일용 선택 카드할부 선택*/
+  $("#m_way li").on("click", function() {
+    var thIdx = $(this).index();
+    $(this).closest("ul").children().removeClass("on");
+    $(this).addClass("on");
   });
   /*결제하실 금액 브라우저 너비, 높이에 따라 조절*/
   var wd = $(window).width();

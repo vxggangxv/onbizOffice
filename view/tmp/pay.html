@@ -4,7 +4,7 @@
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta charset="UTF-8">
-  <meta name="viewport" content="width=320, width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
 
 	<meta name="title" content="온비즈오피스" />
 	<meta name="subject" content="가상오피스 1인실에서 80평까지 분할임대" /> 
@@ -37,49 +37,43 @@
 
 	<title>온비즈결제페이지</title>
 
-	<link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css">
-  <!--<link rel="stylesheet" href="http://static.onbiz.co.kr/css/common.css" type="text/css">
-  <link rel="stylesheet" href="http://static.onbiz.co.kr/css/pay/pay.css" type="text/css">-->
-  <link rel="stylesheet" href="http://static.onbiz.co.kr/css/common_tmp.css" type="text/css"> 
-  <link rel="stylesheet" href="http://static.onbiz.co.kr/css/pay/pay_tmp.css" type="text/css">  
+  <link rel="stylesheet" href="http://static.onbiz.co.kr/css/common_responsive.css" type="text/css">
+  <link rel="stylesheet" href="http://static.onbiz.co.kr/css/pay/pay_responsive.css" type="text/css">
 
 	<script src="http://static.onbiz.co.kr/js/jquery-1.12.4.min.js" type="text/javascript"></script>
   <script src="http://static.onbiz.co.kr/js/common.js"></script>
-  <!--<script src="http://static.onbiz.co.kr/js/pay/pay.js"></script>-->
+  <!-- <script src="http://static.onbiz.co.kr/js/pay/pay.js"></script> -->
   <script src="http://static.onbiz.co.kr/src/js/pay/pay.js"></script>
 
-  <!-- ie9이하 input꾸미기, nth-child 셀렉터 작동, html5, 미디어쿼리, border-radius 작동 -->
-  <!--[if (gte IE 6)&(lte IE 8)]>
-    <script src="http://static.onbiz.co.kr/js/IE9.js"></script>
-    <script src="http://static.onbiz.co.kr/js/poly-checked.min.js"></script>
-    <script src="http://static.onbiz.co.kr/js/pie/PIE.js"></script>
-
-    <script type="text/javascript" src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script type="text/javascript" src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <!-- ie9이하 html5, 미디어쿼리 작동 -->
+  <!--[if lte IE 8]>
+    <script type="text/javascript" src="http://static.onbiz.co.kr/js/html5shiv.js"></script>
+    <script type="text/javascript" src="http://static.onbiz.co.kr/js/respond.min.js"></script>
   <![endif]-->
 
 </head>
 <body>
+  <h1 class="hidden">온비즈오피스</h1>
+
   <div id="wrap">
     <!--모바일 팝업 배경 백드랍-->
     <div id="backDrop"></div>
     <!-- 모바일 헤더 -->
-    <header class="headerOrigin">
-      <h1><a href="./index.html">Onbiz Office</a><span>가상오피스 임대신청</span></h1>
+    <header class="headerOrigin m_private">
+      <h2><a href="./index.html">Onbiz Office</a><span>가상오피스 임대신청</span></h2>
     </header>
     <!--모바일 top으로-->
     <div class="btntop ptr">
       <img src="http://img.go.co.kr/mobile/top.png" alt="위로가기">
     </div>
     <!--모바일 단계 bar-->
-    <ul class="inf_bar clr">
+    <ul class="inf_bar clr m_private">
       <li class="on">상품선택</li>
       <li>정보입력</li>
       <li>계약서 서명</li>
       <li>계약완료</li>
     </ul>
-    
-   
+
     <!-- 헤더  -->
     <div class="h_wrap">
       <header id="header" class="clr">
@@ -129,7 +123,7 @@
         <ul class="clr t_table">
           <li>
             <div class="table">
-              <p class="t_cell"><input type="radio" class="t_radio" name="term" id="t1"><label for="t1">1개월</label></p>
+              <p class="t_cell"><input type="radio" class="t_radio" name="term" id="t1"><span></span><label for="t1">1개월</label></p>
             </div>
             <div class="table">
               <p class="t_cell">임대료</p>
@@ -138,12 +132,12 @@
               <p class="t_cell">100,000원</p>
             </div>
             <div class="table">
-              <p class="t_cell"><span>예치금</span> 80,000원</p>
+              <p class="t_cell"><span class="del">예치금</span> 80,000원</p>
             </div>
           </li>
           <li class="on">
             <div class="table">
-              <p class="t_cell"><input type="radio" class="t_radio" name="term" id="t3" checked="checked"><label for="t3">3개월</label><span class="sale">30%<br/><span>할인</span></span></p>
+              <p class="t_cell"><input type="radio" class="t_radio" name="term" id="t3" checked="checked"><span class="on"></span><label for="t3">3개월</label><span class="sale del">30%<br/><span>할인</span></span></p>
             </div>
             <div class="table">
               <p class="t_cell">임대료</p>
@@ -152,12 +146,12 @@
               <p class="t_cell"><del>300,000원</del><span class="sale m_private">30%할인</span>210,000원</p>
             </div>
             <div class="table">
-              <p class="t_cell"><span>예치금</span> 80,000원</p>
+              <p class="t_cell"><span class="del">예치금</span> 80,000원</p>
             </div>
           </li>
           <li>
             <div class="table">
-              <p class="t_cell"><input type="radio" class="t_radio" name="term" id="t6"><label for="t6">6개월</label><span class="sale">40%<br/><span>할인</span></span></p>
+              <p class="t_cell"><input type="radio" class="t_radio" name="term" id="t6"><span></span><label for="t6">6개월</label><span class="sale del">40%<br/><span>할인</span></span></p>
             </div>
             <div class="table">
               <p class="t_cell">임대료</p>
@@ -166,12 +160,12 @@
               <p class="t_cell"><del>600,000원</del><span class="sale m_private">40%할인</span>360,000원</p>
             </div>
             <div class="table">
-              <p class="t_cell"><span>예치금</span> 80,000원</p>
+              <p class="t_cell"><span class="del">예치금</span> 80,000원</p>
             </div>
           </li>
           <li>
             <div class="table">
-              <p class="t_cell"><input type="radio" class="t_radio" name="term" id="t12"><label for="t12">12개월</label><span class="sale">50%<br/><span>할인</span></span></p>
+              <p class="t_cell"><input type="radio" class="t_radio" name="term" id="t12"><span></span><label for="t12">12개월</label><span class="sale del">50%<br/><span>할인</span></span></p>
             </div>
             <div class="table">
               <p class="t_cell">임대료</p>
@@ -180,7 +174,7 @@
               <p class="t_cell"><del>1,200,000원</del><span class="sale m_private">50%할인</span>600,000원</p>
             </div>
             <div class="table">
-              <p class="t_cell"><span>예치금</span> 80,000원</p>
+              <p class="t_cell"><span class="del">예치금</span> 80,000원</p>
             </div>
           </li>
         </ul>
@@ -193,7 +187,7 @@
 		    <ul class="clr">
 		      <li class="on">
 		        <p>
-		          <input type="checkbox" name="option" id="o1" class="o_check" checked="checked">
+		          <input type="checkbox" name="option" id="o1" class="o_check" checked="checked"><span class="on"><img src="http://img.onbiz.co.kr/onb_picto.png" alt="체크"></span>
 		          <label for="o1"></label>
 		        </p>
 		        <p>
@@ -206,7 +200,7 @@
 		      </li>
 		      <li>
             <p>
-              <input type="checkbox" name="option" id="o2" class="o_check">
+              <input type="checkbox" name="option" id="o2" class="o_check"><span><img src="http://img.onbiz.co.kr/onb_picto.png" alt="체크"></span>
               <label for="o2"></label>
             </p>
             <p>
@@ -219,7 +213,7 @@
 		      </li>
 		      <li>
             <p>
-              <input type="checkbox" name="option" id="o3" class="o_check">
+              <input type="checkbox" name="option" id="o3" class="o_check"><span><img src="http://img.onbiz.co.kr/onb_picto.png" alt="체크"></span>
               <label for="o3"></label>
             </p>
             <p>
@@ -232,7 +226,7 @@
 		      </li>
 		      <li>
             <p>
-              <input type="checkbox" name="option" id="o4" class="o_check">
+              <input type="checkbox" name="option" id="o4" class="o_check"><span><img src="http://img.onbiz.co.kr/onb_picto.png" alt="체크"></span>
               <label for="o4"></label>
             </p>
             <p>
@@ -242,9 +236,9 @@
               월<span>10,000원</span>
             </p>
 		      </li>
-		      <li>
+		      <li class="l5">
              <p>
-              <input type="checkbox" name="option" id="o5" class="o_check">
+              <input type="checkbox" name="option" id="o5" class="o_check"><span><img src="http://img.onbiz.co.kr/onb_picto.png" alt="체크"></span>
               <label for="o5"></label>
             </p>
             <p>
@@ -263,15 +257,15 @@
         <ul id="tab" class="clr">
           <li class="on">
             <input type="radio" name="c_option" id="co1" class="co_check" checked="checked">
-            <label for="co1">신용카드(개인, 법인)</label>
+            <span class="on"></span><label for="co1">신용카드(개인, 법인)</label>
           </li>
           <li>
             <input type="radio" name="c_option" id="co2" class="co_check">
-            <label for="co2">신용카드(ISP)</label>
+            <span></span><label for="co2">신용카드(ISP)</label>
           </li>
           <li>
             <input type="radio" name="c_option" id="co3" class="co_check">
-            <label for="co3">실시간계좌이체</label>
+            <span></span><label for="co3">실시간계좌이체</label>
           </li>
         </ul>
         <ul class="t_contents">
@@ -285,15 +279,15 @@
       <section class="terms">
         <ul class="clr">
           <li>
-            <input type="checkbox" name="terms" class="ts_check" id="ts1"><label for="ts1"></label><a href="https://plugin.inicis.com/html60/main/01_Information.html" target="_blank">전자금융거래 이용약관</a>
+            <input type="checkbox" name="terms" class="ts_check" id="ts1"><span><img src="http://img.onbiz.co.kr/onb_picto.png" alt="체크"></span><label for="ts1"></label><a href="https://plugin.inicis.com/html60/main/01_Information.html" target="_blank">전자금융거래 이용약관</a>
           </li>
           <li>
-            <input type="checkbox" name="terms" class="ts_check" id="ts2"><label for="ts2"></label><a href="https://plugin.inicis.com/html60/main/03_Information.html" target="_blank">개인정보의 수집 및 이용안내</a>
+            <input type="checkbox" name="terms" class="ts_check" id="ts2"><span><img src="http://img.onbiz.co.kr/onb_picto.png" alt="체크"></span><label for="ts2"></label><a href="https://plugin.inicis.com/html60/main/03_Information.html" target="_blank">개인정보의 수집 및 이용안내</a>
           </li>
           <li>
-            <input type="checkbox" name="terms" class="ts_check" id="ts3"><label for="ts3"></label><a href="https://plugin.inicis.com/html60/main/04_Information.html" target="_blank">개인정보 제공 및 위탁안내</a></li>
+            <input type="checkbox" name="terms" class="ts_check" id="ts3"><span><img src="http://img.onbiz.co.kr/onb_picto.png" alt="체크"></span><label for="ts3"></label><a href="https://plugin.inicis.com/html60/main/04_Information.html" target="_blank">개인정보 제공 및 위탁안내</a></li>
           <li>
-            <input type="checkbox" name="terms" class="ts_check" id="ts4"><label for="ts4"></label><a href="https://plugin.inicis.com/html60/main/07_Information.html" target="_blank">정기과금 이용약관</a>
+            <input type="checkbox" name="terms" class="ts_check" id="ts4"><span><img src="http://img.onbiz.co.kr/onb_picto.png" alt="체크"></span><label for="ts4"></label><a href="https://plugin.inicis.com/html60/main/07_Information.html" target="_blank">정기과금 이용약관</a>
           </li>
         </ul>
       </section>
@@ -302,14 +296,14 @@
         <h3>&#42; 카드 무이자 할부 혜택</h3>
         <ul class="clr">
           <li><p class="c01"></p><p>5만원이상</p><p>2~5개월</p></li>
-          <li><p class="c06"></p><p>5만원이상</p><p>2~5개월</p></li>
-          <li><p class="c02"></p><p>5만원이상</p><p>2~5개월</p></li>
-          <li><p class="c07"></p><p>5만원이상</p><p>2~5개월</p></li>
-          <li><p class="c03"></p><p>5만원이상</p><p>2~5개월</p></li>
-          <li><p class="c08"></p><p>5만원이상</p><p>2~5개월</p></li>
-          <li><p class="c04"></p><p>5만원이상</p><p>2~5개월</p></li>
-          <li><p class="c09"></p><p>5만원이상</p><p>2~5개월</p></li>
-          <li><p class="c05"></p><p>5만원이상</p><p>2~5개월</p></li>
+          <li class="even"><p class="c06"></p><p>5만원이상</p><p>2~5개월</p></li>
+          <li class="bn"><p class="c02"></p><p>5만원이상</p><p>2~5개월</p></li>
+          <li class="even bn"><p class="c07"></p><p>5만원이상</p><p>2~5개월</p></li>
+          <li class="bn"><p class="c03"></p><p>5만원이상</p><p>2~5개월</p></li>
+          <li class="even bn"><p class="c08"></p><p>5만원이상</p><p>2~5개월</p></li>
+          <li class="bn"><p class="c04"></p><p>5만원이상</p><p>2~5개월</p></li>
+          <li class="even bn"><p class="c09"></p><p>5만원이상</p><p>2~5개월</p></li>
+          <li class="bn lt"><p class="c05"></p><p>5만원이상</p><p>2~5개월</p></li>
         </ul>
         <p>&#42; 개인카드로 5만원 이상 결제시 적용</p>
         <p>&#42; 신용카드사 정책 변경에 따라 변동 될 수 있음</p>
@@ -322,28 +316,28 @@
       <div class="container">
         <h3>결제하실 금액</h3>
         <ul class="p_startDate">
-          <li>
+          <li class="lt">
             <label for="p_date"><span class="m_private">&#8226;</span>임대게시일 선택</label>
             <div class="selectBox">
-              <input type="button" id="p_date" class="s_btn" value="2017년 02월 31일"><i class="fa fa-angle-down" aria-hidden="true"></i>
+              <input type="button" id="p_date" class="s_btn" value="2017년 02월 31일"><i><img src="http://img.onbiz.co.kr/f_icons.png" alt="아래로"></i>
             </div>
           </li>
         </ul>
         <ul class="p_term">
           <li><p>&#8226;임대 기간</p><p>2017.02.31~2017.05.31</p></li>
           <li><p>&#8226;임대 개월수</p><p>3개월</p></li>
-          <li><p>&#8226;옵션 추가</p><p><span>전화번호 착신전환 신청</span><span>회의실 및 카페테리아 이용권</span></p></li>
+          <li class="lt"><p>&#8226;옵션 추가</p><p><span>전화번호 착신전환 신청</span><span>회의실 및 카페테리아 이용권</span></p></li>
         </ul>
         <ul class="p_price">
           <li><p>총 신청금액</p><p>442,500원</p></li>
           <li><p>&#8226;임대정상가</p><p>300,000원</p></li>
           <li><p>&#8226;예치금(보증금)</p><p>82,500원</p></li>
           <li><p>&#8226;옵션(2개/3개월)</p><p>60,000원</p></li>
-          <li><p>&#8226;임대가 할인(30% 할인)</p><p>-90,000원</p></li>
+          <li class="lt"><p>&#8226;임대가 할인(30% 할인)</p><p>-90,000원</p></li>
         </ul>
         <ul class="p_total">
           <li><p>총 결제금액</p><p>(신용카드 결제)</p></li>
-          <li>
+          <li class="lt">
             <p>387,750원<span>(VAT포함)</span></p>
           </li>
         </ul>
@@ -368,7 +362,7 @@
       </section>
       <p class="ps3">예치금 <span>80,000</span>원은 계약종료시<br/>고객님 계좌로 전액 환급해 드립니다.</p>
       <div id="panel">
-        <p><input type="checkbox" id="agree" checked="checked"><label for="agree">주의사항 및 약관 동의</label><i class="fa fa-angle-down" aria-hidden="true"></i></p>
+        <p><input type="checkbox" id="agree" checked="checked"><span class="on"><img src="http://img.onbiz.co.kr/onb_picto.png" alt="체크"></span><label for="agree">주의사항 및 약관 동의</label><i><img src="http://img.onbiz.co.kr/f_icons.png" alt="아래로"></i></p>
         <div class="txtara">
           <ul>
             <li>주의사항 (체크박스 확인)</li>
@@ -380,7 +374,7 @@
             <li>으로 정산되어 반환청구됩니다.</li>
             <li class="idt">■업무지원 서비스 및 기타 서비스 비용을 당사가</li>
             <li>대납할 경우에는 10%의 서비스요금이 추가로</li>
-            <li>부가됩니다.</li>
+            <li class="lt">부가됩니다.</li>
           </ul>
         </div>
       </div>

@@ -1,0 +1,172 @@
+@charset "utf-8";
+
+
+/*카테고리 영역*/
+.category > ul li {position: relative; float: left; width: 50%; height: 80px; top:0; text-align: center; background: #444444; color: #fff; cursor: pointer;}
+.category h3 {font-size: 24px; margin-top: 6px;}
+.category > ul li.on {top: -10px; height: 90px; background: #FF9000;}
+.category > ul li.on h3 {margin-top: 16px;}
+.category p {margin-top: 5px;}
+/*업종 선택*/
+.st_wrap {position: relative;}
+.st_wrap .selectBox {display: block; margin: 5px auto 0;}
+.st_wrap .selectBox .s_btn {width: 100%; text-align: left; text-indent: 15px; height: 36px; font-size: 15px;
+}
+.st_wrap p {text-align: center; font-size: 14px; color: #555; letter-spacing: -1px; margin: 12px 0 17px;}
+
+input[type="radio"].cate_inp + span{
+  display: inline-block;
+  position: relative; top: 6px; width: 30px; height: 30px; cursor: pointer;
+  background: url("http://img.onbiz.co.kr/onb_picto.png") no-repeat center -30px;
+}
+input[type="radio"].cate_inp + span.on {
+  background: url("http://img.onbiz.co.kr/onb_picto.png") no-repeat center -60px;
+}
+
+/*컨테이너 영역*/
+input[type="checkbox"].equal + span + label {position: relative; display: inline-block; font-size: 11px; text-align: left; font-size: 13px;}
+input[type="checkbox"].equal + span {
+  display: inline-block; overflow: hidden;
+  position: relative; top: 4px; right: 3px; width: 14px; height: 14px; cursor: pointer;
+  border: 1px solid #a9a9a9; background: #eee;
+}
+input[type="checkbox"].equal + span img {display: none;}
+input[type="checkbox"].equal + span.on {background-color: #ff9000; border-color: #ff9000;}
+input[type="checkbox"].equal + span.on img {
+  display: block;
+  position: relative; top: -82px; left: -2px; width: 16px; 
+}
+
+#container {position: relative; padding: 40px 40px 30px; background: #F9F9F9; box-sizing: border-box; border: 1px solid #ddd;}
+#container h3 {position: absolute; top: 0; left: 0; letter-spacing: -1px;}
+#container ul {position: relative; width: 432px; margin: 0 auto; left: -58px;}
+#container li {margin-top: 9px; color: #888;}
+#container li:first-child {margin-top: 0px;}
+#container li > label {display: inline-block; font-size: 15px; width: 120px; text-indent: 10px; color: #333;}
+#container li > input {width: 307px; height: 36px; border: 1px solid #a9a9a9; text-indent: 15px; font-size: 15px;}
+#container li > input:focus {color: #333; border: 2px solid #ff9000; outline: none;}
+#container .m_jm span, #container .l_snum span {display: inline-block; width: 17px; text-align: center; font-weight: 800;}
+#container .mng_jm {width: 142px;}
+#container .m_jm #mng_jm + span + input {width: 40px; margin-right: 5px;}
+#container .mTxt {padding-left: 120px; font-size: 14px; letter-spacing: -1px; margin: 5px 0 12px;}
+#container .m_adr input[type=text] {width: 185px; margin-right: -6px;}
+#container .m_adr a {display: inline-block; width: 123px; height: 36px; vertical-align: middle; line-height: 2.4em; border: 1px solid #a9a9a9; font-size: 14px; color: #222; text-align: center;
+  background: #ffffff; 
+  background: -moz-linear-gradient(top,  #ffffff 0%, #efefef 100%); 
+  background: -webkit-linear-gradient(top,  #ffffff 0%,#efefef 100%); 
+  background: linear-gradient(to bottom,  #ffffff 0%,#efefef 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#efefef',GradientType=0 ); 
+}
+#container .m_emt {margin-top: -1px;}
+#container .m_emt input {width: 307px;}
+
+#container .l_snum #les_snum {width: 90px;}
+#container .l_snum #les_snum + span + input {width: 60px;}
+#container .l_snum #les_snum + span + input + span + input {width: 123px;}
+
+#container > section > p {position: absolute; width: 432px; left: 50%; margin-left: -274px; top: -32px; text-align: right;}
+
+#container section.lessee {display: none;}
+
+#container .refund {position: absolute; top: 25px; left: 676px; width: 288px; height: 332px; border: 1px solid #ddd; background: #fff; padding: 0 10px;}
+#container .refund h3 {position: relative; width: 100%; text-align: center; margin-top: 25px;}
+#container .refund p {letter-spacing: -1px;}
+#container .refund h3 + p {font-size: 14px; text-align: center; margin-top: 5px; color: #4a4a4a;}
+#container .refund ul {width: 100%; left: 0; margin-top: 10px;}
+#container .refund label {width: 70px; text-align: left; text-indent: 0;}
+#container .refund input {width: 191px;}
+#container .refund .selectBox {display: inline-block; width: 191px;}
+#container .refund .selectBox input {width: 100%;}
+#container .refund .selectBox ul {position: absolute; margin-top: 0;}
+#container .refund .selectBox ul li {color: #222;}
+#container .refund > p {font-size: 13px; line-height: 1.4em; color: #4a4a4a;}
+#container .refund > ul + p {margin-top: 10px;}
+#container .refund > ul + p + p {margin-top: 5px;}
+
+/*다음단계 버튼*/
+.nBtn {position: relative; display: block; margin: 15px auto; width: 268px; height: 56px; background: #ff9000; color: #fff; font-size: 20px; font-weight: 700; border-radius: 4px; text-align: center; line-height: 3em;}
+.nBtn i {position: absolute; left: 50%; margin-left: 100px; top: 50%; margin-top: -9px;  display: inline-block; overflow: hidden; width: 15px; height: 22px;}
+.nBtn i img {position: relative; width: 74px; top: -30px; left: 0px;}
+
+
+/*모바일 디자인 미디어 쿼리*/
+.m_private {display: none;}
+@media all and (max-width: 767px){
+  .m_private {display: block;}
+  /*헤더*/
+  .headerOrigin h2 span {float:right; position: relative; font-size: 16px; top: 10px; }
+  
+  /*모바일 단계 바*/
+  .inf_bar li:first-child:after {background-position: -39px;}
+  /*메인텍스트*/
+  #main, #contents {position: relative; width: 100%;}
+  #main {padding: 15px 0 25px;}
+  #main h3:first-child {display: none;}
+  #main p:nth-child(2) {margin-top: 5px;}
+  #main .mTxt {text-align: center; letter-spacing: -1px; line-height: 1.4em; color: #444;}
+  #main .unline {text-decoration: underline;}
+  #main .fc {color: #ff9000;}
+  
+  /*카테고리*/
+  .category {letter-spacing: -1px;}
+  .category h3 {font-size: 18px; margin-top: 0px;} 
+  .category > ul li {padding: 0 3px;}
+  .category > ul li.on h3 {margin-top: 10px;}
+  .category input[type="radio"] + label:before {top: 8px;}
+  .category ul:first-child p {font-size: 13px; margin-top: 8px;}
+  
+  .st_wrap .selectBox {width: 100%; padding: 0 5px}
+  
+  /*켄테이너*/
+  #container {padding: 15px; margin: 0 5px;}
+  #container h3 {position: relative; text-align: center; font-size: 17px;}
+  
+  #container > section > p {position: relative; width: 100%; left: 0; margin-left: 0; top: 0; margin-top: 15px;}
+  #container ul {width: 100%; left: 0; margin-top: 10px; }
+  #container li > label, #container .refund label {font-size: 14px; width: 30%; margin-right: -5px; text-indent: 0;}
+  #container li > input, #container .m_emt input, #container .refund input, #container .refund .selectBox,
+  #container .refund input, #container .refund .selectBox
+  {width: 70%; font-size: 14px;}
+  #container .m_jm span, #container .l_snum span {width: 3%;}
+  #container .mng_jm {width: 35%;}
+  #container .m_jm {width: 100%; font-size: 14px;}
+  #container .m_jm #mng_jm + span + input {width: 10%; margin-right: 0; text-indent: 0px; text-align: center;}
+  
+  
+  #container .mTxt {padding-left: 30%; font-size: 13px;}
+  
+  #container .m_adr input[type="text"] {width: 40%; margin-right: -5px;}
+  #container .m_adr a {width: 30%;}
+  
+  #container .l_snum span {width: 3%;}
+  #container .l_snum #les_snum {width: 22%;}
+  #container .l_snum #les_snum + span + input {width: 15%; text-indent: 0; text-align: center;}
+  #container .l_snum #les_snum + span + input + span + input {width: 27%;}
+  
+  #container .refund {position: relative; width: 100%; height: auto; left: -1px; margin-left: 0; top: 0; margin-top: 25px; padding: 15px 15px 20px 15px;}
+  #container .refund ul {margin-top: 20px;}
+  #container .refund h3 { margin-top: 5px;}
+  #container .refund > ul + p {margin-top: 15px}
+  
+  /*다음단계 버튼*/
+  .btn_wrap {padding: 0 5px;}
+  .nBtn {width: 100%; left: 0;}
+  .nBtn i {margin-right: -135px;}
+  
+}
+@media all and (max-width: 480px){
+  .category > ul li {height: 86px}
+  .category > ul li.on {height: 96px;}
+  .st_wrap p {font-size: 13px;}
+}
+@media all and (max-width: 320px){
+  #main .mTxt {font-size: 14px;}
+  .category > ul li h3, .category > ul li.on h3 {font-size: 15px;}
+  .st_wrap p {text-align: left;}
+  #container li > label, #container .refund label {font-size: 12px;}
+  #container li > input {font-size: 13px;}
+  /* #container .mng_jm {width: 27%;} */
+  #container .m_adr a {font-size: 12px; line-height: 3em;}
+  
+}
+  
