@@ -1,14 +1,13 @@
 @charset "utf-8";
 
-
 /*메인 영역*/
-#main {border-bottom: 1px solid #ccc;}
+#main {border-bottom: 1px solid #ccc; padding: 20px 0px;}
 
 /*콘텐츠*/
 #contents {position: relative; width: 980px; margin: 0 auto; color: #333;}
 #contents > section {position: relative; width: 664px; left: -158px; margin: 0 auto; color: #333;}
-#contents > section > h3 {font-size: 22px; padding: 30px 0px 12px;}
-#contents > section:first-child > h3 {padding-top: 20px;}
+#contents > section > h3 {font-size: 18px; padding: 16px 0px 12px;}
+#contents > section:first-child > h3 {padding: 12px 0px 12px;}
 /*임대상품 선택 영역*/
 .term h3 span {position: relative; top: 10px;font-size: 13px; float: right; color: #444; font-weight: 400;}
 .term .t_table {position: relative; width: 100%;}
@@ -55,7 +54,7 @@ input[type="radio"].t_radio + span.on {
 .ps span:first-child {font-weight: 600; color: #222; margin-right: 5px;}
 .ps span:first-child + span {color: #f52700;}
 .ps2 {padding-left: 92px; margin-top: 3px;}
-.ps2 span {position: relative;}
+.ps2 span {position: relative; text-decoration: underline;}
 
 /*옵션 추가 선택 영역*/
 .option > h3 span {font-size: 15px; font-weight: 400; margin-left: 16px;}
@@ -89,11 +88,11 @@ input[type="checkbox"].o_check + span.on img { display: block;
 
 /*결제수단 선택*/
 .way #tab {z-index: 1;}
-.way #tab li {z-index:1; position: relative; float: left; width: 221px; height: 44px; border: 1px solid #ddd; border-bottom: none; border-left: none; text-align: center; cursor: pointer;}
-.way #tab li:first-child {width: 222px; border-left: 1px solid #ddd;}
+.way #tab li {z-index:1; position: relative; width: 100%; height: 44px; border: 1px solid #ddd; border-left: none; text-align: left; cursor: pointer; padding-left: 10px;}
+.way #tab li p {display: inline; position: relative; top: 5px; font-weight: 400; font-size: 13px;}
 /*클릭 시*/
-.way #tab li.on {border: 1px solid #ff9000; border-bottom: none; background: #FFF5D2; font-weight: 600;}
-.way #tab li:first-child + div.on, .way #tab li:first-child + div + div.on {width: 222px; margin-left: -1px;}
+.way #tab li.on {border: 1px solid #ff9000; background: #FFF5D2; font-weight: 600;}
+/*.way #tab li:first-child + div.on, .way #tab li:first-child + div + div.on {width: 222px; margin-left: -1px;}*/
 
 input[type="radio"].co_check + span + label {position: relative; top: 5px; font-size: 15px;}
 input[type="radio"].co_check + span {
@@ -112,7 +111,7 @@ input[type="radio"].co_check + span.on {
 .way .t_contents li.on {display: block; border-color: #ff9000; background: #FFF5D2;}
 
 /* 이용약관 4가지 */
-#contents .terms {padding: 20px 0; margin-top: 8px; border-bottom: 1px dashed #ddd; }
+#contents .terms {padding: 15px 0 15px; border-bottom: 1px dashed #ddd; }
 .terms ul li {float: left; width: 50%; padding-left: 38px;}
 .terms li a {font-size: 15px;}
 .terms li a:hover {text-decoration: underline;}
@@ -159,16 +158,18 @@ input[type="checkbox"].ts_check + span.on img { display: block;
 .card > p {font-size: 12px; line-height: 1.5em; color: #222;}
 
 /*결제하실 금액*/
-.price {z-index: 2; position: fixed; width: 290px; left: 50%; margin-left: 200px; top: 0; margin-top: 289px; letter-spacing: -1px; background: #fff;}
+.price {z-index: 2; position: fixed; width: 290px; left: 50%; margin-left: 200px; top: 0; margin-top: 242px; letter-spacing: -1px; background: #fff;}
 .price.on {margin-top: 103px; transition: all 2s;}
-.price.m_on {margin-top: 0;}
+.price.m_on {margin-top: 242;}
 @media all and (max-width: 980px) {
   .price {left: 690px; margin-left: 0;}
 }
 .container {border: 1px solid #000;}
-.container h3 { font-size: 22px; padding: 16px 16px 12px;  border-bottom: 1px solid #b3b3b3; font-weight: 600;}
+.container h3 { font-size: 18px; padding: 12px 12px 12px;  border-bottom: 1px solid #b3b3b3; font-weight: 600;}
 
-.container > ul {border-bottom: 1px solid #b3b3b3; padding: 8px 0 12px;}
+.container > ul {border-bottom: 1px solid #b3b3b3; /*padding: 6px 0;*/}
+.container > ul li:before, .container > ul li:after {content: ""; display: block;}
+.container > ul li:after {clear: both;}
 .container > ul li {margin: 0px 14px 0px; border-bottom: 1px solid #d2d2d2; position: relative;}
 .container > ul li.lt {border-bottom: none;}
 .container > ul.p_term li.lt {padding-bottom: 6px;}
@@ -180,36 +181,40 @@ input[type="checkbox"].ts_check + span.on img { display: block;
 .container > ul li p:first-child {float: left;}
 .container > ul li p + p {float: right; text-align: right;}
 .container > .p_term li.lt p + p {width: 190px; line-height: 1.5em;}
+.container > .p_term li.lt span {display: block;}
+.container > .p_term li p + p {letter-spacing: -1px;}
 
 .container > ul li p + p span {display: inline-block;}
 .container > ul li p + p span:first-child {margin-top: 6px;}
 
-.container > .p_startDate {padding: 16px 0; background: #f5f5f5;}
+.container > .p_startDate {padding: 6px 0; background: #f5f5f5;}
 .container > .p_startDate li {margin: 0 14px 0;}
-.container > .p_startDate li label {display: block; text-align: center; font-size: 14px; margin-bottom: 5px; color: #222; letter-spacing: 0;}
-.container .selectBox {width: 100%;}
-.container .selectBox .s_btn {background: #fff;}
+.container > .p_startDate li label {display: inline; font-size: 13px; margin-bottom: 5px; color: #222; letter-spacing: 0; position: relative; top: 5px;}
+.p_startDate label span {display: inline;}
+.container .selectBox {float: right; position: relative; right: 0; display: inline-block; width: 170px;}
+.container .selectBox .s_btn {background: #fff; text-indent: 10px; font-size: 13px;}
 
-.container > .p_price {border-bottom-color: #d2d2d2; padding-top: 6px;}
+.container > .p_price {border-bottom-color: #d2d2d2; /*padding-top: 6px;*/}
 .container > .p_price li:first-child {margin: 0; padding: 0px 14px; border-bottom: 1px dashed #d2d2d2;}
 .container > .p_price li:first-child p {font-size: 15px; font-weight: 600;}
 .p_price li.lt p + p {color: #f93500;}
 
-.container > .p_total {padding: 8px 0 12px; background: #f5f5f5; border-bottom: none;}
+.container > .p_total {padding: 3px 0 12px; background: #f5f5f5; border-bottom: none;}
 .container > .p_total li:first-child {border-bottom: none;}
+.container > .p_total li:first-child span {position: absolute; left: 0; top: 26px; font-weight: 600;}
 .container > .p_total p:first-child {font-size: 16px; line-height: 2.2em; font-weight: 600;}
-.container > .p_total li p + p, .container > .p_total li.lt p {font-size: 14px; color: #4c4c4c; float:right;}
-.container > .p_total li.lt p {font-size: 26px; color: #f93500; font-weight: 800; line-height: 1em; letter-spacing: 0; margin-top: -6px;}
-.container > .p_total li.lt p span:first-child {display: block; font-size: 15px; margin-top: 5px; text-align: right; font-weight: 400; color: #4c4c4c; line-height: 1em;}
+.container > .p_total li p + p, .container > .p_total li.lt p {font-size: 13px; color: #4c4c4c; float:right;}
+.container > .p_total li.lt p {font-size: 22px; color: #f93500; font-weight: 800; line-height: 1em; letter-spacing: 0; margin-top: -6px;}
+.container > .p_total li.lt p span:first-child {display: block; font-size: 12px; margin-top: 3px; text-align: right; font-weight: 400; color: #4c4c4c; line-height: 1em;}
 
-.p_btn {display: block; width: 100%; height: 67px; border-radius: 4px; margin-top: 10px; text-align: center; font-size: 26px; color: #fff; background: #f62600; line-height: 2.6em; font-weight: 600;}
+.p_btn {display: block; width: 100%; height: 67px; border-radius: 4px; text-align: center; font-size: 26px; color: #fff; background: #f62600; line-height: 2.6em; font-weight: 600;}
 .p_btn + p {text-align: center; font-size: 15px; padding: 10px 0; color: #555;}
 .p_btn + p span {color: #f62600;}
 .ps3 {text-align: center; font-size: 15px; padding: 10px 0; color: #555;}
 .ps3 span {color: #f62600;}
 
 /*주의 사항 및 약관 동의*/
-#panel {}
+#panel { margin-top: 8px; }
 input[type="checkbox"]#agree + span + label {position: relative; display: inline-block; font-size: 11px; text-align: left; font-size: 13px; top: -2px;}
 input[type="checkbox"]#agree + span {
   display: inline-block; overflow: hidden;
@@ -225,10 +230,10 @@ input[type="checkbox"]#agree + span.on img { display: block;
 #panel > p i {position: relative; left: 0px; top: 2px; display: inline-block; float:right; overflow: hidden; width: 20px; height: 22px; cursor: pointer;}
 #panel > p i img {position: relative; width: 74px; top: 0px; left: -35px;}
 /* 가리기/보이기 */
-.price #panel > p {padding: 6px 10px;}
-.price #panel > p label {font-size: 16px; width: auto;}
-.price #panel > p label:before {position: relative; top: 2px; margin-right: 5px;}
-#panel .txtara {display: none; position: relative; top: -1px; height: 60px; resize: none; text-align: left; padding: 5px 2px; border: 1px solid #dedede; overflow-y: scroll; overflow-x: hidden; border-bottom-left-radius: 6px; border-bottom-right-radius: 6px;}
+#panel > p {padding: 6px 10px;}
+#panel > p label {font-size: 16px; width: auto;}
+#panel > p label:before {position: relative; top: 2px; margin-right: 5px;}
+#panel .txtara {display: none; position: relative; top: -1px; height: 64px; resize: none; text-align: left; padding: 5px 2px; border: 1px solid #dedede; overflow-y: scroll; overflow-x: hidden; border-bottom-left-radius: 6px; border-bottom-right-radius: 6px;}
 #panel .txtara li {padding: 0; font-size: 14px; font-weight: 400; line-height: 1.3em; text-indent: 14px;}
 #panel .txtara .idt {text-indent: 0;}
 
@@ -316,8 +321,7 @@ input[type="checkbox"]#agree + span.on img { display: block;
   .option ul li:first-child + li + li + li		 {border-left: 1px solid #ccc;}
   .option ul li:first-child, 
   .option ul li:first-child + li, 
-  .option ul li:first-child + li + li	, 
-  .option ul li:first-child + li + li + li		 {border-bottom: none;}
+  .option ul li:first-child + li + li	{border-bottom: none;}
   .option ul li:first-child + li.on, 
   .option ul li:first-child + li + li + li.on {width: 100%; margin-left: 0px;}
   .option ul li:first-child.on, 
@@ -341,7 +345,7 @@ input[type="checkbox"]#agree + span.on img { display: block;
   .way {display: none;}
   #m_way h3 {padding: 8px; margin: 0; font-weight: 600; font-size: 16px; color: #555; background: #f5f5f5; border-top: 1px solid #ccc;}
   #m_way input[type="radio"] + label:before {position: absolute; left: -9999px;}
-  #m_way li {position: relative; float: left; width: 32%; margin-left: 1%; height: 80px; display: table; border: 1px solid #ccc; margin-top: 14px;}
+  #m_way li {position: relative; width: 50%; margin: 0 auto; height: 80px; display: table; border: 1px solid #ccc; margin-top: 14px;}
   #m_way li.on {border-color: #ff9000; background: #fff5d2; font-weight: 600;}
   #m_way input[type="radio"] + label {display: table-cell; top: 0; left: 0; width: 100%; height: 100%; text-align: center; vertical-align: middle;} 
   
@@ -354,30 +358,31 @@ input[type="checkbox"]#agree + span.on img { display: block;
   
   /*결제하실 금액*/
   .price {position: relative; width: 100%; top: 0; left: 0; margin-left: 0px; margin-top: 0px; letter-spacing: -1px; background: #fff; border-top: 1px solid #000;}
-  .p_startDate label span {display: inline;}
+
   .container {border: none; padding: 0px 5px;}
-  .container h3 {font-size: 16px; border: none; padding-left: 5px;}
+  .container h3 {font-size: 16px; border: none; padding: 10px 10px 10px 5px; border-bottom: 1px dashed #b3b3b3;}
   .container > ul {padding: 0;}
   .container > ul li {margin: 0; border: none;}
   .container > .p_startDate li {margin: 0;}
-  .container > ul:nth-child(2) {border: none;}
-  .container > .p_startDate {background: none; padding: 0 0 17px;}
-  .container > .p_startDate li label {display: inline; position: relative; top: 8px;}
-  .container .selectBox {position: absolute; right: 0; display: inline-block; width: 170px;}
-  .container .selectBox .s_btn {background: #f9f9f9;}
+  .container > ul:nth-child(2) {border: none; padding: 0; margin: 6px 0 2px;}
+  .container > .p_startDate {background: none;}
+  
+  .container .selectBox .s_btn {background: #f9f9f9; font-size: 12px;}
   .container > .p_price li:first-child {padding: 0 0 0 5px; }
-  .container > .p_total {background: none;}
+  .container > ul.p_term li.lt {padding-bottom: 0; top: -6px;}
+  
+  .container > .p_total li:first-child span {top: -4px; left: 5px;}
+  .container > .p_total {background: none; padding: 15px 0 13px;}
   .container > .p_total li {padding-left: 5px;}
-  .container > .p_total li.lt {margin-top: -20px;}
-  .container > .p_total li:first-child p:first-child + p {display: none;}
+  .container > .p_total li:first-child p {display: none;}
   .container > .p_total li.lt p {font-size: 22px;}
   .container > .p_total li.lt p span {font-size: 14px;}
   
   .ps3 {padding: 14px 0;}
    /*결제하기 버튼, 약관동의*/
-  #panel {margin: 0 5px;}
+  #panel {margin: 8px 5px 50px;}
   .btn_wrap {padding: 0 5px;}
-  .p_btn {height: 50px; font-size: 20px; margin-top: 10px;}
+  .p_btn {height: 50px; font-size: 20px;}
 }
 
  @media all and (max-width: 320px){

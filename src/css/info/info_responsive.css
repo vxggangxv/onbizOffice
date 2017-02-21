@@ -2,17 +2,22 @@
 
 
 /*카테고리 영역*/
-.category > ul li {position: relative; float: left; width: 50%; height: 80px; top:0; text-align: center; background: #444444; color: #fff; cursor: pointer;}
-.category h3 {font-size: 24px; margin-top: 6px;}
-.category > ul li.on {top: -10px; height: 90px; background: #FF9000;}
+.category > ul li {display: table; position: relative; float: left; width: 50%; height: 70px; top:0; text-align: center; background: #444444; color: #fff; cursor: pointer;}
+.category h3, .category p {position: relative; display: table-cell; vertical-align: middle;}
+.category h3 {font-size: 24px; /*margin-top: 6px;*/ line-height: 2em;}
+.category .c_h {left: 15px;}
+.category .rt {left: 5px; letter-spacing: -1px;}
+.category .c_h + p {left: 10px;}
+.category .rt + p {left: 0px; }
+.category p {text-align: left; /*margin-top: 5px;*/}
+.category > ul li.on {margin-top: -10px; height: 80px; background: #FF9000;}
 .category > ul li.on h3 {margin-top: 16px;}
-.category p {margin-top: 5px;}
 /*업종 선택*/
-.st_wrap {position: relative;}
-.st_wrap .selectBox {display: block; margin: 5px auto 0;}
-.st_wrap .selectBox .s_btn {width: 100%; text-align: left; text-indent: 15px; height: 36px; font-size: 15px;
+.st_wrap {position: relative; text-align: center;}
+.st_wrap .selectBox {display: inline-block; width: 35%; margin: 10px auto; }
+.st_wrap .selectBox .s_btn {width: 100%; text-align: left; text-indent: 15px; height: 30px; font-size: 15px;
 }
-.st_wrap p {text-align: center; font-size: 14px; color: #555; letter-spacing: -1px; margin: 12px 0 17px;}
+.st_wrap p {display: inline-block; text-align: center; font-size: 14px; color: #555;}
 
 input[type="radio"].cate_inp + span{
   display: inline-block;
@@ -37,20 +42,20 @@ input[type="checkbox"].equal + span.on img {
   position: relative; top: -82px; left: -2px; width: 16px; 
 }
 
-#container {position: relative; padding: 40px 40px 30px; background: #F9F9F9; box-sizing: border-box; border: 1px solid #ddd;}
+#container {position: relative; padding: 30px 40px 30px; background: #F9F9F9; box-sizing: border-box; border: 1px solid #ddd;}
 #container h3 {position: absolute; top: 0; left: 0; letter-spacing: -1px;}
 #container ul {position: relative; width: 432px; margin: 0 auto; left: -58px;}
 #container li {margin-top: 9px; color: #888;}
 #container li:first-child {margin-top: 0px;}
 #container li > label {display: inline-block; font-size: 15px; width: 120px; text-indent: 10px; color: #333;}
-#container li > input {width: 307px; height: 36px; border: 1px solid #a9a9a9; text-indent: 15px; font-size: 15px;}
+#container li > input {width: 307px; height: 30px; border: 1px solid #a9a9a9; text-indent: 15px; font-size: 15px;}
 #container li > input:focus {color: #333; border: 2px solid #ff9000; outline: none;}
 #container .m_jm span, #container .l_snum span {display: inline-block; width: 17px; text-align: center; font-weight: 800;}
 #container .mng_jm {width: 142px;}
 #container .m_jm #mng_jm + span + input {width: 40px; margin-right: 5px;}
 #container .mTxt {padding-left: 120px; font-size: 14px; letter-spacing: -1px; margin: 5px 0 12px;}
 #container .m_adr input[type=text] {width: 185px; margin-right: -6px;}
-#container .m_adr a {display: inline-block; width: 123px; height: 36px; vertical-align: middle; line-height: 2.4em; border: 1px solid #a9a9a9; font-size: 14px; color: #222; text-align: center;
+#container .m_adr a {display: inline-block; width: 123px; height: 30px; vertical-align: middle; line-height: 2.4em; border: 1px solid #a9a9a9; font-size: 14px; color: #222; text-align: center;
   background: #ffffff; 
   background: -moz-linear-gradient(top,  #ffffff 0%, #efefef 100%); 
   background: -webkit-linear-gradient(top,  #ffffff 0%,#efefef 100%); 
@@ -64,12 +69,12 @@ input[type="checkbox"].equal + span.on img {
 #container .l_snum #les_snum + span + input {width: 60px;}
 #container .l_snum #les_snum + span + input + span + input {width: 123px;}
 
-#container > section > p {position: absolute; width: 432px; left: 50%; margin-left: -274px; top: -32px; text-align: right;}
+#container > section > p {position: absolute; width: 432px; left: 50%; margin-left: -274px; top: -22px; text-align: right;}
 
 #container section.lessee {display: none;}
 
-#container .refund {position: absolute; top: 25px; left: 676px; width: 288px; height: 332px; border: 1px solid #ddd; background: #fff; padding: 0 10px;}
-#container .refund h3 {position: relative; width: 100%; text-align: center; margin-top: 25px;}
+#container .refund {position: absolute; top: 50%; margin-top: -152px; left: 676px; width: 288px; height: 304px; border: 1px solid #ddd; background: #fff; padding: 0 10px;}
+#container .refund h3 {position: relative; width: 100%; text-align: center; margin-top: 16px;}
 #container .refund p {letter-spacing: -1px;}
 #container .refund h3 + p {font-size: 14px; text-align: center; margin-top: 5px; color: #4a4a4a;}
 #container .refund ul {width: 100%; left: 0; margin-top: 10px;}
@@ -100,7 +105,7 @@ input[type="checkbox"].equal + span.on img {
   .inf_bar li:first-child:after {background-position: -39px;}
   /*메인텍스트*/
   #main, #contents {position: relative; width: 100%;}
-  #main {padding: 15px 0 25px;}
+  #main {padding: 15px 0;}
   #main h3:first-child {display: none;}
   #main p:nth-child(2) {margin-top: 5px;}
   #main .mTxt {text-align: center; letter-spacing: -1px; line-height: 1.4em; color: #444;}
@@ -109,12 +114,17 @@ input[type="checkbox"].equal + span.on img {
   
   /*카테고리*/
   .category {letter-spacing: -1px;}
+  .category h3, .category p {display: block;}
+  .category .c_h, .category .c_h + p, .category .rt {left: 0;}
+  .category p {text-align: center;}
   .category h3 {font-size: 18px; margin-top: 0px;} 
-  .category > ul li {padding: 0 3px;}
-  .category > ul li.on h3 {margin-top: 10px;}
+  .category > ul li {padding: 0 3px; top: 10px; height: 77px;}
+  .category > ul li.on {top: 0px; height: 97px;}
+  .category > ul li.on h3 {margin-top: 13px;}
   .category input[type="radio"] + label:before {top: 8px;}
-  .category ul:first-child p {font-size: 13px; margin-top: 8px;}
+  .category ul:first-child p {font-size: 13px; margin-top: 0px; padding-bottom: 5px;}
   
+  .st_wrap p { margin-bottom: 10px;}
   .st_wrap .selectBox {width: 100%; padding: 0 5px}
   
   /*켄테이너*/
@@ -155,13 +165,22 @@ input[type="checkbox"].equal + span.on img {
   
 }
 @media all and (max-width: 480px){
-  .category > ul li {height: 86px}
-  .category > ul li.on {height: 96px;}
+  .category h3 {font-size: 16px;}
+  .category .rt {letter-spacing: -2px;}
+  .category > ul li.on h3 {margin-top: 15px;}
+  .category > ul li {padding: 0px;height: 67px;}
+  .category > ul li.on {height: 87px;}
+  input[type="radio"].cate_inp + span + label {position: relative; top: 2px;}
+  input[type="radio"].cate_inp + span {width: 20px; height: 20px; background-size: 20px; background-position: center -20px;}
+  input[type="radio"].cate_inp + span.on {background-size: 20px; background-position: center -40px;}
+  /*.category > ul li {height: 86px}*/
+  /*.category > ul li.on {height: 96px;}*/
   .st_wrap p {font-size: 13px;}
 }
 @media all and (max-width: 320px){
   #main .mTxt {font-size: 14px;}
   .category > ul li h3, .category > ul li.on h3 {font-size: 15px;}
+  /* input[type="radio"].cate_inp + span + label {top: -3px;} */
   .st_wrap p {text-align: left;}
   #container li > label, #container .refund label {font-size: 12px;}
   #container li > input {font-size: 13px;}

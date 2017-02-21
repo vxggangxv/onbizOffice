@@ -1248,42 +1248,40 @@ p.file_upload span{display:block;padding-bottom:5px;}
 .banner02{
 	position:fixed;
 	width:180px;
-	height:350px;
+	height:275px;
 	top:560px;
 	right:107px;
 	z-index:15;
 	background:#db2d2e;
 	border-radius:10px;
 	}
-.banner02 > .bannerBox{width:180px;height:118px;margin:0 auto;}
+.banner02 > .bannerBox{width:180px;height:118px;margin:0 auto;padding-bottom:5px;}
 .banner_txt02{
 	text-align:center;
 	width:180px;
-	font-size:18px;
+	font-size:16px;
 	color:#fff;
 	font-weight:600;
-	line-height:25px;
+	line-height:20px;
+	margin-top:5px;
 	}
 .banner_txt02 span{font-size:16px;font-weight:normal;}
-.yellow_txt02{text-align:center;font-size:35px;line-height:35px;font-weight:600;color:#fdfe00;margin-top:10px;}
+.yellow_txt02{text-align:center;font-size:23px;line-height:26px;font-weight:600;color:#fdfe00;margin-top:10px;}
 p.link_txt{
 	color:#fff;
-	font-size:18px;
+	font-size:15px;
 	font-weight:500;
 	line-height:20px;
 	text-align:center;
-	margin:10px 0px;
+	margin:5px 0px;
 	border-top:1px dashed #fff;
-	padding-top:15px;
+	padding-top:10px;
 	}
 p.link_txt2{
 	color:#fff;
-	font-size:18px;
+	font-size:16px;
 	font-weight:500;
-	line-height:20px;
 	text-align:center;
-	margin:10px 0px;
-	padding-top:8px;
 	}
 p.link_txt3{
 	color:#fff600;
@@ -1291,8 +1289,8 @@ p.link_txt3{
 	font-weight:500;
 	line-height:20px;
 	text-align:center;
-	margin:10px 0px;
 	padding-top:8px;
+	margin-bottom:10px;
 	}
 
 

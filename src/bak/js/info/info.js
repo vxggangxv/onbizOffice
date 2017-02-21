@@ -13,6 +13,7 @@ $(document).ready(function() {
     $(this).addClass("on");
     $(this).closest("ul").find(".cate_inp + span").removeClass("on");
     $(this).find(".cate_inp + span").addClass("on");
+    $(this).find("input").prop("checked", true);
     var isCheck = $(this).find("input").prop("checked");
     console.log(isCheck);
     $("#container > section").css("display", "none");

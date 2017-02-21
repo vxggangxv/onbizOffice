@@ -51,7 +51,7 @@ $(document).ready(function() {
   /*결제하실 금액 브라우저 너비, 높이에 따라 조절*/
   var wd = $(window).width();
   var ht = $(window).height();
-  if (wd >= 768 && ht < 1005) {
+  if (wd >= 768 && ht < 866) {
     setTimeout(function() {
       $(".price").addClass("on");
     }, 1000);
@@ -59,7 +59,7 @@ $(document).ready(function() {
   $(window).on("resize", function() {
     var r_wd = $(window).width();
     var r_ht = $(window).height();
-    if (r_wd >= 768 && r_ht < 1005) {
+    if (r_wd >= 768 && r_ht < 866) {
       setTimeout(function() {
         $(".price").removeClass("m_on");
         $(".price").addClass("on");
