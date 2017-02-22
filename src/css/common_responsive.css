@@ -111,9 +111,10 @@ section {position: relative;}
 /* 푸터 영역 */
 #footer {width:100%; background: #fff; padding: 10px 0; margin-top: 20px; border-top: 1px solid #ccc;}
 #footer p, address {font-size:14px; color:#696969; text-align: center;}
-#footer p a {position: relative; display: inline-block; color: #24D7E5;  padding: 0px 5px; margin-left: 5px;
+#footer p a {position: relative; display: inline-block; color: #696969; /* color: #24D7E5; */  padding: 0px 5px; margin-left: 5px;
 /* border: 1px solid #ff8840; border-radius: 3px; background: #f7f7f7; */}
-
+#footer p a:last-child { color: #24d7e5; }
+address a { color: #696969; }
 
 /*위로가기 버튼*/
 .btntop {display: none; width:55px; z-index:10; position:fixed; height:55px; bottom:75px; right:15px;}

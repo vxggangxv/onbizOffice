@@ -193,6 +193,8 @@ input[type="checkbox"].ts_check + span.on img { display: block;
 .p_startDate label span {display: inline;}
 .container .selectBox {float: right; position: relative; right: 0; display: inline-block; width: 170px;}
 .container .selectBox .s_btn {background: #fff; text-indent: 10px; font-size: 13px;}
+.selectBox i {width: 15px;  height: 15px;  top: 8px;}
+.selectBox i img {width: 60px; left: -29px; top: -6px;}
 
 .container > .p_price {border-bottom-color: #d2d2d2; /*padding-top: 6px;*/}
 .container > .p_price li:first-child {margin: 0; padding: 0px 14px; border-bottom: 1px dashed #d2d2d2;}

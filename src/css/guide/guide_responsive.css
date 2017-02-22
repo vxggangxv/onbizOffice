@@ -82,11 +82,12 @@ width: 13px; height: 20px;}
   #main > h3:first-child {display: none;}
   #main .mTxt {color: #333; text-align: center; letter-spacing: -1px;}
   #main .mTxt h3 {font-size: 28px; font-weight: 800; }
-  #main .mTxt p {font-weight: 600; font-size: 15px; line-height: 1.3em; color: #4c4c4c; padding: 0 50px;}
+  #main .mTxt p {font-weight: 600; font-size: 17px; line-height: 1.3em; color: #4c4c4c; padding: 0 50px;}
   #main .mTxt .mt {margin-top: 14px;}
   #main .mTxt p .fc {color: #ff9000;}
   
-  #main .mTxt p .bl2 {display: block;}
+  #main .mTxt p .bl {display: block;}
+  /* #main .mTxt p .bl2 {display: block;} */
   
   #main > ul {position: relative; display: table; margin: 12px auto;}
   #main > ul li {display: table-cell; text-align: center; padding: 11px 0; width: 153px; height: 60px; margin: 4px 0; font-size: 16px; line-height: 1.2em;}
@@ -112,7 +113,7 @@ width: 13px; height: 20px;}
   /*상세설명*/
   .guide {margin: 0; padding: 0;}
   .guide > div {position: relative; margin-top: 30px; float: none;}
-  .guide > div:first-child, .guide > .guide > div:first-child + div {width: 100%;}
+  .guide > div:first-child, .guide > div:first-child + div {width: 100%; padding-left: 14px;}
   .guide li h2 {font-size: 16px; left: 28px; letter-spacing: 0;}
   .guide li:first-child span {top: -7px;}
   .guide li:first-child:before {width: 24px; height: 24px; background: url("http://img.onbiz.co.kr/onb_picto.png") no-repeat center -142px; background-size: 24px;}
@@ -127,12 +128,9 @@ width: 13px; height: 20px;}
   /*버튼*/
   .fBtn {width: 100%;}
 }
-@media all and (max-width: 767px) and (min-width: 481px){
-  .guide > div:first-child, .guide > div:first-child + div {padding-left: 14px;}
-}
 @media all and (max-width: 630px){
-  #main .mTxt p {padding: 0;}
-  #main .mTxt p .bl {display: block;}
+  #main .mTxt p {padding: 0; font-size: 15px;}
+  /* #main .mTxt p .bl {display: block;} */
   
   
   #main > ul {display: block; position: relative; width: 320px; margin: 12px auto;}
