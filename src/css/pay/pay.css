@@ -168,9 +168,10 @@ input[type="radio"].co_check:checked + label:active:before {
 .card > p {font-size: 12px; line-height: 1.5em; color: #222;}
 
 /*결제하실 금액*/
-.price {z-index: 2; position: fixed; width: 290px; left: 50%; margin-left: 200px; top: 0; margin-top: 289px; letter-spacing: -1px; background: #fff;}
+.price {z-index: 2; position: absolute; width: 290px; left: 50%; margin-left: 200px; top: 0; margin-top: 262px; letter-spacing: -1px; background: #fff;}
+/* .price {z-index: 2; position: fixed; width: 290px; left: 50%; margin-left: 200px; top: 0; margin-top: 289px; letter-spacing: -1px; background: #fff;}
 .price.on {margin-top: 103px; transition: all 2s;}
-.price.m_on {margin-top: 0;}
+.price.m_on {margin-top: 0;} */
 @media all and (max-width: 980px) {
   .price {left: 690px; margin-left: 0;}
 }
@@ -237,108 +238,3 @@ input[type="checkbox"]#agree:checked + label:active:before {
 }
 
 
-/*모바일 디자인 미디어쿼리*/
-/* @media all and (min-width: 768px){
-  .m_private {display: none;}
-}
-@media all and (max-width: 767px){
-  #main, #contents {width: 100%;}
-  #main {padding: 15px 0; margin: 0;}
-  #main h3 {text-align: center; line-height: 1.4em;} 
-  #main h3:first-child {display: none;}
-  #main h3 span {color: #F52700;} */
-  /*콘텐츠*/
-  /* #contents > section {position: relative; width: 100%; left: 0px;}
-  #contents > section > h3 {font-size: 18px; padding: 15px 0px 12px; font-weight: 800;}
-  #contents > section:first-child > h3 {padding-top: 15px;}
-  #contents {padding: 5px;} */
-  /*임대상품선택*/
-  /* .term h3 span {top: 6px;}
-  .term .t_table {position: relative; width: 100%;}
-  .term .t_table li {display: table; width: 100%; height: auto; border: 1px solid #ccc;}
-  .term .t_table li {border-bottom: none;}
-  .term .t_table li:first-child {border-top: none;}
-  .term .t_table li:last-child {border-bottom: 1px solid #ccc;;}
-  .term .table {position: relative; display: table-cell; width: auto; vertical-align: middle; border-left: 1px solid #ccc;}
-  .term .table .t_cell {width: 100%; display: block;}
-  .term .table:nth-child(1) {width: 30%; border-left: none;}
-  .term .table:nth-child(3) {width: 47%; border-left: none;}
-  .term .table:nth-child(4) {width: 23%;}
-  .term .table:nth-child(1) .t_cell, .term .table:nth-child(3) .t_cell, .term .table:nth-child(4) .t_cell {height: auto; padding: 8px 0;}
-  .term .table:nth-child(1) .t_cell {background: none;}
-  .term .table:nth-child(1) span, .term .table:nth-child(2) .t_cell, .term .table:nth-child(4) span {display: none;}
-  .term .table:nth-child(3) del {display: none;}
-  .term  .table:nth-child(1) .t_cell, .term  .table:nth-child(2) .t_cell, .term .table:nth-child(3) .t_cell, .term .table:nth-child(4) .t_cell 
-  {border-bottom: none; font-size: 16px;}
-  .term .table:nth-child(3) .sale {display: inline-block; position: relative; background: #f52700; color: #fff; font-size: 13px; padding: 2px 4px 3px; margin-right: 3px; top: -1px;}
-  .term .table:nth-child(3) .t_cell {font-weight: 600;}
-  .term .t_table li .table:nth-child(1) .sale {display: none;} */
-  /*클릭시*/
-  /* .term .t_table li.on {border: 2px solid #ff9000; width: 100%; margin-left: 0; background: #FFF5D2;}
-  .term .t_table li.on + li {border-top: none;}
-  .term .t_table li.on:nth-child(1) {width: 100%;}
-  .term .t_table li.on .table:nth-child(1) .t_cell {background: #fff5d2; color: #333;}
-  .term .t_table li.on .table:nth-child(1) .sale {display: none;}
-  .term .t_table li.on .table:nth-child(3) {color: #f52700;}
-  .term .t_table li.on .table:nth-child(4) {color: #d32403;}
-  .term .t_table li.on .table:nth-child(3) .t_cell {font-weight: 800;} */
-  /*임대상품선택 th등장*/
-  /* .term .t_th {position: relative; width: 100%; box-sizing: border-box; background: #ff9000; color: #fff; text-align: center; }
-  .term .t_th li {float: left; width: auto; border-left: 1px solid #fff; padding: 8px 0; font-size: 14px;}
-  .term .t_th li:nth-child(1) {width: 30%; border-left: none;}
-  .term .t_th li:nth-child(2) {width: 47%;}
-  .term .t_th li:nth-child(2) span {font-size: 12px;}
-  .term .t_th li:nth-child(3) {width: 23%; border-right: none;} */
-  /*임대상품선택 라디오버튼*/
-  /* input[type="radio"].t_radio + label {top: -2px; margin-right: 10px;}
-  input[type="radio"].t_radio + label:before {
-    height: 24px;
-    margin-right: 0px;
-    background: url("http://img.onbiz.co.kr/onb_picto.png") no-repeat center -73px;
-    background-size: 24px;
-  }
-  input[type="radio"].t_radio:checked + label:before,
-  input[type="radio"].t_radio + label:active:before,
-  input[type="radio"].t_radio:checked + label:active:before {
-    background: url("http://img.onbiz.co.kr/onb_picto.png") no-repeat center -97px;
-    background-size: 24px;
-  }
-  .term .t_table li:last-child .table:nth-child(1) .t_cell input[type="radio"].t_radio + label {left: 5px;} */
-  
-  /*예치금이란?*/
-  /* .term .t_table {margin-bottom: 5px;}
-  .ps, .ps2 {font-size: 14px;display: inline;}
-  .ps2 {padding-left: 0px;}
-  
-  .option h3 span {display: none;}
-  .option ul {position: relative; width: 100%;}
-  .option ul li, .option ul li.on  {width: 100%;}
-  .option ul li:nth-child(1),  .option ul li:nth-child(2),  .option ul li:nth-child(3), .option ul li:nth-child(4), .option ul li:nth-child(5) {border-top: 1px solid #ccc; height: 55px;}
-  .option ul li:nth-child(2), .option ul li:nth-child(4) {border-left: 1px solid #ccc;}
-  .option ul li:nth-child(1), .option ul li:nth-child(2), .option ul li:nth-child(3), .option ul li:nth-child(4) {border-bottom: none;}
-  .option ul li:nth-child(2).on, .option ul li:nth-child(4).on {width: 100%; margin-left: 0px;}
-  .option ul li:nth-child(1).on, .option ul li:nth-child(2).on, .option ul li:nth-child(3).on, .option ul li:nth-child(4).on, .option ul li:nth-child(5).on {border: 1px solid #ff9000; margin-top: 0;}
-  .option ul li:nth-child(1).on + li,  .option ul li:nth-child(2).on + li,  .option ul li:nth-child(3).on + li,  .option ul li:nth-child(4).on + li,  .option ul li:nth-child(5).on + li  {border-top: none;}
-  
-  .option ul li p:nth-child(1) {width: 13%;}
-  .option ul li p:nth-child(2) {width: 57%;}
-  .option ul li p:nth-child(3) {width: 30%;}
-  input[type="checkbox"].o_check + label:before {right: 5px;}
-  .option ul + p {font-size: 13px; margin-top: 5px;} */
-  
-  /*결제수단 선택 영역*/
-  /* .way {display: none;}
-  #contents #m_way h3 {padding: 8px; margin: 0; font-weight: 600; font-size: 16px; color: #555; background: #f5f5f5;}
-  #m_way input[type="radio"] + label:before {position: absolute; left: -9999px;}
-  #m_way li {position: relative; float: left; width: 32%; margin-left: 1%; height: 80px; display: table; border: 1px solid #ccc; margin-top: 14px;}
-  #m_way li.on {border-color: #ff9000; background: #fff5d2; font-weight: 600;}
-  #m_way input[type="radio"] + label {display: table-cell; top: 0; left: 0; width: 100%; height: 100%; text-align: center; vertical-align: middle;} */
-  
-  /*카드 혜택*/
-  /* .card {display: none;} 
-}
-*/
-/* @media all and (max-width: 320px){
-  #main h3 {letter-spacing: -1px;}
-  .term  .table:nth-child(1) .t_cell, .term  .table:nth-child(2) .t_cell, .term .table:nth-child(3) .t_cell, .term .table:nth-child(4) .t_cell {font-size: 15px;}
-} */

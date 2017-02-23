@@ -351,7 +351,7 @@ input[type="checkbox"]#agree + span.on img { display: block;
   .option ul li:first-child + li + li + li {border-left: 1px solid #ccc;}
   .option ul li:first-child, 
   .option ul li:first-child + li, 
-  .option ul li:first-child + li + li {border-bottom: none;}
+  .option ul li:first-child + li + li	{border-bottom: none;}
   .option ul li:first-child + li.on, 
   .option ul li:first-child + li + li + li.on {width: 100%; margin-left: 0px;}
   .option ul li:first-child.on, 
