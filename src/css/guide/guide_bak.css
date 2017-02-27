@@ -47,7 +47,3 @@
 
 	/*pie - ie8 border-radius작동 적용*/
 	/* #nb h2 + a, #main > ul li, .nBtn {behavior: url("http://static.onbiz.co.kr/js/pie/PIE.htc");} */
-
-@media (max-width: 480px) {
-	#main { display: none; }
-}

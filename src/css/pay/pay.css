@@ -76,6 +76,11 @@ input[type="radio"].t_radio:checked + label:active:before {
 .option ul li.on {border:1px solid #ff9000; background: #FFF5D2;}
 .option ul li:nth-child(2).on, .option ul li:nth-child(4).on {margin-left: -1px; width: 333px;}
 .option ul li:nth-child(3).on, .option ul li:nth-child(4).on, .option ul li:nth-child(5).on {margin-top: -1px; height: 56px;}
+/* 클릭효과 없애기 */
+.option ul li.l5, .option ul li:first-child + li + li + li {cursor: default;}
+.option ul li.l5.on, .option ul li:first-child + li + li +li.on {border:1px solid #ccc; background: #fff;}
+
+.option p {font-size: 13px; margin-top: 3px;}
 
 input[type="checkbox"].o_check + label:before {
   content: "";
