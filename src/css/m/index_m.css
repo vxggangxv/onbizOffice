@@ -199,7 +199,7 @@ width:290px; }
 .address b {font-size:20px;}
 .address li {width: 96%; margin: 5px auto; text-align:center; font-size:12px; letter-spacing: -1px}
 .address li:first-child {margin: 10px auto;}
-.address li:nth-child(4) {font-size: 16px; font-weight: 600; margin-top: 15px;}
+.address li:nth-child(6) {font-size: 16px; font-weight: 600; margin-top: 15px;}
 .address li:last-child {margin-bottom: 10px;}
 .map {float: left;}
 #map {height: 250px;}
