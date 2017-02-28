@@ -77,9 +77,10 @@ align-items: center; */
 .intro_img {width:50%; height:150px; float:left; text-align:center; font-size:13px; font-weight:bold;}
 .intro_img li {padding-top:5px;}
 .intro_article {width:90%; margin:0 auto; text-align:justify; ;letter-spacing:-0.5px; word-break:keep-all;margin-top: 30px;}
+.intro_article li {font-size:12px; line-height:15px; margin-top:10px; text-align: left;}
 .intro_article li:first-child {font-size:14px;}
-.intro_article li {font-size:12px; line-height:15px; margin-top:10px;}
 .intro_article li:last-child {margin-top:15px;}
+.intro_article li:last-child.lt {line-height: 1.5em;}
 /* 서비스 부분 */
 .service {width:100%; position:relative; float:left; background-color:black; margin-top:40px;}
 .service p {width:100%; height:50px; color:white; text-align:center; line-height:150%; font-size:26px; font-weight:bold; margin-top: 20px;}
