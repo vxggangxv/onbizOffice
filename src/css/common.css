@@ -18,15 +18,16 @@ input[type="checkbox"] + label, input[type="radio"] + label {vertical-align: mid
 input[type="checkbox"], input[type="radio"] {vertical-align: middle;}
 input[type="reset"], input[type="checkbox"], input[type="text"], input[type="radio"], input[type="button"] {-webkit-border-radius:1px; -webkit-appearance:none;}
 
-select {
+/*select {
 	-webkit-border-radius:1px;
 	-webkit-appearance:none; 
 	-moz-appearance: none; 
+  -ms-appearance: none; 
 	appearance: none; 
 	background: url("http://img.onbiz.co.kr/images/m/triangle2.png") no-repeat 95% 50%;
 	background-size: 12px;
 	background-color: #fff;
-}
+}*/
 .selectBox {z-index: 1; position: relative;  width: 431px; height: 36px;}
 .s_btn {position: relative; width: 100%; height: 36px; font-size:14px; border:1px solid #aeaeae; text-indent: 15px; cursor:pointer; text-align: left;
   background: #ffffff; 
@@ -103,6 +104,18 @@ input[type="checkbox"]:checked + label:active:before {
 /* 전체 영역 */
 #wrap {position:relative; width:100%;}
 section {position: relative;}
+/* 지역 선택 추가 */
+.region_wrap {position: relative; width: 100%; height: 32px; background: #f0f0f0;}
+.region_box {width: 980px; margin: 0 auto;}
+.region_box p.nth-1, .region_box p.nth-2 {position: relative; font-size: 14px; color: #444; letter-spacing: -1px;}
+.region_box p.nth-1 {float: left; top: 7px;}
+.region_box span {letter-spacing: 0;}
+.region_box .l_icon {color: #cbcbcb;}
+.region_box .fc1 {color: #ff9000;}
+.region_box p.nth-2 {float: right; top: 2px;}
+p.nth-2 a {display: inline-block; width: 80px; height: 26px; background: #ff7701; color: #fff; text-align: center; line-height: 1.8em;}
+p.nth-2 a.a2 {margin-left: 5px;}
+p.nth-2 a span {position: relative; font-weight: 600; font-size: 10px; margin-left: 8px; top: -2px;}
 /* 헤더 영역 */
 .h_wrap {width: 100%; padding-bottom: 10px; border-bottom: 1px solid #ededed;}
 /*로고*/
@@ -122,6 +135,7 @@ section {position: relative;}
 #gnb ul li a {font-size: 14px;}
 #gnb a {display: inline-block; height: 35px;}
 .g_wrap p {text-align: right; margin-top: 10px; font-size: 14px; color: #ff7e3f;}
+.g_wrap p.tel {text-align: right; margin-top: 6px; font-size: 16px; font-weight: 600; color: #f93500;}
 
 /*네이게이션 바*/
 #nb {width: 980px; margin: 35px auto 0; height: 45px; border-bottom: 4px solid #676767;}

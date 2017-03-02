@@ -1324,3 +1324,17 @@ p.link_txt02{
 	}
 
 .close_btn_x02 img{width:19px;height:19px;display:block;margin:0 auto;padding-top:3px;}
+
+/* 지역 선택 추가_20170302_강혜준 */
+.region_wrap {z-index: 10; position: relative; width: 100%; height: 32px; background: #f0f0f0;}
+.region_box {width: 980px; margin: 0 auto;}
+.region_box p.nth-1, .region_box p.nth-2 {font-family: "Nanum Gothic", sans-serif; position: relative; font-size: 14px; color: #444; letter-spacing: -1px;}
+.region_box p.nth-1 {float: left; top: 7px;}
+.region_box span {letter-spacing: 0;}
+.region_box .l_icon {color: #cbcbcb;}
+.region_box .fc1 {color: #ff9000;}
+.region_box p.nth-2 {float: right; top: 2px;}
+p.nth-2 a {display: inline-block; width: 80px; height: 26px; background: #ff7701; color: #fff; text-align: center; line-height: 1.9em;}
+p.nth-2 a.a2 {margin-left: 5px;}
+p.nth-2 a span {position: relative; font-family: "Nanum Gothic", sans-serif; font-size: 10px; margin-left: 8px; top: -2px;}
+#gnb p.tel {font-family: "Nanum Gothic", sans-serif; text-align: right; margin-top: 7px; font-size: 16px; color: #ff7e3f; }

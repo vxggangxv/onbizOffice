@@ -2,11 +2,23 @@
 /* 공통 css */
 @import url(http://static.onbiz.co.kr/css/reset.css); 
 
-/*신청내역확인*/
-.contract{width:980px;height:100%;margin:20px auto 45px;}
-.contract > div > p{
-  font-family:'Nanum Gothic'
-    font-size:16px;
+/* 유틸리티 영역 */
+#util {width: 980px; margin: 0 auto; padding: 25px 3px 15px; border-bottom: 1px solid #ddd;}
+.util_link {margin-top: 15px;}
+.util_link > li {float: left; margin-left: 10px;}
+.util_link > li.nth-1 {margin-left: 0;}
+.util_link > li > a {display: block; width: 154px; height: 100px; background: url(http://img.onbiz.co.kr/util_down.png) no-repeat 0;}
+.util_link > li.nth-1 > a {background-position: 0; }
+.util_link > li.nth-2 > a {background-position: -164px 0; }
+.util_link > li.nth-3 > a {background-position: -328px 0; }
+.util_link > li.nth-4 > a {background-position: -492px 0; }
+.util_link > li.nth-5 > a {background-position: -656px 0; }
+.util_link > li.nth-6 > a {background-position: -820px 0; }
+
+/* 신청내역확인 */
+.contract {width:980px; height:100%; margin:20px auto 45px;}
+.contract > div > p {
+  font-size:16px;
   color:#434343;
   font-weight:bold;
   margin:15px 0px 5px 0px;
@@ -14,8 +26,7 @@
 .contract > div > table {width:980px;bordeR-top:2px solid #ff7e00;}
 .contract > div > table td{height:35px;border:1px solid #878787;padding-left:15px;color:#4b4b4b;}
 .contract > div > table td.th_color{
-  font-family:'Nanum Gothic'
-    background:#f3f3f3;
+  background:#f3f3f3;
   text-align:center;
   font-size:17px;
   color:#272727;
@@ -55,3 +66,5 @@
   font-size:18px;
   font-weight:600;
 }
+.contract .contract_pdf {text-align: center; margin-top: 20px;}
+.contract .contract_pdf > p {font-size: 15px; font-weight: 400;}
