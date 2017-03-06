@@ -38,16 +38,19 @@ align-items: center; */
 } 
 /* 메인이미지 */
 .top_box { position:absolute; top:285px; left:50%; margin-left:-145px; z-index:10; text-align:center; letter-spacing: -1px; font-size:15px;}
-.box_1 {width:90px; height:90px; float:left; background-color: rgba(255, 137, 33, 0.8);}
+.box_1 {width:90px; height:104px; float:left; background-color: rgba(255, 137, 33, 0.8);}
 .box_1 p { color:#FFF; margin-top:14px; }
 .box_1 p span{ color:#FFF; font-size:12px;}
-.box_2 {width:90px; height:90px; margin-left: 10px; float:left; background-color: rgba(51, 51, 51, 0.8);}
+.box_2 {width:90px; height:104px; margin-left: 10px; float:left; background-color: rgba(51, 51, 51, 0.8);}
 .box_2 p { color:#FFF; margin-top:14px;}
 .box_2 p span{ color:#FFF; font-size:12px;}
-.box_3 {width:90px; height:90px; margin-left: 10px; float:left; background-color: rgba(196, 196, 196, 0.9);}
+.box_3 {width:90px; height:104px; margin-left: 10px; float:left; background-color: rgba(196, 196, 196, 0.9);}
 .box_3 p { color:#FFF; margin-top:14px;}
 .box_3 p span{ color:#FFF; font-size:12px;}
 .top_box p span:nth-child(2) { font-size: 14px; }
+.link_btn {display: block; color: #fff; border: 1px solid #fff; width: 86%; margin: 0 auto; margin-top: 10px; font-size: 12px; line-height: 1.7em;}
+.box_3 .link_btn > span {font-size: 8px; margin-left: 5px;}
+.regionName {position: absolute; width: 100%; top: -105px; color: #fff; text-shadow: 0 0 10px rgba(0,0,0,1);}
 
 /*전화문의*/
 .call {width:100%; height:64px; position:fixed; left: 0; bottom: 0; background-color:#3b3938; z-index:10;}

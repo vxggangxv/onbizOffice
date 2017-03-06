@@ -24,16 +24,20 @@ line-height: 1.3em; font-weight: 600;}
 #main div ul li {padding: 3px 0;}
 #main div ul li:first-child span {width: 66px;}
 #main div ul li:nth-child(2) span {width: 3%; text-align: center;}
-#main div ul li:last-child label {width: 131px;}
-#main div ul li:nth-child(1) label, #main div ul li:nth-child(2) label 
-{width: 60px; margin-right: 5px;}
-#main div input {position: relative; top: -1px; font-size: 12px; padding: 4px; width: 120px; 	height: 28px; background-color: #fbfbfb; 
-	border-radius: 4px; border: 1px solid #888; text-align: center; box-sizing: border-box;
+#main div ul li:last-child label {width: 100%;}
+#main div ul li:last-child label .st_label {width: 131px;}
+#main div ul li:nth-child(1) label, #main div ul li:nth-child(2) label {width: 60px; margin-right: 5px;}
+#main div input {position: relative; top: -1px; font-size: 12px; padding: 4px; width: 120px; 	height: 28px; background: #fff;
+	border-radius: 4px; border: 1px solid #888; text-align: center; box-sizing: border-box; text-indent: -25px
 }
+/* 날짜선택 icon추가 */
+#main div li:last-child .calandar_icon {position: relative;top: -5px; left: -30px; border-left: 1px solid #888; height: 26px; width: 27px; display: inline-block; text-align: center; margin-bottom: -7px; cursor: pointer;}
+#main div li:last-child .calandar_icon img {width: 16px; position: relative; top: 4px;}
+
 #main div ul li:first-child input {width: 100px;}
 #main div ul li:nth-child(2) {margin-left: 70px;}
 #main div ul li:nth-child(2) input {width: 22%;}
-#main div ul li:nth-child(3) input {width: 39%;}
+#main div ul li:nth-child(3) input {width: 40%;}
 
 /*컨텐츠*/
 #contents {position: relative; padding: 0 5px; color: #4c4c4c; letter-spacing: -1px;}

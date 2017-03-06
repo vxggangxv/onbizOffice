@@ -1,0 +1,88 @@
+@charset "utf-8";
+@import url("http://static.onbiz.co.kr/css/guide/banner.css");
+
+/* select 덮어 쓰기 */
+.selectBox i.calandar_icon {position: absolute; display: inline-block; width: 20px; height: 20px; right: 10px; top: 8px; cursor: pointer; overflow: hidden; font-size: 0;}
+.selectBox i.calandar_icon img {position: relative; left: 0px; width: 17px;}
+
+/*네비게이션 바*/
+#nb h2 + a {display: inline-block; width: 233px; height: 37px; border-radius: 4px; background: #444; color: #fff; font-weight: 600; line-height: 2.4em; text-align: center; letter-spacing: -1px; float: right;}
+#nb h2 + a > span {position: relative; left: -10px; top: 8px; display: inline-block; float:right; overflow: hidden;
+width: 13px; height: 20px;}
+#nb h2 + a > span img {position: relative; width: 70px; top: -19px; left: 0px;}
+/*메인 영역*/
+#main {padding-top: 44px;}
+#main > ul {display: table; text-align: center; margin: 30px auto 20px;}
+#main > ul li {display: table-cell; float: left; padding: 20px 40px; border-radius: 100px; background: #ff9000; color: #fff; font-weight: 600; font-size: 18px; margin-left: 30px;}
+#main > ul li:first-child {margin-left: 0;}
+#main > ul li:first-child + li, #main > ul li:first-child + li + li + li {background: #999999;}
+
+/* 신청하기 영역 */
+.container {position: relative; padding: 30px 40px 30px; background: #F9F9F9; box-sizing: border-box; border: 1px solid #ddd;}
+.c_form {position: relative;}
+.c_form h3 {position: absolute; top: 0; left: 0; font-size: 21px; line-height: 1.3em;}
+.c_form h3 span {display: block;}
+.c_form ul {position: relative; width: 294px; margin-left: 200px; border-right: 1px solid #ddd;} 
+.c_form li {margin-top: 9px; color: #888;}
+.c_form li:first-child {margin-top: 0px;}
+.c_form li > label {display: inline-block; font-size: 15px; width: 88px; text-indent: 0px; color: #333;}
+.c_form li > input {width: 195px; height: 30px; border: 1px solid #a9a9a9; text-indent: 15px; font-size: 15px;}
+.c_form li > input:focus {color: #333; outline: none; border: 2px solid #ff9000;}
+
+.c_form .select_wrap {position: absolute; bottom: 0; left: 504px; }
+.c_form .select_wrap label {display: block; text-align: center; margin-bottom: 6px; font-size: 15px;}
+.c_form .selectBox {display: inline-block; width: 195px;}
+.c_form .selectBox i {color: #333;}
+
+/*신청하기 버튼*/
+.nBtn {position: absolute; display: block; top: 0px; margin-top: 2px; right: 0px; width: 180px; height: 67px; background: #ff9000; color: #fff; font-size: 20px; font-weight: 700; border-radius: 4px; text-align: center; line-height: 3.5em;}
+.nBtn i {position: relative; left: -10px; top: 24px; display: inline-block; float:right; overflow: hidden;
+  width: 15px; height: 22px;}
+.nBtn i img {position: relative; width: 74px; top: -36px; left: 0px;}
+
+/*안내 설명글 영역*/
+.guide {margin-top: 50px; padding: 0px 30px;}
+.guide > div {float: left; }
+.guide > div:first-child {width: 540px;}
+.guide > div:first-child + div {width: 380px;}
+.guide li {color: #333; font-size: 15px; line-height: 1.5em;}
+.guide li h2 {display: inline-block; font-size: 18px; position: relative; left: 32px;}
+.guide li:first-child span {content: ""; position: absolute; display: block; top: -5px; width: 30px; height: 30px; background: url("http://img.onbiz.co.kr/onb_picto.png") no-repeat center -180px;}
+.guide li:first-child + li {margin-top: 20px;}
+
+/*자주묻는 질문 FAQ*/
+.faq {position: relative; margin: 50px 0; padding: 30px 40px; border: 1px solid #ddd; background: #FBF8F3;}
+.faq > h3 {font-size: 26px; color: #333; padding: 0 0 10px 0px; border-bottom: 5px solid #666;}
+.faq > h3 > span {font-size: 16px; margin-left: 20px;}
+.faq .f_table {position: relative;}
+.f_table > li {border-bottom: 1px solid #bdbdbd;}
+.f_q, .f_a {position: relative; padding: 17px 5px 16px 40px;}
+.f_q {cursor: pointer; font-weight: 600; font-size: 18px; color: #363636;}
+.f_a { display: none; color: #444; padding-top: 0; font-size: 17px; line-height: 1.4em; font-size: 16px; letter-spacing: -1px;}
+.q_icon, .a_icon {position: absolute; display: inline-block; width: 26px; height: 26px; color: #ff9000; text-align: center; left: 10px; line-height: 1.3em; font-size: 22px; font-weight: 400; font-family: Helvetica, "NanumBarunGothic", "NanumGothic", sans-serif; }
+.q_icon {top: 15px;}
+.a_icon {/* background: #ff9000; */ color: #333; top: -2px;}
+
+.f_a .link_btn {display: inline-block; letter-spacing: 0; padding: 5px 20px; color: #fff; border-radius: 2px;}
+.f_a .link_btn.lb1 {background: #ff9000; margin-right: 5px;}
+.f_a .link_btn.lb2 {background: #444;}
+.f_a .link_btn .s1, .f_a .link_btn .s2 {display: block;}
+.f_a .link_btn .s1 {font-size: 11px; height: 15px;}
+.f_a .link_btn .s2 {font-size: 15px;}
+.f_a .link_btn .s2 > span {position: relative; font-size: 11px; top: -2px; font-weight: 600;}
+.f_a .mt {margin-top: 17px;}
+/* .f_a .link_btn:hover > .s2 {text-decoration: underline} */
+
+.f_a .co_box {position: relative; margin: 10px 0 20px;}
+.f_a .co_box > p {float: left;}
+.f_a .co_p1 {width: 544px; padding-right: 70px; border-right: 1px dashed #ddd;}
+.f_a .co_p2 {width: 305px; text-align: center;}
+.f_a .co_p2 > a {display: block; width: 165px; height: 222px; background: url("http://img.onbiz.co.kr/contract_hover.png"); margin: 0 auto;}
+/* .f_a .co_p2 > a:hover {background: url("http://img.onbiz.co.kr/contract_hover.png");} */
+.f_a .co_p2 > span {display: block; margin-top: 5px;}
+/*버튼*/
+.fBtn {position: relative; display: block; margin: 20px auto 0; width: 240px; height: 47px; background: #ff9000; color: #fff; font-size: 20px; font-weight: 700; border-radius: 4px; text-align: center; line-height: 2.5em;}
+.fBtn i {position: relative; left: -10px; top: 14px; display: inline-block; float:right; overflow: hidden;
+  width: 15px; height: 22px;}
+.fBtn i img {position: relative; width: 74px; top: -25px; left: 0px;}
+

@@ -37,23 +37,25 @@ html, body{
 #logo{float:left;width:467px;height:102px;line-height:102px;}
 #logo http://img.onbiz.co.kr{width:467px;height:61px;vertical-align:middle;}
 
-#gnb{float:right;width:350px;}
-#gnb ul{float:right;width:328px;height:35px; border: 1px solid #f93500;}
-#gnb ul li{float:left;line-height:35px;text-align:center; padding: 0; font-weight: 600; color: #434343;}
-.gnb_m02{font-size: 15px; font-family:'Nanum Gothic' , sans-serif; width:50%;height:35px; color: #222;}
+#gnb{float:right;width:510px;}
+#gnb ul{float:right;width:390px;height:35px;background:#f0eeee;}
+#gnb ul li{float:left;line-height:37px;text-align:center;}
+.gnb_m01{width:auto;height:35px;margin-left:10px;padding:0px 10px;}
+.gnb_m02{width:auto;height:35px;margin-left:5px;padding:0px 10px;}
+.gnb_m a{font-family:'Nanum Gothic' , sans-serif;font-size:14px;color:#454545;}
 #gnb ul li.menu_title{
-	width:50%;
+	width:157px;
 	height:35px;
-	background: #f93500;
-	font-size:15px;
+	background:url('http://img.onbiz.co.kr/gnb_Bg01.gif') no-repeat;
+	font-size:17px;
 	color:#fff;
+	font-weight:bold;
 	line-height:35px;
 	text-align:center;
 	padding:0;
 	font-family:'Nanum Gothic' , sans-serif;
 	}
-#gnb > ul > li span {position: relative; top: -2px; margin-left: 3px; font-weight: 600; font-size: 10px; color: #f9f402;}
-#gnb > ul > li.gnb_m02 span {color: #f93500;}
+
 #lnb{
 	clear:both;
 	width:980px;
@@ -1325,14 +1327,8 @@ p.link_txt02{
 p.nth-2 a {display: inline-block; width: 80px; height: 26px; background: #ff7701; color: #fff; text-align: center; line-height: 1.9em;}
 p.nth-2 a.a2 {margin-left: 5px;}
 p.nth-2 a span {position: relative; font-family: "Nanum Gothic", sans-serif; font-size: 10px; margin-left: 8px; top: -2px;}
-#gnb p.tel {font-family: "Nanum Gothic", sans-serif; float: right; margin-top: 7px; font-size: 16px; color: #f93500; font-weight: 600;}
+#gnb p.tel {font-family: "Nanum Gothic", sans-serif; float: right; margin-top: 7px; font-size: 16px; color: #ff7e3f; }
 /* 메인지역 버튼 추가 */
 .btn_wrap > a.link_btn {position: relative; display: block; width: 92%; border: 2px solid #fff; margin: 0 auto; margin-top: 25px; color: #fff; font-size: 24px; font-family: "NanumGothic", Arial, sans-serif;
 letter-spacing: -1px; font-weight: 500;	line-height: 2.4em; box-sizing: border-box;}
 .btn_wrap > a.link_btn span {font-size: 19px; position: relative; top: -2px; margin-left: 5px;}
-/* 메인페이지 버튼 추가_20170306_강혜준 */
-.s11 h2.regionName {z-index: 10; position: absolute; color: #fff; font-size: 46px; top: 90px; text-align: center; width: 100%; text-shadow: 0 0 10px rgba(0,0,0,1);}
-.s3repeaterButton.btn_lease {width: 200px; height: 48px; font-size: 17px; background: #f93500; display: inline-block; position: relative; top: -11px; color: #fff; font-weight: 600; font-family: "NanumGothic", sans-serif; letter-spacing: -1px; text-align: center; }
-.s3repeaterButton.btn_lease .s1, .s3repeaterButton.btn_lease .s2 {position: relative; top: 12px;}
-.s3repeaterButton.btn_lease .s1 {}
-.s3repeaterButton.btn_lease .s2 {margin-left: 3px;font-size: 13px;top: 10px; color: #f9f402;}

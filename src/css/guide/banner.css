@@ -2,7 +2,7 @@
 
 /*오른쪽 배너 영역-----------------------------------------------------------------------------*/
 .r_banner{ position: absolute; z-index: 1;}
-#faq_b {cursor: pointer; position: fixed; right: 50%; margin-right: -596px; top: 103px; width: 106px; height: 202px; background: #2d2d2d; color: #fff; text-align: center; line-height: 1.4em;}
+#faq_b {cursor: pointer; position: fixed; right: 50%; margin-right: -597px; top: 120px; width: 106px; height: 202px; background: #2d2d2d; color: #fff; text-align: center; line-height: 1.4em;}
 #faq_b .b1 {display: block; font-weight: 600; font-size: 19px; margin: 0 auto; width: 90px; height: 84px; border-bottom: 1px solid #aaa; line-height: 1.1em;}
 #faq_b .b1 span {display: block; position: relative; top: 14px; color: #fff; vertical-align: middle; width: 100%; height: 100%;}
 #faq_b .b2 {display: block; margin: 0 auto;height: 110px; padding-top: 12px; font-size: 14px; line-height: 1.3em;}

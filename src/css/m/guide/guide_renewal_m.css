@@ -1,0 +1,132 @@
+@charset "utf-8";
+
+/* select 덮어 쓰기 */
+.selectBox i.calandar_icon {position: absolute; display: inline-block; width: 20px; height: 20px; right: 10px; top: 5px; cursor: pointer; overflow: hidden; font-size: 0;}
+.selectBox i.calandar_icon img {position: relative; left: 0px; width: 17px;}
+   
+/*모바일 디자인 css*/
+.m_private {display: block;}
+#main, #contents {width: 100%; padding: 0 5px;}
+
+/*헤더*/
+.headerOrigin {border-bottom: 4px solid #4c4c4c; padding-top: 18px;}
+.headerOrigin h2 a.nav_tab {float: right; position: relative; top: 1px; display: inline-block; width: 140px; height: 28px; display: block; text-align: center; line-height: 2em; font-size: 14px;  color: #fff; background: #4c4c4c;
+border-radius: 4px;}
+.headerOrigin h2 a.nav_tab i {position: relative; top: 2px; left: 2px; left: 0px; font-size: 18px;}
+
+#main {padding: 20px 0 4px;}
+#main > h3:first-child {display: none;}
+#main .mTxt {color: #333; text-align: center; letter-spacing: -1px;}
+#main .mTxt h3 {font-size: 28px; font-weight: 800; }
+#main .mTxt p {font-weight: 600; font-size: 17px; line-height: 1.3em; color: #4c4c4c; padding: 0 50px;}
+#main .mTxt .mt {margin-top: 14px;}
+#main .mTxt p .fc {color: #ff9000;}
+
+#main .mTxt p .bl {display: block;}
+/* #main .mTxt p .bl2 {display: block;} */
+
+#main > ul {position: relative; display: block; margin: 12px auto; text-align: center;}
+/* #main > ul li {display: table-cell; float: left; border-radius: 100px; background: #ff9000; color: #fff; font-weight: 600; text-align: center; padding: 11px 0 9px; width: 153px; height: 60px; margin: 4px 0; font-size: 14px; }
+#main > ul li:first-child {margin-left: 0;}
+#main > ul li:first-child + li, #main > ul li:first-child + li + li + li, #main > ul li.lt {background: #999999;} */
+
+/* 수정 */
+#main > ul li {display: inline-block; border-radius: 100px; 
+  background: #505050; opacity: 0.88; color: #fff; font-weight: 600; text-align: center; padding: 11px 0; width: 33%; height: 60px; margin: 4px 0; font-size: 14px; margin-left: -5%; line-height: 1.3em;}
+#main > ul li:first-child {margin-left: 0;}
+#main > ul li:first-child + li {background: #ff9000; opacity: 0.88;}
+
+
+/*정보등록*/
+.container {position: relative; padding: 15px; background: #f9f9f9; border: 1px solid #ddd;}
+.c_form {position: relative;}
+.c_form h3 {position: relative; font-size: 21px; line-height: 1.3em; text-align: center; font-size: 18px;}
+.c_form h3 span {display: inline;}
+.c_form ul {position: relative; margin: 14px auto; width: 100%; border-right: none;}
+.c_form li {margin-top: 9px; color: #888;}
+.c_form li:first-child {margin-top: 0px;}
+.c_form li > label {display: inline-block; font-size: 15px; width: 25%; text-indent: 0px; color: #333;}
+.c_form li > input {height: 30px; border: 1px solid #a9a9a9; text-indent: 15px; font-size: 15px;}
+.c_form li > input:focus {color: #333; outline: none; border: 2px solid #ff9000;}
+
+.c_form li > input, .c_form .selectBox {width: 75%;}
+.c_form .selectBox {display: inline-block;}
+.c_form .select_wrap {position: relative; left: 0;}
+.c_form .select_wrap label {display: inline-block; width: 25%; text-align: left; font-size: 15px;}
+.c_form .select_wrap label > span {display: none;}
+
+/* 신청하기 버튼 */
+.nBtn {position: relative; display: block; top: 0; margin-top: 10px; left: 0; margin-left: 0; width: 100%; height: 48px; background: #ff9000; color: #fff; font-weight: 700; border-radius: 4px; text-align: center; line-height: 2.7em; font-size: 18px; letter-spacing: -1px;}
+.nBtn i {position: relative; left: -10px; display: inline-block; float:right; overflow: hidden; width: 15px; height: 22px; top: 16px; }
+.nBtn i img {position: relative; width: 74px; top: -27px; left: 0;}
+
+/*상세설명*/
+.guide {margin: 0; padding: 0;}
+.guide > div {float: left; position: relative; margin-top: 30px; float: none;}
+.guide > div:first-child, .guide > div:first-child + div {width: 100%; padding-left: 14px;}
+.guide li {font-size: 14px; letter-spacing: -1px; color: #676767; line-height: 1.5em;}
+.guide li h2 {position: relative; display: inline-block; font-size: 16px; left: 28px; letter-spacing: 0;}
+.guide li:first-child span {position: absolute; display: block; top: -7px; width: 30px; height: 30px; background: url("http://img.onbiz.co.kr/onb_picto.png") no-repeat center -180px;}
+.guide li:first-child + li {margin-top: 10px;}
+
+/*자주묻는 질문 FAQ*/
+.faq {position: relative; margin: 50px 0; padding: 10px 5px; border: 1px solid #ddd; background: #FBF8F3;}
+.faq > h3 {font-size: 16px; color: #333; padding: 0 0 3px 0px; border-bottom: 3px solid #666;}
+.faq .f_table {position: relative;}
+.f_table > li {border-bottom: 1px solid #bdbdbd;}
+.f_q, .f_a {position: relative; padding: 12px 5px 11px 22px; letter-spacing: -1px;}
+.f_q {cursor: pointer; font-weight: 600; font-size: 15px; color: #363636;}
+.f_a { display: none; color: #444; padding-top: 0; line-height: 1.4em; font-size: 14px; letter-spacing: -1px;}
+.q_icon, .a_icon {position: absolute; display: inline-block; color: #ff9000; text-align: center; left: 2px; line-height: 1.3em; font-size: 18px; font-weight: 400; font-family: Helvetica, "NanumBarunGothic", "NanumGothic", sans-serif; }
+.q_icon {top: 10px;}
+.a_icon {/* background: #ff9000; */ color: #333; top: -1px;}
+
+.f_a .link_btn {display: inline-block; letter-spacing: 0; padding: 5px 10px; color: #fff; border-radius: 2px;}
+.f_a .link_btn.lb1 {background: #ff9000; margin-right: 5px;}
+.f_a .link_btn.lb2 {background: #444;}
+.f_a .link_btn .s1, .f_a .link_btn .s2 {display: block;}
+.f_a .link_btn .s1 {font-size: 11px; height: 15px;}
+.f_a .link_btn .s2 {font-size: 13px;}
+.f_a .link_btn .s2 > span {position: relative; font-size: 10px; top: -1px; font-weight: 600;}
+.f_a .mt {margin-top: 17px;}
+/* .f_a .link_btn:hover > .s2 {text-decoration: underline} */
+
+.f_a .co_box {position: relative; margin: 10px 0 20px;}
+.f_a .co_box > p {float: left; position: relative;}
+.f_a .co_p1 img {width: 102%;}
+.f_a .co_p2 {text-align: center; margin-top: 20px; margin-left: 20px;}
+.f_a .co_p2 > a {display: block; width: 165px; height: 222px; background: url("http://img.onbiz.co.kr/contract_hover.png"); margin: 0 auto;}
+/* .f_a .co_p2 > a:hover {background: url("http://img.onbiz.co.kr/contract_hover.png");} */
+.f_a .co_p2 > span {display: block; margin-top: 5px;}
+
+@media all and (max-width: 630px){
+  #main .mTxt p {padding: 0; font-size: 15px;}
+  /* #main .mTxt p .bl {display: block;} */
+  
+  
+  /* #main > ul {display: block; position: relative; width: 320px; margin: 12px auto;}
+  #main > ul li {display: block;}
+  #main > ul li:first-child + li, #main > ul li:first-child + li + li + li, #main > ul li.lt {margin-left: 14px;} */
+  
+}
+@media all and (max-width: 480px){
+  .guide > div:first-child, .guide > div:first-child + div {padding-left: 0px;}
+}
+@media all and (max-width: 375px){
+  #main > ul li {height: 52px; font-size: 12px;}
+  #main > ul li.lt {letter-spacing: -1px; font-size: 11px; line-height: 1.4em;}
+  
+  .guide li {font-size: 13px;}
+}
+@media all and (max-device-width: 320px){
+  .headerOrigin {padding: 18px 5px 0 3px;}
+  .headerOrigin h2 a.nav_tab {line-height: 2.1em; font-size: 13px; width: 130px; top: 2px;}
+  #main .mTxt p {font-size: 14px;}
+  /* #main > ul {width: 320px; padding-left: 14px;} */
+  
+  .c_form .select_wrap label, .c_form li > label {font-size: 14px; letter-spacing: -1px;}
+  
+  .guide li span {display: block; text-indent: 6px;}
+  
+  .faq > h3 > span {font-size: 12px;}
+}
