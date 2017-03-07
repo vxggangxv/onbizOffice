@@ -99,6 +99,10 @@ border-radius: 4px;}
 /* .f_a .co_p2 > a:hover {background: url("http://img.onbiz.co.kr/contract_hover.png");} */
 .f_a .co_p2 > span {display: block; margin-top: 5px;}
 
+/*위로가기 버튼*/
+.btntop {display: none; width:55px; z-index:10; position:fixed; height:55px; bottom:75px; right:15px;}
+.btntop img {width:100%; cursor: pointer;}
+
 @media all and (max-width: 630px){
   #main .mTxt p {padding: 0; font-size: 15px;}
   /* #main .mTxt p .bl {display: block;} */

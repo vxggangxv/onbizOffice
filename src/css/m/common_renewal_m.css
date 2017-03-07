@@ -69,19 +69,15 @@ input[type="radio"], input[type="checkbox"] {
   border: 0
 }
 
-/* 푸터 영역 */
-#footer {width:100%; background: #fff; padding: 10px 0; margin-top: 20px; border-top: 1px solid #ccc;}
-#footer p, address {font-size:14px; color:#696969; text-align: center;}
-#footer p a {position: relative; display: inline-block; color: #24D7E5;  padding: 0px 5px; margin-left: 5px;
-/* border: 1px solid #ff8840; border-radius: 3px; background: #f7f7f7; */}
+
+/* 푸터영역 */
+footer {width:100%; height: 130px; float:left; background: #F9f9f9;}
+.info {width:100%; float:left; font-size:12px; margin:15px 0; color:#2E2E2E;}
+.info li {text-align:center; margin-top:5px;}
+.info li a {color: #2E2E2E;}
 
 /*위로가기 버튼*/
 .btntop {width:55px; z-index:10; position:fixed; height:55px; bottom:75px; right:15px;}
-.btntop img {width:100%; cursor: pointer;}
-
-
-/*위로가기 버튼*/
-.btntop {display: block; width:55px; z-index:10; position:fixed; height:55px; bottom:75px; right:15px;}
 .btntop img {width:100%; cursor: pointer;}
 
 /*jquery addClass*/
