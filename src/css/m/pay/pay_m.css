@@ -136,7 +136,7 @@ padding-bottom: 5px; border-bottom: 1px solid #696969;}
 .p_ctgr + p, .p_ctgr + p + p {font-size: 11px; line-height: 1.7em;}
 
 /*결제하실 금액 영역*/
-.price {margin-top: 30px; border: 2px solid #EDEDED; box-sizing: border-box; font-weight: 600; padding-bottom: 12px;}
+.price {margin-top: 0px; border: 2px solid #EDEDED; box-sizing: border-box; font-weight: 600; padding-bottom: 12px;}
 .price h3 {background-color: #F9F9F9; font-size: 20px; padding: 5px 0; text-align: center; border-bottom: 2px solid #EDEDED; font-weight: 600;}
 .price > ul {border-bottom: 2px solid #ededed;}
 .price > ul li {padding: 0px 18px 12px;}
@@ -206,6 +206,25 @@ padding-bottom: 5px; border-bottom: 1px solid #696969;}
 .ps span {display: inline-block; float: left;}
 .ps span:first-child {width: 12px;}
 .ps span:last-child {width: 95%;}
+
+/*이용약관*/
+#contents .terms {padding: 10px 0; margin-top: 8px; border-top: 1px dashed #ddd; border-bottom: none;}
+.terms ul li {clear: both; width: 100%; padding-left: 8px;}
+.terms li a {position: relative; top: -2px; font-size: 15px; color: #434343;}
+.terms li a:hover {text-decoration: underline;}
+
+input[type="checkbox"].ts_check {position: relative; width: 14px; height: 14px;}
+input[type="checkbox"].ts_check + span + label {position: relative; display: inline-block; font-size: 11px; text-align: left; font-size: 13px;}
+input[type="checkbox"].ts_check + span {
+  display: inline-block; overflow: hidden;
+  position: relative; top: 3px; margin-right: 8px; width: 16px; height: 16px; cursor: pointer;
+  border: 1px solid #a9a9a9; background: #eee;
+}
+input[type="checkbox"].ts_check + span img {display: none;}
+input[type="checkbox"].ts_check + span.on {background-color: #ff9000; border-color: #ff9000;}
+input[type="checkbox"].ts_check + span.on img { display: block;
+  position: relative; top: -92px; left: -2px; width: 18px; 
+}
 
 /*카드 무이자 할부 혜택 영역*/
 .card {letter-spacing: 0; margin-top: 30px;}

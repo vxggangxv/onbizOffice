@@ -23,6 +23,13 @@ $(document).ready(function() {
     $(this).find("input[type=checkbox]").prop("checked", isChecked);
 		console.log(isChecked);
 	});
+	/*이용약관 4가지*/
+  $("#contents .terms li .ts_check + span").on("click", function() {
+    $(this).toggleClass("on");
+    var isChecked = $(this).prev().prop("checked");
+    isChecked = !isChecked;
+    $(this).prev().prop("checked", isChecked);
+  });	
 	/*주의사항 및 약관 동의 클릭시 보이기/가리기*/
 	$("#panel > p span").on("click", function() {
 		$(this).closest("p").toggleClass("up");

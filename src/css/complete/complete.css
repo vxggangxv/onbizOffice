@@ -54,6 +54,8 @@
   cursor:pointer;
 }
 .contract > div > table td.final_pay02 span.btnBox3 input:hover{background:#ff5a00;}
+.contract > div > table td.final_pay02 span.btnBox3 a {position: relative; top: 8px;}
+
 .contract  .contract_btn03{width:100%;text-align:center;margin-top:30px;}
 .contract  .contract_btn03 input{
   width:250px;
