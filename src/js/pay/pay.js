@@ -49,7 +49,7 @@ $(document).ready(function() {
     $(this).addClass("on");
   });
   /*결제하실 금액 브라우저 너비, 높이에 따라 조절*/
-  /*var wd = $(window).width();
+  var wd = $(window).width();
   var ht = $(window).height();
   if (wd >= 768 && ht < 866) {
     setTimeout(function() {
@@ -68,7 +68,7 @@ $(document).ready(function() {
       $(".price").removeClass("on");
       $(".price").addClass("m_on");
     } 
-  });*/
+  });
   /*결제하기 날짜 아이콘 클릭시 input클릭*/
   $(".selectBox input").next("i").on("click",function() {
     $(this).prev().focus();

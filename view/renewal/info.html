@@ -37,10 +37,10 @@
 
   <title>온비즈결제페이지</title>
 
-  <link rel="stylesheet" href="http://static.onbiz.co.kr/css/common_responsive.css" type="text/css">
-  <link rel="stylesheet" href="http://static.onbiz.co.kr/css/info/info_responsive.css" type="text/css">
-  <!-- <link rel="stylesheet" href="../../src/css/common_responsive.css" type="text/css">
-  <link rel="stylesheet" href="../../src/css/info/info_responsive.css" type="text/css"> -->
+  <!-- <link rel="stylesheet" href="http://static.onbiz.co.kr/css/common_responsive.css" type="text/css">
+  <link rel="stylesheet" href="http://static.onbiz.co.kr/css/info/info_responsive.css" type="text/css"> -->
+  <link rel="stylesheet" href="../../src/css/common_renewal.css" type="text/css">
+  <link rel="stylesheet" href="../../src/css/info/info_renewal.css" type="text/css">
 
   <script src="http://static.onbiz.co.kr/js/jquery-1.12.4.min.js" type="text/javascript"></script>
   <script src="http://static.onbiz.co.kr/js/common.js"></script>
@@ -60,23 +60,15 @@
   <h1 class="hidden">온비즈오피스</h1>
 
   <div id="wrap">
-    <!--모바일 팝업 배경 백드랍-->
-    <div id="backDrop"></div>
-    <!-- 모바일 헤더 -->
-    <header class="headerOrigin m_private">
-      <h2><a href="./index.html">Onbiz Office</a><span>가상오피스 임대신청</span></h2>
-    </header>
-    <!--모바일 top으로-->
-    <div class="btntop ptr">
-      <img src="http://img.go.co.kr/mobile/top.png" alt="위로가기">
+    <!-- 상단 지역선택 추가 -->
+    <div class="region_wrap">
+      <div class="region_box clr">
+        <p class="nth-1">온비즈오피스 광주본점<span class="l_icon">ㅣ</span><span class="fc1">문의전화: 010-4429-3013, 010-4429-3019 (24시간)</span></p>
+        <p class="nth-2">
+          <a href="" class="a1">광주<span>&gt;</span></a><a href="" class="a2">부산<span>&gt;</span></a>
+        </p>
+      </div>
     </div>
-    <!--모바일 단계 bar-->
-    <ul class="inf_bar clr m_private">
-      <li>상품선택</li>
-      <li class="on">정보입력</li>
-      <li>계약서 서명</li>
-      <li>계약완료</li>
-    </ul>
    
     <!-- 헤더  -->
     <div class="h_wrap">
@@ -86,15 +78,12 @@
         </h2>
         <div class="g_wrap">
           <nav id="gnb" class="clr">
-            <h2><a href="#">가상오피스 임대신청</a></h2>
+            <h2><a href="#">가상오피스 임대신청 <span>&gt;</span></a></h2>
             <ul class="clr">
-              <li><a href="#">임대신청</a></li>
-              <li> | </li>
-              <li><a href="#">임대 신청내역 확인</a></li>
+              <li><a href="#">임대 신청내역 확인 <span>&gt;</span></a></li>
             </ul>
           </nav>
-          <p class="tel">온비즈오피스
-            <br/>문의전화: 010-4429-3013, 010-4429-3017 (24시간) </p>
+          <p class="tel">가맹점 모집: 010-4429-3013</p>
         </div>
       </header>
     </div>
@@ -111,12 +100,6 @@
     <!-- main영역 -->
     <section id="main">
       <h3><img src="http://img.onbiz.co.kr/info_mt.png" alt="임대계약에필요한정보를입력해주세요"></h3>
-      <h3 class="m_private mTxt">
-        <p>
-          온비즈 가상오피스(비상주) 임대계약에 필요한<br/><span class="unline">정보를 입력해주세요.</span>
-        </p>
-        <p><span class="fc">아래 입력정보는 정식 임대차계약서에 기재될 정보이므로</span><br/><span class="fc">정확하게 입력</span>해 주시기 바랍니다.</p>
-      </h3>
     </section>
     
     <!-- 콘텐츠 -->
@@ -139,7 +122,7 @@
             <p>현재 사업자 등록증이 있으나,<br/>주소 이전을 위해 사용합니다.</p>
           </li>
         </ul>
-        <div class="st_wrap">
+        <!-- <div class="st_wrap">
           <div class="selectBox">
             <input type="button" class="s_btn" value="업종을 선택해주세요."><i><img src="http://img.onbiz.co.kr/f_icons.png" alt="아래로"></i>
             <ul>
@@ -158,11 +141,50 @@
               <li>직접입력</li>
             </ul>
           </div>
-          <p>※ 업종을 모를 경우, 사업 내용을 간략하게 입력해주세요.</p>
+        </div> -->
+      </section>
+      <!-- 사무실 임대차 계약서 -->
+      <section id="contract">
+        <h3>사무실 임대차 계약서</h3>
+        <div class="con_table">
+          <ul class="clr con_row">
+            <li class="con_cell con_th">주소</li>
+            <li class="con_cell">서울시 강남구 테헤란로92길 15(대치동, 디아이타워) 1호</li>
+          </ul>
+          <!--ul.clr.con_row>li.con_cell-->
+          <ul class="clr con_row">
+            <li class="con_cell con_th">계약기간</li>
+            <li class="con_cell">2017.01.30 ~ 2017.04.29 (3개월)</li>
+            <li class="con_cell con_th">업종</li>
+            <li class="con_cell">
+              <div class="st_wrap">
+                <div class="selectBox">
+                  <input type="button" class="s_btn" value="업종을 선택해주세요."><i><img src="http://img.onbiz.co.kr/f_icons.png" alt="아래로"></i>
+                  <ul>
+                    <li>건설업</li>
+                    <li>도매 및 소매업</li>
+                    <li>운수업</li>
+                    <li>출판, 영상, 방송통신 및 정보서비스업</li>
+                    <li>금융 및 보험업</li>
+                    <li>전문, 과학 및 기술서비스업</li>
+                    <li>사업시설관리 및 사업지원서비스업</li>
+                    <li>교육서비스업</li>
+                    <li>사회복지서비스업</li>
+                    <li>예술, 스포츠 및 여가관련 서비스업</li>
+                    <li>협회 및 단체, 수리 및 기타</li>
+                    <li>개인서비스업</li>
+                    <li>직접입력</li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+          
         </div>
       </section>
       <!--정보등록-->
       <div id="container">
+
         <section class="manager">
           <h3>계약 명의자(임차인) 정보</h3>
           <p><input type="checkbox" id="mng" class="equal"><span><img src="http://img.onbiz.co.kr/onb_picto.png" alt="체크"></span><label for="mng">계약 신청인 정보와 동일함</label></p>
