@@ -12,10 +12,23 @@ width: 13px; height: 20px;}
 #nb h2 + a > span img {position: relative; width: 70px; top: -19px; left: 0px;}
 /*메인 영역*/
 #main {padding-top: 44px;}
-#main > ul {display: table; text-align: center; margin: 30px auto 20px;}
-#main > ul li {display: table-cell; float: left; padding: 20px 40px; border-radius: 100px; background: #ff9000; color: #fff; font-weight: 600; font-size: 18px; margin-left: 30px;}
+#main .mt_box {width: 900px; text-align: center; margin: 0 auto; /*margin-top: -78px;*/ margin-top: 20px;}
+#main .mt_cell {float: left; border-radius: 100px; color: #fff; font-weight: 400; font-size: 16px; line-height: 1.3em; margin-left: -25px; padding: 18px 0px 19px;/* padding: 18px 30px 19px; */ font-family: "Noto Sans Kr", "NanumGothic", sans-serif;}
 #main > ul li:first-child {margin-left: 0;}
-#main > ul li:first-child + li, #main > ul li:first-child + li + li + li {background: #999999;}
+/* #main .mt_cell.nth-1 {padding-left: 34px; padding-right: 34px;}
+#main .mt_cell.nth-2 {padding-left: 44px; padding-right: 44px;}
+#main .mt_cell.nth-3 {padding-left: 32px; padding-right: 32px;}
+#main .mt_cell.nth-4 {padding-left: 48px; padding-right: 48px;}
+#main .mt_cell.nth-5 {padding-left: 40px; padding-right: 40px;}
+#main .mt_cell.nth-6 {padding-left: 27.5px; padding-right: 27.5px; margin-left: -33px; letter-spacing: -1px;} */
+#main .mt_cell.nth-1 {width: 174px;}
+#main .mt_cell.nth-2 {width: 164px;}
+#main .mt_cell.nth-3 {width: 162px;}
+#main .mt_cell.nth-4 {width: 168px;}
+#main .mt_cell.nth-5 {width: 179px;}
+#main .mt_cell.nth-6 {width: 183px; margin-left: -33px; letter-spacing: -1px;}
+#main .mt_cell.nth-1, #main .mt_cell.nth-3, #main .mt_cell.nth-5 {background: url(http://img.onbiz.co.kr/mt_bg_even.png) repeat;}
+#main .mt_cell.nth-2, #main .mt_cell.nth-4, #main .mt_cell.nth-6 {background: url(http://img.onbiz.co.kr/mt_bg_odd.png) repeat;}
 
 /* 신청하기 영역 */
 .container {position: relative; padding: 30px 40px 30px; background: #F9F9F9; box-sizing: border-box; border: 1px solid #ddd;}

@@ -12,119 +12,63 @@
 /*임대상품 선택 영역*/
 .term h3 span {position: relative; top: 10px;font-size: 13px; float: right; color: #444; font-weight: 400;}
 .term .t_table {position: relative; width: 100%;}
-.term .t_table li {float: left; width: 166px; height: 175px; border: 1px solid #ccc; box-sizing: border-box; margin-left: 0px; border-left: none; cursor: pointer;}
+.term .t_table li {float: left; width: 166px; height: 143px; border: 1px solid #ccc; box-sizing: border-box; margin-left: 0px; border-left: none; cursor: pointer;}
 .term .t_table li:first-child {border-left: 1px solid #ccc;}
+.term .t_table li.nth-4 .t_label {position: relative; letter-spacing: -2px; font-size: 17px;}
 .term .table {position: relative; display: table; width: 100%; letter-spacing: -1px; box-sizing: border-box;}
-.term .table:first-child .t_cell {height: 50px; font-size: 18px; font-weight: 600; background: #ddd; }
-.term .table:first-child .sale {position: absolute; display: block; top: -1px; right: -1px; font-size: 14px; padding: 4px; background: #f52700; font-weight: 800; letter-spacing: 0; color: #fff;}
-.term .table:first-child .sale span {position: relative; top: -1px; font-weight: 400; font-size: 13px; letter-spacing: -1px;;}
+.term .table:first-child .t_cell {height: 50px; font-size: 18px; font-weight: 600; background: #ddd;}
 .term .table:first-child + div .t_cell {height: 29px; font-size: 14px;}
 .term .table:first-child + div + div {width: 88%; margin: 0 auto;}
 .term .table:first-child + div + div .t_cell {height: 60px; font-size: 22px; font-weight: 800;}
-.term .table:first-child + div + div del {display: block; font-size: 14px; color: #888; font-weight: 400; letter-spacing: 0;}
-.term .table:first-child + div + div + div .t_cell {height: 31px; font-weight: 600;}
-.term .table:first-child + div + div + div span {font-size: 14px; color: #333; font-weight: 400;}
 .term .t_cell {display: table-cell; vertical-align: middle; text-align: center;  /*box-sizing: border-box;*/}
-.term  .table:first-child + div .t_cell,
-.term  .table:first-child + div + div .t_cell
+.term  .table:first-child + div .t_cell
 {border-bottom: 1px solid #ddd;}
 .term .table:first-child .t_cell, .term .table:first-child + div + div + div .t_cell {border-bottom: none;}
 /*클릭시*/
 .term .t_table li.on {border: 3px solid #ff9000; margin-left: -1px; width: 167px;}
 .term .t_table li.on:first-child {margin-left: 0px; width: 166px;}
-.term .t_table li.on .table:first-child .t_cell {height: 48px; background: #FF9000; color: #fff;}
-.term .t_table li.on .table:first-child .sale {position: absolute; display: block; top: -3px; right: -3px;}
+/*.term .t_table li.on .table:first-child .t_cell {height: 48px; background: #FF9000; color: #fff;}*/
+.term .t_table li.on .table:first-child .t_cell {height: 48px; background: #ff9813; color: #fff;}
+/*.term .t_table li.on.nth-2, .term .t_table li.on.nth-4 {border-color: #ff9813;}
+.term .t_table li.on.nth-2 .table:first-child .t_cell,
+.term .t_table li.on.nth-4 .table:first-child .t_cell {background: #ff9813; }*/
+
 .term .t_table li.on .table:first-child + div {background: #FFF5D2;}
 .term .t_table li.on .table:first-child + div + div,
-.term .t_table li.on .table:first-child + div + div + div 
-{color: #f52700;}
-/*임대상품 선택 영역*/
-/* .term h3 span {position: relative; top: 10px;font-size: 13px; float: right; color: #444; font-weight: 400;}
-.term .t_table {position: relative; width: 100%;}
-.term .t_table li {float: left; width: 132.8px; height: 206px; border: 1px solid #ccc; box-sizing: border-box; margin-left: 0px; border-left: none; cursor: pointer;}
-.term .t_table li.li-nth-1 {border-left: 1px solid #ccc;}
-.term .table {position: relative; width: 100%; letter-spacing: -1px; box-sizing: border-box;}
-.term .table.d-nth-1 .t_cell {height: 50px; font-size: 18px; font-weight: 600; background: #ddd; }
-.term .table.d-nth-1 .sale {position: absolute; display: block; top: -1px; right: -1px; font-size: 14px; padding: 4px; background: #f52700; font-weight: 800; letter-spacing: 0; color: #fff;}
-.term .table.d-nth-1 .sale span {position: relative; top: -1px; font-weight: 400; font-size: 13px; letter-spacing: -1px;;}
-.term .table.d-nth-2 .t_cell {height: 29px; font-size: 14px;}
-.term .table.d-nth-3 {width: 88%; margin: 0 auto;}
-.term .table.d-nth-3 .t_cell {height: 60px; font-size: 22px; font-weight: 800;}
-.term .table.d-nth-3 del {display: block; font-size: 14px; color: #888; font-weight: 400; letter-spacing: 0;}
-.term .table.d-nth-4 {line-height: 2em; border-bottom: 1px solid #ccc; font-size: 15px;}
-.term .table.d-nth-5 .t_cell {height: 31px; font-weight: 600;}
-.term .table.d-nth-5 span {font-size: 14px; color: #333; font-weight: 400;}
-.term .t_cell {display: table-cell; vertical-align: middle; text-align: center;  }
-.term  .table.d-nth-2 .t_cell,
-.term  .table.d-nth-3 .t_cell
-{border-bottom: 1px solid #ddd;}
-.term .table.d-nth-1 .t_cell, .term .table.d-nth-4 .t_cell {border-bottom: none;}
+.term .t_table li.on .table:first-child + div + div + div {color: #f52700;}
 
-.term .t_table li.on {border: 3px solid #ff9000; margin-left: -1px; width: 133.8px;}
-.term .t_table li.on.li-nth-1 {margin-left: 0px; width: 132.8px;}
-.term .t_table li.on .table.d-nth-1 .t_cell {height: 48px; background: #FF9000; color: #fff;}
-.term .t_table li.on .table.d-nth-1 .sale {position: absolute; display: block; top: -3px; right: -3px;}
-.term .t_table li.on .table.d-nth-2 {background: #FFF5D2;}
-.term .t_table li.on .table.d-nth-3,
-.term .t_table li.on .table.d-nth-5 {color: #f52700;}
-.term .t_table li.on .table.d-nth-4 {font-weight: 600;} */
-
-input[type="radio"].t_radio + span + label {position: relative; cursor: pointer; top: -6px; margin-right: 30px;}
-input[type="radio"].t_radio + span {
+input[type="checkbox"].t_radio + span + .t_label {position: relative; cursor: pointer; top: -6px; margin-right: 2px;}
+input[type="checkbox"].t_radio + span {
   display: inline-block; cursor: pointer;  
-  margin-right: 5px;
-  position: relative; width: 30px; height: 30px;
+  position: relative; width: 30px; height: 30px; margin-left: -12px; margin-right: 5px;
   background: url("http://img.onbiz.co.kr/onb_picto.png") no-repeat center -88px;
 }
-input[type="radio"].t_radio + span.on {
+input[type="checkbox"].t_radio + span.on {
   background: url("http://img.onbiz.co.kr/onb_picto.png") no-repeat center -118px;
 }
 /*예치금이란?*/
-.ps, .ps2 {font-size: 15px; letter-spacing: -1px; color: #444;}
-.ps {margin-top: 20px;}
-.ps span:first-child {font-weight: 600; color: #222; margin-right: 5px;}
-.ps span:first-child + span {color: #f52700;}
-.ps2 {padding-left: 92px; margin-top: 3px;}
-.ps2 span {position: relative; text-decoration: underline;}
+.ps {position: relative; font-size: 15px; letter-spacing: -1px; color: #444; margin-top: 5px; line-height: 1.5em;}
+.ps span.bold {font-weight: 600; color: #222; margin-right: 5px;}
+.ps span.left_50 {position: absolute; left: 50%;}
 
-/*옵션 추가 선택 영역*/
-.option > h3 span {font-size: 15px; font-weight: 400; margin-left: 16px;}
-.option ul li {display: table; position: relative; float:left; width: 332px; height: 55px; vertical-align: middle; border: 1px solid #ccc; color: #222; letter-spacing: -1px; cursor: pointer;}
-.option ul li:first-child + li, .option ul li:first-child + li + li + li {border-left: none;}
-.option ul li:first-child + li + li, .option ul li:first-child + li + li + li, 
-.option ul li.l5 {border-top: none;}
-.option ul li p {position: relative; display: table-cell; text-align: center; vertical-align: middle; color: #333;}
-.option ul li p:first-child {width: 48px;}
-.option ul li p:first-child + p {font-size: 15px; width: 185px; text-align: left; }
-.option ul li p:first-child + p span {display: block; font-size: 14px; text-align: left;}
-.option ul li p:first-child + p + p span {color: #f52700; margin-left: 3px;}
-.option ul li p:first-child + p + p:before {content: ""; position: absolute; top: 3px; left: 0; display: block; width: 1px; height: 50px; border-left: 1px dashed #999; }
-/* .option ul li p.empty {width: 0;}
-.option ul li p.empty + p {width: 233px; padding-left: 20px;} */
-/*클릭시*/
-.option ul li.on {border:1px solid #ff9000; background: #FFF5D2;}
-.option ul li:first-child + li.on, .option ul li:first-child + li + li + li.on {margin-left: -1px; width: 333px; border:1px solid #ff9000;}
-.option ul li:first-child + li + li.on, .option ul li:first-child + li + li + li.on, .option ul li.l5.on {margin-top: -1px; height: 56px; border:1px solid #ff9000;}
-/* 클릭효과 없애기 */
-.option ul li.l5, .option ul li:first-child + li + li + li {cursor: default;}
-.option ul li.l5.on, .option ul li:first-child + li + li +li.on {border:1px solid #ccc; background: #fff;}
-.option ul li.l5.on {border-top-color: #ff9000;}
-.option ul li:first-child + li + li +li.on {border-left-color: #ff9000; border-top-color: #ff9000;}
+/*옵션 추가 기간 선택 영역*/
+.option_term > h3 span {font-size: 15px; font-weight: 400; margin-left: 16px;}
+.option_term .ot_box {position: relative;}
+.option_term .ot_inner {position: relative; float:left; width: 110.66px; height: 90px; vertical-align: middle; border: 1px solid #ccc; border-right: none; color: #222; letter-spacing: -1px; cursor: pointer;}
+.option_term .ot_inner.bb_non {border-bottom: none;}
+.option_term .ot_inner.bt_non {border-top: none;}
+.option_term .ot_inner.last {border-right: 1px solid #ccc;}
+input[type="radio"] + label.ot_label:before {display: none;}
+.option_term .ot_tit {padding: 6px 0; background: #ddd;}
+.option_term .ot_label {display: block; height: 30px; background: url("http://img.onbiz.co.kr/onb_picto.png") no-repeat center -90px;}
+.option_term .o_check:checked + .ot_label {background: url("http://img.onbiz.co.kr/onb_picto.png") no-repeat center -120px;}
+.option_term .ot_txt {font-size: 18px; text-align: center; line-height: 2.6em; font-weight: 600;}
+/*클릭 상태*/
+.option_term .ot_inner.on {border: 3px solid #ff9000; border-top-width: 1px;}
+.option_term .ot_inner.on.bt_non {border-bottom: 3px solid #ff9000;  border-top-width: 0;}
+.option_term .ot_inner.on .ot_tit {background: #ff9813;}
+.option_term .ot_inner.on + .ot_inner {border-left: 0;}
 
-.option p {font-size: 13px; margin-top: 3px;}
-
-input[type="checkbox"].o_check {position: relative; width: 14px; height: 14px;}
-input[type="checkbox"].o_check + span + label {position: relative; display: inline-block; font-size: 11px; text-align: left; font-size: 13px;}
-input[type="checkbox"].o_check + span {
-  display: inline-block; overflow: hidden;
-  position: relative; top: 4px; right: 3px; width: 18px; height: 18px; cursor: pointer;
-  border: 1px solid #a9a9a9; background: #eee;
-}
-input[type="checkbox"].o_check + span img {display: none;}
-input[type="checkbox"].o_check + span.on {background-color: #ff9000; border-color: #ff9000;}
-input[type="checkbox"].o_check + span.on img { display: block;
-  position: relative; top: -102px; left: -2px; width: 20px; 
-}
 
 /*결제수단 선택*/
 .way #tab {z-index: 1;}
@@ -198,9 +142,7 @@ input[type="checkbox"].ts_check + span.on img { display: block;
 .card > p {font-size: 12px; line-height: 1.5em; color: #222;}
 
 /*결제하실 금액*/
-.price {z-index: 2; position: fixed; width: 290px; right: 50%; margin-right: -490px; top: 0; margin-top: 258px; letter-spacing: -1px; background: #fff;}
-.price.on {margin-top: 103px; transition: all 2s;}
-.price.m_on {margin-top: 242;}
+.price {z-index: 2; position: fixed; width: 290px; right: 50%; margin-right: -490px; top: 0; margin-top: 138px; letter-spacing: -1px; background: #fff;}
 /* .price {z-index: 2; position: absolute; width: 290px; right: 50%; margin-right: -490px; top: 0; margin-top: 258px; letter-spacing: -1px; background: #fff;} */
 @media all and (max-width: 980px) {
   .price {left: 690px; margin-left: 0;}
@@ -228,20 +170,6 @@ input[type="checkbox"].ts_check + span.on img { display: block;
 .container > ul li p + p span {display: inline-block;}
 .container > ul li p + p span:first-child {margin-top: 6px;}
 
-.container > .p_startDate {padding: 6px 0; background: #f5f5f5;}
-.container > .p_startDate li {margin: 0 14px 0;}
-.container > .p_startDate li label {display: inline; font-size: 13px; margin-bottom: 5px; color: #222; letter-spacing: 0; position: relative; top: 5px;}
-.p_startDate label span {display: inline;}
-.container .selectBox {float: right; position: relative; right: 0; display: inline-block; width: 170px;}
-.container .selectBox .s_btn {background: #fff; text-indent: 10px; font-size: 13px;}
-.selectBox i.calandar_icon {width: 17px;  height: 18px;  top: 10px;}
-.selectBox i.calandar_icon img {position: absolute; width: 17px; left: 0px; top: 0px;}
-
-.container > .p_price {border-bottom-color: #d2d2d2; /*padding-top: 6px;*/}
-.container > .p_price li:first-child {margin: 0; padding: 0px 14px; border-bottom: 1px dashed #d2d2d2;}
-/* .container > .p_price li:first-child p {font-size: 15px; font-weight: 600;} */
-/*.p_price li.lt p + p {color: #f93500;}*/
-
 .container > .p_total {padding: 3px 0 12px; background: #f5f5f5; border-bottom: none;}
 .container > .p_total li:first-child {border-bottom: none;}
 .container > .p_total li:first-child span {position: absolute; left: 0; top: 26px; font-weight: 600;}
@@ -250,11 +178,9 @@ input[type="checkbox"].ts_check + span.on img { display: block;
 .container > .p_total li.lt p {font-size: 22px; color: #f93500; font-weight: 800; line-height: 1em; letter-spacing: 0; margin-top: -6px;}
 .container > .p_total li.lt p span:first-child {display: block; font-size: 12px; margin-top: 3px; text-align: right; font-weight: 400; color: #4c4c4c; line-height: 1em;}
 
-.p_btn {display: block; width: 100%; height: 67px; border-radius: 4px; text-align: center; font-size: 26px; color: #fff; background: #f62600; line-height: 2.6em; font-weight: 600;}
+.p_btn {display: block; width: 100%; height: 67px; margin-top: 10px; border-radius: 4px; text-align: center; font-size: 26px; color: #fff; background: #f62600; line-height: 2.6em; font-weight: 600;}
 .p_btn + p {text-align: center; font-size: 15px; padding: 10px 0; color: #555;}
 .p_btn + p span {color: #f62600;}
-.ps3 {text-align: center; font-size: 15px; padding: 10px 0; color: #555;}
-.ps3 span {color: #f62600;}
 
 /*주의 사항 및 약관 동의*/
 #panel { margin-top: 8px; }
@@ -276,8 +202,9 @@ input[type="checkbox"]#agree + span.on img { display: block;
 #panel > p {padding: 6px 10px;}
 #panel > p label {font-size: 16px; width: auto;}
 #panel > p label:before {position: relative; top: 2px; margin-right: 5px;}
-#panel .txtara {display: none; position: relative; top: -1px; height: 64px; resize: none; text-align: left; padding: 5px 2px; border: 1px solid #dedede; overflow-y: scroll; overflow-x: hidden; border-bottom-left-radius: 6px; border-bottom-right-radius: 6px;}
+#panel .txtara {display: none; position: relative; top: -1px; height: 82px; resize: none; text-align: left; padding: 5px 2px; border: 1px solid #dedede; overflow-y: scroll; overflow-x: hidden; border-bottom-left-radius: 6px; border-bottom-right-radius: 6px;}
 #panel .txtara li {padding: 0; font-size: 14px; font-weight: 400; line-height: 1.3em; text-indent: 14px;}
 #panel .txtara .idt {text-indent: 0;}
+#panel .txtara .vat {font-size: 12px;}
 
 

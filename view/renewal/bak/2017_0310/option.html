@@ -37,16 +37,15 @@
 
 	<title>온비즈결제페이지</title>
 
-  <!-- <link rel="stylesheet" href="http://static.onbiz.co.kr/css/common_renewal.css" type="text/css">
-  <link rel="stylesheet" href="http://static.onbiz.co.kr/css/pay/pay_renewal.css" type="text/css"> -->
-  <link rel="stylesheet" href="../../src/css/common_renewal.css" type="text/css">
-  <link rel="stylesheet" href="../../src/css/pay/pay_renewal.css" type="text/css">
+  <link rel="stylesheet" href="http://static.onbiz.co.kr/css/common_option.css" type="text/css">
+  <link rel="stylesheet" href="http://static.onbiz.co.kr/css/option/option.css" type="text/css">
+  <!-- <link rel="stylesheet" href="../../src/css/common_option.css" type="text/css">
+  <link rel="stylesheet" href="../../src/css/option/option.css" type="text/css"> -->
 
 	<script src="http://static.onbiz.co.kr/js/jquery-1.12.4.min.js" type="text/javascript"></script>
   <script src="http://static.onbiz.co.kr/js/common.js"></script>
-  <script src="http://static.onbiz.co.kr/js/pay/pay.js"></script>
-  <!-- <script src="http://static.onbiz.co.kr/src/js/pay/pay.js"></script> -->
-  <!-- <script src="../../src/js/pay/pay.js"></script> -->
+  <script src="http://static.onbiz.co.kr/js/option/option.js"></script>
+   <!-- <script src="../../src/js/option/option.js"></script> --> 
 
   <!-- ie9이하 html5, 미디어쿼리 작동 -->
   <!--[if lte IE 8]>
@@ -59,50 +58,19 @@
   <h1 class="hidden">온비즈오피스</h1>
 
   <div id="wrap">
-    <!-- 상단 지역선택 추가 -->
-    <div class="region_wrap">
-      <div class="region_box clr">
-        <p class="nth-1">온비즈오피스 광주본점<span class="l_icon">ㅣ</span><span class="fc1">문의전화: 010-4429-3013, 010-4429-3019 (24시간)</span></p>
-        <p class="nth-2">
-          <a href="" class="a1">광주<span>&gt;</span></a><a href="" class="a2">부산<span>&gt;</span></a>
-        </p>
-      </div>
-    </div>
     <!--top으로-->
     <div class="btntop ptr">
       <img src="http://img.go.co.kr/mobile/top.png" alt="위로가기">
     </div>
-
-    <!-- 헤더  -->
-    <div class="h_wrap">
-      <header id="header" class="clr">
-        <h2 class="in">
-          <a href="/"><img src="http://img.onbiz.co.kr/logo.gif" alt="온비트오피스로고"/></a>
-        </h2>
-        <div class="g_wrap">
-          <nav id="gnb" class="clr">
-            <h2><a href="#">가상오피스 임대신청 <span>&gt;</span></a></h2>
-            <ul class="clr">
-              <li><a href="#">임대 신청내역 확인 <span>&gt;</span></a></li>
-            </ul>
-          </nav>
-          <p class="tel">가맹점 모집: 010-4429-3013</p>
-        </div>
-      </header>
-    </div>
-    <!-- 네비게이션 -->
-    <nav id="nb" class="clr">
-      <h2>가상오피스 (비상주) 임대신청</h2>
-      <ul class="clr">
-        <li class="on">01. 상품선택</li>
-        <li>02. 정보입력</li>
-        <li>03. 계약서 서명</li>
-        <li>04. 계약 완료</li>
-      </ul>
-    </nav>
+    <!-- 해더 영역 -->
+    <header class="header">
+      <nav id="nb" class="clr">
+        <h2>온비즈 가상오피스 (비상주) 옵션신청</h2>
+      </nav>
+    </header>
 		<!-- main영역 -->
 		<section id="main">
-      <h3><img src="http://img.onbiz.co.kr/pay_mt.png" alt="임대상품을선택하고결제를진행해주세요"></h3>
+      <h3><img src="http://img.onbiz.co.kr/pay_mt02.png" alt="옵션상품을선택하고결제를진행해주세요"></h3>
 		</section>
 
 		<!-- 콘텐츠영역 -->
@@ -111,160 +79,130 @@
 		  <section class="term">
 		    <h3>임대상품선택<span>(VAT별도)</span></h3>
         <ul class="clr t_table">
-          <li class="li-nth-1">
-            <div class="table d-nth-1">
-              <p class="t_cell"><input type="radio" class="t_radio" name="term" id="t1"><span></span><label for="t1">1개월</label><span class="sale del">47%<br/><span>할인</span></span></p>
+          <li>
+            <div class="table">
+              <p class="t_cell"><input type="checkbox" class="t_radio" name="term"><span></span><span class="t_label">회의실</span></p>
             </div>
-            <div class="table d-nth-2">
-              <p class="t_cell">임대료</p>
+            <div class="table">
+              <p class="t_cell">사용요금</p>
             </div>
-            <div class="table d-nth-3">
-              <p class="t_cell"><del>150,000원</del>80,000원</p>
-            </div>
-            <div class="table d-nth-4">
-              <p class="t_cell">월 8만원</p>
-            </div>
-            <div class="table d-nth-5">
-              <p class="t_cell"><span class="del">예치금</span> 80,000원</p>
+            <div class="table">
+              <p class="t_cell">100,000원</p>
             </div>
           </li>
-          <li class="li-nth-2 on">
-            <div class="table d-nth-1">
-              <p class="t_cell"><input type="radio" class="t_radio" name="term" id="t3" checked="checked"><span class="on"></span><label for="t3">3개월</label><span class="sale del">53%<br/><span>할인</span></span></p>
+          <li class="nth-2 on">
+            <div class="table">
+              <p class="t_cell"><input type="checkbox" class="t_radio" name="term" checked="checked"><span class="on"></span><span class="t_label">우편발송</span></p>
             </div>
-            <div class="table d-nth-2">
-              <p class="t_cell">임대료</p>
+            <div class="table">
+              <p class="t_cell">사용요금</p>
             </div>
-            <div class="table d-nth-3">
-              <p class="t_cell"><del>450,000원</del>210,000원</p>
-            </div>
-            <div class="table d-nth-4">
-              <p class="t_cell">월 7만원</p>
-            </div>
-            <div class="table d-nth-5">
-              <p class="t_cell"><span class="del">예치금</span> 80,000원</p>
+            <div class="table">
+              <p class="t_cell">210,000원</p>
             </div>
           </li>
-          <li class="li-nth-3">
-            <div class="table d-nth-1">
-              <p class="t_cell"><input type="radio" class="t_radio" name="term" id="t6"><span></span><label for="t6">6개월</label><span class="sale del">60%<br/><span>할인</span></span></p>
+          <li>
+            <div class="table">
+              <p class="t_cell"><input type="checkbox" class="t_radio" name="term" id="t6"><span></span><span class="t_label">복사기이용</span></p>
             </div>
-            <div class="table d-nth-2">
-              <p class="t_cell">임대료</p>
+            <div class="table">
+              <p class="t_cell">사용요금</p>
             </div>
-            <div class="table d-nth-3">
-              <p class="t_cell"><del>900,000원</del>360,000원</p>
-            </div>
-            <div class="table d-nth-4">
-              <p class="t_cell">월 6만원</p>
-            </div>
-            <div class="table d-nth-5">
-              <p class="t_cell"><span class="del">예치금</span> 80,000원</p>
+            <div class="table">
+              <p class="t_cell">360,000원</p>
             </div>
           </li>
-          <li class="li-nth-4">
-            <div class="table d-nth-1">
-              <p class="t_cell"><input type="radio" class="t_radio" name="term" id="t12"><span></span><label for="t12">12개월</label><span class="sale del">67%<br/><span>할인</span></span></p>
+          <li class="nth-4">
+            <div class="table">
+              <p class="t_cell"><input type="checkbox" class="t_radio" name="term" id="t12"><span></span><span class="t_label">전화번호 착신신청</span></p>
             </div>
-            <div class="table d-nth-2">
-              <p class="t_cell">임대료</p>
+            <div class="table">
+              <p class="t_cell">사용요금</p>
             </div>
-            <div class="table d-nth-3">
-              <p class="t_cell"><del>1,800,000원</del>600,000원</p>
-            </div>
-            <div class="table d-nth-4">
-              <p class="t_cell">월 5만원</p>
-            </div>
-            <div class="table d-nth-5">
-              <p class="t_cell"><span class="del">예치금</span> 80,000원</p>
-            </div>
-          </li>
-          <li class="li-nth-5">
-            <div class="table d-nth-1">
-              <p class="t_cell"><input type="radio" class="t_radio" name="term" id="t13"><span></span><label for="t13">24개월</label><span class="sale del">67%<br/><span>할인</span></span></p>
-            </div>
-            <div class="table d-nth-2">
-              <p class="t_cell">임대료</p>
-            </div>
-            <div class="table d-nth-3">
-              <p class="t_cell"><del>1,200,000원</del>1,200,000원</p>
-            </div>
-            <div class="table d-nth-4">
-              <p class="t_cell">월 5만원</p>
-            </div>
-            <div class="table d-nth-5">
-              <p class="t_cell"><span class="del">예치금</span> 80,000원</p>
+            <div class="table">
+              <p class="t_cell">600,000원</p>
             </div>
           </li>
         </ul>
-        <p class="ps"><span>※ 예치금이란?</span> 보증금 개념으로 계약 종료 시점에 <span>고객님 은행계좌로 전액 정산환급</span>해 드립니다.</p>
-        <p class="ps2"><span>최초 결제시 1회 납부 하시게 되며, 결제수수료 2500원이 환산되어 결제</span>됨을 안내해 드립니다.</p>
+        <p class="ps">
+          <span class="bold">- 회의실:</span>월 5시간 이용<span class="left_50"><span class="bold">- 전화번호 착신신청:</span>직접가입/실비별도 발생</span> <br/>
+          <span class="bold">- 우편발송:</span>착불/매주 금요일 발송<span class="left_50"><span class="bold">- 복사기 이용:</span>월 흑백 150매</span>
+        </p>
 		  </section>
       <!--옵션 추가 선택 영역-->
-		  <section class="option">
-        <h3>옵션 추가 선택<span>※ 옵션 상품의 이용기간은 임대기간과 동일하게 적용됩니다.</span></h3>
-		    <ul class="clr">
-		      <li class="on">
-		        <p>
-		          <input type="checkbox" name="option" id="o1" class="o_check" checked="checked"><span class="on"><img src="http://img.onbiz.co.kr/onb_picto.png" alt="체크"></span>
-		          <label for="o1"></label>
-		        </p>
-		        <p>
-		          회의실 및 가페테리아
-		          <span>(월 5시간 이용)</span>
-		        </p>
-		        <p>
-		          월<span>10,000원</span>
-		        </p>
-		      </li>
-		      <li>
-            <p>
-              <input type="checkbox" name="option" id="o2" class="o_check"><span><img src="http://img.onbiz.co.kr/onb_picto.png" alt="체크"></span>
-              <label for="o2"></label>
+		  <section class="option_term">
+        <h3>서비스 이용기간</h3>
+        <!--ul.ot_box.clr>(li.ot_inner>p.ot_tit>input[name=option_term type=radio id=ot_$@7 class=o_check]+label.ot_label[for=ot_$@7]^p.ot_txt{$개월})*6-->
+        <ul class="ot_box clr">
+          <li class="ot_inner bb_non">
+            <p class="ot_tit">
+              <input type="radio" name="option_term" id="ot_1" class="o_check">
+              <label for="ot_1" class="ot_label"></label>
             </p>
-            <p>
-              우편물 발송 및 등기수취
-              <span>(발송비 별도)</span>
-            </p>
-            <p>
-              월<span>10,000원</span>
-            </p>
-		      </li>
-          <li>
-            <p>
-              <input type="checkbox" name="option" id="o4" class="o_check"><span><img src="http://img.onbiz.co.kr/onb_picto.png" alt="체크"></span>
-              <label for="o4"></label>
-            </p>
-            <p>
-              복사기 이용 (월 흑백 150매)
-            </p>
-            <p>
-              월<span>10,000원</span>
-            </p>
+            <p class="ot_txt">1개월</p>
           </li>
-          <li>
-            <p class="empty"></p>
-            <p>
-              전화번호 착신전환 신청
-              <span>(ex: 02-XXXX-XXXX)</span>
+          <li class="ot_inner bb_non">
+            <p class="ot_tit">
+              <input type="radio" name="option_term" id="ot_2" class="o_check">
+              <label for="ot_2" class="ot_label"></label>
             </p>
-            <p>
-              월<span>10,000원</span>
-            </p>
+            <p class="ot_txt">2개월</p>
           </li>
-          <li class="l5">
-            <p class="empty"></p>
-            <p>
-              건물 유료주차
+          <li class="ot_inner bb_non on">
+            <p class="ot_tit">
+              <input type="radio" name="option_term" id="ot_3" class="o_check" checked="checked">
+              <label for="ot_3" class="ot_label"></label>
             </p>
-            <p>
-              월<span>200,000원</span>
+            <p class="ot_txt">3개월</p>
+          </li>
+          <li class="ot_inner bb_non">
+            <p class="ot_tit">
+              <input type="radio" name="option_term" id="ot_4" class="o_check">
+              <label for="ot_4" class="ot_label"></label>
             </p>
-          </li>		      
-		      
-          
-		    </ul>
-        <p>※ 착신전환 및 유료주차 관련 금액안내와 서비스 신청을 원하시면, Tel) 010.4429.3013으로 문의전화 주시기바랍니다.</p>
+            <p class="ot_txt">4개월</p>
+          </li>
+          <li class="ot_inner bb_non">
+            <p class="ot_tit">
+              <input type="radio" name="option_term" id="ot_5" class="o_check">
+              <label for="ot_5" class="ot_label"></label>
+            </p>
+            <p class="ot_txt">5개월</p>
+          </li>
+          <li class="ot_inner bb_non last">
+            <p class="ot_tit">
+              <input type="radio" name="option_term" id="ot_6" class="o_check">
+              <label for="ot_6" class="ot_label"></label>
+            </p>
+            <p class="ot_txt">6개월</p>
+          </li>
+        </ul>
+        <ul class="ot_box clr">
+          <li class="ot_inner bt_non">
+            <p class="ot_tit"><input type="radio" name="option_term" id="ot_7" class="o_check"><label for="ot_7" class="ot_label"></label></p>
+            <p class="ot_txt">7개월</p>
+          </li>
+          <li class="ot_inner bt_non">
+            <p class="ot_tit"><input type="radio" name="option_term" id="ot_8" class="o_check"><label for="ot_8" class="ot_label"></label></p>
+            <p class="ot_txt">8개월</p>
+          </li>
+          <li class="ot_inner bt_non">
+            <p class="ot_tit"><input type="radio" name="option_term" id="ot_9" class="o_check"><label for="ot_9" class="ot_label"></label></p>
+            <p class="ot_txt">9개월</p>
+          </li>
+          <li class="ot_inner bt_non">
+            <p class="ot_tit"><input type="radio" name="option_term" id="ot_10" class="o_check"><label for="ot_10" class="ot_label"></label></p>
+            <p class="ot_txt">10개월</p>
+          </li>
+          <li class="ot_inner bt_non">
+            <p class="ot_tit"><input type="radio" name="option_term" id="ot_11" class="o_check"><label for="ot_11" class="ot_label"></label></p>
+            <p class="ot_txt">11개월</p>
+          </li>
+          <li class="ot_inner bt_non last">
+            <p class="ot_tit"><input type="radio" name="option_term" id="ot_12" class="o_check"><label for="ot_12" class="ot_label"></label></p>
+            <p class="ot_txt">12개월</p>
+          </li>
+        </ul>
 		  </section>
 		  <!--결제수단 선택 영역-->
 		  <section class="way">
@@ -318,14 +256,6 @@
     <aside class="price">
       <div class="container">
         <h3>결제하실 금액</h3>
-        <ul class="p_startDate">
-          <li class="lt">
-            <label for="p_date"><span>&#8226;</span>임대게시일</label>
-            <div class="selectBox">
-              <input type="button" id="p_date" class="s_btn" value="2017년 02월 31일"><i class="calandar_icon"><img src="http://img.onbiz.co.kr/calandar_icon.png" alt="날짜선택"></i>
-            </div>
-          </li>
-        </ul>
         <ul class="p_term">
           <li><p>&#8226;임대 기간</p><p>2017.02.31~2017.05.31 (3개월)</p></li>
           <li class="lt">
@@ -337,21 +267,13 @@
               <span>복사기 이용</span>
             </p>
           </li>
-        </ul>
-        <ul class="p_price">
-          <li><p>&#8226;임대정상가</p><p>300,000원</p></li>
-          <li><p>&#8226;예치금(보증금)</p><p>82,500원</p></li>
-          <li><p>&#8226;옵션(2개/3개월)</p><p>60,000원</p></li>
-          <li class="lt"><p>&#8226;임대가 할인(30% 할인)</p><p>-90,000원</p></li>
-        </ul>
-        <ul class="p_total">
+        </ul><ul class="p_total">
           <li><span>총 결제금액</span><p>(신용카드 결제)</p></li>
           <li class="lt">
             <p>387,750원<span>(VAT포함)</span></p>
           </li>
         </ul>
       </div>
-      <p class="ps3">예치금 <span>80,000</span>원은 계약종료시<br/>고객님 계좌로 환급해 드립니다.</p>
       <!--결제하기 버튼-->
       <p class="btn_wrap">
         <a class="p_btn" href="http://design.autopay.co.kr/joon/onbiz/info.html">결제하기</a>
@@ -362,6 +284,8 @@
         <div class="txtara">
           <ul>
             <li>주의사항 (체크박스 확인)</li>
+            <li class="idt">■ Onbiz Office는 1개월이 최소 의무사용기간입</li>
+            <li>니다. (정상가: 월 150,000원 <span class="vat">VAT별도</span>)</li>
             <li class="idt">■ 계약 만료 및 해지시 30일 이전에 당시에</li>
             <li>통보해야하며, 미통보시 해당 예고기간은 사용</li>
             <li>기간으로 간주되어 합상 청구됩니다.</li>
