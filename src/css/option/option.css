@@ -12,14 +12,14 @@
 /*임대상품 선택 영역*/
 .term h3 span {position: relative; top: 10px;font-size: 13px; float: right; color: #444; font-weight: 400;}
 .term .t_table {position: relative; width: 100%;}
-.term .t_table li {float: left; width: 166px; height: 143px; border: 1px solid #ccc; box-sizing: border-box; margin-left: 0px; border-left: none; cursor: pointer;}
+.term .t_table li {float: left; width: 166px; height: 141px; border: 1px solid #ccc; box-sizing: border-box; margin-left: 0px; border-left: none; cursor: pointer;}
 .term .t_table li:first-child {border-left: 1px solid #ccc;}
 .term .t_table li.nth-4 .t_label {position: relative; letter-spacing: -2px; font-size: 17px;}
 .term .table {position: relative; display: table; width: 100%; letter-spacing: -1px; box-sizing: border-box;}
 .term .table:first-child .t_cell {height: 50px; font-size: 18px; font-weight: 600; background: #ddd;}
 .term .table:first-child + div .t_cell {height: 29px; font-size: 14px;}
 .term .table:first-child + div + div {width: 88%; margin: 0 auto;}
-.term .table:first-child + div + div .t_cell {height: 60px; font-size: 22px; font-weight: 800;}
+.term .table:first-child + div + div .t_cell {height: 60px; font-size: 21px; font-weight: 800;}
 .term .t_cell {display: table-cell; vertical-align: middle; text-align: center;  /*box-sizing: border-box;*/}
 .term  .table:first-child + div .t_cell
 {border-bottom: 1px solid #ddd;}

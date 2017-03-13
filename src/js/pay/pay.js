@@ -13,11 +13,15 @@ $(document).ready(function() {
     $(this).closest("li").toggleClass("on");
   });
   $("#contents .option li").on("click", function() {
-    var isChecked =  $(this).find("input[type=checkbox]").prop('checked');
-    $(this).toggleClass("on");
-    $(this).find(".o_check + span").toggleClass("on");
-    isChecked = !isChecked;
-    $(this).find("input[type=checkbox]").prop('checked', isChecked);
+    var thIdx = $(this).index();
+    //console.log(thIdx);
+    if( thIdx < 3 ){
+      var isChecked =  $(this).find("input[type=checkbox]").prop('checked');
+      $(this).toggleClass("on");
+      $(this).find(".o_check + span").toggleClass("on");
+      isChecked = !isChecked;
+      $(this).find("input[type=checkbox]").prop('checked', isChecked);
+    }
 	pay.calc();
   });
   /*이용약관 4가지*/

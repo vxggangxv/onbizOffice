@@ -12,67 +12,43 @@
 /*임대상품 선택 영역*/
 .term h3 span {position: relative; top: 10px;font-size: 13px; float: right; color: #444; font-weight: 400;}
 .term .t_table {position: relative; width: 100%;}
-.term .t_table li {float: left; width: 166px; height: 175px; border: 1px solid #ccc; box-sizing: border-box; margin-left: 0px; border-left: none; cursor: pointer;}
-.term .t_table li:first-child {border-left: 1px solid #ccc;}
-.term .table {position: relative; display: table; width: 100%; letter-spacing: -1px; box-sizing: border-box;}
-.term .table:first-child .t_cell {height: 50px; font-size: 18px; font-weight: 600; background: #ddd; }
-.term .table:first-child .sale {position: absolute; display: block; top: -1px; right: -1px; font-size: 14px; padding: 4px; background: #f52700; font-weight: 800; letter-spacing: 0; color: #fff;}
-.term .table:first-child .sale span {position: relative; top: -1px; font-weight: 400; font-size: 13px; letter-spacing: -1px;;}
-.term .table:first-child + div .t_cell {height: 29px; font-size: 14px;}
-.term .table:first-child + div + div {width: 88%; margin: 0 auto;}
-.term .table:first-child + div + div .t_cell {height: 60px; font-size: 22px; font-weight: 800;}
-.term .table:first-child + div + div del {display: block; font-size: 14px; color: #888; font-weight: 400; letter-spacing: 0;}
-.term .table:first-child + div + div + div .t_cell {height: 31px; font-weight: 600;}
-.term .table:first-child + div + div + div span {font-size: 14px; color: #333; font-weight: 400;}
-.term .t_cell {display: table-cell; vertical-align: middle; text-align: center;  /*box-sizing: border-box;*/}
-.term  .table:first-child + div .t_cell,
-.term  .table:first-child + div + div .t_cell
-{border-bottom: 1px solid #ddd;}
-.term .table:first-child .t_cell, .term .table:first-child + div + div + div .t_cell {border-bottom: none;}
-/*클릭시*/
-.term .t_table li.on {border: 3px solid #ff9000; margin-left: -1px; width: 167px;}
-.term .t_table li.on:first-child {margin-left: 0px; width: 166px;}
-.term .t_table li.on .table:first-child .t_cell {height: 48px; background: #FF9000; color: #fff;}
-.term .t_table li.on .table:first-child .sale {position: absolute; display: block; top: -3px; right: -3px;}
-.term .t_table li.on .table:first-child + div {background: #FFF5D2;}
-.term .t_table li.on .table:first-child + div + div,
-.term .t_table li.on .table:first-child + div + div + div 
-{color: #f52700;}
-/*임대상품 선택 영역*/
-/* .term h3 span {position: relative; top: 10px;font-size: 13px; float: right; color: #444; font-weight: 400;}
-.term .t_table {position: relative; width: 100%;}
-.term .t_table li {float: left; width: 132.8px; height: 206px; border: 1px solid #ccc; box-sizing: border-box; margin-left: 0px; border-left: none; cursor: pointer;}
+.term .t_table li {float: left; width: 132.8px; height: 203px; border: 1px solid #ccc; box-sizing: border-box; margin-left: 0px; border-left: none; cursor: pointer;}
+/*.term .t_table li.li-nth-2 .table.d-nth-1, .term .t_table li.li-nth-3 .table.d-nth-1 .t_cell, .term .t_table li.li-nth-4 .table.d-nth-1 .t_cell {width: 131.8px;}*/
+.term .t_table li .table.d-nth-1 .t_cell {width: 131.8px;}
+.term .t_table li.li-nth-1 .table.d-nth-1 .t_cell {width: 130.8px;}
 .term .t_table li.li-nth-1 {border-left: 1px solid #ccc;}
-.term .table {position: relative; width: 100%; letter-spacing: -1px; box-sizing: border-box;}
+.term .table {position: relative; display: table; width: 100%; letter-spacing: -1px; box-sizing: border-box;}
 .term .table.d-nth-1 .t_cell {height: 50px; font-size: 18px; font-weight: 600; background: #ddd; }
-.term .table.d-nth-1 .sale {position: absolute; display: block; top: -1px; right: -1px; font-size: 14px; padding: 4px; background: #f52700; font-weight: 800; letter-spacing: 0; color: #fff;}
+.term .table.d-nth-1 .sale {position: absolute; display: block; top: -1px; right: 0px; font-size: 14px; padding: 4px; background: #f52700; font-weight: 800; letter-spacing: 0; color: #fff;}
 .term .table.d-nth-1 .sale span {position: relative; top: -1px; font-weight: 400; font-size: 13px; letter-spacing: -1px;;}
-.term .table.d-nth-2 .t_cell {height: 29px; font-size: 14px;}
+.term .table.d-nth-2 .t_cell {height: 29px; font-size: 14px; line-height: 2em;}
 .term .table.d-nth-3 {width: 88%; margin: 0 auto;}
-.term .table.d-nth-3 .t_cell {height: 60px; font-size: 22px; font-weight: 800;}
+.term .table.d-nth-3 .t_cell {height: 60px; font-size: 20px; font-weight: 800; padding-top: 13px;}
 .term .table.d-nth-3 del {display: block; font-size: 14px; color: #888; font-weight: 400; letter-spacing: 0;}
 .term .table.d-nth-4 {line-height: 2em; border-bottom: 1px solid #ccc; font-size: 15px;}
-.term .table.d-nth-5 .t_cell {height: 31px; font-weight: 600;}
+.term .table.d-nth-5 .t_cell {height: 31px; font-weight: 600; line-height: 1.9em;}
 .term .table.d-nth-5 span {font-size: 14px; color: #333; font-weight: 400;}
-.term .t_cell {display: table-cell; vertical-align: middle; text-align: center;  }
+.term .t_cell {/*display: table-cell vertical-align: middle;*/ text-align: center;  /*box-sizing: border-box;*/}
 .term  .table.d-nth-2 .t_cell,
 .term  .table.d-nth-3 .t_cell
 {border-bottom: 1px solid #ddd;}
 .term .table.d-nth-1 .t_cell, .term .table.d-nth-4 .t_cell {border-bottom: none;}
-
-.term .t_table li.on {border: 3px solid #ff9000; margin-left: -1px; width: 133.8px;}
-.term .t_table li.on.li-nth-1 {margin-left: 0px; width: 132.8px;}
+/*클릭시*/
+.term .t_table li.on {border: 3px solid #ff9000; margin-left: -1px; width: 132.8px;}
+.term .t_table li.on.li-nth-1 {margin-left: 0px; width: 131.8px;}
 .term .t_table li.on .table.d-nth-1 .t_cell {height: 48px; background: #FF9000; color: #fff;}
 .term .t_table li.on .table.d-nth-1 .sale {position: absolute; display: block; top: -3px; right: -3px;}
 .term .t_table li.on .table.d-nth-2 {background: #FFF5D2;}
 .term .t_table li.on .table.d-nth-3,
 .term .t_table li.on .table.d-nth-5 {color: #f52700;}
-.term .t_table li.on .table.d-nth-4 {font-weight: 600;} */
-
-input[type="radio"].t_radio + span + label {position: relative; cursor: pointer; top: -6px; margin-right: 30px;}
+.term .t_table li.on .table.d-nth-4 {font-weight: 600;}
+.term .t_table li.on .table.d-nth-1 .t_cell {width: 126.8px;}
+.term .t_table li.li-nth-1.on .table.d-nth-1 .t_cell {width: 125.8px;}
+input[type="radio"].t_radio + span + label {position: relative; cursor: pointer; top: -6px; margin-right: 30px; line-height: 3.3em; }
+input[type="radio"].t_radio + span + label { line-height: 3.1em; }
 input[type="radio"].t_radio + span {
   display: inline-block; cursor: pointer;  
-  margin-right: 5px;
+  margin-left: -5px; margin-right: 3px;
   position: relative; width: 30px; height: 30px;
   background: url("http://img.onbiz.co.kr/onb_picto.png") no-repeat center -88px;
 }

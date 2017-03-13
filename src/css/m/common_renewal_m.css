@@ -86,19 +86,17 @@ footer {width:100%; height: 130px; float:left; background: #F9f9f9;}
 /*모바일 디자인 미디어 쿼리*/
 .headerOrigin, #main, #contents {overflow: hidden;}
 
-.h_wrap, #nb {display: none;}
 
 /*Div팝업창 등장시 배경*/
 #backDrop, #menu_wrap {position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
 #backDrop {display: none; z-index: 20;background: rgba(0,0,0,.905);}
 
 /* 모바일 헤더영역 */
+
 .headerOrigin {position: relative; width: 100%; height: 60px; background: #fff; padding: 18px 10px 0;}
 .headerOrigin h2 a {position: relative; float:left; color: #302E2E; font-size: 28px; font-weight: 800;}
-/*.headerOrigin h1 a {margin-left: 3px;}*/
 .headerOrigin h2 a.nav_tab span {position: relative; float: right; top: 10px; margin-left: 5px; font-size: 16px; font-weight: 700;}
-/*.headerOrigin h1 + a {position: absolute; width: 25px; height: 22px; top: 14px;	right: 10px; display: block; background-image: url("http://img.onbiz.co.kr/images/m/tab.jpg");}*/
-/*모바일 단계 바*/
+
 .inf_bar {position: relative; width: 100%; background: #5b5b59; border-top: 1px solid #5b5b59; border-bottom: 1px solid #5b5b59; margin-top: -4px;}
 .inf_bar li {position: relative; float:left; height: 39px; line-height: 38px; background-color: #E0E0E0; font-size: 14px; font-weight: 500; color: #4C4C4C; text-align: center; width: 25%; text-indent: 10px; box-sizing: border-box;}
 .inf_bar li:first-child {text-indent: 5px;}
@@ -109,8 +107,8 @@ footer {width:100%; height: 130px; float:left; background: #F9f9f9;}
 
 
 @media all and (max-width: 320px) {
-  /*단계바*/
+
   .headerOrigin, .inf_bar li { letter-spacing: -1px; }
-  /*내역조회*/
+
   .wrap_ntc {width: 316px;}
 }

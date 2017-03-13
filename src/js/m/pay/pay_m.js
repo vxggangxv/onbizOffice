@@ -21,10 +21,14 @@ $(document).ready(function() {
 	});
 	/*체크 박스 포함 ul태그 클릭 시 스타일 설정*/
 	$("#contents .term.add ul").on("click",function() {
+		var thIdx = $(this).index();
+    //console.log(thIdx);
+    if( thIdx < 4 ){
 		$(this).toggleClass("on");
-		var isChecked =  $(this).find("input[type=checkbox]").prop('checked');
-		isChecked = !isChecked;
-		$(this).find("input[type=checkbox]").prop("checked", isChecked);
+			var isChecked =  $(this).find("input[type=checkbox]").prop('checked');
+			isChecked = !isChecked;
+			$(this).find("input[type=checkbox]").prop("checked", isChecked);
+		}
 		pay.calc();
 	});
 	/*이용약관 4가지*/
