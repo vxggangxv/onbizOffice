@@ -1,0 +1,87 @@
+@charset "utf-8";
+#footer {background:#f2f2f2; margin-top:0;}
+#wrap {min-width:1450px;}
+input[type="radio"].on + label:before {background: url("http://img.onbiz.co.kr/onb_picto.png") no-repeat center -60px;}
+
+/* 공통 */
+.sec {padding:80px 0 110px; color:#292929;}
+.sec .wrap {width:960px; margin:0 auto; text-align:center;}
+.sec .title {position:relative; margin-bottom:20px; padding-bottom:25px; color:#000; font-size:40px;}
+.sec .title:before {content:''; display:block; position:absolute; left:50%; bottom:0; width:36px; height:4px; margin-left:-18px; background-color:#ff7701;}
+.sec .title.white {color:#fff;}
+.sec .s_tit {margin-top:80px; margin-bottom:20px; color:#000; font-size:40px;}
+.sec .s_txt01 {margin-bottom:15px; color:#454545; font-weight:bold; font-size:25px;}
+.sec .s_txt02 {padding-bottom:55px; color:#000; font-size:20px;}
+.sec .s_txt02.white {color:#fff;}
+.sec .s_txt03 {color:#545454; font-size:17px;}
+.sec .s_txt04 {color:#717171; font-size:15px;}
+.sec .s_txt01 .mark {color:#545454; font-size:40px;}
+.sec .s_txt01 .sign {color:#ff7d0d;}
+
+/* 상단 네비게이션메뉴 */
+.t_wrap {background-color:#f2f2f2;}
+.t_wrap .top_menu {overflow:hidden; width:960px; margin:0 auto;}
+.t_wrap .top_menu li {float:left; width:160px; height:46px; text-align:center; line-height:46px;}
+.t_wrap .top_menu li a {color:#333; font-weight:bold; font-size:18px;}
+
+/* 개설특장점 */
+.sec .ico_list {}
+.sec .ico_list li {float:left; width:310px; height:244px; margin-left:14px; padding-top:108px; border:1px solid #d6d6d6; color:#393939; box-shadow:0 5px 5px rgba(220,220,220,.75);}
+.sec .ico_list li:first-child {width:311px; margin-left:0;}
+.sec .ico_list li.ico_list01 {background:url('http://img.onbiz.co.kr/sec_ico01.gif') no-repeat 50% 20px #f7f7f7;}
+.sec .ico_list li.ico_list02 {background:url('http://img.onbiz.co.kr/sec_ico02.gif') no-repeat 50% 20px #f7f7f7;}
+.sec .ico_list li.ico_list03 {background:url('http://img.onbiz.co.kr/sec_ico03.gif') no-repeat 50% 20px #f7f7f7;}
+.sec .ico_list li strong {font-size:22px;}
+.sec .ico_list li p {font-size:16px;}
+.sec .ico_list li p.line1 {padding-top:30px;}
+.sec .ico_list li p.line3 {padding-top:20px;}
+.sec .ico_list li p.line4 {padding-top:10px;}
+.sec .info {padding:45px 0; border:1px solid #d9d9d9; background-color:#f9f9f9;}
+.sec .info ul li {margin-top:45px;}
+.sec .info ul li:first-child {margin-top:0;}
+.sec .info ul li strong {position:relative; color:#484848; font-size:22px;}
+.sec .info ul li strong:before {content:''; display:block; position:absolute; left:-21px; top:5px; width:17px; height:15px; background:url('http://img.onbiz.co.kr/ico_blt01.gif') no-repeat 0 0;}
+.sec .info ul li p {margin-top:15px; font-size:17px;}
+.sec .office {overflow:hidden; margin-bottom:50px;}
+.sec .office li {float:left; width:216px; height:217px; margin-left:32px; background:url('http://img.onbiz.co.kr/bg_roundbox.gif') no-repeat 0 0;}
+.sec .office li:first-child {margin-left:0;}
+.sec .office li > div {display:table; width:100%;}
+.sec .office li .top {height:95px;}
+.sec .office li .btm {height:122px;}
+.sec .office li > div p {display:table-cell; vertical-align:middle;}
+.sec .office li .top p {color:#4c4c4c; font-weight:bold; font-size:19px;}
+.sec .office li .btm p {color:#fff; font-size:17px;}
+
+/* 개설절차 */
+.process {background:url('http://img.onbiz.co.kr/pattern.gif') repeat 0 0;}
+.process .setup {width:989px; margin:0 auto; height:1186px; background:url('http://img.onbiz.co.kr/img_process.png') no-repeat 0 0;}
+
+/* 예상수익률 */
+.sec .invest {margin-bottom:30px; border:1px solid #cecece;}
+.sec .invest .top {padding:10px 0; background-color:#ff7d0d;}
+.sec .invest .top p {color:#fff; font-weight:bold; font-size:28px;}
+.sec .invest .btm {padding:15px 0; background-color:#fbfbfb;}
+.sec .invest .btm p {color:#000; font-size:28px;}
+.sec .invest .btm .money {font-size:60px;}
+
+/* 가맹문의 */
+.partners {background-color:#4b4b4b;}
+.partners *  {color:#fff;}
+.partners .board_write {}
+.partners .board_write .gruop {margin-bottom:25px; font-size:20px; text-align:left;}
+.partners .board_write .gruop .column3 {overflow:hidden;}
+.partners .board_write .gruop .column3 .col {float:left; width:286px; margin-left:50px;}
+.partners .board_write .gruop .column3 .col:first-child {margin-left:0;}
+.partners .board_write .gruop .txt_box {height:45px; padding:5px; border:0; border-radius:0; color:#000; font-size:20px;}
+.partners .board_write .gruop .block {display:block; margin-bottom:5px;}
+.partners .board_write .gruop textarea {width:100%; padding:5px; color:#000; font-size:20px; resize:none;}
+.partners .board_write .btn_partners {display:block; height:65px; background-color:#1f1f1f; font-size:25px; line-height:65px;}
+
+/* 왼쪽 컨트롤메뉴 */
+.indicator {position:fixed; left:30px; top:255px; width:180px;}
+.indicator p {padding:20px 0 10px; background-color:#3e1d01; color:#fff; font-weight:bold; font-size:25px; text-align:center;}
+.indicator ul {padding-bottom:15px; background-color:#ff9234;}
+.indicator ul li {padding:0 10px;}
+.indicator ul li.on, .indicator ul li:hover {background-color:#ff7d0d;}
+.indicator ul li a {display:block; position:relative; padding:10px 0 10px 25px; border-top:1px solid #fba052; color:#fff; font-weight:bold; font-size:19px;}
+.indicator ul li.on a:before {content:''; display:block; position:absolute; left:6px; top:50%; width:15px; height:12px; margin-top:-6px; background:url('http://img.onbiz.co.kr/indicator_on.gif') no-repeat 0 0;}
