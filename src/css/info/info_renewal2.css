@@ -1,0 +1,163 @@
+@charset "utf-8";
+
+
+/*카테고리 영역*/
+.category > ul li {display: table; position: relative; float: left; width: 50%; height: 70px; top:0; text-align: center; background: #444444; color: #fff; cursor: pointer;}
+.category h3, .category p {position: relative; display: table-cell; vertical-align: middle;}
+.category h3 {font-size: 24px; /*margin-top: 6px;*/ line-height: 2em;}
+.category h3 label {cursor: pointer;}
+.category .c_h {left: 15px;}
+.category .rt {left: 2px; letter-spacing: -1px;}
+.category .c_h + p {left: 10px;}
+.category .rt + p {left: 3px; }
+.category p {text-align: left; /*margin-top: 5px;*/}
+.category > ul li.on {margin-top: -10px; height: 80px; background: #FF9000;}
+.category > ul li.on h3 {margin-top: 16px;}
+
+input[type="radio"].cate_inp + span{
+  display: inline-block;
+  position: relative; top: 6px; width: 30px; height: 30px; cursor: pointer;
+  background: url("http://img.onbiz.co.kr/onb_picto.png") no-repeat center -30px;
+}
+input[type="radio"].cate_inp + span.on {
+  background: url("http://img.onbiz.co.kr/onb_picto.png") no-repeat center -60px;
+}
+
+/*컨테이너 영역*/
+input[type="checkbox"].equal + span + label {position: relative; display: inline-block; font-size: 11px; text-align: left; font-size: 13px;}
+input[type="checkbox"].equal + span {
+  display: inline-block; overflow: hidden;
+  position: relative; top: 4px; right: 3px; width: 14px; height: 14px; cursor: pointer;
+  border: 1px solid #a9a9a9; background: #eee;
+}
+input[type="checkbox"].equal + span img {display: none;}
+input[type="checkbox"].equal + span.on {background-color: #ff9000; border-color: #ff9000;}
+input[type="checkbox"].equal + span.on img {
+  display: block;
+  position: relative; top: -82px; left: -2px; width: 16px;
+}
+/* 사무실 임대차 계약서 영역*/
+#contract > h3 {padding: 20px 0; text-align: center; font-size: 22px;}
+.con_table {position: relative; border: 1px solid #b5b5b5; margin:11px 15px 0 9px;}
+.con_row {border-top: 1px solid #b5b5b5; background-color: #fff;}
+.con_row:first-child {border-top: none;}
+.con_row > .con_cell {float: left;}
+.con_cell {position: relative;min-height: 33px; vertical-align: middle; border-left: 1px solid #b5b5b5; padding-left: 15px; font-size: 15px; line-height: 2.1em;}
+.con_cell:first-child {border-left: none;}
+.con_cell.col3 {width:195px;}
+.con_cell.con_th {padding-left: 0; text-align: center; width: 110px; background: #f7f7f7;}
+
+/*업종 선택*/
+.st_wrap {position: relative; /*text-align: center;*/ width: 280px; height: 27px;}
+.st_wrap .selectBox {display: inline-block; width: 100%; height: 100%; /*position: absolute; top: 0; left: 0;*/}
+.st_wrap .selectBox i {top: 8px;}
+.st_wrap .selectBox .s_btn {width: 100%; text-align: left; text-indent: 15px; height: 27px; font-size: 14px; position: relative; top: -1px;}
+
+/*정보입력*/
+#container {position: relative; padding: 30px 40px 30px; background: #F9F9F9; box-sizing: border-box; border: 1px solid #ddd;}
+#container h3 {position: absolute; top: 0; left: 0; letter-spacing: -1px;}
+#container ul {position: relative; width: 432px; margin: 0 auto; left: -58px;}
+#container li {margin-top: 9px; color: #888;}
+#container li:first-child {margin-top: 0px;}
+#container li > label {display: inline-block; font-size: 15px; width: 120px; text-indent: 10px; color: #333;}
+#container li > input {width: 307px; height: 30px; border: 1px solid #a9a9a9; text-indent: 15px; font-size: 15px;}
+#container li > input:focus {color: #333; border: 2px solid #ff9000; outline: none;}
+#container .m_jm span, #container .l_snum span {display: inline-block; width: 17px; text-align: center; font-weight: 800;}
+#container .mng_jm {width: 142px;}
+#container .m_jm #mng_jm + span + input {width: 40px; margin-right: 5px;}
+#container .mTxt {padding-left: 120px; font-size: 14px; letter-spacing: -1px; margin: 5px 0 12px;}
+#container .m_adr input[type=text] {width: 185px; margin-right: -6px;}
+#container .m_adr a {display: inline-block; width: 123px; height: 30px; vertical-align: middle; line-height: 2.4em; border: 1px solid #a9a9a9; font-size: 14px; color: #222; text-align: center;
+  background: #ffffff;
+  background: -moz-linear-gradient(top,  #ffffff 0%, #efefef 100%);
+  background: -webkit-linear-gradient(top,  #ffffff 0%,#efefef 100%);
+  background: linear-gradient(to bottom,  #ffffff 0%,#efefef 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#efefef',GradientType=0 );
+}
+#container .m_emt {margin-top: -1px;}
+#container .m_emt input {width: 307px;}
+
+#container .l_snum #les_snum {width: 90px;}
+#container .l_snum #les_snum + span + input {width: 60px;}
+#container .l_snum #les_snum + span + input + span + input {width: 123px;}
+
+
+/*다음단계 버튼*/
+.nBtn {position: relative; display: block; margin: 15px auto; width: 268px; height: 56px; background: #ff9000; color: #fff; font-size: 20px; font-weight: 700; border-radius: 4px; text-align: center; line-height: 3em;}
+.nBtn i {position: absolute; left: 50%; margin-left: 100px; top: 50%; margin-top: -9px;  display: inline-block; overflow: hidden; width: 15px; height: 22px;}
+.nBtn i img {position: relative; width: 74px; top: -30px; left: 0px;}
+
+
+/* lhw */
+.con_table_wrap {padding-bottom:20px; border:1px solid #eee; background-color:#fcfcfc;}
+.con_table_wrap .con_row .con_cell .item_list {margin:10px 0; border:1px solid #979797;}
+.con_table_wrap .con_row .con_cell .item_list p {background-color:#fdfdfd; padding:5px; text-align:center;}
+.con_table_wrap .con_row .con_cell .item_list ul li {padding:5px; border-top:1px solid #979797;}
+.con_table_wrap .line {position:relative;}
+.con_table_wrap .line:before {content:''; display:block; position:absolute; left:1px; top:1px; bottom:1px; width:109px; background-color:#f7f7f7;}
+.con_table_wrap .item_list {width:811px;}
+.con_table_wrap .nbsp {position:relative;}
+.con_table_wrap .nbsp:before {content:''; display:block; position:absolute; left:50%; top:50%; z-index:100; width:1197px; height:24px; margin:-12px 0 0 -598px ; background:url('../../img/bg_table_line.gif') no-repeat 0 0;}
+.con_table_wrap .date {margin:20px 0; color:#7f7f7f; font-size:18px; text-align:center;}
+.con_table_wrap .write {margin:0 25px; padding-top:25px; border-top:1px solid #e5e5e5;}
+.con_table_wrap .write > li {float:left; position:relative; width:420px; margin-left:85px;}
+.con_table_wrap .write > li:first-child {margin-left:0;}
+.con_table_wrap .write > li h3 {padding-bottom:15px; color:#222; font-size:20px;}
+.con_table_wrap .write > li .cont {display:none;}
+.con_table_wrap .write > li .chk {position:absolute; right:0; top:5px;}
+.con_table_wrap .write > li ul li {margin-top: 9px; color: #888;}
+.con_table_wrap .write > li ul li:first-child {margin-top: 0px;}
+.con_table_wrap .write > li ul li > label {display: inline-block; font-size: 15px; width: 120px; text-indent: 10px; color: #333;}
+.con_table_wrap .write > li ul li > input {width: 291px; height: 30px; border: 1px solid #a9a9a9; text-indent: 15px; font-size: 15px;}
+.con_table_wrap .write > li ul li > input:focus {color: #333; border: 2px solid #ff9000; outline: none;}
+.con_table_wrap .write .m_jm span, .con_table_wrap .write .l_snum span {display: inline-block; width: 17px; text-align: center; font-weight: 800;}
+.con_table_wrap .write .mng_jm {width: 142px;}
+.con_table_wrap .write .m_jm #mng_jm + span + input {width: 40px; margin-right: 5px;}
+.con_table_wrap .write .mTxt {padding-left: 120px; font-size: 14px; letter-spacing: -1px; margin: 5px 0 12px;}
+.con_table_wrap .write .m_adr input[type=text] {width: 169px; margin-right: -6px;}
+.con_table_wrap .write .m_adr a {display: inline-block; width: 123px; height: 30px; vertical-align: middle; line-height: 2.4em; border: 1px solid #a9a9a9; font-size: 14px; color: #222; text-align: center;
+  background: #ffffff;
+  background: -moz-linear-gradient(top,  #ffffff 0%, #efefef 100%);
+  background: -webkit-linear-gradient(top,  #ffffff 0%,#efefef 100%);
+  background: linear-gradient(to bottom,  #ffffff 0%,#efefef 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#efefef',GradientType=0 );
+}
+.con_table_wrap .write .m_sign input[type=text] {height:110px; text-align:center; line-height:110px;}
+.con_table_wrap .write .m_sign label {padding-top:5px; vertical-align:top;}
+.con_table_wrap .write .m_sign a {display: inline-block; width: 291px; height: 30px; vertical-align: middle; line-height: 2.4em; border: 1px solid #a9a9a9; font-size: 14px; color: #222; text-align: center;
+  background: #ffffff;
+  background: -moz-linear-gradient(top,  #ffffff 0%, #efefef 100%);
+  background: -webkit-linear-gradient(top,  #ffffff 0%,#efefef 100%);
+  background: linear-gradient(to bottom,  #ffffff 0%,#efefef 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#efefef',GradientType=0 );
+}
+.con_table_wrap .write .m_emt {margin-top: -1px;}
+.con_table_wrap .write .m_emt input {width: 291px;}
+
+.con_table_wrap .write .l_snum #les_snum {width: 90px;}
+.con_table_wrap .write .l_snum #les_snum + span + input {width: 60px;}
+.con_table_wrap .write .l_snum #les_snum + span + input + span + input {width: 107px;}
+
+.con_table_wrap .write .lease {font-size:0;}
+.con_table_wrap .write .lease dt, .con_table_wrap .write .lease dd {display:inline-block; margin-top:15px; font-size:14px;}
+.con_table_wrap .write .lease .first {margin-top:0;}
+.con_table_wrap .write .lease dt {width:112px; color:#555;}
+.con_table_wrap .write .lease dt.vt {vertical-align:top;}
+.con_table_wrap .write .lease dd {width:308px; color:#2e2d2d;}
+
+.con_table_wrap .write .refund {margin-top: 10px; border: 1px solid #ddd; background:#fff; padding:10px;}
+.con_table_wrap .write .refund h3 {position: relative; width: 100%; text-align: center; margin-top: 16px;}
+.con_table_wrap .write .refund p {letter-spacing: -1px;}
+.con_table_wrap .write .refund h3 + p {font-size: 14px; text-align: center; margin-top: 5px; color: #4a4a4a;}
+.con_table_wrap .write .refund ul {width: 100%; left: 0; margin-top: 10px;}
+.con_table_wrap .write .refund label {width: 70px; text-align: left; text-indent: 0;}
+.con_table_wrap .write .refund input {width: 191px;}
+.con_table_wrap .write .refund .selectBox {display: inline-block; width: 191px;}
+.con_table_wrap .write .refund .selectBox input {width: 100%;}
+.con_table_wrap .write .refund .selectBox ul {position: absolute; margin-top: 0;}
+.con_table_wrap .write .refund .selectBox ul li {color: #222;}
+.con_table_wrap .write .refund > p {font-size: 13px; line-height: 1.4em; color: #4a4a4a;}
+.con_table_wrap .write .refund > ul + p {margin-top: 10px;}
+.con_table_wrap .write .refund > ul + p + p {margin-top: 5px;}
+.con_table_wrap .write .refund h4 {color:#222;}
+.con_table_wrap .write .refund h4 span {color:#555;font-size:13px;}
