@@ -161,3 +161,24 @@
 #popup_cardSimple2 .inicis_copy {float:left; margin:auto; width:488px; margin-top:50px; text-align:center; font-size:12px; letter-spacing:-1px}
 #popup_cardSimple2 .inicis_copy span {color:#275e9f}
 
+/* 리얼후기 등록_170421_강혜준 */
+/*--- bxSlider 재정의 ---*/
+.bx-wrapper {position: relative; margin: 0 auto;}
+.bx-wrapper .bx-pager {display: none;}
+.bx-wrapper .bx-viewport {border: none; box-shadow: none; left: 0;}
+#slider-prev .bx-prev, #slider-next .bx-next {display: block; width: 16px; height: 36px;}
+
+#comp-ihemm5hu > h2 {font-family: "Nanum Gothic";}
+#comp-ihemm5hu > h2 + p {font-weight: 400;}
+
+.rs-box {position: relative; width: 900px; margin: 0 auto; top: 190px; font-family: "Nanum Gothic";}
+.rs-box .rb-u1 {position: relative; width: 807px; margin: 0 auto;}
+.rb-u1 .post {width: 396px; height: 216px; background: #3B393A; padding: 0px 15px;}
+.rb-u1 .post .tit {font-size: 20px; color: #fff; margin-top: 45px; padding-bottom: 9px; margin-bottom: 15px; border-bottom: 1px solid #838282; font-weight: 600;}
+.rb-u1 .post .tit .sm {font-size: 16px; font-weight: 400;}
+.rb-u1 .post .txt {line-height: 1.5em; font-size: 16px; letter-spacing: -1.2px; color: #fff; word-break: keep-all;}
+.rs-slide-btn {position: absolute; width: 100%; top: 50%; margin-top: -20px;}
+.rs-slide-btn span {position: absolute; display: block; width: 19px; height: 41px;}
+
+.rs-slide-btn #slider-prev {background: url(http://img.onbiz.co.kr/review_prev_btn.png) no-repeat; left: 0; }
+.rs-slide-btn #slider-next {background: url(http://img.onbiz.co.kr/review_next_btn.png) no-repeat; right: 0;}

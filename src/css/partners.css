@@ -1,15 +1,16 @@
 @charset "utf-8";
 #footer {background:#f2f2f2; margin-top:0;}
 #wrap {min-width:1450px;}
+strong {font-weight:bold;}
 input[type="radio"].on + label:before {background: url("http://img.onbiz.co.kr/onb_picto.png") no-repeat center -60px;}
 
 /* 공통 */
 .sec {padding:80px 0 110px; color:#292929;}
 .sec .wrap {width:960px; margin:0 auto; text-align:center;}
-.sec .title {position:relative; margin-bottom:20px; padding-bottom:25px; color:#000; font-size:40px;}
+.sec .title {position:relative; margin:80px 0 20px; padding-bottom:25px; color:#000; font-size:40px;}
+.sec .title:first-child {margin-top:0;}
 .sec .title:before {content:''; display:block; position:absolute; left:50%; bottom:0; width:36px; height:4px; margin-left:-18px; background-color:#ff7701;}
 .sec .title.white {color:#fff;}
-.sec .s_tit {margin-top:80px; margin-bottom:20px; color:#000; font-size:40px;}
 .sec .s_txt01 {margin-bottom:15px; color:#454545; font-weight:bold; font-size:25px;}
 .sec .s_txt02 {padding-bottom:55px; color:#000; font-size:20px;}
 .sec .s_txt02.white {color:#fff;}
@@ -24,6 +25,9 @@ input[type="radio"].on + label:before {background: url("http://img.onbiz.co.kr/o
 .t_wrap .top_menu li {float:left; width:160px; height:46px; text-align:center; line-height:46px;}
 .t_wrap .top_menu li a {color:#333; font-weight:bold; font-size:18px;}
 
+/* 온비즈 소개 */
+.intro {border-bottom:1px solid #ddd;}
+
 /* 개설특장점 */
 .sec .ico_list {}
 .sec .ico_list li {float:left; width:310px; height:244px; margin-left:14px; padding-top:108px; border:1px solid #d6d6d6; color:#393939; box-shadow:0 5px 5px rgba(220,220,220,.75);}
@@ -34,6 +38,7 @@ input[type="radio"].on + label:before {background: url("http://img.onbiz.co.kr/o
 .sec .ico_list li strong {font-size:22px;}
 .sec .ico_list li p {font-size:16px;}
 .sec .ico_list li p.line1 {padding-top:30px;}
+.sec .ico_list li p.line2 {padding-top:15px;}
 .sec .ico_list li p.line3 {padding-top:20px;}
 .sec .ico_list li p.line4 {padding-top:10px;}
 .sec .info {padding:45px 0; border:1px solid #d9d9d9; background-color:#f9f9f9;}
@@ -78,10 +83,13 @@ input[type="radio"].on + label:before {background: url("http://img.onbiz.co.kr/o
 .partners .board_write .btn_partners {display:block; height:65px; background-color:#1f1f1f; font-size:25px; line-height:65px;}
 
 /* 왼쪽 컨트롤메뉴 */
-.indicator {position:fixed; left:30px; top:255px; width:180px;}
+.indicator {position:fixed; left:30px; top:255px; width:162px;}
 .indicator p {padding:20px 0 10px; background-color:#3e1d01; color:#fff; font-weight:bold; font-size:25px; text-align:center;}
 .indicator ul {padding-bottom:15px; background-color:#ff9234;}
 .indicator ul li {padding:0 10px;}
 .indicator ul li.on, .indicator ul li:hover {background-color:#ff7d0d;}
 .indicator ul li a {display:block; position:relative; padding:10px 0 10px 25px; border-top:1px solid #fba052; color:#fff; font-weight:bold; font-size:19px;}
 .indicator ul li.on a:before {content:''; display:block; position:absolute; left:6px; top:50%; width:15px; height:12px; margin-top:-6px; background:url('http://img.onbiz.co.kr/indicator_on.gif') no-repeat 0 0;}
+
+/* 탑버튼 */
+.ancor {display:none; position:fixed; left:50%; bottom:100px; margin-left:580px;}

@@ -35,7 +35,7 @@ justify-content: center;
 -ms-flex-align: center;
 -webkit-align-items: center;
 align-items: center; */
-} 
+}
 /* 메인이미지 */
 .top_box { position:absolute; top:285px; left:50%; margin-left:-145px; z-index:9; text-align:center; letter-spacing: -1px; font-size:15px;}
 .box_1 {width:90px; height:104px; float:left; background-color: rgba(255, 137, 33, 0.8);}
@@ -102,8 +102,8 @@ align-items: center; */
 
 /* 입주사 부분 */
 .company {
-	width:100%; 
-	float:left; 
+	width:100%;
+	float:left;
 	position:relative;
 }
 
@@ -122,16 +122,16 @@ align-items: center; */
 
 .company::after {
 	content:"";
-	width:100%; 
+	width:100%;
 	height:100%;
 	top:0;
 	left:0;
 	display: block;
 	position:absolute;
-	background-image:url('http://img.onbiz.co.kr/images/floor.jpg'); 
-	background-size:200% 100%; 
+	background-image:url('http://img.onbiz.co.kr/images/floor.jpg');
+	background-size:200% 100%;
 	background-repeat:no-repeat;
-	background-position: center; 
+	background-position: center;
 	opacity:0.5;
 	z-index: -1;
 	/*background-attachment:fixed;*/
@@ -151,12 +151,13 @@ width:290px; }
 
 /* 갤러리 부분 */
 .gallary {width:100%; float:left; position:relative;}
-.gallary img {max-width:100%;}
+.gallary img {width:100%; height:100%;}
 .gallary p {width:100%; float:left; text-align:center; margin-top:20px; font-size:26px; font-weight:bold; color:#FF8921; }
 .left_gallary {width:50%; float:left;}
-.left_gallary li {width:90%; margin:20px auto; box-shadow: rgba(0, 0, 0, 0.329412) 0px 1px 3px 0px;}
+.left_gallary li {position:relative; margin:10px 5px; padding-top:75%;box-shadow: rgba(0, 0, 0, 0.329412) 0px 1px 3px 0px;}
 .right_gallary {width:50%; float:left;}
-.right_gallary li {width:90%; margin:20px auto; box-shadow: rgba(0, 0, 0, 0.329412) 0px 1px 3px 0px;}
+.right_gallary li {position:relative; margin:10px 5px; padding-top:75%; box-shadow: rgba(0, 0, 0, 0.329412) 0px 1px 3px 0px;}
+.left_gallary li div, .right_gallary li div {position:absolute; left:0; top:0; width:100%; height:100%;}
 
 /* 도면이미지 */
 .floor {width:100%; float:left; position:relative; background-color:#2F2E2E; padding-bottom:20px;}
@@ -194,7 +195,7 @@ span.rs-slide-btn {position: absolute; width: 100%; top: 50%; margin-top: -10px;
 .inquiry p {width:100%; float:left; text-align:center; font-size:26px; font-weight:bold; margin-top:20px;}
 .inquiry_wrap {width:100%; float:left;}
 .form_box {width:80%; margin:5px auto;}
-.form_box input, .form_box select, .form_box textarea, .form_btn {border:1px solid #474747; border-radius: 4px}	
+.form_box input, .form_box select, .form_box textarea, .form_btn {border:1px solid #474747; border-radius: 4px}
 .form_box label {width:100%; float:left; font-size:15px; font-weight:bold; margin:10px 0; color:#525252;}
 .form_box input {font-size:14px;}
 .form_box select {font-size:14px;}
