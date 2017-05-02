@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+/* 공통 */
+#Wrapper {padding-top:130px;}
+.sec {padding:25px 0 30px;}
+.sec .wrap {padding:0 10px; text-align:center;}
+.sec .wrap .title {display:inline-block; position:relative; margin:30px 0 10px; padding:0 10px 10px; font-size:20px;}
+.sec .wrap .title:first-child {margin-top:0;}
+.sec .wrap .title:before {content:''; display:block; position:absolute; left:50%; bottom:0; width:18px; margin-left:-9px; height:2px; background-color:#ff7701;}
+.sec .wrap .s_txt01 {margin-bottom:5px; padding:0 10px 15px; font-weight:bold; font-size:13px;}
+.sec .wrap .s_txt02 {padding:0 10px 15px;}
+.sec .wrap .etc {position:relative; padding:6px 0 0 11px; text-align:left;}
+.sec .wrap .etc:before {content:'※'; display:block; position:absolute; left:0; top:5px;}
+.sec .wrap .btn_area {margin-top:15px;}
+.sec .wrap .btn_area a {display:block; height:37px; background-color:#222; color:#fff; font-size:14px; line-height:37px;}
+
+/* header */
+header {position:fixed; left:0; top:0; z-index:100; width:100%; background-color:#fff;}
+header .top_bar {overflow:hidden; padding:0 10px; background-color:#000; height:46px; line-height:46px;}
+header .top_bar .city {float:left; overflow:hidden; font-size:0;}
+header .top_bar .city li {float:left; margin-left:3px;}
+header .top_bar .city li:first-child {margin-left:0;}
+header .top_bar .city li a {display:inline-block; width:50px; padding:5px 0; border:1px solid #fff; border-radius:2px; color:#fff; font-size:12px; text-align:center; vertical-align:middle; line-height:12px;}
+header .rent {float:right;}
+header .rent a {display:inline-block; padding:5px 10px; border:1px solid #fff; border-radius:2px; color:#fff; text-align:center; vertical-align:middle; line-height:12px;}
+header .logo {height:50px; font-size:17px; text-align:center; line-height:50px;}
+header .logo span {color:#ff7d0d;}
+header .gnb {display:table; width:100%; background-color:#ff7d0d; table-layout:fixed;}
+header .gnb li {display:table-cell; width:20%; vertical-align:middle;}
+header .gnb li h2 {display:table; width:100%; table-layout:fixed;}
+header .gnb li h2 a {display:table-cell; height:34px; color:#fff; font-weight:normal; font-size:12px; text-align:center; vertical-align:middle;}
+header .gnb li h2 a.on {font-weight:bold; font-size:14px;}
+
+/* footer */
+footer {padding:15px 10px; background-color:#f9f9f9; text-align:center;}
+footer address {line-height:1.6;}
+
+/* top button */
+.move_top {display:none; position:fixed; right:10px; bottom:45px;}
+.move_top img {width:32px;}
+
+/* 온비즈소개 */
+.intro {border-bottom:1px dashed #ccc;}
+.intro .info {padding:15px 10px; border-top:1px solid #d9d9d9; border-bottom:1px solid #d9d9d9; background-color:#f9f9f9;}
+.intro .info ul > li {margin-top:25px;}
+.intro .info ul > li:first-child {margin-top:0;}
+.intro .info ul > li > strong {position:relative; padding-left:10px; font-size:14px;}
+.intro .info ul > li > strong:before {content:''; display:block; position:absolute; left:0; top:50%; width:9px; height:8px; margin-top:-4px; background:url('http://img.onbiz.co.kr/m/partners/ico_blt01.png') no-repeat 0 0; background-size:100% 100%;}
+.intro .info ul > li > p {margin-top:10px;}
+.intro .office {font-size:0; text-align:center;}
+.intro .office > li {display:inline-block; margin:4px 10px; width:128px; height:128px; border:1px solid #ff7701; border-radius:100%; vertical-align:middle;}
+.intro .office > li .radius {display:table; width:100%; table-layout:fixed;}
+.intro .office > li .radius:first-child {height:54px; font-size:13px;}
+.intro .office > li .radius:last-child {height:74px; border-bottom-left-radius:128px; border-bottom-right-radius:128px; background-color:#ff7701; color:#fff; font-size:11px;}
+.intro .office > li .radius > div {display:table-cell; width:100%; text-align:center; vertical-align:middle;}
+/* 개설특장점 */
+.feature .feature_list  > li {margin-top:15px; height:69px; padding:10px 10px 0 70px; border:1px solid #d6d6d6; box-shadow:2px 2px 2px rgba(220,220,220,.75); text-align:left;}
+.feature .feature_list  > li.ico01 {background:url('http://img.onbiz.co.kr/m/partners/ico_feature01.png') no-repeat 14px 50% #f7f7f7; background-size:33px 37px;}
+.feature .feature_list  > li.ico02 {background:url('http://img.onbiz.co.kr/m/partners/ico_feature02.png') no-repeat 14px 50% #f7f7f7; background-size:33px 40px;}
+.feature .feature_list  > li.ico03 {background:url('http://img.onbiz.co.kr/m/partners/ico_feature03.png') no-repeat 14px 50% #f7f7f7; background-size:28px 38px;}
+.feature .feature_list  > li > strong {font-size:13px;}
+.feature .feature_list  > li > p {margin-top:5px;}
+
+/* 개설절차 */
+.process {background:url('http://img.onbiz.co.kr/m/partners/bg_pattern.gif') repeat 0 0;}
+.process .process_list {padding:0 15px;}
+
+/* 예상수익률 */
+.revenue .invest {border:1px solid #dbdbdb;}
+.revenue .invest .top {padding:5px 10px; background-color:#ff7d0d;}
+.revenue .invest .top > p {color:#fff;}
+.revenue .invest .btm {padding:10px; background-color:#fbfbfb;}
+.revenue .invest .btm > p {font-size:14px;}
+.revenue .invest .btm .money {font-size:30px;}
+.revenue .example {display:inline-block; position:relative; padding:15px 20px; font-weight:bold; font-size:13px; line-height:1.6;}
+.revenue .example:before {content:'“'; display:block; position:absolute; left:0; top:-2px; font-size:40px}
+.revenue .example:after {content:'”'; display:block; position:absolute; right:0; bottom:-24px; font-size:40px}
+.revenue .example em {color:#ff7d0d;}
+
+/* 가맹문의 */
+.partners {background-color:#4b4b4b; color:#fff;}
+.partners .board_write tbody tr td {padding-bottom:10px; text-align:left;}
+.partners .board_write tbody tr td:nth-child(2) {padding-left:10px;}
+.partners .board_write tbody tr td .lb_txt {display:block; color:#fff; line-height:1.8;}
+.partners .board_write tbody tr td .txt_box {height:30px; padding:5px; border:0; box-sizing:border-box;}
+.partners .board_write tbody tr td input[type="radio"] {position:relative; width:16px; height:16px; border-radius:100%; background-color:#fff;}
+.partners .board_write tbody tr td input[type="radio"]:before {content:''; display:none; position:absolute; left:50%; top:50%; width:10px; height:10px; margin:-5px 0 0 -5px; border-radius:100%; background-color: #ff7d0d;}
+.partners .board_write tbody tr td input[type="radio"]:checked:before {display:block;}
+.partners .board_write tbody tr td label {color:#fff;}
+.partners .board_write tbody tr td textarea {width:100%; height:150px; padding:5px; box-sizing:border-box; resize:none;}

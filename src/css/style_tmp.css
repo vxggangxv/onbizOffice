@@ -1,4 +1,4 @@
-@import url(https://cdn.rawgit.com/openhiun/hangul/14c0f6faa2941116bb53001d6a7dcd5e82300c3f/nanumbarungothic.css); 
+@import url(https://cdn.rawgit.com/openhiun/hangul/14c0f6faa2941116bb53001d6a7dcd5e82300c3f/nanumbarungothic.css);
 @import url(http://fonts.googleapis.com/earlyaccess/hanna.css);
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 
@@ -12,7 +12,7 @@ input{
   -moz-box-shadow: none;
   box-shadow: none;}
 table{border-collapse:collapse;}
-article, aside, hgroup, header, footer, figure, figcaption, nav, section,time, mark, canvas, video, 
+article, aside, hgroup, header, footer, figure, figcaption, nav, section,time, mark, canvas, video,
 audio, details, summary {display:block;}
 input {outline-style:none}
 http://img.onbiz.co.kr{border:none;}
@@ -20,7 +20,7 @@ http://img.onbiz.co.kr{border:none;}
 
 html, body{
 
-	
+
 	}
 
 #wrapeer{width:100%;height:100%;margin:0 auto;background:#f9f9f9;}
@@ -37,7 +37,7 @@ html, body{
 #logo{float:left;width:467px;height:102px;line-height:102px;}
 #logo http://img.onbiz.co.kr{width:467px;height:61px;vertical-align:middle;}
 
-#gnb{float:right;width:350px;}
+#gnb{float:right;width:476px;}
 #gnb ul{float:right;width:328px;height:35px; border: 1px solid #f93500;}
 #gnb ul li{float:left;line-height:35px;text-align:center; padding: 0; font-weight: 600; color: #434343;}
 .gnb_m02{font-size: 15px; font-family:'Nanum Gothic' , sans-serif; width:50%;height:35px; color: #222;}
@@ -54,6 +54,7 @@ html, body{
 	}
 #gnb > ul > li span {position: relative; top: -2px; margin-left: 3px; font-weight: 600; font-size: 10px; color: #f9f402;}
 #gnb > ul > li.gnb_m02 span {color: #f93500;}
+#gnb .go_partners {float:left;}
 #lnb{
 	clear:both;
 	width:980px;
@@ -267,7 +268,7 @@ html, body{
 	display: inline-block;
 	position: relative;
 	padding-left: 30px;
-	cursor: pointer;	
+	cursor: pointer;
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
@@ -418,30 +419,30 @@ html, body{
 	margin-bottom:4px;
 	}
 
-.checks01 {position: relative;} 
+.checks01 {position: relative;}
 .checks01 input[type="checkbox"] {
 	position: absolute;
 	width:1px;
 	height:1px;
 	padding:0;margin: -1px;
-	overflow: hidden; 
+	overflow: hidden;
 	clip:rect(0,0,0,0);
-	border: 0 
+	border: 0
 	}
 .checks01 input[type="checkbox"] + label {
 	display: inline-block;
 	position: relative;
 	cursor: pointer;
-	-webkit-user-select:none; 
+	-webkit-user-select:none;
 	-moz-user-select:none;
-	-ms-user-select:none; 
-	} 
+	-ms-user-select:none;
+	}
 .checks01 input[type="checkbox"] + label:before {
 	content: ' ';
 	display: inline-block;
 	width:10px; /* 체크박스의 너비를 지정 */
-	height:10px; /* 체크박스의 높이를 지정 */ 
-	line-height:10px; /* 세로정렬을 위해 높이값과 일치 */ 
+	height:10px; /* 체크박스의 높이를 지정 */
+	line-height:10px; /* 세로정렬을 위해 높이값과 일치 */
 	margin:-2px 0px 0 0;
 	font-family:'Nanum Gothic' , sans-serif;
 	text-align:center;
@@ -450,20 +451,20 @@ html, body{
 	border: 1px solid #cacece;
 	border-radius:3px;
 	box-shadow: 0px 1px 2px rgba(0,0,0,0.05),
-	inset 0px -15px 10px -12px rgba(0,0,0,0.05); } 
-.checks01 input[type="checkbox"] + label:active:before, 
-.checks01 input[type="checkbox"]:checked + label:active:before { 
-	box-shadow: 0 1px 2px rgba(0,0,0,0.05), 
-	inset 0px 1px 3px rgba(0,0,0,0.1); } 
-.checks01 input[type="checkbox"]:checked + label:before { /* 체크박스를 체크했을때 */ 
+	inset 0px -15px 10px -12px rgba(0,0,0,0.05); }
+.checks01 input[type="checkbox"] + label:active:before,
+.checks01 input[type="checkbox"]:checked + label:active:before {
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05),
+	inset 0px 1px 3px rgba(0,0,0,0.1); }
+.checks01 input[type="checkbox"]:checked + label:before { /* 체크박스를 체크했을때 */
 	font-family:'Nanum Gothic' , sans-serif;
-	content: '\2714'; /* 체크표시 유니코드 사용 */ 
-	color: #333; 
-	text-shadow: 1px 1px #fff; 
-	background: #e9ecee; 
-	border-color: #adb8c0; 
-	box-shadow: 0px 1px 2px rgba(0,0,0,0.05), 
-	inset 0px -15px 10px -12px rgba(0,0,0,0.05), 
+	content: '\2714'; /* 체크표시 유니코드 사용 */
+	color: #333;
+	text-shadow: 1px 1px #fff;
+	background: #e9ecee;
+	border-color: #adb8c0;
+	box-shadow: 0px 1px 2px rgba(0,0,0,0.05),
+	inset 0px -15px 10px -12px rgba(0,0,0,0.05),
 	inset 15px 10px -12px rgba(255,255,255,0.1);
 	}
 #container .contents .select03 .table_write01 dd.addr {height:100px;}
@@ -610,7 +611,7 @@ html, body{
 	color:#fff;
 	}
 .chek02 {position: relative;}
-.chek02 input[type="radio"] { 
+.chek02 input[type="radio"] {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -626,7 +627,7 @@ html, body{
 	display: inline-block;
 	position: relative;
 	padding-left: 30px;
-	cursor: pointer;	
+	cursor: pointer;
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
@@ -659,7 +660,7 @@ html, body{
 
 /*옵션상품추가*/
 .chek03 {position: relative;}
-.chek03 input[type="checkbox"] { 
+.chek03 input[type="checkbox"] {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -675,7 +676,7 @@ html, body{
 	display: inline-block;
 	position: relative;
 	padding-left: 30px;
-	cursor: pointer;	
+	cursor: pointer;
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
@@ -711,7 +712,7 @@ html, body{
 
 /*무통장입금*/
 .chek04 {position: relative;}
-.chek04 input[type="radio"] { 
+.chek04 input[type="radio"] {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -728,7 +729,7 @@ html, body{
 	display: inline-block;
 	position: relative;
 	padding-left:30px;
-	cursor: pointer;	
+	cursor: pointer;
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
@@ -815,30 +816,30 @@ html, body{
 	color:#f93500;
 	}
 .payBox .final_pay p.s_text{clear:both;float:right;margin:0 15px 0px 0px;font-size:13px;}
-.checks {position: relative;margin-left:15px;font-size:14px;} 
+.checks {position: relative;margin-left:15px;font-size:14px;}
 .checks input[type="checkbox"] {
 	position: absolute;
 	width:1px;
 	height:1px;
 	padding:0;margin: -1px;
-	overflow: hidden; 
+	overflow: hidden;
 	clip:rect(0,0,0,0);
-	border: 0 
+	border: 0
 	}
 .checks input[type="checkbox"] + label {
 	display: inline-block;
 	position: relative;
 	cursor: pointer;
-	-webkit-user-select:none; 
+	-webkit-user-select:none;
 	-moz-user-select:none;
-	-ms-user-select:none; 
-	} 
+	-ms-user-select:none;
+	}
 .checks input[type="checkbox"] + label:before {
 	content: ' ';
 	display: inline-block;
 	width:10px; /* 체크박스의 너비를 지정 */
-	height:10px; /* 체크박스의 높이를 지정 */ 
-	line-height:10px; /* 세로정렬을 위해 높이값과 일치 */ 
+	height:10px; /* 체크박스의 높이를 지정 */
+	line-height:10px; /* 세로정렬을 위해 높이값과 일치 */
 	margin:-2px 8px 0 0;
 	font-family:'Nanum Gothic' , sans-serif;
 	text-align:center;
@@ -847,20 +848,20 @@ html, body{
 	border: 1px solid #cacece;
 	border-radius:3px;
 	box-shadow: 0px 1px 2px rgba(0,0,0,0.05),
-	inset 0px -15px 10px -12px rgba(0,0,0,0.05); } 
-.checks input[type="checkbox"] + label:active:before, 
-.checks input[type="checkbox"]:checked + label:active:before { 
-	box-shadow: 0 1px 2px rgba(0,0,0,0.05), 
-	inset 0px 1px 3px rgba(0,0,0,0.1); } 
-.checks input[type="checkbox"]:checked + label:before { /* 체크박스를 체크했을때 */ 
-	content: '\2714'; /* 체크표시 유니코드 사용 */ 
+	inset 0px -15px 10px -12px rgba(0,0,0,0.05); }
+.checks input[type="checkbox"] + label:active:before,
+.checks input[type="checkbox"]:checked + label:active:before {
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05),
+	inset 0px 1px 3px rgba(0,0,0,0.1); }
+.checks input[type="checkbox"]:checked + label:before { /* 체크박스를 체크했을때 */
+	content: '\2714'; /* 체크표시 유니코드 사용 */
 	font-family:'Nanum Gothic' , sans-serif;
-	color: #333; 
-	text-shadow: 1px 1px #fff; 
-	background: #e9ecee; 
-	border-color: #adb8c0; 
-	box-shadow: 0px 1px 2px rgba(0,0,0,0.05), 
-	inset 0px -15px 10px -12px rgba(0,0,0,0.05), 
+	color: #333;
+	text-shadow: 1px 1px #fff;
+	background: #e9ecee;
+	border-color: #adb8c0;
+	box-shadow: 0px 1px 2px rgba(0,0,0,0.05),
+	inset 0px -15px 10px -12px rgba(0,0,0,0.05),
 	inset 15px 10px -12px rgba(255,255,255,0.1);
 	}
 .payBox p.clause{ width:279px;margin:3px 0px 0px 15px;}
@@ -885,7 +886,7 @@ html, body{
 	display:block;
 	margin:0 auto;
 	cursor:pointer;
-	} 
+	}
 .payBox .card_discount ul {height:24px;}
 .payBox .card_discount ul.first_card{border-top:1px solid #dcdcdc;}
 .payBox .card_discount ul li{float:left;width:auto;padding-right:15px;}
@@ -952,7 +953,7 @@ html, body{
 	cursor: pointer;
 	font-weight:600;
 	border-radius:5px;
-	} 
+	}
 .filebox input[type="file"] { /* 파일 필드 숨기기 */
 	position:absolute;
 	width:1px;
