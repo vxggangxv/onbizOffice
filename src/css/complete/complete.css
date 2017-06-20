@@ -1,6 +1,6 @@
 @charset "utf-8";
 /* 공통 css */
-@import url(http://static.onbiz.co.kr/css/reset.css); 
+@import url(http://static.onbiz.co.kr/css/reset.css);
 
 /* 유틸리티 영역 */
 #util {width: 980px; margin: 0 auto; padding: 25px 3px 15px; border-bottom: 1px solid #ddd;}
@@ -70,3 +70,21 @@
 }
 .contract .contract_pdf {text-align: center; margin-top: 20px;}
 .contract .contract_pdf > p {font-size: 15px; font-weight: 400;}
+
+.receipt {display:none; position:absolute; left:50%; top:210px; min-width:620px; margin-left:-130px; padding:20px 15px 40px; border:3px solid #333; background-color:#fff;}
+.receipt .top_txt {font-size:22px; font-weight:bold;}
+.receipt .receipt_close {position:absolute; right:15px; top:20px;}
+.receipt .sort {margin:30px 0 10px; text-align:right;}
+.receipt .receipt_data {border-right:1px solid #b2b2b2; border-bottom:1px solid #b2b2b2;}
+.receipt .receipt_data thead tr th {padding:15px 10px; background-color:#f4f4f4; border-left:1px solid #dedede; border-top:1px solid #b2b2b2; color:#010101; font-weight:bold; text-align:center;}
+.receipt .receipt_data thead tr th:first-child {border-left:1px solid #b2b2b2;}
+.receipt .receipt_data tbody tr td {padding:10px; border-left:1px solid #dedede; border-top:1px solid #dedede; color:#010101; text-align:center;}
+.receipt .receipt_data tbody tr td:first-child {border-left:1px solid #b2b2b2;}
+.receipt .receipt_data tbody tr td.ar {text-align:right;}
+.receipt .receipt_data tbody tr:first-child td {border-top:1px solid #b2b2b2;}
+.paging {margin-top:35px; text-align:center;}
+.paging > a {vertical-align:top;}
+.paging span {display:inline-block; width:28px; height:28px; vertical-align:top; line-height:28px;}
+.paging span.on {border:1px solid #e41b13;}
+.paging span.on a {color:#e41b13;}
+.paging span:hover a, .paging span:active a {color:#e41b13;}
